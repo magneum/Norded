@@ -3,7 +3,7 @@ from pyrogram import Client as POD, filters , idle
 from pyrogram.types import Message
 from time import time
 from datetime import datetime
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 ɦɖɛ = POD(
     session_name="Ӽɛʀօʋօɨɖ",
