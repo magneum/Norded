@@ -1,7 +1,0 @@
-Pyrogram
-wheel
-heroku3
-TgCrypto
-ffmpeg-python
-pytgcalls
-termcolor
