@@ -22,10 +22,9 @@
 ## 💠 DΣPLӨY
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mentiontard/Telegram-Xeronoid.git/tree/main) 
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSouls/Xeronoid.git/tree/main) 
 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
-
--  [![Generic badge](https://img.shields.io/badge/REPLIT-𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙼𝚞𝚜𝚒𝚌_𝚂𝚎𝚜𝚜𝚒𝚘𝚗𝙼𝚊𝚔𝚎𝚛-blue.svg)](https://replit.com/@mastermindvrtx/hypevoidmusicsessionmaker#main.py) 
+-  [![Generic badge](https://img.shields.io/badge/REPLIT-𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙼𝚞𝚜𝚒𝚌_𝚂𝚎𝚜𝚜𝚒𝚘𝚗𝙼𝚊𝚔𝚎𝚛-blue.svg)]() 
 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘱𝘺𝘳𝘰𝘨𝘳𝘢𝘮 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘴𝘵𝘳𝘪𝘯𝘨 
 
 ## 🍺 CӨMMΛПDƧ
