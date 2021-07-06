@@ -4,7 +4,7 @@ format="%(levelname)s - %(message)s",
 level=INFO)
 import shutil
 from pyrogram import Client as mapple, idle
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 
 Ӽɛռ = mapple(
@@ -15,5 +15,4 @@ from Importing import *
     workers=20
     )
 from ᴇᴘɪꜱᴛʟᴇ import *
-from Importing import *
 LOGS = getLogger(__name__)
