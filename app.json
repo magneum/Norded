@@ -1,12 +1,13 @@
-{   "name": "一═デ🦋 Ӽɛʀօռօɨɖ 🦋デ═一",
-    "description": "Play Audio in Telegram Voice Chats",
-    "repository": "https://github.com/HypeVoidSouls/Xeronoid.git",
-    "logo": "https://telegra.ph/file/136c238b287f9c7d5174c.jpg",
-    "website": "https://t.me/HypeVoids",
-    "stack": "container",
-    "keywords": [      "telegram",      "userbot",      "voicechat",      "music",      "python",
+{
+      "name": "一═デ🦋 Ӽɛʀօռօɨɖ 🦋デ═一",
+      "description": "Play Audio in Telegram Voice Chats",
+      "repository": "https://github.com/HypeVoidSouls/Xeronoid.git",
+      "logo": "https://telegra.ph/file/136c238b287f9c7d5174c.jpg",
+      "website": "https://t.me/HypeVoids",
+      "stack": "container",
+      "keywords": [      "telegram",      "userbot",      "voicechat",      "music",      "python",
       "pyrogram",      "pytgcalls",      "tgcalls",      "voip"   ],
-    "env": 
+      "env": 
       {
       "API_ID": {
       "description":
@@ -62,20 +63,15 @@
       "HEROKU_API_KEY",
       "required":
       true
-    },
-    "OWNER_USERNAME":
-    {
-    "description":
-    "OWNER_USERNAME",
-    "value":
-    "@hypevoidsoul",
-    "required":
-    true
-    }
-    },
-    "buildpacks": [
+      },
+      "OWNER_USERNAME":
       {
-      "url":
-      "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-      }]
+      "description":
+      "OWNER_USERNAME",
+      "value":
+      "@hypevoidsoul",
+      "required":
+      true
+      }
+      }
 }
