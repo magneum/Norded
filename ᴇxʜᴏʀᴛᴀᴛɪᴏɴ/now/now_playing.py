@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from datetime import datetime, timedelta
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 @Client.on_message(
 demon_killer_sigki
