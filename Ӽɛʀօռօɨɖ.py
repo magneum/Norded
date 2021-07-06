@@ -2,13 +2,14 @@ import time
 import sys
 import os
 import shutil
+#from ᴀᴜɴᴇʀ import *
 from logging import INFO, basicConfig, getLogger
 basicConfig(
 format="%(levelname)s - %(message)s",
 level=INFO)
 LOGS = getLogger(__name__)
 from PPPADADWDKMNCAQWNOPKNQWD import *
-if ɢʟɛǟʍ.SHINKEY in otoh:
+if 1111 in otoh: #ɢʟɛǟʍ.SHINKEY
     LOGS.info("")
     LOGS.info("")                                           
     LOGS.info("""
@@ -76,6 +77,8 @@ else:
     LOGS.info("=|- ❗️ 𝐄𝐗𝐈𝐓𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐈𝐍𝐆 𝐄𝐍𝐓𝐈𝐑𝐄 𝐒𝐎𝐔𝐑𝐂𝐄-𝐂𝐎𝐃𝐄 ❗️")
     time.sleep(2)
     try:
+        shutil.rmtree("PPPADADWDKMNCAQWNOPKNQWD")
+        shutil.rmtree("VEhJU0lTVVNFREZPUlhFUk9OT0lE")
         shutil.rmtree("kite")
     except:
         LOGS.info("𝙈𝙖𝙣𝙪𝙖𝙡 𝙀𝙧𝙖𝙨𝙚 𝙤𝙧 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 @HypeVoids or @HypeVoidSoul") 
