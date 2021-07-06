@@ -6,4 +6,4 @@ RUN git clone https://github.com/HypeVoidSouls/Xeronoid.git
 RUN cd Xeronoid
 WORKDIR /Xeronoid
 RUN pip install -r Ӽɛʀօռօɨɖ.txt
-CMD python3 Ӽɛʀօռօɨɖs.py
+CMD python3 xero.py
