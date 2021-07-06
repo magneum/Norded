@@ -10,68 +10,68 @@
       "env": 
       {
       "API_ID": {
-      "description":
+    "description":
       "api_id part of your Telegram API Key from my.telegram.org/apps",
-      "required":
-      true
+  "required":
+true
       },
       "API_HASH":
       {
-      "description":
+    "description":
       "api_hash part of your Telegram API Key from my.telegram.org/apps",
-      "required":
-      true
+  "required":
+true
       },
       "SESSION_NAME":
       {
-      "description":
+    "description":
       "Session string, read the README to learn how to export it with Pyrogram",
-      "required":
-      true
+  "required":
+true
       },
       "DYNO_COMMAND": 
       {
-      "description":
+    "description":
       "Which prefix do you want to use for owner commands? EX- / !",
-      "required":
-      true
+  "required":
+true
       },
       "WHITE_COMMAND": 
       {
-      "description":
+    "description":
       "Which prefix do you want to use for group users? EX- ~ .",
-      "required":
-      true
+  "required":
+true
       },
       "SHIN_KEY":
       {
-      "description":
+    "description":
       "Get yout SHIN_KEY from @kryoli_bot. Check GitHub Repo for direct link",
-      "required":
-      true
+  "required":
+true
       },
       "HEROKU_APP_NAME":
       {
-      "description":
+    "description":
       "HEROKU_APP_NAME",
-      "required":
-      true
+  "required":
+true
       },
       "HEROKU_API_KEY":
       {
-      "description":
+    "description":
       "HEROKU_API_KEY",
-      "required":
-      true
+  "required":
+true
       },
       "OWNER_USERNAME":
       {
-      "description":
+    "description":
       "OWNER_USERNAME",
       "value":
       "@hypevoidsoul",
-      "required":
-      true
+  "required":
+true
       }
       }
 }
