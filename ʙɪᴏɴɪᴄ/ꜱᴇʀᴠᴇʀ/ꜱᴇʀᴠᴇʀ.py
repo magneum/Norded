@@ -5,7 +5,7 @@ from pyrogram import Client as ɦɖɛ, filters
 from pyrogram.types import Message
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 
 @ɦɖɛ.on_message(
