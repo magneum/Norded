@@ -1,4 +1,5 @@
-🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪=====__Wê Ärê H¥þêVðïÐ§__=====♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
+#『••••—✭••÷[🎧  Ӽɛʀօռօɨɖ   🎧]÷••✭—••••』
+
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # 🎧⭐️『 一═デ __𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗠𝘂𝘀𝗶𝗰__ デ═一 』⭐️🎧
 <img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="80%" />
