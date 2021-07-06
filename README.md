@@ -1,7 +1,7 @@
 🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪=====__Wê Ärê H¥þêVðïÐ§__=====♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # 🎧⭐️『 一═デ __𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗠𝘂𝘀𝗶𝗰__ デ═一 』⭐️🎧
-<img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="450" />
+<img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="80%" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
 <img align="right" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
