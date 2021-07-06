@@ -2,7 +2,11 @@ import time
 import sys
 import os
 import shutil
-from Ӽɛʀօռօɨɖ import *
+from logging import INFO, basicConfig, getLogger
+basicConfig(
+format="%(levelname)s - %(message)s",
+level=INFO)
+LOGS = getLogger(__name__)
 from PPPADADWDKMNCAQWNOPKNQWD import *
 if ɢʟɛǟʍ.SHINKEY in otoh:
     LOGS.info("")
