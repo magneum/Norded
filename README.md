@@ -23,11 +23,9 @@
 ╰☆☆♢--------------------------------------------------------------------♢☆☆╮
 
 ## 💠 DΣPLӨY
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSouls/Xeronoid.git/tree/main) 
-𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
--  [![Generic badge](https://img.shields.io/badge/REPLIT-𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙼𝚞𝚜𝚒𝚌_𝚂𝚎𝚜𝚜𝚒𝚘𝚗𝙼𝚊𝚔𝚎𝚛-blue.svg)]() 
-𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘱𝘺𝘳𝘰𝘨𝘳𝘢𝘮 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘴𝘵𝘳𝘪𝘯𝘨 
+♢ ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
+♢ [![Ӽɛʀօռօɨɖ-ɦօֆȶ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSouls/Xeronoid.git/tree/VOID)𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
+♢ [![Generic badge](https://img.shields.io/badge/Replit-Ӽɛʀօռօɨɖ-darkgreen.svg)]() 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘱𝘺𝘳𝘰𝘨𝘳𝘢𝘮 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘴𝘵𝘳𝘪𝘯𝘨 
 
 ╰☆☆♢--------------------------------------------------------------------♢☆☆╮
 
@@ -54,7 +52,7 @@
 ╰☆☆♢--------------------------------------------------------------------♢☆☆╮
 
 ## 📜 LICΣПSΣ
-- __Ӽɛʀօռօɨɖ __ 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0[GNU V3.0](LICENSE)
+♢ __Ӽɛʀօռօɨɖ __ 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0[GNU V3.0](LICENSE)
 ```sh
 * pēr๓iʂʂi໐ຖŞ 💢
 ✔ ᴄᴏᴍᴍᴇʀᴄɪᴀʟ ᴜꜱᴇ
