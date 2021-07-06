@@ -3,7 +3,7 @@ from Ӽɛʀօռօɨɖ import *
 from pyrogram.types import Message
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 @Ӽɛռ.on_message(
 demon_killer_sigki

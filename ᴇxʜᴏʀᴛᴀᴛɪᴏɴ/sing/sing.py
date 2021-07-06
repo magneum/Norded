@@ -5,7 +5,7 @@ from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR as fme
 from pyrogram.types import Message
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
-from Importing import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 
 @Ӽɛռ.on_message(
