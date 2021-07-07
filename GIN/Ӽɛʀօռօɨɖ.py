@@ -1,12 +1,16 @@
 from HEIST import *
 from ᴀᴜɴᴇʀ import *
-from Color import *
 from PPPADADWDKMNCAQWNOPKNQWD import *
 if ɢʟɛǟʍ.XERONOID in otoh:
     LOGS.info("")
     LOGS.info("")    
     time.sleep(3)                                   
-    LOGS.info(booting)
+    LOGS.info("🥮________𝙱𝚘𝚘𝚝𝚒𝚗𝚐 Ӽɛʀօռօɨɖ 𝙴𝚗𝚐𝚒𝚗𝚎________🥮")
+    LOGS.info("| _ )   ___    ___   | |_    (_)   _ _    / _|")
+    LOGS.info("| _ \  / _ \  / _ \  |  _|   | |  | ' \   \__|")
+    LOGS.info("|___/  \___/  \___/  _\__|  _|_|_ |_||_|  |__|")
+    LOGS.info("🥮________------------------------________🥮")
+    LOGS.info("")
     time.sleep(3)
     LOGS.info("")
     LOGS.info("➢🥮________Ӽɛʀօռօɨɖ engine is now going to start________🥮")
@@ -64,9 +68,9 @@ else:
     LOGS.info("=|- ❗️ 𝐄𝐗𝐈𝐓𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐈𝐍𝐆 𝐄𝐍𝐓𝐈𝐑𝐄 𝐒𝐎𝐔𝐑𝐂𝐄-𝐂𝐎𝐃𝐄 ❗️")
     time.sleep(2)
     try:
-        shutil.rmtree("PPPADADWDKMNCAQWNOPKNQWD")
-        shutil.rmtree("VEhJU0lTVVNFREZPUlhFUk9OT0lE")
-        shutil.rmtree("knite")
+        shutil.rmtree(K)
+        shutil.rmtree(P)
+        shutil.rmtree(V)
     except:
         LOGS.info("𝙈𝙖𝙣𝙪𝙖𝙡 𝙀𝙧𝙖𝙨𝙚 𝙤𝙧 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 @HypeVoids or @HypeVoidSoul") 
         pass
