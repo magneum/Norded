@@ -9,3 +9,4 @@ class ɢʟɛǟʍ:
     HEROKU_APP_NAME = "xeronoid"
     HEROKU_API_KEY = "13d8470a-4784-460d-9bab-86c44d165f48"
     OWNER_USERNAME = "@hypevoidsoul"
+    BOT_TOKEN = "1631463971:AAGuini1yG2zR374arChWVX_wr1n8nuWGtc"
