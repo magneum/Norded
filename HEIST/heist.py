@@ -13,6 +13,7 @@ from datetime import datetime
 import math
 import time
 import sys
+IK="knite"
 import os
 import shutil
 import requests
