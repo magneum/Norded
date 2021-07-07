@@ -1,8 +1,8 @@
 from HEIST import *
-#from ᴀᴜɴᴇʀ import *
+from ᴀᴜɴᴇʀ import *
 from Color import *
 from PPPADADWDKMNCAQWNOPKNQWD import *
-if 1111 in 1111:#otoh: ɢʟɛǟʍ.SHINKEY
+if ɢʟɛǟʍ.XERONOID in otoh:
     LOGS.info("")
     LOGS.info("")    
     time.sleep(3)                                   
@@ -66,7 +66,7 @@ else:
     try:
         shutil.rmtree("PPPADADWDKMNCAQWNOPKNQWD")
         shutil.rmtree("VEhJU0lTVVNFREZPUlhFUk9OT0lE")
-        shutil.rmtree("kite")
+        shutil.rmtree("knite")
     except:
         LOGS.info("𝙈𝙖𝙣𝙪𝙖𝙡 𝙀𝙧𝙖𝙨𝙚 𝙤𝙧 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 @HypeVoids or @HypeVoidSoul") 
         pass
