@@ -10,4 +10,3 @@ from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
     workers=20
     )
 from ᴇᴘɪꜱᴛʟᴇ import *
-LOGS = getLogger(__name__)

@@ -1,6 +1,7 @@
 from HEIST import *
 
-cprint(
+CP = cprint(
 "Attention!",
 'red',
 attrs=['bold'], file=sys.stderr)
+LOGS.info(CP)

@@ -1,15 +1,12 @@
-import time
-import sys
-import os
-import shutil
-#from ᴀᴜɴᴇʀ import *
-from logging import INFO, basicConfig, getLogger
-basicConfig(
-format="%(levelname)s - %(message)s",
-level=INFO)
+from HEIST import *
+from ᴀᴜɴᴇʀ import *
+cprint(
+"Attention!",
+'red',
+attrs=['bold'], file=sys.stderr)
 LOGS = getLogger(__name__)
 from PPPADADWDKMNCAQWNOPKNQWD import *
-if 1111 in otoh: #ɢʟɛǟʍ.SHINKEY
+if 1111 in 1111:#otoh: ɢʟɛǟʍ.SHINKEY
     LOGS.info("")
     LOGS.info("")                                           
     LOGS.info("""
