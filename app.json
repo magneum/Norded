@@ -1,7 +1,7 @@
 {
       "name": "一═デ🦋 Ӽɛʀօռօɨɖ 🦋デ═一",
       "description": "Play Audio in Telegram Voice Chats",
-      "repository": "https://github.com/HypeVoidSouls/Xeronoid.git",
+      "repository": "https://github.com/HypeVoidSoul/Xeronoid.git",
       "logo": "https://telegra.ph/file/136c238b287f9c7d5174c.jpg",
       "website": "https://t.me/HypeVoids",
       "stack": "container",
@@ -43,10 +43,10 @@ true
   "required":
 true
       },
-      "SHIN_KEY":
+      "XERONOID_KEY":
       {
     "description":
-      "Get yout SHIN_KEY from @kryoli_bot. Check GitHub Repo for direct link",
+      "Get yout XERONOID_KEY from @kryoli_bot. Check GitHub Repo for direct link",
   "required":
 true
       },
