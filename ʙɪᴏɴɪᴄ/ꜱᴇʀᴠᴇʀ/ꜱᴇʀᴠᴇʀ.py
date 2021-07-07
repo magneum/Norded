@@ -15,11 +15,11 @@ async def usage(_, ryui: Message):
     await drip.edit("🕑")
     await drip.edit("🕒")
     await drip.delete()
-    useragent = [
-    "Mozilla/5.0 (Linux; Android 10; SM-G975F) ",
-    "AppleWebKit/537.36 (KHTML, like Gecko)",
-    "Chrome/80.0.3987.149 Mobile Safari/537.36"
-    ]
+    useragent = (
+        "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/80.0.3987.149 Mobile Safari/537.36"
+    )
     user_id = Heroku.account().id
     headers = {
         "User-Agent":
