@@ -25,7 +25,7 @@
 ## 💠 DΣPLӨY
 ♢ ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
 
-♢ [![Ӽɛʀօռօɨɖ-ɦօֆȶ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSouls/Xeronoid.git/tree/VOID)
+♢ [![Ӽɛʀօռօɨɖ-ɦօֆȶ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Xeronoid.git/tree/VOID)
 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
 ♢ [![Generic badge](https://img.shields.io/badge/Replit-Ӽɛʀօռօɨɖ-darkgreen.svg)](https://replit.com/@HypeVoidSoul/Xeronoid-Pyrogram-Session#main.py) 
