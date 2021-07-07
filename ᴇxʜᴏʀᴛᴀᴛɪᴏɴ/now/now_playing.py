@@ -4,6 +4,7 @@ from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
+
 @Client.on_message(
 demon_killer_sigki
 & misa_misa

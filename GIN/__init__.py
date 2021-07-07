@@ -1,1 +1,1 @@
-from .Ӽɛʀօռօɨɖ import *
+from . import *

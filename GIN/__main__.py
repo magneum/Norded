@@ -1,5 +1,8 @@
 from HEIST import *
 from ᴀᴜɴᴇʀ import *
+
+import time
+
 from PPPADADWDKMNCAQWNOPKNQWD import *
 if ɢʟɛǟʍ.XERONOID in otoh:                                
     LOGS.info("🥮________𝙱𝚘𝚘𝚝𝚒𝚗𝚐 Ӽɛʀօռօɨɖ 𝙴𝚗𝚐𝚒𝚗𝚎________🥮")
@@ -7,8 +10,6 @@ if ɢʟɛǟʍ.XERONOID in otoh:
     LOGS.info("| _ \  / _ \  / _ \  |  _|   | |  | ' \   \__|")
     LOGS.info("|___/  \___/  \___/  _\__|  _|_|_ |_||_|  |__|")
     LOGS.info("🥮________------------------------________🥮")
-    LOGS.info("")
-    time.sleep(3)
     LOGS.info("")
     LOGS.info("➢🥮________Ӽɛʀօռօɨɖ engine is now going to start________🥮")
     LOGS.info("")
