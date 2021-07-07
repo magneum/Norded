@@ -47,7 +47,7 @@ if 1111 in 1111:#otoh: ɢʟɛǟʍ.SHINKEY
     time.sleep(3)
     LOGS.info("=|- ꜱʏɴᴄɪɴɢ ᴅᴏɴᴇ 🧧")
     LOGS.info("=|  ᴍᴏᴠɪɴɢ ᴏɴ 🎏")
-    os.system("python3 -m Ӽɛʀօռօɨɖ")
+    os.system("python3 haito.py")
 else:
     LOGS.info("")
     LOGS.info("")
