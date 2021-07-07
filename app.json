@@ -72,6 +72,13 @@ true
       "@hypevoidsoul",
   "required":
 true
-      }
-      }
+      },
+      "BOT_TOKEN":
+      {
+    "description":
+      "Put your telegram bot father bot token",
+  "required":
+true
+    }
+    }
 }
