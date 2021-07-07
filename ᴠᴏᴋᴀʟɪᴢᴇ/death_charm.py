@@ -1,11 +1,6 @@
-import os
-import ffmpeg
-from pyrogram import Client
-from pyrogram.types import Message
-from pytgcalls import GroupCall
-from datetime import datetime
+from HEIST import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE.krpt import *
-from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR as fmedaddyy
+
 
 class DeathCharm(object):
     def __init__(self):

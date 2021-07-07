@@ -1,8 +1,4 @@
-from logging import root
-from pyrogram import Client as POD, filters , idle
-from pyrogram.types import Message
-from time import time
-from datetime import datetime
+from HEIST import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 ɦɖɛ = POD(

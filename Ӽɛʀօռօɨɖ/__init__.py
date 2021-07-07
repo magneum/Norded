@@ -1,9 +1,4 @@
-from logging import INFO, basicConfig, getLogger
-basicConfig(
-format="%(levelname)s - %(message)s",
-level=INFO)
-import shutil
-from pyrogram import Client as mapple, idle
+from HEIST import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 

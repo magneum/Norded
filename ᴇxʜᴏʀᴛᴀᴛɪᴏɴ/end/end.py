@@ -1,5 +1,5 @@
 from Ӽɛʀօռօɨɖ import *
-from pyrogram.types import Message
+from HEIST import *
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *

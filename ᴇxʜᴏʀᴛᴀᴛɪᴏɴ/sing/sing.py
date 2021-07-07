@@ -1,8 +1,5 @@
-import os
-import asyncio
 from Ӽɛʀօռօɨɖ import *
-from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR as fmedaddyy
-from pyrogram.types import Message
+from HEIST import *
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *

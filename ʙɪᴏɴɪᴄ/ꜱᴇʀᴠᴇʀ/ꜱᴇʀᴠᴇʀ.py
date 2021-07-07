@@ -1,8 +1,4 @@
-import math
-import requests
-import asyncio
-from pyrogram import Client as ɦɖɛ, filters
-from pyrogram.types import Message
+from HEIST import *
 from ᴠᴏᴋᴀʟɪᴢᴇ import *
 from ᴇᴘɪꜱᴛʟᴇ import *
 from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *

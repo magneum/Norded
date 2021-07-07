@@ -5,3 +5,4 @@ psutil
 pytgcalls
 wheel
 heroku3
+termcolor

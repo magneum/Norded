@@ -1,4 +1,4 @@
-import os
+from HEIST import *
 class ɢʟɛǟʍ:
     API_ID = int(os.environ["API_ID"])
     API_HASH = os.environ["API_HASH"]
