@@ -1,22 +1,12 @@
 from HEIST import *
-from ᴀᴜɴᴇʀ import *
-cprint(
-"Attention!",
-'red',
-attrs=['bold'], file=sys.stderr)
-LOGS = getLogger(__name__)
+#from ᴀᴜɴᴇʀ import *
+from Color import *
 from PPPADADWDKMNCAQWNOPKNQWD import *
 if 1111 in 1111:#otoh: ɢʟɛǟʍ.SHINKEY
     LOGS.info("")
-    LOGS.info("")                                           
-    LOGS.info("""
-                 🥮________𝙱𝚘𝚘𝚝𝚒𝚗𝚐 Ӽɛʀօռօɨɖ 𝙴𝚗𝚐𝚒𝚗𝚎________🥮
-                 ___                  _       _    __ _  
-                 | _ )   ___    ___   | |_    (_)   _ _    / _` | 
-                 | _ \  / _ \  / _ \  |  _|   | |  | ' \   \__, | 
-                 |___/  \___/  \___/  _\__|  _|_|_ |_||_|  |___/  
-                 🥮________------------------------________🥮
-    """)
+    LOGS.info("")    
+    time.sleep(3)                                   
+    LOGS.info(booting)
     time.sleep(3)
     LOGS.info("")
     LOGS.info("➢🥮________Ӽɛʀօռօɨɖ engine is now going to start________🥮")
