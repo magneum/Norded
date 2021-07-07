@@ -8,7 +8,10 @@ from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 filters.command("cmd",prefixes="/")) 
 async def pong(_, xd: Message):
     await xd.reply_chat_action("playing")
-    await xd.reply_photo(
+    cate = await xd.reply_photo(
     ZV0,
     caption="type .cmd to check all commands",
     )    
+    await asyncio.sleep(8)
+    await cate.delete()
+    return 
