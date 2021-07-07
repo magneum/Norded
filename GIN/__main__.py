@@ -1,8 +1,6 @@
 from HEIST import *
 from ᴀᴜɴᴇʀ import *
-
 import time
-
 from PPPADADWDKMNCAQWNOPKNQWD import *
 if ɢʟɛǟʍ.XERONOID in otoh:                                
     LOGS.info("🥮________𝙱𝚘𝚘𝚝𝚒𝚗𝚐 Ӽɛʀօռօɨɖ 𝙴𝚗𝚐𝚒𝚗𝚎________🥮")
