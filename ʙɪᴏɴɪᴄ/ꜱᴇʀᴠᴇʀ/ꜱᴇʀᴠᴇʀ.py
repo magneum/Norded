@@ -5,10 +5,7 @@ from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
 
 
 @ɦɖɛ.on_message(
-demon_killer_sigki
-& senzo_kryo_ni
-& misa_misa
-&filters.command(
+filters.command(
 "usage",
 prefixes="/"))
 async def usage(_, ryui: Message):

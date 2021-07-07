@@ -23,10 +23,12 @@ FULL_PLAYING_HELP =f"""
 - {DYNO_COMMANDK}server: ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
 
 `ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ʜᴀꜱ ʙᴇᴇɴ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ:`
-[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC).)
+[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)
 `𝐒𝐏𝐃𝐗 ɪᴅᴇɴᴛɪꜰɪᴇʀ = 𝘎𝘗𝘓-3.0-𝘰𝘳-𝘭𝘢𝘵𝘦𝘳`
 
-**Dҽʋ Mҽɳƚισɳ:**
+💻**Dҽʋ Mҽɳƚισɳ:**
  @hypevoidsoul
+ @hypevoidbot
     
 一═デ🦋 **Ӽɛʀօռօɨɖ** 🦋デ═一"""
+
