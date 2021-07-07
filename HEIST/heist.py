@@ -3,6 +3,7 @@ import os
 import shutil
 from pyrogram import Client as mapple, idle
 import asyncio
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from datetime import datetime
 import math
 from logging import INFO, basicConfig, getLogger
