@@ -28,7 +28,7 @@
 ♢ [![Ӽɛʀօռօɨɖ-ɦօֆȶ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSouls/Xeronoid.git/tree/VOID)
 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
-♢ [![Generic badge](https://img.shields.io/badge/Replit-Ӽɛʀօռօɨɖ-darkgreen.svg)]() 
+♢ [![Generic badge](https://img.shields.io/badge/Replit-Ӽɛʀօռօɨɖ-darkgreen.svg)](https://replit.com/@HypeVoidSoul/Xeronoid-Pyrogram-Session#main.py) 
 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘱𝘺𝘳𝘰𝘨𝘳𝘢𝘮 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘴𝘵𝘳𝘪𝘯𝘨 
 
 ╰☆☆♢--------------------------------------------------------------------♢☆☆╮
