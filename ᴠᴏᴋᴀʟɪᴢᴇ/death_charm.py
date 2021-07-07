@@ -1,5 +1,5 @@
 from HEIST import *
-from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
+from VEhJU0lTVVNFREZPUlhFUk9OT0lE.Importing.krpt import *
 
 
 class DeathCharm(object):

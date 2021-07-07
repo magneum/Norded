@@ -64,8 +64,7 @@ async def play_track(client, ryui: Message):
         await pwn.edit_text("ETR: > sec[░░░░░░░░░░░░        ]")
         await pwn.edit_text("ETR: > sec[░░░░░░░░░░░░░░░░░░░░]")
         await pwn.delete() 
-        m_status = await ryui.reply_text(f"""{XE}
-[🦋]{ZV0}[🦋]                          
+        m_status = await ryui.reply_text(f"""{XE}                         
 **ᴀɴᴀʟʏᴢɪɴɢ ᴀᴜᴅɪᴏ ʙɪᴛʀᴀᴛᴇ & ꜱᴇɴᴅɪɴɢ ᴛᴏ ꜱᴇʀᴠᴇʀ**
         """)
         await ʜᴀᴅᴇ.download_audio(playlist[0])
