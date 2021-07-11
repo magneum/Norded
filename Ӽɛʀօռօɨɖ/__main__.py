@@ -1,21 +1,9 @@
-from HEIST import *
-from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
-
-Ӽɛռ = mapple(
-    session_name=SN,
-    api_id=AD,
-    api_hash=AH,
-    plugins=ᴄᴇᴘᴛ,
-    workers=20
-    )
-from ᴇᴘɪꜱᴛʟᴇ import *
-
 from knite import *
+from . import *
 
 Ӽɛռ.start()
 LOGS.info(XEon)
 idle()
-Ӽɛռ.stop()   
 try:
     shutil.rmtree(K)
     shutil.rmtree(P)
@@ -24,4 +12,5 @@ try:
     shutil.rmtree(M)
 except:
     pass
+Ӽɛռ.stop()   
 LOGS.info(XEof)
