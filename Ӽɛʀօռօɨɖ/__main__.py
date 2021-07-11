@@ -9,7 +9,6 @@ from VEhJU0lTVVNFREZPUlhFUk9OT0lE import *
     workers=20
     )
 from ᴇᴘɪꜱᴛʟᴇ import *
-from pyrogram.methods.utilities import idle
 
 from knite import *
 
