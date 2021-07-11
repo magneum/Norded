@@ -1,4 +1,5 @@
 
+🔥 ΉYPΣ VӨID LΛB 🔥__Wê Ärê H¥þêVðïÐ§__🔥 ΉYPΣ VӨID LΛB 🔥
 # 『••••—✭••÷[🎧  Ӽɛʀօռօɨɖ   🎧]÷••✭—••••』[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="80%" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
@@ -17,13 +18,11 @@
 ## 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 
 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
-- [![Generic badge](https://img.shields.io/badge/𝙺𝚁𝚈𝙾𝙺𝙴𝚈_𝙱𝙾𝚃-Vïå_ßð†-brown.svg)](https://t.me/kryoli_bot) 
-𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘬𝘳𝘺𝘰-𝘬𝘦𝘺 𝘧𝘳𝘰𝘮 𝘩𝘦𝘳!
 
 ╰☆☆♢--------------------------------------------------------------------♢☆☆╮
 
 ## 💠 DΣPLӨY
-♢ ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
+♢ ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
 
 ♢ [![Ӽɛʀօռօɨɖ-ɦօֆȶ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Xeronoid.git/tree/VOID)
 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
@@ -57,11 +56,5 @@
 
 ## 📜 LICΣПSΣ
 ♢ __Ӽɛʀօռօɨɖ __ 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 [𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0](LICENSE)
-```sh
-* pēr๓iʂʂi໐ຖŞ 💢
-✔ ᴄᴏᴍᴍᴇʀᴄɪᴀʟ ᴜꜱᴇ
-✔ ᴍᴏᴅɪꜰɪᴄᴀᴛɪᴏɴ
-✔ ᴅɪꜱᴛʀɪʙᴜᴛɪᴏɴ
-✔ ᴘʀɪᴠᴀᴛᴇ ᴜꜱᴇ 
-```
-## Ðêv Mêñ†ïðñ: [💻 HypeVoidSoul](https://t.me/HypeVoidSoul)
+
+🔥 ΉYPΣ VӨID LΛB 🔥__Wê Ärê H¥þêVðïÐ§__🔥 ΉYPΣ VӨID LΛB 🔥
