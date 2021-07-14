@@ -1,5 +1,5 @@
 
-🔥 ΉYPΣ VӨID LΛB 🔥__Wê Ärê H¥þêVðïÐ§__🔥 ΉYPΣ VӨID LΛB 🔥
+|🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
 # 『••••—✭••÷[🎧  Ӽɛʀօռօɨɖ   🎧]÷••✭—••••』[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="80%" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
@@ -69,4 +69,4 @@
 ## 📜 LICΣПSΣ
 ♢ __Ӽɛʀօռօɨɖ __ 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 [𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0](LICENSE)
 
-🔥 ΉYPΣ VӨID LΛB 🔥__Wê Ärê H¥þêVðïÐ§__🔥 ΉYPΣ VӨID LΛB 🔥
+|🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
