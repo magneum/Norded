@@ -9,3 +9,4 @@ from .replay import *
 from .resume import *
 from .sing import *
 from .skip import *
+from .volume import *
