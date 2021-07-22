@@ -59,6 +59,7 @@
 /skip:      *- Skip the current or skip n(n=>2).
 /temp:      *- Remove unused RAW files. 
 /ryuk:      *- To check the ping status with server.
+/vol        *- ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ. ʟɪᴍɪᴛ 1-200
 ```
 
 ```sh
