@@ -13,7 +13,7 @@ demon_killer_sigki
 prefixes=DYNO_COMMAND)) 
 async def join_voice_chatting(client, ryui: Message):
     voice_chatting = ʜᴀᴅᴇ.voice_chatting
-    #voice_chatting.client = client
+    voice_chatting.client = client
     if voice_chatting.is_connected:
         pwn = await ryui.reply_text("Syncing with @hypevoids 's servers", True)
         await pwn.edit_text("ETR> [░░░       ]")
