@@ -4,7 +4,7 @@
 <img src="https://github.com/HypeVoidSouls/Xeronoid/blob/VOID/XENOMORPH/Ӽɛʀօռօɨɖ.jpg" width="80%" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
 <img align="right" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
-
+ # ERROR IN THIS BUILD /... PLEASE WAIT TILL I FIX IT .... TOOMUCH BUSY SRY!
 
 ```sh
 ╰✨✨♢--------------------------------------------------------------------♢✨✨╮
