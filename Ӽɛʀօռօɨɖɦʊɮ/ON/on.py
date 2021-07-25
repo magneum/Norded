@@ -23,14 +23,11 @@ from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-"""
-xeronoid_master_filter
-& xeronoid_user_filter
-& 
-"""
 
 @Ӽɛʀօռօɨɖ.on_message(
-xerofil.command("on", prefixes="/"))
+xeronoid_master_filter
+& xeronoid_user_filter
+& xerofil.command("on", prefixes="/"))
 async def join_group_call(client, xemsg: xeromsg):
     group_call = xeroclip.group_call
     if not group_call:

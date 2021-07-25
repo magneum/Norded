@@ -22,14 +22,14 @@ from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-"""
+
+
+
+@Ӽɛʀօռօɨɖ.on_message(
 xerofil.group
 & ~xerofil.edited
 & xeronoid_chat_check
-& 
-"""
-@Ӽɛʀօռօɨɖ.on_message(
-xerofil.command("sing") | xerofil.audio)
+& xerofil.command("sing") | xerofil.audio)
 async def play_track(client, xemsg: xeromsg):
     group_call = xeroclip.group_call
     xeronoid_music_list = xeroclip.xeronoid_music_list
