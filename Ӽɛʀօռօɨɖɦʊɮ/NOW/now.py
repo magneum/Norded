@@ -26,7 +26,7 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 @Ӽɛʀօռօɨɖ.on_message(
 xeronoid_master_filter
 & xeronoid_chat_check
-& xerofil.command("current", prefixes="/"))
+& xerofil.command("now", prefixes="/"))
 async def show_current_playing_time(_, xemsg: xeromsg):
     xeronoid_begin = xeroclip.xeronoid_begin
     xeronoid_music_list = xeroclip.xeronoid_music_list

@@ -27,7 +27,7 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 xerofil.group
 & ~xerofil.edited
 & xeronoid_chat_check
-& xerofil.command("play") | xerofil.audio)
+& xerofil.command("sing") | xerofil.audio)
 async def play_track(client, xemsg: xeromsg):
     xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
     xeronoid_music_list = xeroclip.xeronoid_music_list
