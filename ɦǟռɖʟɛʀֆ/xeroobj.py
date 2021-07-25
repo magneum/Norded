@@ -16,31 +16,28 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from ɖօօʍ_ʀօօʍ import *
-from .class_room import *
-
-async def xeronoid_msg_sender(text):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    client = xeronoid_musical_xhat.client
-    xeronoid_chatid = xeroclip.xeronoid_chatid
-    message = await client.send_message(
-    xeronoid_chatid,
-    text,
-    disable_web_page_preview=False,
-    disable_notification=False
-    )
-    return message
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
-async def xeronoid_begin_clock(self, reset=False):
+
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+class xeronoid_player(xeroobj):
+    def __init__(self):
+        self.xeronoid_musical_xhat = None
+        self.client = None
+        self.xeronoid_chatid = None
+        self.xeronoid_begin = None
+        self.xeronoid_music_list = []
+        self.xeronoid_msngr = {}
+       
+    async def xeronoid_begin_clock(self, reset=False):
         self.xeronoid_begin = (
             None if reset
-            else datetime.utcnow().replace(microsecond=0))
-        
-        
+            else datetime.utcnow().replace(microsecond=0)) 
            
-async def xeronoid_show_playlist(self, xemsg: xeromsg):
+    async def xeronoid_show_playlist(self, xemsg: xeromsg):
         xeronoid_music_list = self.xeronoid_music_list
         if not xeronoid_music_list:
             xero_playlist = await xemsg.reply_animation(
@@ -71,7 +68,19 @@ async def xeronoid_show_playlist(self, xemsg: xeromsg):
             ])
         if xeroclip.xeronoid_msngr.get('xeronoid_music_list') is not None:
             await xeroclip.xeronoid_msngr['xeronoid_music_list'].delete()
-        xeroclip.xeronoid_msngr['xeronoid_music_list'] = await xeronoid_msg_sender(xero_playlist)
-        
-
+        xeroclip.xeronoid_msngr['xeronoid_music_list'] = await xeronoid_msg_sender(xero_playlist)    
 xeroclip = xeronoid_player()
+
+
+async def xeronoid_msg_sender(text):
+    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    client = xeronoid_musical_xhat.client
+    xeronoid_chatid = xeroclip.xeronoid_chatid
+    message = await client.send_message(
+    xeronoid_chatid,
+    text,
+    disable_web_page_preview=False,
+    disable_notification=False
+    )
+    return message
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
