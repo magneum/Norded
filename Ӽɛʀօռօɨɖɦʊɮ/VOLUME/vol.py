@@ -16,30 +16,31 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
-
-
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+from ɦǟռɖʟɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+@Ӽɛʀօռօɨɖ.on_message(
+xeronoid_master_filter
+& xeronoid_user_filter
+& xeronoid_chat_check
+& xerofil.command("volume", prefixes="/"))
+async def volume(client, xemsg: xeromsg):
+   if len(xemsg.command) < 2:
+      cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗰𝗵𝗮𝗻𝗴𝗲 𝘃𝗼𝗹𝘂𝗺𝗲 𝗼𝗳 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗯𝘂𝘁 𝗳𝗮𝗶𝗹𝗲𝗱', 'yellow', attrs=['reverse'])
+      # xeronoid_throw = await xemsg.reply_animation(
+      # animation=xerolink,
+      # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nYou forgot to pass volume (1-200)"
+      # )
+   else:
+      await group_calls.set_my_volume(volume=int(xemsg.command[1]))
+      cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗰𝗵𝗮𝗻𝗴𝗲 𝘃𝗼𝗹𝘂𝗺𝗲 𝗼𝗳 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
+   #    xeronoid_throw = await xemsg.reply_animation(
+   #    animation=xerolink,
+   #    caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nVolume changed to {xemsg.command[1]}"
+   #    )
+   
+   # await xeronoid_volume_purge((xeronoid_throw, xemsg), VOLUME_REMOVER)

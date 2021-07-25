@@ -17,29 +17,51 @@
 """
 
 
-
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɖօօʍ_ʀօօʍ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from ɖօօʍ_ʀօօʍ import *
+from .xeroobj import xeroclip
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
+xeronoid_master_filter=(
+xerofil.chat(CHAT_ID)
+& xerofil.text 
+& ~xerofil.via_bot
+& ~xerofil.edited
+& ~xerofil.private)
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
+
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+xeronoid_user_filter = xerofil.create(lambda _, __,
+message:(message.from_user and message.from_user.is_contact) 
+or message.outgoing)
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
+
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+xeronoid_bot_master_filter=(
+xerofil.chat(CHAT_ID)
+& xerofil.text 
+& xerofil.via_bot
 )
-LOGGER = logging.getLogger(__name__)
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
+
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+async def xeronoid_chatcheck_cust_filter(_,__,xemsg: xeromsg):
+    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    if not (xeronoid_musical_xhat and xeronoid_musical_xhat.is_connected):
+        return False
+    xeronoid_chatid = int("-100" + str(xeronoid_musical_xhat.full_chat.id))
+    if xemsg.chat.id == xeronoid_chatid:
+        return True
+    return False
+xeronoid_chat_check = xerofil.create(xeronoid_chatcheck_cust_filter)
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'

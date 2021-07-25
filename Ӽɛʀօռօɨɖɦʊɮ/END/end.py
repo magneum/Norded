@@ -16,30 +16,29 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
-
-
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+from ɦǟռɖʟɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+@Ӽɛʀօռօɨɖ.on_message(
+xeronoid_master_filter
+& xeronoid_user_filter
+& xeronoid_chat_check
+& xerofil.command("end", prefixes="/"))
+async def stop_playing(client, xemsg: xeromsg):
+    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    xeronoid_musical_xhat.stop_playout()
+    cprint('🎧 𝐔𝐬𝐞𝐫 𝐚𝐬𝐤𝐞𝐝 𝐟𝐨𝐫 𝐬𝐭𝐨𝐩𝐩𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭', 'yellow', attrs=['reverse'])
+    # xemsg.reply_text("Initiated xeronoid music ender!")
+    # xeronoid_throw = await xemsg.reply_animation(
+    # animation=xerolink,
+    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n stopped playing"
+    # )
+    # await xeroclip.xeronoid_begin_clock(reset=True)
+    # xeroclip.xeronoid_music_list.clear()
+    
+    # await xeronoid_stop_purge((xeronoid_throw, xemsg), STOP_REMOVER)

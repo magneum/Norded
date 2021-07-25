@@ -16,30 +16,28 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
+from . import *
+   
 
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɖօօʍ_ʀօօʍ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+Ӽɛʀօռօɨɖ = Ӽɛʀօռօɨɖ(
+"Ӽɛʀօռօɨɖ_ɮօȶ",
+bot_token=BOT_TOKEN,
+api_id=API_ID,
+api_hash=API_HASH,
+plugins=BORNS,
+workers=12)
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
+Ӽɛʀօռօɨɖ.start()
+cprint(ON_OFF_FEED,'green')
+cprint('♣       一═••÷[______ONLINE______]÷••═一', on_color='on_green')
+idle()
+cprint(ON_OFF_FEED,'red')
+cprint('♣       一═••÷[______OFFLINE______]÷••═一', on_color='on_red')
+Ӽɛʀօռօɨɖ.stop()
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'

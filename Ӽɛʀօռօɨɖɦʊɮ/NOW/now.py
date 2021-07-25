@@ -16,30 +16,35 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
-
-
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+from ɦǟռɖʟɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+@Ӽɛʀօռօɨɖ.on_message(
+xeronoid_master_filter
+& xeronoid_chat_check
+& xerofil.command("current", prefixes="/"))
+async def show_current_playing_time(_, xemsg: xeromsg):
+    xeronoid_begin = xeroclip.xeronoid_begin
+    xeronoid_music_list = xeroclip.xeronoid_music_list
+    if not xeronoid_begin:
+        await xemsg.reply_chat_action("find_location")
+        cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝗳𝗼𝗿 𝗰𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘄𝗵𝗶𝗰𝗵 𝘀𝗼𝗻𝗴 𝗶𝘀 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
+        xeronoid_throw = await xemsg.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 𝗨𝗻𝗸𝗻𝗼𝘄𝗻 𝗼𝗿 𝗻𝗼 𝗳𝗶𝗹𝗲𝘀 𝘆𝗲𝘁 𝗶𝗻 𝘅𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘀𝗲𝗿𝘃𝗲𝗿"
+        )
+        await xeronoid_current_purge((xeronoid_throw, xemsg), CURRENT_REMOVER)
+        return
+    utcnow = datetime.utcnow().replace(microsecond=0)
+    if xeroclip.xeronoid_msngr.get('current') is not None:
+        await xeroclip.xeronoid_msngr['current'].delete()
+    xeroclip.xeronoid_msngr['current'] = await xeronoid_music_list[0].reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {utcnow - xeronoid_begin} {timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
+        disable_notification=True
+        )
+    await xeronoid_current_purge((xemsg), CURRENT_REMOVER)

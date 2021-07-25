@@ -20,26 +20,24 @@
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 from ɖօօʍ_ʀօօʍ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ.variables import HEROKU
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-cprint('Using Info mode for LOGGER', 'green')
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
+if HEROKU is not None and HEROKU == "HEROKU":
+    API_ID = os.environ.get('API_ID')
+    API_HASH = os.environ.get('API_HASH')
+    BOT_TOKEN = os.environ.get('BOT_TOKEN')
+    XERONOID_SESSION = os.environ.get('XERONOID_SESSION')
+elif HEROKU != "HEROKU":
+    API_ID = 5397317 
+    API_HASH = "7ed80948c3b916010963407eaccd1752"
+    BOT_TOKEN = "1631463971:AAFLcSTXJR11d9Imay6pWJ-7NGijbThH6Ts"
+    XERONOID_SESSION = "BQDF2H8tazqK34_7MJS2jTKRId_v3A7EN7lmFUGTSmIJTCyltEsGoTglzsty9XeaMut495fsmlF9KiVszVjSsnkbHYsQjw1dbact5pwTAtnMqXFyo-BqYmYDgFkKz9kKtaPum_3Vuq5e-0N9grgVpvwBM-XPmnqeL1lYwhw1JWXxSHCpG3eGfNfDzJVx8Zjym9bMAcH7cGQjs-RUlcltzSDd-_sQEhA4--TmNA0m85HyWccSS5nYJtAWEEnnUDaxoPJ7zpw0W6KIRl--d0GCEwlUyuHgqR_2_2pJTx40Vr9Qba_DcDYHp1BiFLS3agwpV6ErRGhnYjA-IofGc135L4ErbjAdTQA" 
+else:
+    cprint('Please recheck all the needed variables and restart the bot.',on_color='on_red')
+    cprint('Exiting Xeronoid now','magenta', attrs=['concealed'])
+    sys.exit()
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'

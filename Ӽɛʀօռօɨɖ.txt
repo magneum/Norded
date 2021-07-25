@@ -1,8 +1,8 @@
-Pyrogram
 TgCrypto
 ffmpeg-python
 psutil
 pytgcalls
+pyrogram
 wheel
-heroku3
+loguru
 termcolor
