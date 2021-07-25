@@ -29,14 +29,14 @@ filters.group
 & (filters.regex("^(\\/|!)sing$") | filters.audio))
 async def play_track(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
-    playlist = xep.playlist
+    xeronoid_music_list = xep.xeronoid_music_list
     # check audio
     if m.audio:
         if m.audio.duration > (MAX_MIN * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(MAX_MIN)} min won't be automatically "
-                "added to playlist"
+                "added to xeronoid_music_list"
             )
             await delay_sing_messages((reply,), CLEAN_REMOVER)
             return
@@ -46,7 +46,7 @@ async def play_track(client, m: Message):
         if m_audio.audio.duration > (MAX_HOUR * 60 * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
-                f"{str(MAX_HOUR)} hours won't be added to playlist"
+                f"{str(MAX_HOUR)} hours won't be added to xeronoid_music_list"
             )
             await delay_sing_messages((reply,), CLEAN_REMOVER)
             return
@@ -55,28 +55,28 @@ async def play_track(client, m: Message):
         await m.delete()
         return
     # check already added
-    if playlist and playlist[-1].audio.file_unique_id \
+    if xeronoid_music_list and xeronoid_music_list[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
         reply = await m.reply_text(f"{emoji.ROBOT} already added")
         await delay_sing_messages((reply, m), CLEAN_REMOVER)
         return
-    # add to playlist
-    playlist.append(m_audio)
-    if len(playlist) == 1:
+    # add to xeronoid_music_list
+    xeronoid_music_list.append(m_audio)
+    if len(xeronoid_music_list) == 1:
         m_status = await m.reply_text(
             f"{emoji.INBOX_TRAY} downloading and transcoding..."
         )
-        await download_audio(playlist[0])
+        await download_audio(xeronoid_music_list[0])
         xeronoid_voixe.input_filename = os.path.join(
             client.workdir,
             DEFAULT_DOWNLOAD_DIR,
-            f"{playlist[0].audio.file_unique_id}.raw"
+            f"{xeronoid_music_list[0].audio.file_unique_id}.raw"
         )
         await xep.update_start_time()
         await m_status.delete()
-        print(f"- START PLAYING: {playlist[0].audio.title}")
+        print(f"- START PLAYING: {xeronoid_music_list[0].audio.title}")
     await xep.send_playlist()
-    for track in playlist[:2]:
+    for track in xeronoid_music_list[:2]:
         await download_audio(track)
     if not m.audio:
         await m.delete()

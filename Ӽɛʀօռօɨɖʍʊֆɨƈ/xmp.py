@@ -25,29 +25,29 @@ class XeronoidSinger(object):
         self.xeronoid_voixe = None
         self.client = None
         self.xeronoid_chat_verify = None
-        self.start_time = None
-        self.playlist = []
+        self.xeronoid_clock = None
+        self.xeronoid_music_list = []
         self.msg = {}
 
     async def update_start_time(self, reset=False):
-        self.start_time = (None if reset else datetime.utcnow().replace(microsecond=0))
+        self.xeronoid_clock = (None if reset else datetime.utcnow().replace(microsecond=0))
 
     async def send_playlist(self):
-        playlist = self.playlist
-        if not playlist:
-            pl = f"{emoji.NO_ENTRY} empty playlist"
+        xeronoid_music_list = self.xeronoid_music_list
+        if not xeronoid_music_list:
+            pl = f"{emoji.NO_ENTRY} empty xeronoid_music_list"
         else:
-            if len(playlist) == 1:
+            if len(xeronoid_music_list) == 1:
                 pl = f"{emoji.REPEAT_SINGLE_BUTTON} **Playlist**:\n"
             else:
                 pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
             pl += "\n".join([
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
-                for i, x in enumerate(playlist)
+                for i, x in enumerate(xeronoid_music_list)
             ])
-        if xep.msg.get('playlist') is not None:
-            await xep.msg['playlist'].delete()
-        xep.msg['playlist'] = await xero_back_sender(pl)
+        if xep.msg.get('xeronoid_music_list') is not None:
+            await xep.msg['xeronoid_music_list'].delete()
+        xep.msg['xeronoid_music_list'] = await xero_back_sender(pl)
 xep = XeronoidSinger()
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 

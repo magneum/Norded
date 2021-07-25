@@ -27,18 +27,18 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^(\\/|!)now$"))
 async def show_current_playing_time(_, m: Message):
-    start_time = xep.start_time
-    playlist = xep.playlist
-    if not start_time:
+    xeronoid_clock = xep.xeronoid_clock
+    xeronoid_music_list = xep.xeronoid_music_list
+    if not xeronoid_clock:
         reply = await m.reply_text(f"{emoji.PLAY_BUTTON} unknown")
         await xeronoid_now_purge((reply, m), CLEAN_REMOVER)
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
     if xep.msg.get('current') is not None:
         await xep.msg['current'].delete()
-    xep.msg['current'] = await playlist[0].reply_text(
-        f"{emoji.PLAY_BUTTON}  {utcnow - start_time} / "
-        f"{timedelta(seconds=playlist[0].audio.duration)}",
+    xep.msg['current'] = await xeronoid_music_list[0].reply_text(
+        f"{emoji.PLAY_BUTTON}  {utcnow - xeronoid_clock} / "
+        f"{timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
         disable_notification=True
     )
     await m.delete()

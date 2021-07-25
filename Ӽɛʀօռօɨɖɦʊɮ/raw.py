@@ -29,7 +29,7 @@ xero_basic_fils
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
-    for track in xep.playlist[:2]:
+    for track in xep.xeronoid_music_list[:2]:
         track_fn = f"{track.audio.file_unique_id}.raw"
         if track_fn in all_fn:
             all_fn.remove(track_fn)

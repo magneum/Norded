@@ -28,7 +28,7 @@ xero_basic_fils
 & filters.regex("^!replay$"))
 async def restart_playing(_, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
-    if not xep.playlist:
+    if not xep.xeronoid_music_list:
         return
     xeronoid_voixe.restart_playout()
     await xep.update_start_time()

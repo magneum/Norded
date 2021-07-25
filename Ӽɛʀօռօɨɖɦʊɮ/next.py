@@ -28,7 +28,7 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.command("next", prefixes="!"))
 async def skip_track(_, m: Message):
-    playlist = xep.playlist
+    xeronoid_music_list = xep.xeronoid_music_list
     if len(m.command) == 1:
         await skip_current_playing()
     else:
@@ -38,9 +38,9 @@ async def skip_track(_, m: Message):
             items.sort(reverse=True)
             text = []
             for i in items:
-                if 2 <= i <= (len(playlist) - 1):
-                    audio = f"[{playlist[i].audio.title}]({playlist[i].link})"
-                    playlist.pop(i)
+                if 2 <= i <= (len(xeronoid_music_list) - 1):
+                    audio = f"[{xeronoid_music_list[i].audio.title}]({xeronoid_music_list[i].link})"
+                    xeronoid_music_list.pop(i)
                     text.append(f"{emoji.WASTEBASKET} {i}. **{audio}**")
                 else:
                     text.append(f"{emoji.CROSS_MARK} {i}")

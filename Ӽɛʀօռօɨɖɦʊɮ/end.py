@@ -35,6 +35,6 @@ async def stop_playing(_, m: Message):
     xeronoid_voixe.stop_playout()
     reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
     await xep.update_start_time(reset=True)
-    xep.playlist.clear()
+    xep.xeronoid_music_list.clear()
     await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'

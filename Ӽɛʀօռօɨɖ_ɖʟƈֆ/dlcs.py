@@ -22,29 +22,29 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 async def skip_current_playing():
     xeronoid_voixe = xep.xeronoid_voixe
-    playlist = xep.playlist
-    if not playlist:
+    xeronoid_music_list = xep.xeronoid_music_list
+    if not xeronoid_music_list:
         return
-    if len(playlist) == 1:
+    if len(xeronoid_music_list) == 1:
         await xep.update_start_time()
         return
     client = xeronoid_voixe.client
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     xeronoid_voixe.input_filename = os.path.join(
     download_dir,
-    f"{playlist[1].audio.file_unique_id}.raw")
+    f"{xeronoid_music_list[1].audio.file_unique_id}.raw")
     await xep.update_start_time()
-    # remove old track from playlist
-    old_track = playlist.pop(0)
-    print(f"• START PLAYING: {playlist[0].audio.title}")
+    # remove old track from xeronoid_music_list
+    old_track = xeronoid_music_list.pop(0)
+    print(f"• START PLAYING: {xeronoid_music_list[0].audio.title}")
     await xep.send_playlist()
     os.remove(os.path.join(
         download_dir,
         f"{old_track.audio.file_unique_id}.raw")
     )
-    if len(playlist) == 1:
+    if len(xeronoid_music_list) == 1:
         return
-    await download_audio(playlist[1])
+    await download_audio(xeronoid_music_list[1])
 
 
 async def download_audio(m: Message):
