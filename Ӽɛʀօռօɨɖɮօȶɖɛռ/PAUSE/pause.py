@@ -28,7 +28,7 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("pause", prefixes="/"))
 async def pause_playing(client, xemsg: xeromsg):
-    xeroclip.xeronoid_musical_xhat.pause_playout()
+    xeroclip.group_call.pause_playout()
     await xeroclip.xeronoid_begin_clock(reset=True)
     await xemsg.reply_chat_action("record_audio")
     await client.send_animation(

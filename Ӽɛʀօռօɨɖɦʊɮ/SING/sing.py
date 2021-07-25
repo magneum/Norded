@@ -22,14 +22,16 @@ from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-
-@Ӽɛʀօռօɨɖ.on_message(
+"""
 xerofil.group
 & ~xerofil.edited
 & xeronoid_chat_check
-& xerofil.command("sing") | xerofil.audio)
+& 
+"""
+@Ӽɛʀօռօɨɖ.on_message(
+xerofil.command("sing") | xerofil.audio)
 async def play_track(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    group_call = xeroclip.group_call
     xeronoid_music_list = xeroclip.xeronoid_music_list
     if xemsg.audio:
         if xemsg.audio.duration > (MAX_MIN * 60):
@@ -52,7 +54,7 @@ async def play_track(client, xemsg: xeromsg):
             await delay_play_messages((xeronoid_throw,), PLAY_REMOVER)
             return
     else:
-        await xeroclip.xeronoid_show_playlist()
+        await xeroclip.xeronoid_show_playlist(xemsg)
         await xemsg.delete()
         return
     if xeronoid_music_list and xeronoid_music_list[-1].audio.file_unique_id \
@@ -71,7 +73,7 @@ async def play_track(client, xemsg: xeromsg):
         caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴 𝗮𝗻𝗱 𝘁𝗿𝗮𝗻𝘀𝗰𝗼𝗱𝗶𝗻𝗴..."
         )
         await xeronoid_music_dl_handler(xeronoid_music_list[0])
-        xeronoid_musical_xhat.input_filename = os.path.join(
+        group_call.input_filename = os.path.join(
             client.workdir,
             xeronoid_dl_dir,
             f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
@@ -79,7 +81,7 @@ async def play_track(client, xemsg: xeromsg):
         await xeroclip.xeronoid_begin_clock()
         await m_status.delete()
         print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴: {xeronoid_music_list[0].audio.title}" + f"\n𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 `{CHAT_ID}'s` 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩'")
-    await xeroclip.xeronoid_show_playlist()
+    await xeroclip.xeronoid_show_playlist(xemsg)
     for track in xeronoid_music_list[:2]:
         await xeronoid_music_dl_handler(track)
     if not xemsg.audio:

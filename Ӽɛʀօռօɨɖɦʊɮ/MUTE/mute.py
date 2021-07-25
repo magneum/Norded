@@ -29,8 +29,8 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("mute", prefixes="/"))
 async def mute(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    xeronoid_musical_xhat.set_is_mute(True)
+    group_call = xeroclip.group_call
+    group_call.set_is_mute(True)
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗺𝘂𝘁𝗲 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
     # xemsg.reply_text("Initiated xeronoid mute sequence!")
     # xeronoid_throw = await xemsg.reply_animation(

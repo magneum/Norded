@@ -23,16 +23,20 @@ from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-@Ӽɛʀօռօɨɖ.on_message(
+"""
 xeronoid_master_filter
 & xeronoid_user_filter
 & xeronoid_chat_check
-& xerofil.command("off", prefixes="/"))
+& 
+"""
+
+@Ӽɛʀօռօɨɖ.on_message(
+xerofil.command("off", prefixes="/"))
 async def leave_voice_chat(_, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    group_call = xeroclip.group_call
     xeroclip.xeronoid_music_list.clear()
-    xeronoid_musical_xhat.input_filename = ''
-    await xeronoid_musical_xhat.stop()
+    group_call.input_filename = ''
+    await group_call.stop()
 
     await xeronoid_leave_purge((xemsg, xemsg), LEAVE_REMOVER)
     

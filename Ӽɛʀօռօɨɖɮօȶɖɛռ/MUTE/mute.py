@@ -28,8 +28,8 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("mute", prefixes="/"))
 async def mute(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    xeronoid_musical_xhat.set_is_mute(True)
+    group_call = xeroclip.group_call
+    group_call.set_is_mute(True)
     await xemsg.reply_chat_action("playing")
     await client.send_animation(
     chat_id=LOGGER_ID,

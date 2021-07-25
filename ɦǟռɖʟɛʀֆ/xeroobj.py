@@ -23,10 +23,10 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-class xeronoid_player(xeroobj):
+class XeronoidPlayer(xeroobj):
     def __init__(self):
-        self.xeronoid_musical_xhat = None
         self.client = None
+        self.group_call = None
         self.xeronoid_chatid = None
         self.xeronoid_begin = None
         self.xeronoid_music_list = []
@@ -47,21 +47,28 @@ class xeronoid_player(xeroobj):
             )
         else:
             if len(xeronoid_music_list) == 1:
-                xero_playlist = await xemsg.reply_animation(
-                animation=xerolink,
-                caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n
-                『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
+                xero_playlist = f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
                 (┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n
                 """
-                )
+                # xero_playlist = await xemsg.reply_animation(
+                # animation=xerolink,
+                # caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n
+                # 『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
+                # (┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n
+                # """
+                # )
             else:
-                xero_playlist = await xemsg.reply_animation(
-                animation=xerolink,
-                caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n
+                xero_playlist = f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n
                 『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
                 (┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n
                 """
-                )
+                # xero_playlist = await xemsg.reply_animation(
+                # animation=xerolink,
+                # caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n
+                # 『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
+                # (┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n
+                # """
+                # )
             xero_playlist += "\n".join([
                 f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n**{i}**. **[{x.audio.title}]({x.link})"""
                 for i, x in enumerate(xeronoid_music_list)
@@ -69,12 +76,14 @@ class xeronoid_player(xeroobj):
         if xeroclip.xeronoid_msngr.get('xeronoid_music_list') is not None:
             await xeroclip.xeronoid_msngr['xeronoid_music_list'].delete()
         xeroclip.xeronoid_msngr['xeronoid_music_list'] = await xeronoid_msg_sender(xero_playlist)    
-xeroclip = xeronoid_player()
+
+
+xeroclip = XeronoidPlayer()
 
 
 async def xeronoid_msg_sender(text):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    client = xeronoid_musical_xhat.client
+    group_call = xeroclip.group_call
+    client = group_call.client
     xeronoid_chatid = xeroclip.xeronoid_chatid
     message = await client.send_message(
     xeronoid_chatid,
@@ -84,3 +93,96 @@ async def xeronoid_msg_sender(text):
     )
     return message
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+async def xeronoid_msg_sender(text):
+    group_call = xeroclip.group_call
+    client = group_call.client
+    xeronoid_chatid = xeroclip.xeronoid_chatid
+    xero_send_msgnr = await client.send_message(
+    xeronoid_chatid,
+    text,
+    disable_web_page_preview=False,
+    disable_notification=False
+    )
+    return xero_send_msgnr
+
+async def xeronoid_bot_msg_sender(text):
+    group_call = xeroclip.group_call
+    client = group_call.client
+    xeronoid_chatid = LOGGER_ID
+    xero_send_msgnr = await client.send_message(
+    xeronoid_chatid,
+    text,
+    disable_web_page_preview=False,
+    disable_notification=False
+    )
+    return xero_send_msgnr
+
+
+async def network_status_changed_handler(context, is_connected: bool):
+    if is_connected:
+        xeroclip.xeronoid_chatid = macid - context.full_chat.id
+        await xeronoid_msg_sender(
+        f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙥𝙡𝙪𝙜𝙜𝙚𝙙 𝙞𝙣 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 
+        `{CHAT_ID}`'s 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩
+        """)
+        await xeronoid_bot_msg_sender(
+        f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙥𝙡𝙪𝙜𝙜𝙚𝙙"
+        )
+    else:
+        await xeronoid_msg_sender(
+        f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙪𝙣𝙥𝙡𝙪𝙜𝙜𝙚𝙙 𝙛𝙧𝙤𝙢 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 
+        `{CHAT_ID}`'s 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩
+        """)
+        await xeronoid_bot_msg_sender(
+        f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙪𝙣𝙥𝙡𝙪𝙜𝙜𝙚𝙙"
+				)
+        xeroclip.xeronoid_chatid = None
+
+
+async def xeronoid_music_over_handler(_, __):
+    await xeronoid_show_playlist()
+
+
+async def xeronoid_skip_music_handler():
+    group_call = xeroclip.group_call
+    xeronoid_music_list = xeroclip.xeronoid_music_list
+    if not xeronoid_music_list:
+        return
+    if len(xeronoid_music_list) == 1:
+        await xeroclip.xeronoid_begin_clock()
+        return
+    client = group_call.client
+    download_dir = os.path.join(client.workdir, xeronoid_dl_dir)
+    group_call.input_filename = os.path.join(
+        download_dir,
+        f"{xeronoid_music_list[1].audio.file_unique_id}.raw"
+        )
+    await xeroclip.xeronoid_begin_clock()
+    old_track = xeronoid_music_list.pop(0)
+    print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	Ӽɛʀօռօɨɖ ռօա քʟǟʏɨռɢ: {xeronoid_music_list[0].audio.title}")
+    await xeroclip.xeronoid_show_playlist()
+    os.remove(os.path.join(
+        download_dir,
+        f"{old_track.audio.file_unique_id}.raw")
+        )
+    if len(xeronoid_music_list) == 1:
+        return
+    await xeronoid_music_dl_handler(xeronoid_music_list[1])
+    
+    
+    
+async def xeronoid_music_dl_handler(xemsg: xeromsg):
+    group_call = xeroclip.group_call
+    client = group_call.client
+    raw_file = os.path.join(
+    client.workdir,
+    xeronoid_dl_dir,
+    f"{xemsg.audio.file_unique_id}.raw")
+    if not os.path.isfile(raw_file):
+        xeronoid_raw_media = await xemsg.download()
+        ffmpeg.input(xeronoid_raw_media).output(
+        raw_file,
+        format='s16le',acodec='pcm_s16le',ac=2,ar='48k',loglevel='error'
+        ).overwrite_output().run()
+        os.remove(xeronoid_raw_media)

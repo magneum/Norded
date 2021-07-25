@@ -28,7 +28,7 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("resume", prefixes="/"))
 async def resume_playing(client, xemsg: xeromsg):
-    xeroclip.xeronoid_musical_xhat.resume_playout()
+    xeroclip.group_call.resume_playout()
     await xemsg.reply_chat_action("record_audio")
     await client.send_animation(
     chat_id=LOGGER_ID,

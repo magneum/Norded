@@ -29,10 +29,10 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("replay", prefixes="/"))
 async def restart_playing(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    group_call = xeroclip.group_call
     if not xeroclip.xeronoid_music_list:
         return
-    xeronoid_musical_xhat.restart_playout()
+    group_call.restart_playout()
     await xeroclip.xeronoid_begin_clock()
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
     # xemsg.reply_text("Initiated xeronoid replay current music sequence!")

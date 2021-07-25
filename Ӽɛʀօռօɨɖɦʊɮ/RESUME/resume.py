@@ -31,7 +31,7 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("resume", prefixes="/"))
 async def resume_playing(client, xemsg: xeromsg):
-    xeroclip.xeronoid_musical_xhat.resume_playout()
+    xeroclip.group_call.resume_playout()
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝘀𝘂𝗺𝗲 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
     # xemsg.reply_text("Initiated xeronoid unpause sequence!")
     # xeronoid_throw = await xemsg.reply_animation(

@@ -56,10 +56,10 @@ xerofil.chat(CHAT_ID)
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 async def xeronoid_chatcheck_cust_filter(_,__,xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    if not (xeronoid_musical_xhat and xeronoid_musical_xhat.is_connected):
+    group_call = xeroclip.group_call
+    if not (group_call and group_call.is_connected):
         return False
-    xeronoid_chatid = int("-100" + str(xeronoid_musical_xhat.full_chat.id))
+    xeronoid_chatid = int("-100" + str(group_call.full_chat.id))
     if xemsg.chat.id == xeronoid_chatid:
         return True
     return False

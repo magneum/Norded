@@ -29,8 +29,8 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("unmute", prefixes="/"))
 async def unmute(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    xeronoid_musical_xhat.set_is_mute(False)
+    group_call = xeroclip.group_call
+    group_call.set_is_mute(False)
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝘂𝗻𝗺𝘂𝘁𝗲 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
     # xemsg.reply_text("Initiated xeronoid unmute sequence!")
     # xeronoid_throw = await xemsg.reply_animation(
