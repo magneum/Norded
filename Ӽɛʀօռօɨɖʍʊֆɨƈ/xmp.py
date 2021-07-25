@@ -22,16 +22,20 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 class XeronoidSinger(object):
     def __init__(self):
-        self.xeronoid_voixe = None
-        self.client = None
-        self.xeronoid_chat_verify = None
-        self.xeronoid_clock = None
-        self.xeronoid_music_list = []
         self.xemsg = {}
-
+        self.client = None
+        self.xeronoid_clock = None
+        self.xeronoid_voixe = None
+        self.xeronoid_music_list = []
+        self.xeronoid_chat_verify = None       
+        
+        
+        
     async def update_start_time(self, reset=False):
         self.xeronoid_clock = (None if reset else datetime.utcnow().replace(microsecond=0))
-
+        
+        
+        
     async def send_playlist(self):
         xeronoid_music_list = self.xeronoid_music_list
         if not xeronoid_music_list:
@@ -43,13 +47,15 @@ class XeronoidSinger(object):
                 pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
             pl += "\n".join([
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
-                for i, x in enumerate(xeronoid_music_list)
-            ])
+                for i, x in enumerate(xeronoid_music_list)])
         if xep.xemsg.get('xeronoid_music_list') is not None:
             await xep.xemsg['xeronoid_music_list'].delete()
         xep.xemsg['xeronoid_music_list'] = await xero_back_sender(pl)
+        
+        
 xep = XeronoidSinger()
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 
 
 
