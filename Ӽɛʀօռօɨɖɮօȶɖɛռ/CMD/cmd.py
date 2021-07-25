@@ -33,7 +33,7 @@ async def show_help(client, xemsg: xeromsg):
     duration=10,
     caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝗳𝗼𝗿 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀"
     )
-    xeroclip.xeronoid_msngr['cmd'] = hawk = await xemsg.reply_animation(
+    xeroclip.msg['cmd'] = hawk = await xemsg.reply_animation(
     animation=xerolink,
     caption=XERO_HELP
     )

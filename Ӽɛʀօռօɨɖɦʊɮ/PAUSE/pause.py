@@ -38,7 +38,7 @@ async def pause_playing(client, xemsg: xeromsg):
     # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\npaused",
     # quote=False
     # )
-    # xeroclip.xeronoid_msngr['pause'] = xeronoid_throw
+    # xeroclip.msg['pause'] = xeronoid_throw
     
     # await xeronoid_pause_purge((xemsg, xemsg), PAUSE_REMOVER)
     

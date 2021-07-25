@@ -42,8 +42,8 @@ async def resume_playing(client, xemsg: xeromsg):
     caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗵𝗮𝘀 𝗿𝗲𝘀𝘂𝗺𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲𝗰𝗵𝗮𝘁",
     quote=False
     )
-    if xeroclip.xeronoid_msngr.get('pause') is not None:
-        await xeroclip.xeronoid_msngr['pause'].delete()
+    if xeroclip.msg.get('pause') is not None:
+        await xeroclip.msg['pause'].delete()
         
         
     await xeronoid_resume_purge((xeronoid_throw, xemsg), RESUME_REMOVER)

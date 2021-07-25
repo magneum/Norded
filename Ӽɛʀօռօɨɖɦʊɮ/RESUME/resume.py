@@ -38,8 +38,8 @@ async def resume_playing(client, xemsg: xeromsg):
     # animation=xerolink,
     # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nresumed"
     # )
-    if xeroclip.xeronoid_msngr.get('pause') is not None:
-        await xeroclip.xeronoid_msngr['pause'].delete()
+    if xeroclip.msg.get('pause') is not None:
+        await xeroclip.msg['pause'].delete()
         
         
     # await xeronoid_resume_purge((xeronoid_throw, xemsg), RESUME_REMOVER)

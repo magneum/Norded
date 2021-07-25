@@ -25,12 +25,12 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 class XeronoidPlayer(xeroobj):
     def __init__(self):
-        self.client = None
         self.group_call = None
+        self.client = None
         self.chat_id = None
         self.start_time = None
         self.playlist = []
-        self.xeronoid_msngr = {}
+        self.msg = {}
        
     async def xeronoid_begin_clock(self, reset=False):
         self.start_time = (
@@ -73,9 +73,9 @@ class XeronoidPlayer(xeroobj):
                 f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n**{i}**. **[{x.audio.title}]({x.link})"""
                 for i, x in enumerate(playlist)
             ])
-        if xeroclip.xeronoid_msngr.get('playlist') is not None:
-            await xeroclip.xeronoid_msngr['playlist'].delete()
-        xeroclip.xeronoid_msngr['playlist'] = await xeronoid_msg_sender(xero_playlist)    
+        if xeroclip.msg.get('playlist') is not None:
+            await xeroclip.msg['playlist'].delete()
+        xeroclip.msg['playlist'] = await xeronoid_msg_sender(xero_playlist)    
 
 
 xeroclip = XeronoidPlayer()

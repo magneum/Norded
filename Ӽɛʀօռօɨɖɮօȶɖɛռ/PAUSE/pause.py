@@ -43,7 +43,7 @@ async def pause_playing(client, xemsg: xeromsg):
     caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗮𝘂𝘀𝗲𝗱 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲𝗰𝗵𝗮𝘁",
     quote=False
     )
-    xeroclip.xeronoid_msngr['pause'] = xeronoid_throw
+    xeroclip.msg['pause'] = xeronoid_throw
     
     await xeronoid_pause_purge((xemsg, xemsg), PAUSE_REMOVER)
     
