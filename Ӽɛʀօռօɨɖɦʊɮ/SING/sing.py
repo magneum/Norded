@@ -38,6 +38,7 @@ async def play_track(client, xemsg: xeromsg):
             cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝘂𝘁 𝗮𝘂𝗱𝗶𝗼 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗻𝗼𝘁 𝗺𝗲𝘁', 'yellow', attrs=['reverse'])
             xeronoid_throw = await xemsg.reply_animation(
             animation=xerolink,
+            duration=10,
             caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝙎𝙤𝙧𝙧𝙮 𝙖𝙪𝙙𝙞𝙤 𝙬𝙝𝙞𝙘𝙝 𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙡𝙤𝙣𝙜𝙚𝙧 𝙩𝙝𝙖𝙣 {str(MAX_MIN)} 𝗺𝗶𝗻 𝘄𝗼𝗻'𝘁 𝗯𝗲 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰𝗮𝗹𝗹𝘆 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝘅𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗺𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁."
             )
             await delay_play_messages((xeronoid_throw,), PLAY_REMOVER)
@@ -49,6 +50,7 @@ async def play_track(client, xemsg: xeromsg):
             cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝘂𝘁 𝗮𝘂𝗱𝗶𝗼 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗻𝗼𝘁 𝗺𝗲𝘁', 'yellow', attrs=['reverse'])
             xeronoid_throw = await xemsg.reply_animation(
             animation=xerolink,
+            duration=10,
             caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝙎𝙤𝙧𝙧𝙮 𝙖𝙪𝙙𝙞𝙤 𝙬𝙝𝙞𝙘𝙝 𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙡𝙤𝙣𝙜𝙚𝙧 𝙩𝙝𝙖𝙣 {str(MAX_HOUR)} 𝗵𝗼𝘂𝗿𝘀 𝘄𝗼𝗻'𝘁 𝗯𝗲 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝘅𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗺𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁."
             )
             await delay_play_messages((xeronoid_throw,), PLAY_REMOVER)
@@ -61,6 +63,7 @@ async def play_track(client, xemsg: xeromsg):
             == m_audio.audio.file_unique_id:
         xeronoid_throw = await xemsg.reply_animation(
         animation=xerolink,
+        duration=10,
         caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝙈𝙪𝙨𝙞𝙘 𝙖𝙡𝙧𝙚𝙖𝙙𝙮 𝙖𝙙𝙙𝙚𝙙. 𝙎𝙠𝙞𝙥𝙥𝙞𝙣𝙜!"
         )
         await delay_play_messages((xeronoid_throw, xemsg), PLAY_REMOVER)
@@ -70,17 +73,18 @@ async def play_track(client, xemsg: xeromsg):
         cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼', 'yellow', attrs=['reverse'])
         m_status = await xemsg.reply_animation(
         animation=xerolink,
+        duration=10,
         caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴 𝗮𝗻𝗱 𝘁𝗿𝗮𝗻𝘀𝗰𝗼𝗱𝗶𝗻𝗴..."
         )
         await xeronoid_music_dl_handler(xeronoid_music_list[0])
         group_call.input_filename = os.path.join(
-            client.workdir,
-            xeronoid_dl_dir,
-            f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
-            )
+        client.workdir,
+        xeronoid_dl_dir,
+        f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
+        )
         await xeroclip.xeronoid_begin_clock()
         await m_status.delete()
-        print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴: {xeronoid_music_list[0].audio.title}" + f"\n𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 `{CHAT_ID}'s` 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩'")
+        print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗽𝗹𝗮𝘆𝗶𝗻𝗴: {xeronoid_music_list[0].audio.title}" + f"\n𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 `{CHAT_ID}'s` 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩'")
     await xeroclip.xeronoid_show_playlist(xemsg)
     for track in xeronoid_music_list[:2]:
         await xeronoid_music_dl_handler(track)

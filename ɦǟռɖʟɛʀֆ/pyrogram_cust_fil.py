@@ -59,8 +59,8 @@ async def xeronoid_chatcheck_cust_filter(_,__,xemsg: xeromsg):
     group_call = xeroclip.group_call
     if not (group_call and group_call.is_connected):
         return False
-    xeronoid_chatid = int("-100" + str(group_call.full_chat.id))
-    if xemsg.chat.id == xeronoid_chatid:
+    chat_id = int("-100" + str(group_call.full_chat.id))
+    if xemsg.chat.id == chat_id:
         return True
     return False
 xeronoid_chat_check = xerofil.create(xeronoid_chatcheck_cust_filter)

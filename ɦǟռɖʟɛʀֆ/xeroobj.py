@@ -27,7 +27,7 @@ class XeronoidPlayer(xeroobj):
     def __init__(self):
         self.client = None
         self.group_call = None
-        self.xeronoid_chatid = None
+        self.chat_id = None
         self.xeronoid_begin = None
         self.xeronoid_music_list = []
         self.xeronoid_msngr = {}
@@ -84,9 +84,9 @@ xeroclip = XeronoidPlayer()
 async def xeronoid_msg_sender(text):
     group_call = xeroclip.group_call
     client = group_call.client
-    xeronoid_chatid = xeroclip.xeronoid_chatid
+    chat_id = xeroclip.chat_id
     message = await client.send_message(
-    xeronoid_chatid,
+    chat_id,
     text,
     disable_web_page_preview=False,
     disable_notification=False
@@ -97,9 +97,9 @@ async def xeronoid_msg_sender(text):
 async def xeronoid_msg_sender(text):
     group_call = xeroclip.group_call
     client = group_call.client
-    xeronoid_chatid = xeroclip.xeronoid_chatid
+    chat_id = xeroclip.chat_id
     xero_send_msgnr = await client.send_message(
-    xeronoid_chatid,
+    chat_id,
     text,
     disable_web_page_preview=False,
     disable_notification=False
@@ -109,9 +109,9 @@ async def xeronoid_msg_sender(text):
 async def xeronoid_bot_msg_sender(text):
     group_call = xeroclip.group_call
     client = group_call.client
-    xeronoid_chatid = LOGGER_ID
+    chat_id = LOGGER_ID
     xero_send_msgnr = await client.send_message(
-    xeronoid_chatid,
+    chat_id,
     text,
     disable_web_page_preview=False,
     disable_notification=False
@@ -121,7 +121,7 @@ async def xeronoid_bot_msg_sender(text):
 
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
-        xeroclip.xeronoid_chatid = macid - context.full_chat.id
+        xeroclip.chat_id = macid - context.full_chat.id
         await xeronoid_msg_sender(
         f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙥𝙡𝙪𝙜𝙜𝙚𝙙 𝙞𝙣 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 
         `{CHAT_ID}`'s 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩
@@ -137,7 +137,7 @@ async def network_status_changed_handler(context, is_connected: bool):
         await xeronoid_bot_msg_sender(
         f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙪𝙣𝙥𝙡𝙪𝙜𝙜𝙚𝙙"
 				)
-        xeroclip.xeronoid_chatid = None
+        xeroclip.chat_id = None
 
 
 async def xeronoid_music_over_handler(_, __):
