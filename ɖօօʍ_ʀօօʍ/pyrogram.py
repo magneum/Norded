@@ -1,5 +1,4 @@
-""" 
-⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
+"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |----------------------------------------------------------------------------------------|
                           GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
@@ -13,15 +12,10 @@
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |----------------------------------------------------------------------------------------|       
-⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-"""
+⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from pyrogram import idle
-from pyrogram.types import Message as xeromsg
-from pyrogram.utils import MAX_CHANNEL_ID as macid
-from pyrogram import Client as Ӽɛʀօռօɨɖ, filters as xerofil
-from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR as xeronoid_dl_dir
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+from pyrogram import Client, filters, emoji,idle
+from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
+from pyrogram.types import Message
+from pyrogram.utils import MAX_CHANNEL_ID

@@ -1,5 +1,4 @@
-""" 
-⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
+"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |----------------------------------------------------------------------------------------|
                           GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
@@ -13,8 +12,8 @@
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |----------------------------------------------------------------------------------------|       
-⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-"""
+⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+
 
 
 import os
@@ -31,11 +30,11 @@ if HEROKU is not None and HEROKU == "HEROKU":
     debuger_or_not = os.environ.get('NO').upper()
 else:
     debuger_or_not = "no"
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
 
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
 if HEROKU is not None and HEROKU == "HEROKU":
     CHAT_ID = int(os.environ.get('CHAT_ID', None))
 else:
@@ -60,10 +59,10 @@ if HEROKU is not None and HEROKU == "HEROKU":
     LOGGER_ID = int(os.environ.get('LOGGER_ID'))
 else:
     LOGGER_ID = (-1001513582173)
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝                         purge handlers' timings                        ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+
+"""purge handlers' timings"""
 CLEAN_REMOVER = 8
 CURRENT_REMOVER = 12
 GROUP_REMOVER = 8
@@ -80,17 +79,16 @@ STOP_REMOVER = 8
 UNMUTE_REMOVER = 6
 VOLUME_REMOVER = 6
 SERVER_REMOVER = 12
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝                         purge handlers' timings                        ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
 
-
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝                         Xeronoid Designer                        ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+"""Xeronoid Designer"""
 XEXO = "一═••÷デ[ 🦋 Ӽɛʀօռօɨɖ 🦋 ]デ÷••═一 | by "
 xerolink = "https://telegra.ph/file/25d6e03ed79350f5a545f.gif"
 ON_OFF_FEED ="""
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-                         GNU GENERAL PUBLIC LICENSE
+|----------------------------------------------------------------------------------------|
+                          GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
                             
         Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -101,8 +99,5 @@ ON_OFF_FEED ="""
                         Telegram Music player userbot 
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-
-
-⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-"""
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝                         Xeronoid Designer                        ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+|----------------------------------------------------------------------------------------|       
+⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""

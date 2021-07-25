@@ -14,16 +14,4 @@
 |----------------------------------------------------------------------------------------|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-
-
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+from .dlcs import *

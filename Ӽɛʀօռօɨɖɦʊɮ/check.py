@@ -15,15 +15,32 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+'|----------------------------------------------------------------------------------------|'
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+'|----------------------------------------------------------------------------------------|'
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+
+
+'|----------------------------------------------------------------------------------------|'
+@Client.on_message(
+main_filter
+& self_or_contact_filter
+& filters.regex("^!check$"))
+async def list_voice_chat(client, m: Message):
+    group_call = xep.group_call
+    if group_call and group_call.is_connected:
+        chat_id = int("-100" + str(group_call.full_chat.id))
+        chat = await client.get_chat(chat_id)
+        reply = await m.reply_text(
+            f"{emoji.MUSICAL_NOTES} **currently in the voice chat**:\n"
+            f"- **{chat.title}**"
+        )
+    else:
+        reply = await m.reply_text(emoji.NO_ENTRY
+                                   + "didn't join any voice chat yet")
+    await xeronoid_check_purge((reply, m), CLEAN_REMOVER)
+'|----------------------------------------------------------------------------------------|'

@@ -15,18 +15,46 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+'|----------------------------------------------------------------------------------------|'
+from .snd import send_text
+from ɖօօʍ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+'|----------------------------------------------------------------------------------------|'
+
 
 '|----------------------------------------------------------------------------------------|'
-from .check import *
-from .end import *
-from .info import *
-from .next import *
-from .now import *
-from .off import *
-from .on import *
-from .pause import *
-from .raw import *
-from .replay import *
-from .resume import *
-from .sing import *
+class MusicPlayer(object):
+    def __init__(self):
+        self.group_call = None
+        self.client = None
+        self.chat_id = None
+        self.start_time = None
+        self.playlist = []
+        self.msg = {}
+
+    async def update_start_time(self, reset=False):
+        self.start_time = (
+            None if reset
+            else datetime.utcnow().replace(microsecond=0)
+        )
+
+    async def send_playlist(self):
+        playlist = self.playlist
+        if not playlist:
+            pl = f"{emoji.NO_ENTRY} empty playlist"
+        else:
+            if len(playlist) == 1:
+                pl = f"{emoji.REPEAT_SINGLE_BUTTON} **Playlist**:\n"
+            else:
+                pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
+            pl += "\n".join([
+                f"**{i}**. **[{x.audio.title}]({x.link})**"
+                for i, x in enumerate(playlist)
+            ])
+        if xep.msg.get('playlist') is not None:
+            await xep.msg['playlist'].delete()
+        xep.msg['playlist'] = await send_text(pl)
+
+
+xep = MusicPlayer()
 '|----------------------------------------------------------------------------------------|'

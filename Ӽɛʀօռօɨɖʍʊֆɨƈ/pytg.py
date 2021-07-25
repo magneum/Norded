@@ -16,14 +16,26 @@
 
 
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+'|----------------------------------------------------------------------------------------|'
+from .snd import send_text
+from .xmp import xep
+from ɖօօʍ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ_ɖʟƈֆ import *
+'|----------------------------------------------------------------------------------------|'
+
+
+
+'|----------------------------------------------------------------------------------------|'
+async def network_status_changed_handler(context, is_connected: bool):
+    if is_connected:
+        xep.chat_id = MAX_CHANNEL_ID - context.full_chat.id
+        await send_text(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+    else:
+        await send_text(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        xep.chat_id = None
+
+
+async def playout_ended_handler(_, __):
+    await skip_current_playing()
+'|----------------------------------------------------------------------------------------|'

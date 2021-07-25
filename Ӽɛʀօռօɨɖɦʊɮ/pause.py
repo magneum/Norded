@@ -15,15 +15,20 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+@Client.on_message(main_filter
+                   & self_or_contact_filter
+                   & current_vc
+                   & filters.regex("^!pause"))
+async def pause_playing(_, m: Message):
+    xep.group_call.pause_playout()
+    await xep.update_start_time(reset=True)
+    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused",
+                               quote=False)
+    xep.msg['pause'] = reply
+    await m.delete()

@@ -15,15 +15,29 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import * 
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+
+@Client.on_message(main_filter
+                   & current_vc
+                   & filters.regex("^(\\/|!)now$"))
+async def show_current_playing_time(_, m: Message):
+    start_time = xep.start_time
+    playlist = xep.playlist
+    if not start_time:
+        reply = await m.reply_text(f"{emoji.PLAY_BUTTON} unknown")
+        await xeronoid_now_purge((reply, m), CLEAN_REMOVER)
+        return
+    utcnow = datetime.utcnow().replace(microsecond=0)
+    if xep.msg.get('current') is not None:
+        await xep.msg['current'].delete()
+    xep.msg['current'] = await playlist[0].reply_text(
+        f"{emoji.PLAY_BUTTON}  {utcnow - start_time} / "
+        f"{timedelta(seconds=playlist[0].audio.duration)}",
+        disable_notification=True
+    )
+    await m.delete()

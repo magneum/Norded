@@ -15,15 +15,22 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+'|----------------------------------------------------------------------------------------|'
+from .xmp import xep
+from ɖօօʍ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+'|----------------------------------------------------------------------------------------|'
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+
+'|----------------------------------------------------------------------------------------|'
+async def send_text(text):
+    group_call = xep.group_call
+    client = group_call.client
+    chat_id = xep.chat_id
+    message = await client.send_message(
+    chat_id,
+    text,
+    disable_web_page_preview=True,
+    disable_notification=True)
+    return message
+'|----------------------------------------------------------------------------------------|'

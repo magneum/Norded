@@ -16,14 +16,9 @@
 
 
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+
+'|----------------------------------------------------------------------------------------|'
+from .pytg import *
+from .snd import *
+from .xmp import *
+'|----------------------------------------------------------------------------------------|'

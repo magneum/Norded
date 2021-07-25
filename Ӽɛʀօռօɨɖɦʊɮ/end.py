@@ -14,16 +14,26 @@
 |----------------------------------------------------------------------------------------|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
+'|----------------------------------------------------------------------------------------|'
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+'|----------------------------------------------------------------------------------------|'
 
 
-import os
-import sys
-import time
-import ffmpeg
-import asyncio
-import logging
-import subprocess
-from termcolor import *
-from sys import platform
-from loguru import logger
-from datetime import datetime, timedelta
+
+'|----------------------------------------------------------------------------------------|'
+@Client.on_message(main_filter
+                   & self_or_contact_filter
+                   & current_vc
+                   & filters.regex("^!end$"))
+async def stop_playing(_, m: Message):
+    group_call = xep.group_call
+    group_call.stop_playout()
+    reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
+    await xep.update_start_time(reset=True)
+    xep.playlist.clear()
+    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
+'|----------------------------------------------------------------------------------------|'
