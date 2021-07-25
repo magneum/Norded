@@ -45,8 +45,8 @@ async def xero_xemp_fils(_, __, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if not (xeronoid_voixe and xeronoid_voixe.is_connected):
         return False
-    chat_id = int("-100" + str(xeronoid_voixe.full_chat.id))
-    if m.chat.id == chat_id:
+    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
+    if m.chat.id == xeronoid_chat_verify:
         return True
     return False
 xero_xemp_fils = filters.create(xero_xemp_fils)

@@ -23,9 +23,9 @@ from Ӽɛʀօռօɨɖ_ɖʟƈֆ import *
 async def xero_back_sender(text):
     xeronoid_voixe = xep.xeronoid_voixe
     client = xeronoid_voixe.client
-    chat_id = xep.chat_id
+    xeronoid_chat_verify = xep.xeronoid_chat_verify
     message = await client.send_message(
-    chat_id,
+    xeronoid_chat_verify,
     text,
     disable_web_page_preview=True,
     disable_notification=True)
@@ -33,11 +33,11 @@ async def xero_back_sender(text):
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
-        xep.chat_id = MAX_CHANNEL_ID - context.full_chat.id
+        xep.xeronoid_chat_verify = MAX_CHANNEL_ID - context.full_chat.id
         await xero_back_sender(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
     else:
         await xero_back_sender(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
-        xep.chat_id = None
+        xep.xeronoid_chat_verify = None
 
 
 async def playout_ended_handler(_, __):

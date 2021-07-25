@@ -24,7 +24,7 @@ class XeronoidSinger(object):
     def __init__(self):
         self.xeronoid_voixe = None
         self.client = None
-        self.chat_id = None
+        self.xeronoid_chat_verify = None
         self.start_time = None
         self.playlist = []
         self.msg = {}
@@ -57,9 +57,9 @@ xep = XeronoidSinger()
 async def xero_back_sender(text):
     xeronoid_voixe = xep.xeronoid_voixe
     client = xeronoid_voixe.client
-    chat_id = xep.chat_id
+    xeronoid_chat_verify = xep.xeronoid_chat_verify
     message = await client.send_message(
-    chat_id,
+    xeronoid_chat_verify,
     text,
     disable_web_page_preview=True,
     disable_notification=True)

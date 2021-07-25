@@ -33,8 +33,8 @@ xero_basic_fils
 async def list_voice_chat(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:
-        chat_id = int("•100" + str(xeronoid_voixe.full_chat.id))
-        chat = await client.get_chat(chat_id)
+        xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+        chat = await client.get_chat(xeronoid_chat_verify)
         reply = await m.reply_text(
             f"{emoji.MUSICAL_NOTES} **currently in the voice chat**:\n"
             f"• **{chat.title}**"
