@@ -21,16 +21,16 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 async def skip_current_playing():
-    group_call = xep.group_call
+    xeronoid_voixe = xep.xeronoid_voixe
     playlist = xep.playlist
     if not playlist:
         return
     if len(playlist) == 1:
         await xep.update_start_time()
         return
-    client = group_call.client
+    client = xeronoid_voixe.client
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
-    group_call.input_filename = os.path.join(
+    xeronoid_voixe.input_filename = os.path.join(
     download_dir,
     f"{playlist[1].audio.file_unique_id}.raw")
     await xep.update_start_time()
@@ -48,8 +48,8 @@ async def skip_current_playing():
 
 
 async def download_audio(m: Message):
-    group_call = xep.group_call
-    client = group_call.client
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
     raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
                             f"{m.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):

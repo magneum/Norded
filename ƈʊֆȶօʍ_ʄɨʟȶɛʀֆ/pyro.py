@@ -42,10 +42,10 @@ or message.outgoing)
 
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 async def xero_xemp_fils(_, __, m: Message):
-    group_call = xep.group_call
-    if not (group_call and group_call.is_connected):
+    xeronoid_voixe = xep.xeronoid_voixe
+    if not (xeronoid_voixe and xeronoid_voixe.is_connected):
         return False
-    chat_id = int("-100" + str(group_call.full_chat.id))
+    chat_id = int("-100" + str(xeronoid_voixe.full_chat.id))
     if m.chat.id == chat_id:
         return True
     return False
