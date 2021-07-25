@@ -13,23 +13,49 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
+
+
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.regex("^!pause"))
+& filters.command("pause", prefixes=DYNO_COMMANDK))
 async def pause_playing(_, m: Message):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
-    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused",
-                               quote=False)
+    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused")
+    xep.xemsg['pause'] = reply
+    await m.delete()
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
+
+"Below code is for the XeronoidBot only and will be used for logging purposes also"
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+@Client.on_message(
+xero_bot_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.command("pause", prefixes=DYNO_COMMANDK))
+async def pause_playing(client, m: Message):
+    xep.xeronoid_voixe.pause_playout()
+    await xep.update_start_time(reset=True)
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    chat = await client.get_chat(xeronoid_chat_verify)
+    reply = await client.send_animation(
+    animation=xerolink,
+    duration=10,
+    chat_id=LOGGER_ID,
+    caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
+    )
     xep.xemsg['pause'] = reply
     await m.delete()

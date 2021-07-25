@@ -48,7 +48,7 @@ async def xeronoid_check_purge(xemsgs: tuple, slow: int):
 
 
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
-async def xeronoid_help_purge(xemsgs: tuple, slow: int):
+async def xeronoid_info_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
