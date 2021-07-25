@@ -22,10 +22,11 @@ from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.command("next", prefixes="!"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.command("next", prefixes="!"))
 async def skip_track(_, m: Message):
     playlist = xep.playlist
     if len(m.command) == 1:

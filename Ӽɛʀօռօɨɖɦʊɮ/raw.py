@@ -21,10 +21,11 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!raw$"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!raw$"))
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)

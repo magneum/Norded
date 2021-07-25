@@ -22,9 +22,10 @@ from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & filters.regex("^!on$"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& filters.regex("^!on$"))
 async def join_group_call(client, m: Message):
     group_call = xep.group_call
     if not group_call:

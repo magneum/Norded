@@ -27,8 +27,8 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 @Client.on_message(
-main_filter
-& self_or_contact_filter
+xero_basic_fils
+& xero_self_fils
 & filters.regex("^!check$"))
 async def list_voice_chat(client, m: Message):
     group_call = xep.group_call

@@ -21,10 +21,11 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!replay$"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!replay$"))
 async def restart_playing(_, m: Message):
     group_call = xep.group_call
     if not xep.playlist:

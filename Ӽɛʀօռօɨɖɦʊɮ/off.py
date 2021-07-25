@@ -21,10 +21,11 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!leave$"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!leave$"))
 async def leave_voice_chat(_, m: Message):
     group_call = xep.group_call
     xep.playlist.clear()

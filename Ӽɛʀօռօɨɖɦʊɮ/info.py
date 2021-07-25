@@ -24,8 +24,8 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 @Client.on_message(
-main_filter
-& (self_or_contact_filter | current_vc)
+xero_basic_fils
+& (xero_self_fils | xero_xemp_fils)
 & filters.regex("^(\\/|!)info$"))
 async def show_help(_, m: Message):
     if xep.msg.get('info') is not None:

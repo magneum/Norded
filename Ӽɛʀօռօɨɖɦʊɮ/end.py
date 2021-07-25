@@ -25,10 +25,11 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!end$"))
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!end$"))
 async def stop_playing(_, m: Message):
     group_call = xep.group_call
     group_call.stop_playout()

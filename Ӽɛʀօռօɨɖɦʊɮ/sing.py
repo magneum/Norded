@@ -23,11 +23,10 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 @Client.on_message(
-    filters.group
-    & ~filters.edited
-    & current_vc
-    & (filters.regex("^(\\/|!)sing$") | filters.audio)
-)
+filters.group
+& ~filters.edited
+& xero_xemp_fils
+& (filters.regex("^(\\/|!)sing$") | filters.audio))
 async def play_track(client, m: Message):
     group_call = xep.group_call
     playlist = xep.playlist

@@ -22,9 +22,10 @@ from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import * 
 
 
-@Client.on_message(main_filter
-                   & current_vc
-                   & filters.regex("^(\\/|!)now$"))
+@Client.on_message(
+xero_basic_fils
+& xero_xemp_fils
+& filters.regex("^(\\/|!)now$"))
 async def show_current_playing_time(_, m: Message):
     start_time = xep.start_time
     playlist = xep.playlist
