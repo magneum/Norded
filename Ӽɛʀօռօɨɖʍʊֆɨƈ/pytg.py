@@ -20,7 +20,7 @@ from Ӽɛʀօռօɨɖ_ɖʟƈֆ import *
 
 
 
-async def send_text(text):
+async def xero_back_sender(text):
     group_call = xep.group_call
     client = group_call.client
     chat_id = xep.chat_id
@@ -34,9 +34,9 @@ async def send_text(text):
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         xep.chat_id = MAX_CHANNEL_ID - context.full_chat.id
-        await send_text(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+        await xero_back_sender(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
     else:
-        await send_text(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        await xero_back_sender(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
         xep.chat_id = None
 
 

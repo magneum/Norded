@@ -18,18 +18,9 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 
-async def send_text(text):
-    group_call = xep.group_call
-    client = group_call.client
-    chat_id = xep.chat_id
-    message = await client.send_message(
-    chat_id,
-    text,
-    disable_web_page_preview=True,
-    disable_notification=True)
-    return message
+
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
-class MusicPlayer(object):
+class XeronoidSinger(object):
     def __init__(self):
         self.group_call = None
         self.client = None
@@ -39,10 +30,7 @@ class MusicPlayer(object):
         self.msg = {}
 
     async def update_start_time(self, reset=False):
-        self.start_time = (
-            None if reset
-            else datetime.utcnow().replace(microsecond=0)
-        )
+        self.start_time = (None if reset else datetime.utcnow().replace(microsecond=0))
 
     async def send_playlist(self):
         playlist = self.playlist
@@ -59,8 +47,21 @@ class MusicPlayer(object):
             ])
         if xep.msg.get('playlist') is not None:
             await xep.msg['playlist'].delete()
-        xep.msg['playlist'] = await send_text(pl)
+        xep.msg['playlist'] = await xero_back_sender(pl)
+xep = XeronoidSinger()
+'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 
 
-xep = MusicPlayer()
+
+'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+async def xero_back_sender(text):
+    group_call = xep.group_call
+    client = group_call.client
+    chat_id = xep.chat_id
+    message = await client.send_message(
+    chat_id,
+    text,
+    disable_web_page_preview=True,
+    disable_notification=True)
+    return message
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
