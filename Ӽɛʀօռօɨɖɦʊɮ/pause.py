@@ -31,5 +31,5 @@ async def pause_playing(_, m: Message):
     await xep.update_start_time(reset=True)
     reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused",
                                quote=False)
-    xep.msg['pause'] = reply
+    xep.xemsg['pause'] = reply
     await m.delete()

@@ -30,7 +30,7 @@ async def resume_playing(_, m: Message):
     xep.xeronoid_voixe.resume_playout()
     reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} resumed",
                                quote=False)
-    if xep.msg.get('pause') is not None:
-        await xep.msg['pause'].delete()
+    if xep.xemsg.get('pause') is not None:
+        await xep.xemsg['pause'].delete()
     await m.delete()
     await xeronoid_resume_purge((reply,), CLEAN_REMOVER)

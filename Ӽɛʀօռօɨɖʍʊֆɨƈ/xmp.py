@@ -27,7 +27,7 @@ class XeronoidSinger(object):
         self.xeronoid_chat_verify = None
         self.xeronoid_clock = None
         self.xeronoid_music_list = []
-        self.msg = {}
+        self.xemsg = {}
 
     async def update_start_time(self, reset=False):
         self.xeronoid_clock = (None if reset else datetime.utcnow().replace(microsecond=0))
@@ -45,9 +45,9 @@ class XeronoidSinger(object):
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
                 for i, x in enumerate(xeronoid_music_list)
             ])
-        if xep.msg.get('xeronoid_music_list') is not None:
-            await xep.msg['xeronoid_music_list'].delete()
-        xep.msg['xeronoid_music_list'] = await xero_back_sender(pl)
+        if xep.xemsg.get('xeronoid_music_list') is not None:
+            await xep.xemsg['xeronoid_music_list'].delete()
+        xep.xemsg['xeronoid_music_list'] = await xero_back_sender(pl)
 xep = XeronoidSinger()
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 

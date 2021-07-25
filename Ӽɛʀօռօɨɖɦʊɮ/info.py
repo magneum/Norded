@@ -28,7 +28,7 @@ xero_basic_fils
 & (xero_self_fils | xero_xemp_fils)
 & filters.regex("^(\\/|!)info$"))
 async def show_help(_, m: Message):
-    if xep.msg.get('info') is not None:
-        await xep.msg['info'].delete()
-    xep.msg['info'] = await m.reply_text(XERO_HELP, quote=False)
+    if xep.xemsg.get('info') is not None:
+        await xep.xemsg['info'].delete()
+    xep.xemsg['info'] = await m.reply_text(XERO_HELP, quote=False)
     await m.delete()
