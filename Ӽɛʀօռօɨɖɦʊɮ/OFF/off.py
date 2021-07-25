@@ -30,7 +30,7 @@ xeronoid_master_filter
 & xerofil.command("off", prefixes="/"))
 async def leave_voice_chat(_, xemsg: xeromsg):
     group_call = xeroclip.group_call
-    xeroclip.xeronoid_music_list.clear()
+    xeroclip.playlist.clear()
     group_call.input_filename = ''
     await group_call.stop()
 

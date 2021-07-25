@@ -29,7 +29,7 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("skip", prefixes="/"))
 async def skip_track(client, xemsg: xeromsg):
-    xeronoid_music_list = xeroclip.xeronoid_music_list
+    playlist = xeroclip.playlist
     if len(xemsg.command) == 1:
         await xeronoid_skip_music_handler()
     else:
@@ -39,9 +39,9 @@ async def skip_track(client, xemsg: xeromsg):
             items.sort(reverse=True)
             text = []
             for i in items:
-                if 2 <= i <= (len(xeronoid_music_list) - 1):
-                    audio = f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 [{xeronoid_music_list[i].audio.title}]({xeronoid_music_list[i].link})"
-                    xeronoid_music_list.pop(i)
+                if 2 <= i <= (len(playlist) - 1):
+                    audio = f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 [{playlist[i].audio.title}]({playlist[i].link})"
+                    playlist.pop(i)
                     text.append(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {i}. **{audio}**")
                 else:
                     text.append(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {i}")

@@ -39,6 +39,6 @@ async def stop_playing(client, xemsg: xeromsg):
     # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n stopped playing"
     # )
     # await xeroclip.xeronoid_begin_clock(reset=True)
-    # xeroclip.xeronoid_music_list.clear()
+    # xeroclip.playlist.clear()
     
     # await xeronoid_stop_purge((xeronoid_throw, xemsg), STOP_REMOVER)

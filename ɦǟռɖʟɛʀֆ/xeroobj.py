@@ -29,7 +29,7 @@ class XeronoidPlayer(xeroobj):
         self.group_call = None
         self.chat_id = None
         self.start_time = None
-        self.xeronoid_music_list = []
+        self.playlist = []
         self.xeronoid_msngr = {}
        
     async def xeronoid_begin_clock(self, reset=False):
@@ -38,15 +38,15 @@ class XeronoidPlayer(xeroobj):
             else datetime.utcnow().replace(microsecond=0)) 
            
     async def xeronoid_show_playlist(self, xemsg: xeromsg):
-        xeronoid_music_list = self.xeronoid_music_list
-        if not xeronoid_music_list:
+        playlist = self.playlist
+        if not playlist:
             xero_playlist = await xemsg.reply_animation(
             animation=xerolink,
             caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙢𝙪𝙨𝙞𝙘 𝙡𝙞𝙨𝙩 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩
             """
             )
         else:
-            if len(xeronoid_music_list) == 1:
+            if len(playlist) == 1:
                 xero_playlist = f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n『  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
                 (┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n
                 """
@@ -71,11 +71,11 @@ class XeronoidPlayer(xeroobj):
                 # )
             xero_playlist += "\n".join([
                 f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n**{i}**. **[{x.audio.title}]({x.link})"""
-                for i, x in enumerate(xeronoid_music_list)
+                for i, x in enumerate(playlist)
             ])
-        if xeroclip.xeronoid_msngr.get('xeronoid_music_list') is not None:
-            await xeroclip.xeronoid_msngr['xeronoid_music_list'].delete()
-        xeroclip.xeronoid_msngr['xeronoid_music_list'] = await xeronoid_msg_sender(xero_playlist)    
+        if xeroclip.xeronoid_msngr.get('playlist') is not None:
+            await xeroclip.xeronoid_msngr['playlist'].delete()
+        xeroclip.xeronoid_msngr['playlist'] = await xeronoid_msg_sender(xero_playlist)    
 
 
 xeroclip = XeronoidPlayer()
@@ -146,29 +146,29 @@ async def xeronoid_music_over_handler(_, __):
 
 async def xeronoid_skip_music_handler():
     group_call = xeroclip.group_call
-    xeronoid_music_list = xeroclip.xeronoid_music_list
-    if not xeronoid_music_list:
+    playlist = xeroclip.playlist
+    if not playlist:
         return
-    if len(xeronoid_music_list) == 1:
+    if len(playlist) == 1:
         await xeroclip.xeronoid_begin_clock()
         return
     client = group_call.client
     download_dir = os.path.join(client.workdir, xeronoid_dl_dir)
     group_call.input_filename = os.path.join(
         download_dir,
-        f"{xeronoid_music_list[1].audio.file_unique_id}.raw"
+        f"{playlist[1].audio.file_unique_id}.raw"
         )
     await xeroclip.xeronoid_begin_clock()
-    old_track = xeronoid_music_list.pop(0)
-    print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	Ӽɛʀօռօɨɖ ռօա քʟǟʏɨռɢ: {xeronoid_music_list[0].audio.title}")
+    old_track = playlist.pop(0)
+    print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	Ӽɛʀօռօɨɖ ռօա քʟǟʏɨռɢ: {playlist[0].audio.title}")
     await xeroclip.xeronoid_show_playlist()
     os.remove(os.path.join(
         download_dir,
         f"{old_track.audio.file_unique_id}.raw")
         )
-    if len(xeronoid_music_list) == 1:
+    if len(playlist) == 1:
         return
-    await xeronoid_music_dl_handler(xeronoid_music_list[1])
+    await xeronoid_music_dl_handler(playlist[1])
     
     
     

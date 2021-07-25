@@ -29,7 +29,7 @@ xeronoid_bot_master_filter
 & xerofil.command("replay", prefixes="/"))
 async def restart_playing(client, xemsg: xeromsg):
     group_call = xeroclip.group_call
-    if not xeroclip.xeronoid_music_list:
+    if not xeroclip.playlist:
         return
     group_call.restart_playout()
     await xeroclip.xeronoid_begin_clock()

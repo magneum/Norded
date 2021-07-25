@@ -32,7 +32,7 @@ xeronoid_master_filter
 async def clean_raw_pcm(client, xemsg: xeromsg):
     download_dir = os.path.join(client.workdir, xeronoid_dl_dir)
     all_fn: list[str] = os.listdir(download_dir)
-    for track in xeroclip.xeronoid_music_list[:2]:
+    for track in xeroclip.playlist[:2]:
         track_fn = f"{track.audio.file_unique_id}.raw"
         if track_fn in all_fn:
             all_fn.remove(track_fn)

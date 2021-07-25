@@ -29,7 +29,7 @@ xeronoid_master_filter
 & xerofil.command("now", prefixes="/"))
 async def show_current_playing_time(_, xemsg: xeromsg):
     start_time = xeroclip.start_time
-    xeronoid_music_list = xeroclip.xeronoid_music_list
+    playlist = xeroclip.playlist
     if not start_time:
         await xemsg.reply_chat_action("find_location")
         cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝗳𝗼𝗿 𝗰𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘄𝗵𝗶𝗰𝗵 𝘀𝗼𝗻𝗴 𝗶𝘀 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
@@ -42,9 +42,9 @@ async def show_current_playing_time(_, xemsg: xeromsg):
     utcnow = datetime.utcnow().replace(microsecond=0)
     if xeroclip.xeronoid_msngr.get('current') is not None:
         await xeroclip.xeronoid_msngr['current'].delete()
-    xeroclip.xeronoid_msngr['current'] = await xeronoid_music_list[0].reply_animation(
+    xeroclip.xeronoid_msngr['current'] = await playlist[0].reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {utcnow - start_time} {timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
+        caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {utcnow - start_time} {timedelta(seconds=playlist[0].audio.duration)}",
         disable_notification=True
         )
     await xeronoid_current_purge((xemsg), CURRENT_REMOVER)
