@@ -28,12 +28,12 @@ class XeronoidPlayer(xeroobj):
         self.client = None
         self.group_call = None
         self.chat_id = None
-        self.xeronoid_begin = None
+        self.start_time = None
         self.xeronoid_music_list = []
         self.xeronoid_msngr = {}
        
     async def xeronoid_begin_clock(self, reset=False):
-        self.xeronoid_begin = (
+        self.start_time = (
             None if reset
             else datetime.utcnow().replace(microsecond=0)) 
            
