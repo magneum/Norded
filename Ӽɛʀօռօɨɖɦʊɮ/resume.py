@@ -27,7 +27,7 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^!resume"))
 async def resume_playing(_, m: Message):
-    xep.group_call.resume_playout()
+    xep.xeronoid_voixe.resume_playout()
     reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} resumed",
                                quote=False)
     if xep.msg.get('pause') is not None:

@@ -31,8 +31,8 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^!end$"))
 async def stop_playing(_, m: Message):
-    group_call = xep.group_call
-    group_call.stop_playout()
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_voixe.stop_playout()
     reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
     await xep.update_start_time(reset=True)
     xep.playlist.clear()

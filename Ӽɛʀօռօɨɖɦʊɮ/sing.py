@@ -28,7 +28,7 @@ filters.group
 & xero_xemp_fils
 & (filters.regex("^(\\/|!)sing$") | filters.audio))
 async def play_track(client, m: Message):
-    group_call = xep.group_call
+    xeronoid_voixe = xep.xeronoid_voixe
     playlist = xep.playlist
     # check audio
     if m.audio:
@@ -67,7 +67,7 @@ async def play_track(client, m: Message):
             f"{emoji.INBOX_TRAY} downloading and transcoding..."
         )
         await download_audio(playlist[0])
-        group_call.input_filename = os.path.join(
+        xeronoid_voixe.input_filename = os.path.join(
             client.workdir,
             DEFAULT_DOWNLOAD_DIR,
             f"{playlist[0].audio.file_unique_id}.raw"

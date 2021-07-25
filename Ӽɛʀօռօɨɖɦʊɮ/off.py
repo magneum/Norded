@@ -27,8 +27,8 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^!leave$"))
 async def leave_voice_chat(_, m: Message):
-    group_call = xep.group_call
+    xeronoid_voixe = xep.xeronoid_voixe
     xep.playlist.clear()
-    group_call.input_filename = ''
-    await group_call.stop()
+    xeronoid_voixe.input_filename = ''
+    await xeronoid_voixe.stop()
     await m.delete()

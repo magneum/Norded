@@ -27,10 +27,10 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^!replay$"))
 async def restart_playing(_, m: Message):
-    group_call = xep.group_call
+    xeronoid_voixe = xep.xeronoid_voixe
     if not xep.playlist:
         return
-    group_call.restart_playout()
+    xeronoid_voixe.restart_playout()
     await xep.update_start_time()
     reply = await m.reply_text(
         f"{emoji.COUNTERCLOCKWISE_ARROWS_BUTTON}  "

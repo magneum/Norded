@@ -31,9 +31,9 @@ xero_basic_fils
 & xero_self_fils
 & filters.regex("^!check$"))
 async def list_voice_chat(client, m: Message):
-    group_call = xep.group_call
-    if group_call and group_call.is_connected:
-        chat_id = int("•100" + str(group_call.full_chat.id))
+    xeronoid_voixe = xep.xeronoid_voixe
+    if xeronoid_voixe and xeronoid_voixe.is_connected:
+        chat_id = int("•100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(chat_id)
         reply = await m.reply_text(
             f"{emoji.MUSICAL_NOTES} **currently in the voice chat**:\n"

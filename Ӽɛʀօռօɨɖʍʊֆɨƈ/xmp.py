@@ -22,7 +22,7 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 class XeronoidSinger(object):
     def __init__(self):
-        self.group_call = None
+        self.xeronoid_voixe = None
         self.client = None
         self.chat_id = None
         self.start_time = None
@@ -55,8 +55,8 @@ xep = XeronoidSinger()
 
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 async def xero_back_sender(text):
-    group_call = xep.group_call
-    client = group_call.client
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
     chat_id = xep.chat_id
     message = await client.send_message(
     chat_id,

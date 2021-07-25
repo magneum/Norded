@@ -27,7 +27,7 @@ xero_basic_fils
 & xero_xemp_fils
 & filters.regex("^!pause"))
 async def pause_playing(_, m: Message):
-    xep.group_call.pause_playout()
+    xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused",
                                quote=False)

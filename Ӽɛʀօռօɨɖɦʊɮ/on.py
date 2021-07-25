@@ -27,14 +27,14 @@ xero_basic_fils
 & xero_self_fils
 & filters.regex("^!on$"))
 async def join_group_call(client, m: Message):
-    group_call = xep.group_call
-    if not group_call:
-        xep.group_call = GroupCallFactory(client).get_file_group_call()
-        xep.group_call.add_handler(network_status_changed_handler,
+    xeronoid_voixe = xep.xeronoid_voixe
+    if not xeronoid_voixe:
+        xep.xeronoid_voixe = GroupCallFactory(client).get_file_group_call()
+        xep.xeronoid_voixe.add_handler(network_status_changed_handler,
                                   GroupCallFileAction.NETWORK_STATUS_CHANGED)
-        xep.group_call.add_handler(playout_ended_handler,
+        xep.xeronoid_voixe.add_handler(playout_ended_handler,
                                   GroupCallFileAction.PLAYOUT_ENDED)
-        await xep.group_call.start(m.chat.id)
+        await xep.xeronoid_voixe.start(m.chat.id)
         await m.delete()
-    if group_call and group_call.is_connected:
+    if xeronoid_voixe and xeronoid_voixe.is_connected:
         await m.reply_text(f"{emoji.ROBOT} already joined a voice chat")
