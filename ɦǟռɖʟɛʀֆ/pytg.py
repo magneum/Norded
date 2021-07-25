@@ -24,10 +24,9 @@ async def xeronoid_msg_sender(text):
     xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
     client = xeronoid_musical_xhat.client
     xeronoid_chatid = xeroclip.xeronoid_chatid
-    xero_send_msgnr = await client.send_animation(
+    xero_send_msgnr = await client.send_message(
     xeronoid_chatid,
     text,
-    animation=xerolink,
     disable_web_page_preview=False,
     disable_notification=False
     )
@@ -37,10 +36,9 @@ async def xeronoid_bot_msg_sender(text):
     xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
     client = xeronoid_musical_xhat.client
     xeronoid_chatid = LOGGER_ID
-    xero_send_msgnr = await client.send_animation(
+    xero_send_msgnr = await client.send_message(
     xeronoid_chatid,
     text,
-    animation=xerolink,
     disable_web_page_preview=False,
     disable_notification=False
     )
