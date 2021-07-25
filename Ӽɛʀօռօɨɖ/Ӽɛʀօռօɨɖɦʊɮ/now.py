@@ -13,30 +13,33 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import * 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 @Client.on_message(
 xero_basic_fils
-& xero_self_fils
-& filters.command("on", prefixes=DYNO_COMMANDK))
-async def join_group_call(client, m: Message):
-    xeronoid_voixe = xep.xeronoid_voixe
-    if not xeronoid_voixe:
-        xep.xeronoid_voixe = GroupCallFactory(client).get_file_group_call()
-        xep.xeronoid_voixe.add_handler(network_status_changed_handler,
-                                  GroupCallFileAction.NETWORK_STATUS_CHANGED)
-        xep.xeronoid_voixe.add_handler(playout_ended_handler,
-                                  GroupCallFileAction.PLAYOUT_ENDED)
-        await xep.xeronoid_voixe.start(m.chat.id)
-        await m.delete()
-    if xeronoid_voixe and xeronoid_voixe.is_connected:
-        await m.reply_text(f"{emoji.ROBOT} already joined a voice chat")
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+& xero_xemp_fils
+& filters.command("now", prefixes="!"))
+async def show_current_playing_time(_, m: Message):
+    xeronoid_clock = xep.xeronoid_clock
+    xeronoid_music_list = xep.xeronoid_music_list
+    if not xeronoid_clock:
+        reply = await m.reply_text(f"{emoji.PLAY_BUTTON} unknown")
+        await xeronoid_now_purge((reply, m), CLEAN_REMOVER)
+        return
+    utcnow = datetime.utcnow().replace(microsecond=0)
+    if xep.xemsg.get('current') is not None:
+        await xep.xemsg['current'].delete()
+    xep.xemsg['current'] = await xeronoid_music_list[0].reply_text(
+        f"{emoji.PLAY_BUTTON}  {utcnow - xeronoid_clock} / "
+        f"{timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
+        disable_notification=True
+    )
+    await m.delete()
+    

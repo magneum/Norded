@@ -1,5 +1,5 @@
 """⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|
+|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| 
                           GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
                             
@@ -11,17 +11,14 @@
                         Telegram Music player userbot 
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
+|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-
 
 
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
@@ -29,14 +26,15 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(_, m: Message):
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_voixe.stop_playout()
-    reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
-    await xep.update_start_time(reset=True)
-    xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
+& filters.command("resume", prefixes=DYNO_COMMANDK))
+async def resume_playing(_, m: Message):
+    xep.xeronoid_voixe.resume_playout()
+    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} resumed",
+                               quote=False)
+    if xep.xemsg.get('pause') is not None:
+        await xep.xemsg['pause'].delete()
+    await m.delete()
+    await xeronoid_resume_purge((reply,), CLEAN_REMOVER)
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
@@ -47,16 +45,18 @@ async def stop_playing(_, m: Message):
 xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(client, m: Message):
+& filters.command("resume", prefixes=DYNO_COMMANDK))
+async def pause_playing(client, m: Message):
+    xep.xeronoid_voixe.pause_playout()
+    await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_voixe.stop_playout()
+    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    chat = await client.get_chat(xeronoid_chat_verify)
     reply = await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has stopped playing"
+    caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
     )
-    await xep.update_start_time(reset=True)
-    xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
+    xep.xemsg['pause'] = reply
+    await m.delete()

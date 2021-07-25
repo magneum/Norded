@@ -15,9 +15,9 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
-from ɖօօʍ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 async def skip_current_playing():
@@ -34,7 +34,7 @@ async def skip_current_playing():
     download_dir,
     f"{xeronoid_music_list[1].audio.file_unique_id}.raw")
     await xep.update_start_time()
-    # remove old track from xeronoid_music_list
+    # remove old track from Ӽɛʀօռօɨɖ.xeronoid_music_list
     old_track = xeronoid_music_list.pop(0)
     print(f"• START PLAYING: {xeronoid_music_list[0].audio.title}")
     await xep.send_playlist()

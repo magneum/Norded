@@ -13,43 +13,33 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+from .xmp import xep
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖ_ɖʟƈֆ import *
 
 
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-
-@Client.on_message(
-xero_basic_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("next", prefixes="!"))
-async def skip_track(_, m: Message):
-    xeronoid_music_list = xep.xeronoid_music_list
-    if len(m.command) == 1:
-        await skip_current_playing()
+async def xero_back_sender(text):
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
+    xeronoid_chat_verify = xep.xeronoid_chat_verify
+    message = await client.send_message(
+    xeronoid_chat_verify,
+    text,
+    disable_web_page_preview=True,
+    disable_notification=True)
+    return message
+'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+async def network_status_changed_handler(context, is_connected: bool):
+    if is_connected:
+        xep.xeronoid_chat_verify = MAX_CHANNEL_ID - context.full_chat.id
+        await xero_back_sender(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
     else:
-        try:
-            items = list(dict.fromkeys(m.command[1:]))
-            items = [int(x) for x in items if x.isdigit()]
-            items.sort(reverse=True)
-            text = []
-            for i in items:
-                if 2 <= i <= (len(xeronoid_music_list) - 1):
-                    audio = f"[{xeronoid_music_list[i].audio.title}]({xeronoid_music_list[i].link})"
-                    xeronoid_music_list.pop(i)
-                    text.append(f"{emoji.WASTEBASKET} {i}. **{audio}**")
-                else:
-                    text.append(f"{emoji.CROSS_MARK} {i}")
-            reply = await m.reply_text(
-                "\n".join(text),
-                disable_web_page_preview=True
-            )
-            await xep.send_playlist()
-        except (ValueError, TypeError):
-            reply = await m.reply_text(f"{emoji.NO_ENTRY} invalid input",
-                                       disable_web_page_preview=True)
-        await xeronoid_next_purge((reply, m), CLEAN_REMOVER)
+        await xero_back_sender(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        xep.xeronoid_chat_verify = None
+
+
+async def playout_ended_handler(_, __):
+    await skip_current_playing()
+'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '

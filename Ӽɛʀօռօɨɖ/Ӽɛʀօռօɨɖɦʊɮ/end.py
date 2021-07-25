@@ -13,12 +13,32 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
+
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.command("end", prefixes=DYNO_COMMANDK))
+async def stop_playing(_, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_voixe.stop_playout()
+    reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
+    await xep.update_start_time(reset=True)
+    xep.xeronoid_music_list.clear()
+    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
@@ -27,15 +47,16 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("info", prefixes=DYNO_COMMANDK))
-async def show_help(client, m: Message):
-    if xep.xemsg.get('info') is not None:
-        await xep.xemsg['info'].delete()
-    xep.xemsg['info'] = await m.reply_text(XERO_HELP, quote=False)
-    await client.send_animation(
+& filters.command("end", prefixes=DYNO_COMMANDK))
+async def stop_playing(client, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_voixe.stop_playout()
+    reply = await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has called for showing help for xeronoid"
+    caption=f"{XEXO}The userbot has stopped playing"
     )
-    await xeronoid_info_purge((m), CLEAN_REMOVER)
+    await xep.update_start_time(reset=True)
+    xep.xeronoid_music_list.clear()
+    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)

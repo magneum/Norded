@@ -13,11 +13,11 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
+from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
@@ -27,13 +27,22 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("pause", prefixes=DYNO_COMMANDK))
-async def pause_playing(_, m: Message):
-    xep.xeronoid_voixe.pause_playout()
-    await xep.update_start_time(reset=True)
-    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused")
-    xep.xemsg['pause'] = reply
-    await m.delete()
+& filters.command("raw", prefixes=DYNO_COMMANDK))
+async def clean_raw_pcm(client, m: Message):
+    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
+    all_fn: list[str] = os.listdir(download_dir)
+    for track in xep.xeronoid_music_list[:2]:
+        track_fn = f"{track.audio.file_unique_id}.raw"
+        if track_fn in all_fn:
+            all_fn.remove(track_fn)
+    count = 0
+    if all_fn:
+        for fn in all_fn:
+            if fn.endswith(".raw"):
+                count += 1
+                os.remove(os.path.join(download_dir, fn))
+    reply = await m.reply_text(f"{emoji.WASTEBASKET} cleaned {count} files")
+    await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
@@ -44,18 +53,24 @@ async def pause_playing(_, m: Message):
 xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("pause", prefixes=DYNO_COMMANDK))
-async def pause_playing(client, m: Message):
-    xep.xeronoid_voixe.pause_playout()
-    await xep.update_start_time(reset=True)
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
-    chat = await client.get_chat(xeronoid_chat_verify)
+& filters.command("raw", prefixes=DYNO_COMMANDK))
+async def clean_raw_pcm(client, m: Message):
+    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
+    all_fn: list[str] = os.listdir(download_dir)
+    for track in xep.xeronoid_music_list[:2]:
+        track_fn = f"{track.audio.file_unique_id}.raw"
+        if track_fn in all_fn:
+            all_fn.remove(track_fn)
+    count = 0
+    if all_fn:
+        for fn in all_fn:
+            if fn.endswith(".raw"):
+                count += 1
+                os.remove(os.path.join(download_dir, fn))
     reply = await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
+    caption=f"{XEXO}Xeronoid has cleaned up server."
     )
-    xep.xemsg['pause'] = reply
-    await m.delete()
+    await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
