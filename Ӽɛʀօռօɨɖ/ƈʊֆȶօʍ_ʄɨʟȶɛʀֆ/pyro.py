@@ -52,15 +52,6 @@ or message.outgoing)
 
 
 
-
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
-xero_singer_fils = filters.create(
-filters.command("sing", prefixes=DYNO_COMMANDK) | filters.audio)
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
-
-
-
-
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 async def xero_xemp_fils(_, __, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
