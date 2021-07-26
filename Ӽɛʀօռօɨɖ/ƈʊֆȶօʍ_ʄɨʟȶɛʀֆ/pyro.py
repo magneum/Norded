@@ -20,22 +20,11 @@ from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import xep
 
 
 
-
 xero_basic_fils = (
 filters.group
-& filters.text
 & filters.chat(CHAT_ID)
 & ~filters.edited
-& ~filters.via_bot
-)
-
-
-
-xero_bot_fils = (
-filters.text
-& filters.via_bot
-)
-
+& ~filters.via_bot)
 
 
 xero_self_fils = filters.create(

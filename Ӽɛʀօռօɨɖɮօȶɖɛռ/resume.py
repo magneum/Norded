@@ -25,15 +25,14 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Ӽɛʀօռօɨɖ.on_message(
-xero_bot_fils
-& xero_self_fils
+xero_self_fils
 & xero_xemp_fils
 & filters.command("resume", prefixes=DYNO_COMMANDK))
 async def pause_playing(client, xeMsg: XeronoidMessageType):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
     chat = await client.get_chat(xeronoid_chat_verify)
     replybot = await xeMsg.reply_animation(
     animation=xerolink,

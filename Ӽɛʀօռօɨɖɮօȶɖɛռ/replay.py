@@ -24,8 +24,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Ӽɛʀօռօɨɖ.on_message(
-xero_bot_fils
-& xero_self_fils
+xero_self_fils
 & xero_xemp_fils
 & filters.command("replay", prefixes=DYNO_COMMANDK))
 async def restart_playing(client, xeMsg: XeronoidMessageType):

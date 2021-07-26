@@ -33,29 +33,3 @@ async def resume_playing(_, xeMsg: XeronoidMessageType):
     if xep.xemsg.get('pause') is not None:
         await xep.xemsg['pause'].delete()
     await xeMsg.delete()
-    
-    
-"Below code is for the XeronoidBot only and will be used for logging purposes also"
-@Ӽɛʀօռօɨɖ.on_message(
-xero_bot_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("resume", prefixes=DYNO_COMMANDK))
-async def pause_playing(client, xeMsg: XeronoidMessageType):
-    xep.xeronoid_voixe.pause_playout()
-    await xep.update_start_time(reset=True)
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
-    chat = await client.get_chat(xeronoid_chat_verify)
-    replybot = await xeMsg.reply_animation(
-    animation=xerolink,
-    caption=f"{XEXO}The Userbot has resumed Music in the voice chat."
-    )
-    reply = await client.send_animation(
-    animation=xerolink,
-    duration=10,
-    chat_id=LOGGER_ID,
-    caption=f"{XEXO}The Userbot has resumed Music in the voice chat of • **{chat.title}**"
-    )
-    xep.xemsg['pause'] = reply
-    await xeronoid_replay_purge((replybot, xeMsg), CLEAN_REMOVER)

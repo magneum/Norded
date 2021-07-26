@@ -31,7 +31,7 @@ xero_basic_fils
 async def stop_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
-    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
     chat = await client.get_chat(xeronoid_chat_verify)
     print(f"{XEXO}The userbot has been successfully stopped in **{chat.title}**. Any future propagation won't run untill manually asked")
     await xep.update_start_time(reset=True)

@@ -30,10 +30,8 @@ xero_basic_fils
 async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:
-        xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+        xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(xeronoid_chat_verify)
         cprint(f"Userbot is connected to **{chat.title}**", 'cyan')
-        pass
     else:
         cprint(f"Userbot is not connected to any group calls", 'red')
-        pass

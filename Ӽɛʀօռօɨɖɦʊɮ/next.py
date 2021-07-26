@@ -52,4 +52,4 @@ async def skip_track(_, xeMsg: XeronoidMessageType):
         except (ValueError, TypeError):
             reply = await xeMsg.reply_text(f"{emoji.NO_ENTRY} invalid input",
                                        disable_web_page_preview=True)
-        await xeronoid_next_purge((reply, xeMsg), CLEAN_REMOVER)
+        await xeronoid_next_purge((reply, xeMsg), SKIP_REMOVER)

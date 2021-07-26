@@ -31,7 +31,7 @@ async def show_current_playing_time(_, xeMsg: XeronoidMessageType):
     xeronoid_music_list = xep.xeronoid_music_list
     if not xeronoid_clock:
         reply = await xeMsg.reply_text(f"{emoji.PLAY_BUTTON} unknown")
-        await xeronoid_now_purge((reply, xeMsg), CLEAN_REMOVER)
+        await xeronoid_now_purge((reply, xeMsg), CURRENT_REMOVER)
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
     if xep.xemsg.get('current') is not None:
