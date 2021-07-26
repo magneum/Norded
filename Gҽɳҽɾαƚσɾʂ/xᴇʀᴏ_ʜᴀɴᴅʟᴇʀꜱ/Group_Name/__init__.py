@@ -15,43 +15,5 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from Gҽɳҽɾαƚσɾʂ.xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ.Group_Name import list_voice_chat_private
-from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
-from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
-from ʟɪʙʀᴀʀʏ import *
-from ʜᴏᴍᴇ import *
-
-
-@Client.on_message(
-filters.private
-& filters.command("group", prefixes="/"))
-async def list_voice_chat(client, m: Message):
-    if list_voice_chat_private is True:
-        await m.reply_chat_action("playing")
-        await client.send_animation(
-            animation=xerolink,
-            duration=10,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged"
-        )
-        group_info = await m.reply_animation(
-            animation=xerolink,
-            caption=f"{XEXO}Userbot is plugged in the voice chat"    
-        )
-        
-        
-    else:
-        await client.send_animation(
-            animation=xerolink,
-            duration=10,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged but uderbot is not plugged yet"
-        )
-        group_info = await m.reply_animation(
-            animation=xerolink,
-            caption=f"{XEXO}Userbot is not plugged in any voice chat yet")
-        
-    # delete help info in private chats to keep it clean no matter what 
-    await xeronoid_help_purge(
-        (group_info,m),
-        GROUP_REMOVER)
+from .check_group import *
+from .check_private import *

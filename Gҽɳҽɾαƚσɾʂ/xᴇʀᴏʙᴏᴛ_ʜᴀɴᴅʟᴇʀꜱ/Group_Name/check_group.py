@@ -15,6 +15,7 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
+from Gҽɳҽɾαƚσɾʂ.xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ.Group_Name import list_voice_chat_group
 from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
 from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
@@ -27,27 +28,19 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
-    group_call = mp.group_call
-    if group_call and group_call.is_connected:
-        
-        print(f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged ")
-        
+    if list_voice_chat_group is True:
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
             caption=f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged"
         )
-        
         group_info = await m.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}Userbot is plugged in the voice chat"    
         )
-        
-        
+       
     else:
-        print(f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged")
-        
         await client.send_animation(
             animation=xerolink,
             duration=10,
