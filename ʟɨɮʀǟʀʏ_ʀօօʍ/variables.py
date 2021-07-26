@@ -20,8 +20,8 @@ import os
 XERO = '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 MAX_MIN = 8
 MAX_HOUR = 3
-BORNS = dict(root="Ӽɛʀօռօɨɖɮօȶɖɛռ")
-HORNS = dict(root="Ӽɛʀօռօɨɖɦʊɮ")
+BORNS = dict(root="Ӽɛʀօռօɨɖɮօȶ__ɖɛռ")
+HORNS = dict(root="Ӽɛʀօռօɨɖ__ɦʊɮ")
 HEROKU = os.environ.get('HEROKU', None)
 xeroobj = object
 WHITE_COMMANDK = '/'
