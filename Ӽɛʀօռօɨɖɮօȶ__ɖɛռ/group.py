@@ -29,7 +29,7 @@ filters.command("group", prefixes=DYNO_COMMANDK))
 async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:
-        xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
+        xeronoid_chat_verify = CHAT_ID #int("-100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(xeronoid_chat_verify)
         replybot = await xeMsg.reply_animation(
         animation=xerolink,
