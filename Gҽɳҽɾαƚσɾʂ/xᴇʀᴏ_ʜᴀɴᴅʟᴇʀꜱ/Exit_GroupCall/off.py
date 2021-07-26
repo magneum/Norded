@@ -34,14 +34,11 @@ async def leave_voice_chat(client, m: Message):
     await group_call.stop()
     
     "Log this event using xeronoid userbot"
-    group_call = mp.group_call
-    chat_id = int("-100" + str(group_call.full_chat.id))
-    chat = await client.get_chat(chat_id)   
     await client.send_animation(
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}Xeronoid userbot has successfully left the voice chat of **{chat.title}**"
+        caption=f"{XEXO}Xeronoid userbot has successfully left the voice chat"
     )
     
     # Now just clean up the chat room and idle the code
