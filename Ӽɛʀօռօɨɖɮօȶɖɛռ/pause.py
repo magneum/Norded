@@ -24,7 +24,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-
 @Ӽɛʀօռօɨɖ.on_message(
 xero_bot_fils
 & xero_self_fils
@@ -34,8 +33,12 @@ async def pause_playing(client, xeMsg: XeronoidMessageType):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
     chat = await client.get_chat(xeronoid_chat_verify)
+    replybot = xeMsg.reply_animation(
+    animation=xerolink,
+    caption=f"{XEXO}The Userbot has paused itself in the voice chat and waiting for manual unpause"
+    )
     reply = await client.send_animation(
     animation=xerolink,
     duration=10,
@@ -43,4 +46,4 @@ async def pause_playing(client, xeMsg: XeronoidMessageType):
     caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
     )
     xep.xemsg['pause'] = reply
-    await xeMsg.delete()
+    await xeronoid_pause_purge((replybot, xeMsg), CLEAN_REMOVER)
