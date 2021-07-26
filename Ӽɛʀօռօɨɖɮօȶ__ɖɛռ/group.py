@@ -23,18 +23,33 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
+"|••••••••••••••••••        Below code is for the XeronoidBot only and will be used for logging purposes also       •••••••••••••••|"
 @Ӽɛʀօռօɨɖ.on_message(
-filters.chat(CHAT_ID)
-& ~filters.edited
-& ~filters.text
-& ~filters.via_bot
-& xero_self_fils
-& filters.command("check", prefixes=DYNO_COMMANDK))
+filters.command("group", prefixes=DYNO_COMMANDK))
 async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:
         xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(xeronoid_chat_verify)
-        cprint(f"Userbot is connected to **{chat.title}**", 'cyan')
+        replybot = await xeMsg.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
+        )
+        await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
+        )
     else:
-        cprint(f"Userbot is not connected to any group calls", 'red')
+        replybot = await xeMsg.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has not joined any voice chat yet"
+        )
+        await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}The userbot has not joined any voice chat yet"
+        )
+    await xeronoid_check_purge((replybot, xeMsg), GROUP_REMOVER)
