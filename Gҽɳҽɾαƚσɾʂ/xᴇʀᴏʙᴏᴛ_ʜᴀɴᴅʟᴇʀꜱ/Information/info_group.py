@@ -22,7 +22,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
-& filters.command("info", prefixes=["/"]))
+& filters.command("info", prefixes="/"))
 async def show_help(client, m: Message):
     await m.reply_chat_action("playing")
     print(f"{XEXO}Userbot has requested Xeronoidbot to show help in group chat")

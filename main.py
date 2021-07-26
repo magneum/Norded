@@ -92,28 +92,6 @@ async def clean_raw_pcm(client, m: Message):
 
 
 @Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!mute$"))
-async def mute(_, m: Message):
-    group_call = mp.group_call
-    group_call.set_is_mute(True)
-    reply = await m.reply_text(f"{emoji.MUTED_SPEAKER} muted")
-    await _delay_delete_messages((reply, m), DELETE_DELAY)
-
-
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!unmute$"))
-async def unmute(_, m: Message):
-    group_call = mp.group_call
-    group_call.set_is_mute(False)
-    reply = await m.reply_text(f"{emoji.SPEAKER_MEDIUM_VOLUME} unmuted")
-    await _delay_delete_messages((reply, m), DELETE_DELAY)
-
-
-@Client.on_message(main_filter
                    & current_vc
                    & filters.regex("^(\\/|!)repo$"))
 async def show_repository(_, m: Message):

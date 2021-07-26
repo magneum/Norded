@@ -28,7 +28,7 @@ from ʜᴏᴍᴇ import *
 main_filter
 & self_or_contact_filter
 & current_vc
-& filters.command("next", prefixes=["/"]))
+& filters.command("next", prefixes="/"))
 async def skip_track(_, m: Message):
     playlist = mp.playlist
     if len(m.command) == 1:

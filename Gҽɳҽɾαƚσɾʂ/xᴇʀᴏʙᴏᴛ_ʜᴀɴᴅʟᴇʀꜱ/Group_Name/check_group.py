@@ -25,7 +25,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
-& filters.command("group", prefixes=["/"]))
+& filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
     group_call = mp.group_call
     if group_call and group_call.is_connected:

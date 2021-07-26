@@ -27,7 +27,7 @@ from ʜᴏᴍᴇ import *
 @Client.on_message(
 main_filter
 & current_vc
-& filters.command("now", prefixes=["/"]))
+& filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, m: Message):
     start_time = mp.start_time
     playlist = mp.playlist

@@ -26,7 +26,7 @@ from ʜᴏᴍᴇ import *
 main_filter
 & self_or_contact_filter
 & current_vc
-& filters.command("off", prefixes=["/"]))
+& filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, m: Message):
     group_call = mp.group_call
     mp.playlist.clear()

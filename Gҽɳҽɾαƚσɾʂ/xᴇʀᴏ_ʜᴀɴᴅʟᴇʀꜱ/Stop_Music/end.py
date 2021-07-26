@@ -26,7 +26,7 @@ from ʜᴏᴍᴇ import *
 main_filter
 & self_or_contact_filter
 & current_vc
-& filters.command("end", prefixes=["/"]))
+& filters.command("end", prefixes="/"))
 async def stop_playing(client, m: Message):
     group_call = mp.group_call
     group_call.stop_playout()
