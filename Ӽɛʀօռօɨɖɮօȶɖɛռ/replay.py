@@ -23,7 +23,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-
 @Ӽɛʀօռօɨɖ.on_message(
 xero_bot_fils
 & xero_self_fils
@@ -31,14 +30,21 @@ xero_bot_fils
 & filters.command("replay", prefixes=DYNO_COMMANDK))
 async def restart_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_voixe.stop_playout()
+    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
+    chat = await client.get_chat(xeronoid_chat_verify)
     if not xep.xeronoid_music_list:
         return
     xeronoid_voixe.restart_playout()
     await xep.update_start_time()
-    reply = await client.send_animation(
+    replybot = xeMsg.reply_animation(
+    animation=xerolink,
+    caption=f"{XEXO}Xeronoid userbot is now playing from the beginning..."
+    )
+    await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}Xeronoid userbot is now playing from the beginning..."
+    caption=f"{XEXO}Xeronoid userbot is now playing from the beginning in **{chat.title}**"
     )
-    await xeronoid_replay_purge((reply, xeMsg), CLEAN_REMOVER)
+    await xeronoid_replay_purge((replybot, xeMsg), CLEAN_REMOVER)

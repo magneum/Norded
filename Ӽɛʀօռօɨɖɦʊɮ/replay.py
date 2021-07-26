@@ -28,38 +28,10 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("replay", prefixes=DYNO_COMMANDK))
-async def restart_playing(_, xeMsg: XeronoidMessageType):
-    xeronoid_voixe = xep.xeronoid_voixe
-    if not xep.xeronoid_music_list:
-        return
-    xeronoid_voixe.restart_playout()
-    await xep.update_start_time()
-    reply = await xeMsg.reply_text(
-        f"{emoji.COUNTERCLOCKWISE_ARROWS_BUTTON}  "
-        "playing from the beginning..."
-    )
-    await xeronoid_replay_purge((reply, xeMsg), CLEAN_REMOVER)
-
-
-
-
-"Below code is for the XeronoidBot only and will be used for logging purposes also"
-
-@Ӽɛʀօռօɨɖ.on_message(
-xero_bot_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("replay", prefixes=DYNO_COMMANDK))
 async def restart_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xep.xeronoid_music_list:
         return
     xeronoid_voixe.restart_playout()
     await xep.update_start_time()
-    reply = await client.send_animation(
-    animation=xerolink,
-    duration=10,
-    chat_id=LOGGER_ID,
-    caption=f"{XEXO}Xeronoid userbot is now playing from the beginning..."
-    )
-    await xeronoid_replay_purge((reply, xeMsg), CLEAN_REMOVER)
+    print(f"{XEXO}Xeronoid userbot is now playing from the beginning...")
