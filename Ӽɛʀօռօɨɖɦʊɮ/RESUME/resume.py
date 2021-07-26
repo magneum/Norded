@@ -13,10 +13,8 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɦǟռɖʟɛʀֆ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
@@ -29,15 +27,15 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("resume", prefixes="/"))
 async def resume_playing(client, xemsg: xeromsg):
-    xeroclip.xeronoid_musical_xhat.resume_playout()
+    xep.xeronoid_musical_xhat.resume_playout()
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝘀𝘂𝗺𝗲 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
     # xemsg.reply_text("Initiated xeronoid unpause sequence!")
     # xeronoid_throw = await xemsg.reply_animation(
     # animation=xerolink,
     # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nresumed"
     # )
-    if xeroclip.xeronoid_msngr.get('pause') is not None:
-        await xeroclip.xeronoid_msngr['pause'].delete()
+    if xep.xeronoid_msngr.get('pause') is not None:
+        await xep.xeronoid_msngr['pause'].delete()
         
         
     # await xeronoid_resume_purge((xeronoid_throw, xemsg), RESUME_REMOVER)

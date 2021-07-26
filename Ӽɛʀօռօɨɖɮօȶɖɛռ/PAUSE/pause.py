@@ -13,9 +13,8 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɦǟռɖʟɛʀֆ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
@@ -26,8 +25,8 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("pause", prefixes="/"))
 async def pause_playing(client, xemsg: xeromsg):
-    xeroclip.xeronoid_musical_xhat.pause_playout()
-    await xeroclip.xeronoid_begin_clock(reset=True)
+    xep.xeronoid_musical_xhat.pause_playout()
+    await xep.xeronoid_begin_clock(reset=True)
     await xemsg.reply_chat_action("record_audio")
     await client.send_animation(
     chat_id=LOGGER_ID,
@@ -41,7 +40,7 @@ async def pause_playing(client, xemsg: xeromsg):
     caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗮𝘂𝘀𝗲𝗱 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲𝗰𝗵𝗮𝘁",
     quote=False
     )
-    xeroclip.xeronoid_msngr['pause'] = xeronoid_throw
+    xep.xeronoid_msngr['pause'] = xeronoid_throw
     
     await xeronoid_pause_purge((xemsg, xemsg), PAUSE_REMOVER)
     

@@ -18,7 +18,7 @@
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from ɖօօʍ_ʀօօʍ import *
-from .xeroobj import xeroclip
+from Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import xep
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
@@ -54,7 +54,7 @@ xerofil.chat(CHAT_ID)
 
 '⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 async def xeronoid_chatcheck_cust_filter(_,__,xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
     if not (xeronoid_musical_xhat and xeronoid_musical_xhat.is_connected):
         return False
     xeronoid_chatid = int("-100" + str(xeronoid_musical_xhat.full_chat.id))

@@ -13,29 +13,5 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-
-@Ӽɛʀօռօɨɖ.on_message(
-xeronoid_master_filter
-& xeronoid_user_filter
-& xeronoid_chat_check
-& xerofil.command("replay", prefixes="/"))
-async def restart_playing(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    if not xep.xeronoid_music_list:
-        return
-    xeronoid_musical_xhat.restart_playout()
-    await xep.xeronoid_begin_clock()
-    cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid replay current music sequence!")
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nplaying from the beginning..."
-    # )
-    
-    # await xeronoid_replay_purge((xeronoid_throw, xemsg), REPLAY_REMOVER)
+from .pytg import *
+from .xmp import *

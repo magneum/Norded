@@ -1,5 +1,5 @@
 """⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| 
+|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|
                           GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
                             
@@ -11,53 +11,54 @@
                         Telegram Music player userbot 
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
+|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+
 from ɖօօʍ_ʀօօʍ import *
-from .xeroobj import xeroclip
+from Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 async def xeronoid_skip_music_handler():
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    xeronoid_music_list = xeroclip.xeronoid_music_list
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_music_list = xep.xeronoid_music_list
     if not xeronoid_music_list:
         return
     if len(xeronoid_music_list) == 1:
-        await xeroclip.xeronoid_begin_clock()
+        await xep.update_start_time()
         return
-    client = xeronoid_musical_xhat.client
+    client = xeronoid_voixe.client
     download_dir = os.path.join(client.workdir, xeronoid_dl_dir)
-    xeronoid_musical_xhat.input_filename = os.path.join(
-        download_dir,
-        f"{xeronoid_music_list[1].audio.file_unique_id}.raw"
-        )
-    await xeroclip.xeronoid_begin_clock()
+    xeronoid_voixe.input_filename = os.path.join(
+    download_dir,
+    f"{xeronoid_music_list[1].audio.file_unique_id}.raw")
+    await xep.update_start_time()
     old_track = xeronoid_music_list.pop(0)
-    print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	Ӽɛʀօռօɨɖ ռօա քʟǟʏɨռɢ: {xeronoid_music_list[0].audio.title}")
-    await xeroclip.xeronoid_show_playlist()
+    print(f"• START PLAYING: {xeronoid_music_list[0].audio.title}")
+    await xep.send_playlist()
     os.remove(os.path.join(
         download_dir,
         f"{old_track.audio.file_unique_id}.raw")
-        )
+    )
     if len(xeronoid_music_list) == 1:
         return
     await xeronoid_music_dl_handler(xeronoid_music_list[1])
-    
-    
-    
+
+
 async def xeronoid_music_dl_handler(xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    client = xeronoid_musical_xhat.client
-    raw_file = os.path.join(
-    client.workdir,
-    xeronoid_dl_dir,
-    f"{xemsg.audio.file_unique_id}.raw")
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
+    raw_file = os.path.join(client.workdir, xeronoid_dl_dir,
+                            f"{xemsg.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):
-        xeronoid_raw_media = await xemsg.download()
-        ffmpeg.input(xeronoid_raw_media).output(
-        raw_file,
-        format='s16le',acodec='pcm_s16le',ac=2,ar='48k',loglevel='debug'#'error'
+        original_file = await xemsg.download()
+        ffmpeg.input(original_file).output(
+            raw_file,
+            format='s16le',
+            acodec='pcm_s16le',
+            ac=2,
+            ar='48k',
+            loglevel='error'
         ).overwrite_output().run()
-        os.remove(xeronoid_raw_media)
+        os.remove(original_file)

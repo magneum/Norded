@@ -13,29 +13,57 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
-from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
-from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-@Ӽɛʀօռօɨɖ.on_message(
-xeronoid_master_filter
-& xeronoid_user_filter
-& xeronoid_chat_check
-& xerofil.command("replay", prefixes="/"))
-async def restart_playing(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    if not xep.xeronoid_music_list:
-        return
-    xeronoid_musical_xhat.restart_playout()
-    await xep.xeronoid_begin_clock()
-    cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid replay current music sequence!")
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nplaying from the beginning..."
-    # )
-    
-    # await xeronoid_replay_purge((xeronoid_throw, xemsg), REPLAY_REMOVER)
+
+
+class XeronoidSinger(object):
+    def __init__(self):
+        self.client = None
+        self.xeronoid_msngr = {}
+        self.xeronoid_begin = None
+        self.xeronoid_voixe = None
+        self.xeronoid_chatid = None 
+        self.xeronoid_musical_xhat = []
+              
+                
+        
+    async def xeronoid_begin_clock(self, reset=False):
+        self.xeronoid_begin = (None if reset else datetime.utcnow().replace(microsecond=0))
+        
+                
+    async def xeronoid_show_playlist(self):
+        xeronoid_musical_xhat = self.xeronoid_musical_xhat
+        if not xeronoid_musical_xhat:
+            pl = f"empty xeronoid_musical_xhat"
+        else:
+            if len(xeronoid_musical_xhat) == 1:
+                pl = f" **Playlist**:\n"
+            else:
+                pl = f" **Playlist**:\n"
+            pl += "\n".join([
+                f"**{i}**. **[{x.audio.title}]({x.link})**"
+                for i, x in enumerate(xeronoid_musical_xhat)])
+        if xep.xeronoid_msngr.get('xeronoid_musical_xhat') is not None:
+            await xep.xeronoid_msngr['xeronoid_musical_xhat'].delete()
+        xep.xeronoid_msngr['xeronoid_musical_xhat'] = await xero_back_sender(pl)
+        
+        
+xep = XeronoidSinger()
+
+
+
+
+
+
+async def xero_back_sender(text):
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
+    xeronoid_chatid = xep.xeronoid_chatid
+    message = await client.send_message(
+    xeronoid_chatid,
+    text,
+    disable_web_page_preview=True,
+    disable_notification=True)
+    return message

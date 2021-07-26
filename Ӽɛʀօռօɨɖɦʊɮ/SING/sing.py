@@ -13,8 +13,8 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɦǟռɖʟɛʀֆ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
@@ -26,8 +26,8 @@ xerofil.group
 & xeronoid_chat_check
 & xerofil.command("play") | xerofil.audio)
 async def play_track(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
-    xeronoid_music_list = xeroclip.xeronoid_music_list
+    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
+    xeronoid_music_list = xep.xeronoid_music_list
     if xemsg.audio:
         if xemsg.audio.duration > (MAX_MIN * 60):
             cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝘂𝘁 𝗮𝘂𝗱𝗶𝗼 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗻𝗼𝘁 𝗺𝗲𝘁', 'yellow', attrs=['reverse'])
@@ -49,7 +49,7 @@ async def play_track(client, xemsg: xeromsg):
             await delay_play_messages((xeronoid_throw,), PLAY_REMOVER)
             return
     else:
-        await xeroclip.xeronoid_show_playlist()
+        await xep.xeronoid_show_playlist()
         await xemsg.delete()
         return
     if xeronoid_music_list and xeronoid_music_list[-1].audio.file_unique_id \
@@ -73,10 +73,10 @@ async def play_track(client, xemsg: xeromsg):
             xeronoid_dl_dir,
             f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
             )
-        await xeroclip.xeronoid_begin_clock()
+        await xep.xeronoid_begin_clock()
         await m_status.delete()
         print(f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴: {xeronoid_music_list[0].audio.title}" + f"\n𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 `{CHAT_ID}'s` 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩'")
-    await xeroclip.xeronoid_show_playlist()
+    await xep.xeronoid_show_playlist()
     for track in xeronoid_music_list[:2]:
         await xeronoid_music_dl_handler(track)
     if not xemsg.audio:

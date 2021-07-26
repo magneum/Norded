@@ -13,9 +13,8 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
-from ɦǟռɖʟɛʀֆ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
@@ -26,14 +25,14 @@ xeronoid_master_filter
 & xeronoid_user_filter
 & xerofil.command("on", prefixes="/"))
 async def join_group_call(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xeroclip.xeronoid_musical_xhat
+    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
     if not xeronoid_musical_xhat:
-        xeroclip.xeronoid_musical_xhat = gcfact(client).get_file_group_call()
-        xeroclip.xeronoid_musical_xhat.add_handler(network_status_changed_handler,
+        xep.xeronoid_musical_xhat = gcfact(client).get_file_group_call()
+        xep.xeronoid_musical_xhat.add_handler(network_status_changed_handler,
                                   xeronoid_gcf.NETWORK_STATUS_CHANGED)
-        xeroclip.xeronoid_musical_xhat.add_handler(xeronoid_music_over_handler,
+        xep.xeronoid_musical_xhat.add_handler(xeronoid_music_over_handler,
                                   xeronoid_gcf.PLAYOUT_ENDED)
-        await xeroclip.xeronoid_musical_xhat.start(xemsg.chat.id)
+        await xep.xeronoid_musical_xhat.start(xemsg.chat.id)
         await xemsg.delete()
     if xeronoid_musical_xhat and xeronoid_musical_xhat.is_connected:
         cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
