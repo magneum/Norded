@@ -18,11 +18,11 @@ from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
 from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
@@ -43,12 +43,12 @@ async def clean_raw_pcm(client, m: Message):
                 os.remove(os.path.join(download_dir, fn))
     reply = await m.reply_text(f"{emoji.WASTEBASKET} cleaned {count} files")
     await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 @Client.on_message(
 xero_bot_fils
 & xero_self_fils

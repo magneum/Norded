@@ -18,10 +18,10 @@ from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
 from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
@@ -35,12 +35,12 @@ async def resume_playing(_, m: Message):
         await xep.xemsg['pause'].delete()
     await m.delete()
     await xeronoid_resume_purge((reply,), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 @Client.on_message(
 xero_bot_fils
 & xero_self_fils

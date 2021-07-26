@@ -18,11 +18,11 @@ from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
 from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
@@ -39,12 +39,12 @@ async def restart_playing(_, m: Message):
         "playing from the beginning..."
     )
     await xeronoid_replay_purge((reply, m), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 @Client.on_message(
 xero_bot_fils
 & xero_self_fils

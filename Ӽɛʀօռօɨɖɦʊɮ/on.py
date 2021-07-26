@@ -18,11 +18,11 @@ from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
 from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
@@ -39,4 +39,3 @@ async def join_group_call(client, m: Message):
         await m.delete()
     if xeronoid_voixe and xeronoid_voixe.is_connected:
         await m.reply_text(f"{emoji.ROBOT} already joined a voice chat")
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'

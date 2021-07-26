@@ -16,7 +16,7 @@
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
 from .check import *
 from .end import *
 from .info import *
@@ -29,4 +29,3 @@ from .raw import *
 from .replay import *
 from .resume import *
 from .sing import *
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
