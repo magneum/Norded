@@ -31,9 +31,6 @@ filters.group
 
 
 
-
-
-
 xero_bot_fils = (
 filters.text
 & filters.via_bot
@@ -41,14 +38,10 @@ filters.text
 
 
 
-
-
-
 xero_self_fils = filters.create(
 lambda _, __, message:
 (message.from_user and message.from_user.is_contact)
 or message.outgoing)
-
 
 
 

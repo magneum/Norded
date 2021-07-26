@@ -27,7 +27,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & filters.command("on", prefixes=DYNO_COMMANDK))
-async def join_group_call(client, m: Message):
+async def join_group_call(client, xeMsg: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xeronoid_voixe:
         xep.xeronoid_voixe = GroupCallFactory(client).get_file_group_call()
@@ -35,7 +35,7 @@ async def join_group_call(client, m: Message):
                                   GroupCallFileAction.NETWORK_STATUS_CHANGED)
         xep.xeronoid_voixe.add_handler(playout_ended_handler,
                                   GroupCallFileAction.PLAYOUT_ENDED)
-        await xep.xeronoid_voixe.start(m.chat.id)
-        await m.delete()
+        await xep.xeronoid_voixe.start(xeMsg.chat.id)
+        await xeMsg.delete()
     if xeronoid_voixe and xeronoid_voixe.is_connected:
-        await m.reply_text(f"{emoji.ROBOT} already joined a voice chat")
+        await xeMsg.reply_text(f"{emoji.ROBOT} already joined a voice chat")

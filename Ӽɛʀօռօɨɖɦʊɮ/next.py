@@ -27,13 +27,13 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("next", prefixes="!"))
-async def skip_track(_, m: Message):
+async def skip_track(_, xeMsg: Message):
     xeronoid_music_list = xep.xeronoid_music_list
-    if len(m.command) == 1:
+    if len(xeMsg.command) == 1:
         await skip_current_playing()
     else:
         try:
-            items = list(dict.fromkeys(m.command[1:]))
+            items = list(dict.fromkeys(xeMsg.command[1:]))
             items = [int(x) for x in items if x.isdigit()]
             items.sort(reverse=True)
             text = []
@@ -44,12 +44,12 @@ async def skip_track(_, m: Message):
                     text.append(f"{emoji.WASTEBASKET} {i}. **{audio}**")
                 else:
                     text.append(f"{emoji.CROSS_MARK} {i}")
-            reply = await m.reply_text(
+            reply = await xeMsg.reply_text(
                 "\n".join(text),
                 disable_web_page_preview=True
             )
             await xep.send_playlist()
         except (ValueError, TypeError):
-            reply = await m.reply_text(f"{emoji.NO_ENTRY} invalid input",
+            reply = await xeMsg.reply_text(f"{emoji.NO_ENTRY} invalid input",
                                        disable_web_page_preview=True)
-        await xeronoid_next_purge((reply, m), CLEAN_REMOVER)
+        await xeronoid_next_purge((reply, xeMsg), CLEAN_REMOVER)

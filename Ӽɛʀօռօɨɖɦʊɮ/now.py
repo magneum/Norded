@@ -26,12 +26,12 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_xemp_fils
 & filters.command("now", prefixes="!"))
-async def show_current_playing_time(_, m: Message):
+async def show_current_playing_time(_, xeMsg: Message):
     xeronoid_clock = xep.xeronoid_clock
     xeronoid_music_list = xep.xeronoid_music_list
     if not xeronoid_clock:
-        reply = await m.reply_text(f"{emoji.PLAY_BUTTON} unknown")
-        await xeronoid_now_purge((reply, m), CLEAN_REMOVER)
+        reply = await xeMsg.reply_text(f"{emoji.PLAY_BUTTON} unknown")
+        await xeronoid_now_purge((reply, xeMsg), CLEAN_REMOVER)
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
     if xep.xemsg.get('current') is not None:
@@ -41,5 +41,5 @@ async def show_current_playing_time(_, m: Message):
         f"{timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
         disable_notification=True
     )
-    await m.delete()
+    await xeMsg.delete()
     

@@ -28,24 +28,24 @@ filters.group
 & ~filters.edited
 & xero_xemp_fils
 & filters.command("sing", prefixes=DYNO_COMMANDK) | filters.audio)
-async def play_track(client, m: Message):
+async def play_track(client, xeMsg: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_music_list = xep.xeronoid_music_list
     # check audio
-    if m.audio:
-        if m.audio.duration > (MAX_MIN * 60):
-            reply = await m.reply_text(
+    if xeMsg.audio:
+        if xeMsg.audio.duration > (MAX_MIN * 60):
+            reply = await xeMsg.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(MAX_MIN)} min won't be automatically "
                 "added to xeronoid_music_list"
             )
             await delay_sing_messages((reply,), CLEAN_REMOVER)
             return
-        m_audio = m
-    elif m.reply_to_message and m.reply_to_message.audio:
-        m_audio = m.reply_to_message
+        m_audio = xeMsg
+    elif xeMsg.reply_to_message and xeMsg.reply_to_message.audio:
+        m_audio = xeMsg.reply_to_message
         if m_audio.audio.duration > (MAX_HOUR * 60 * 60):
-            reply = await m.reply_text(
+            reply = await xeMsg.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(MAX_HOUR)} hours won't be added to xeronoid_music_list"
             )
@@ -53,18 +53,18 @@ async def play_track(client, m: Message):
             return
     else:
         await xep.send_playlist()
-        await m.delete()
+        await xeMsg.delete()
         return
     # check already added
     if xeronoid_music_list and xeronoid_music_list[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
-        reply = await m.reply_text(f"{emoji.ROBOT} already added")
-        await delay_sing_messages((reply, m), CLEAN_REMOVER)
+        reply = await xeMsg.reply_text(f"{emoji.ROBOT} already added")
+        await delay_sing_messages((reply, xeMsg), CLEAN_REMOVER)
         return
     # add to xeronoid_music_list
     xeronoid_music_list.append(m_audio)
     if len(xeronoid_music_list) == 1:
-        m_status = await m.reply_text(
+        m_status = await xeMsg.reply_text(
             f"{emoji.INBOX_TRAY} downloading and transcoding..."
         )
         await download_audio(xeronoid_music_list[0])
@@ -79,5 +79,5 @@ async def play_track(client, m: Message):
     await xep.send_playlist()
     for track in xeronoid_music_list[:2]:
         await download_audio(track)
-    if not m.audio:
-        await m.delete()
+    if not xeMsg.audio:
+        await xeMsg.delete()

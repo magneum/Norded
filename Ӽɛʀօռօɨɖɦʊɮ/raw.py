@@ -28,7 +28,7 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("raw", prefixes=DYNO_COMMANDK))
-async def clean_raw_pcm(client, m: Message):
+async def clean_raw_pcm(client, xeMsg: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
     for track in xep.xeronoid_music_list[:2]:
@@ -41,8 +41,8 @@ async def clean_raw_pcm(client, m: Message):
             if fn.endswith(".raw"):
                 count += 1
                 os.remove(os.path.join(download_dir, fn))
-    reply = await m.reply_text(f"{emoji.WASTEBASKET} cleaned {count} files")
-    await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
+    reply = await xeMsg.reply_text(f"{emoji.WASTEBASKET} cleaned {count} files")
+    await xeronoid_raw_purge((reply, xeMsg), CLEAN_REMOVER)
 
 
 
@@ -54,7 +54,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("raw", prefixes=DYNO_COMMANDK))
-async def clean_raw_pcm(client, m: Message):
+async def clean_raw_pcm(client, xeMsg: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
     for track in xep.xeronoid_music_list[:2]:
@@ -73,4 +73,4 @@ async def clean_raw_pcm(client, m: Message):
     chat_id=LOGGER_ID,
     caption=f"{XEXO}Xeronoid has cleaned up server."
     )
-    await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
+    await xeronoid_raw_purge((reply, xeMsg), CLEAN_REMOVER)
