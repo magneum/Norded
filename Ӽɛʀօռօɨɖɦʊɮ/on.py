@@ -27,7 +27,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & filters.command("on", prefixes=DYNO_COMMANDK))
-async def join_group_call(client, xeMsg: Message):
+async def join_group_call(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xeronoid_voixe:
         xep.xeronoid_voixe = GroupCallFactory(client).get_file_group_call()

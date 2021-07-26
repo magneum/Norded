@@ -27,7 +27,7 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("next", prefixes="!"))
-async def skip_track(_, xeMsg: Message):
+async def skip_track(_, xeMsg: XeronoidMessageType):
     xeronoid_music_list = xep.xeronoid_music_list
     if len(xeMsg.command) == 1:
         await skip_current_playing()

@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & xero_xemp_fils
 & filters.command("sing", prefixes=DYNO_COMMANDK) | filters.audio)
-async def play_track(client, xeMsg: Message):
+async def play_track(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_music_list = xep.xeronoid_music_list
     # check audio

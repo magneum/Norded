@@ -28,7 +28,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("info", prefixes=DYNO_COMMANDK))
-async def show_help(client, xeMsg: Message):
+async def show_help(client, xeMsg: XeronoidMessageType):
     if xep.xemsg.get('info') is not None:
         await xep.xemsg['info'].delete()
     xep.xemsg['info'] = await xeMsg.reply_text(XERO_HELP, quote=False)

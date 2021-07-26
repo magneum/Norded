@@ -47,13 +47,13 @@ async def skip_current_playing():
     await download_audio(xeronoid_music_list[1])
 
 
-async def download_audio(m: Message):
+async def download_audio(xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     client = xeronoid_voixe.client
     raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
-                            f"{m.audio.file_unique_id}.raw")
+                            f"{xeMsg.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):
-        original_file = await m.download()
+        original_file = await xeMsg.download()
         ffmpeg.input(original_file).output(
             raw_file,
             format='s16le',

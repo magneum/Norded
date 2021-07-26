@@ -28,7 +28,7 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("raw", prefixes=DYNO_COMMANDK))
-async def clean_raw_pcm(client, xeMsg: Message):
+async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
     for track in xep.xeronoid_music_list[:2]:
@@ -54,7 +54,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("raw", prefixes=DYNO_COMMANDK))
-async def clean_raw_pcm(client, xeMsg: Message):
+async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
     for track in xep.xeronoid_music_list[:2]:

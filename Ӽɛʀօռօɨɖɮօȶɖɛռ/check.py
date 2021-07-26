@@ -28,7 +28,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_bot_fils
 & xero_self_fils
 & filters.command("check", prefixes=DYNO_COMMANDK))
-async def list_voice_chat(client, xeMsg: Message):
+async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:
         xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))

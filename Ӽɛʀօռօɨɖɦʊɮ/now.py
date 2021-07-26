@@ -26,7 +26,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_xemp_fils
 & filters.command("now", prefixes="!"))
-async def show_current_playing_time(_, xeMsg: Message):
+async def show_current_playing_time(_, xeMsg: XeronoidMessageType):
     xeronoid_clock = xep.xeronoid_clock
     xeronoid_music_list = xep.xeronoid_music_list
     if not xeronoid_clock:

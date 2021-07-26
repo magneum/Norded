@@ -28,7 +28,7 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("pause", prefixes=DYNO_COMMANDK))
-async def pause_playing(_, xeMsg: Message):
+async def pause_playing(_, xeMsg: XeronoidMessageType):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     reply = await xeMsg.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused")
@@ -45,7 +45,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("pause", prefixes=DYNO_COMMANDK))
-async def pause_playing(client, xeMsg: Message):
+async def pause_playing(client, xeMsg: XeronoidMessageType):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe

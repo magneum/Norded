@@ -33,7 +33,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(client, xeMsg: Message):
+async def stop_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
     reply = await client.send_animation(

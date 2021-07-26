@@ -46,12 +46,12 @@ or message.outgoing)
 
 
 
-async def xero_xemp_fils(_, __, m: Message):
+async def xero_xemp_fils(_, __, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if not (xeronoid_voixe and xeronoid_voixe.is_connected):
         return False
     xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
-    if m.chat.id == xeronoid_chat_verify:
+    if xeMsg.chat.id == xeronoid_chat_verify:
         return True
     return False
 xero_xemp_fils = filters.create(xero_xemp_fils)

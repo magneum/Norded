@@ -28,7 +28,7 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("replay", prefixes=DYNO_COMMANDK))
-async def restart_playing(_, xeMsg: Message):
+async def restart_playing(_, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xep.xeronoid_music_list:
         return
@@ -50,7 +50,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("replay", prefixes=DYNO_COMMANDK))
-async def restart_playing(client, xeMsg: Message):
+async def restart_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xep.xeronoid_music_list:
         return
