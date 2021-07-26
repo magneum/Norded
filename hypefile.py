@@ -26,7 +26,7 @@ try:
     cprint(f'{platform.upper()}','green')
     os.system("pip install -U pip;pip install -r Ӽɛʀօռօɨɖ.txt")
     os.system("clear")
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    subprocess.run("python3 -m Ӽɛʀօռօɨɖɮօȶ & python3 -m Ӽɛʀօռօɨɖ",
     shell=True)
 except Exception as Opps:
     print(Opps)
