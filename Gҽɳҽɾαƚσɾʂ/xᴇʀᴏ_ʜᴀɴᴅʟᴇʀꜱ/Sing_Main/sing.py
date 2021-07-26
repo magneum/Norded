@@ -37,10 +37,9 @@ async def play_track(client, m: Message):
     "Check Wherether audio duration matches with the specified time mentioned in the code"
     if m.audio:
         if m.audio.duration > (MAX_MIN * 60):
-            reply = await m.reply_text(
-                f"audio which duration longer than "
-                f"{str(MAX_MIN)} min won't be automatically "
-                "added to playlist"
+            reply = await m.reply_animation(
+                animation=xerolink,
+                caption=f"{XEXO}Audio which duration longer than {str(MAX_MIN)} min won't be automatically added to playlist"
             )
             await xeronoid_sing_purge(
                 (reply,),
@@ -50,9 +49,9 @@ async def play_track(client, m: Message):
     elif m.reply_to_message and m.reply_to_message.audio:
         m_audio = m.reply_to_message
         if m_audio.audio.duration > (MAX_HOUR * 60 * 60):
-            reply = await m.reply_text(
-                f"audio which duration longer than "
-                f"{str(MAX_HOUR)} hours won't be added to playlist"
+            reply = await m.reply_animation(
+                animation=xerolink,
+                caption=f"{XEXO}Audio which duration longer than {str(MAX_HOUR)} hours won't be added to playlist"
             )
             await xeronoid_sing_purge(
                 (reply,),
@@ -70,7 +69,9 @@ async def play_track(client, m: Message):
     "Check Wherether audio is already added in the playlist or not"
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
-        reply = await m.reply_text(f"already added")
+        reply = await m.reply_animation(
+            animation=xerolink,
+            caption=f"{XEXO} That music is already added to the xeronoid playlist")
         await xeronoid_sing_purge(
             (reply,),
             PLAY_REMOVER)
@@ -82,10 +83,21 @@ async def play_track(client, m: Message):
     "Download the raw audio file and send to the server and return"
     playlist.append(m_audio)
     if len(playlist) == 1:
-        m_status = await m.reply_text(
-            f"{emoji.INBOX_TRAY} downloading and transcoding..."
+        m_status = await client.send_animation(
+            animation=xerolink,
+            duration=10,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}Music has been sent to the server...\nPlease wait"
+        )
+        
+        
+        m_status = await m.reply_animation(
+            animation=xerolink,
+            caption=f"{XEXO}Please wait for xeronoid to link with userbot's server...\nGreater audio size, more time to add to server"
         )
         await download_audio(playlist[0])
+        
+        
         group_call.input_filename = os.path.join(
             client.workdir,
             DEFAULT_DOWNLOAD_DIR,
@@ -94,12 +106,15 @@ async def play_track(client, m: Message):
         await mp.update_start_time()
         await m_status.delete()
         
+        
+        
+        
         "Log the audio being transcoded and played in the group..."
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}- START PLAYING: {playlist[0].audio.title}"
+            caption=f"{XEXO} Xeronoid userbot has started playing:\n{playlist[0].audio.title}"
         )
         # Only userbot is going to log this event. So we need not to worry about Xeronoidbot
         
