@@ -19,7 +19,6 @@
 
 from .check import *
 from .end import *
-from .info import *
 from .next import *
 from .now import *
 from .off import *

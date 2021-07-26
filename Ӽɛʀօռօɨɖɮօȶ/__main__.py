@@ -21,6 +21,7 @@ session_name="🦋Ӽɛʀօռօɨɖɮօȶ🦋",
 api_id=API_ID,
 api_hash=API_HASH,
 plugins=HORNS,
+bot_token=BOT_TOKEN,
 workers=22)
 
 
