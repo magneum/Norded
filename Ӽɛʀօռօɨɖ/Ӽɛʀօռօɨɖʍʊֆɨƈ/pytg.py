@@ -30,7 +30,7 @@ async def xero_back_sender(text):
     disable_web_page_preview=True,
     disable_notification=True)
     return message
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         xep.xeronoid_chat_verify = MAX_CHANNEL_ID - context.full_chat.id
@@ -42,4 +42,3 @@ async def network_status_changed_handler(context, is_connected: bool):
 
 async def playout_ended_handler(_, __):
     await skip_current_playing()
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '

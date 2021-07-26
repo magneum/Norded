@@ -19,7 +19,7 @@ from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 class XeronoidSinger(object):
     def __init__(self):
         self.xemsg = {}
@@ -54,12 +54,12 @@ class XeronoidSinger(object):
         
         
 xep = XeronoidSinger()
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
+
 async def xero_back_sender(text):
     xeronoid_voixe = xep.xeronoid_voixe
     client = xeronoid_voixe.client
@@ -70,4 +70,3 @@ async def xero_back_sender(text):
     disable_web_page_preview=True,
     disable_notification=True)
     return message
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
