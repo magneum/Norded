@@ -20,7 +20,7 @@ from .variables import XEXO, WHITE_COMMANDK, DYNO_COMMANDK
 
 
 
-XERO_HELP = f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n
+XERO_HELP = f"""{XEXO}\n
 𝗠𝗲𝗺𝗯𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
 - {WHITE_COMMANDK}sing : ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
 - {WHITE_COMMANDK}sing : ᴀʟꜱᴏ ᴜꜱᴇᴅ ᴛᴏ ᴄʜᴇᴄᴋ ᴘʟᴀʏʟɪꜱᴛ
