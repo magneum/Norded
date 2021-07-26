@@ -24,6 +24,7 @@ xero_basic_fils = (
 filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
+& ~filters.text
 & ~filters.via_bot)
 
 
