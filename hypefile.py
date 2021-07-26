@@ -24,7 +24,7 @@ XEXO = "一═••÷デ[ 🦋 Ӽɛʀօռօɨɖ 🦋 ]デ÷••═一 \nby �
 print(f"{XEXO}")
 print("The bot is going to run in"  +   platform.upper())
 
-HEROKU = os.environ.get('HEROKU').upper()
+HEROKU = os.environ.get('HEROKU')
 if HEROKU == 'HEROKU':
     # When HEROKU, req will be met before this point
     subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
