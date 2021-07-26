@@ -27,6 +27,6 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("end", prefixes="/"))
 async def stop_playing(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    xeronoid_musical_xhat.stop_playout()
+    group_call = xep.group_call
+    group_call.stop_playout()
     cprint('🎧 𝐔𝐬𝐞𝐫 𝐚𝐬𝐤𝐞𝐝 𝐟𝐨𝐫 𝐬𝐭𝐨𝐩𝐩𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭', 'yellow', attrs=['reverse'])

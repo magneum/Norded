@@ -28,6 +28,6 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("pause", prefixes="/"))
 async def pause_playing(client, xemsg: xeromsg):
-    xep.xeronoid_musical_xhat.pause_playout()
+    xep.group_call.pause_playout()
     await xep.xeronoid_begin_clock(reset=True)
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗮𝘂𝘀𝗲 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])

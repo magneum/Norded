@@ -25,10 +25,10 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("replay", prefixes="/"))
 async def restart_playing(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    if not xep.xeronoid_music_list:
+    group_call = xep.group_call
+    if not xep.group_call:
         return
-    xeronoid_musical_xhat.restart_playout()
+    group_call.restart_playout()
     await xep.xeronoid_begin_clock()
     await xemsg.reply_chat_action("playing")
     await client.send_animation(

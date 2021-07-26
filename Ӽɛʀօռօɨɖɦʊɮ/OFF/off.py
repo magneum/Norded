@@ -28,10 +28,10 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("off", prefixes="/"))
 async def leave_voice_chat(_, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    xep.xeronoid_music_list.clear()
-    xeronoid_musical_xhat.input_filename = ''
-    await xeronoid_musical_xhat.stop()
+    group_call = xep.group_call
+    xep.group_call.clear()
+    group_call.input_filename = ''
+    await group_call.stop()
 
     await xeronoid_leave_purge((xemsg, xemsg), LEAVE_REMOVER)
     

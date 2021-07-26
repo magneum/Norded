@@ -24,9 +24,9 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 xerofil.private  
 & xerofil.command("group", prefixes="/"))
 async def list_voice_chat(client, xemsg: xeromsg):
-    xeronoid_musical_xhat = xep.xeronoid_musical_xhat
-    if xeronoid_musical_xhat and xeronoid_musical_xhat.is_connected:
-        xeronoid_chatid = int("-100" + str(xeronoid_musical_xhat.full_chat.id))
+    group_call = xep.group_call
+    if group_call and group_call.is_connected:
+        xeronoid_chatid = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(xeronoid_chatid)
         await xemsg.reply_chat_action("upload_document")
         await client.send_animation(

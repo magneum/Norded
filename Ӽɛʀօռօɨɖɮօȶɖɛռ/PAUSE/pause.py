@@ -25,7 +25,7 @@ xeronoid_bot_master_filter
 & xerofil.chat(CHAT_ID)
 & xerofil.command("pause", prefixes="/"))
 async def pause_playing(client, xemsg: xeromsg):
-    xep.xeronoid_musical_xhat.pause_playout()
+    xep.group_call.pause_playout()
     await xep.xeronoid_begin_clock(reset=True)
     await xemsg.reply_chat_action("record_audio")
     await client.send_animation(
@@ -40,7 +40,7 @@ async def pause_playing(client, xemsg: xeromsg):
     caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗮𝘂𝘀𝗲𝗱 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲𝗰𝗵𝗮𝘁",
     quote=False
     )
-    xep.xeronoid_msngr['pause'] = xeronoid_throw
+    xep.msg['pause'] = xeronoid_throw
     
     await xeronoid_pause_purge((xemsg, xemsg), PAUSE_REMOVER)
     

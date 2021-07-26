@@ -29,7 +29,7 @@ xeronoid_master_filter
 & xeronoid_chat_check
 & xerofil.command("resume", prefixes="/"))
 async def resume_playing(client, xemsg: xeromsg):
-    xep.xeronoid_musical_xhat.resume_playout()
+    xep.group_call.resume_playout()
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝘀𝘂𝗺𝗲 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    if xep.xeronoid_msngr.get('pause') is not None:
-        await xep.xeronoid_msngr['pause'].delete()
+    if xep.msg.get('pause') is not None:
+        await xep.msg['pause'].delete()

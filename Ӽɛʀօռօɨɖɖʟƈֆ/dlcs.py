@@ -21,34 +21,33 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
 async def xeronoid_skip_music_handler():
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_music_list = xep.xeronoid_music_list
-    if not xeronoid_music_list:
+    group_call = xep.group_call
+    if not group_call:
         return
-    if len(xeronoid_music_list) == 1:
+    if len(group_call) == 1:
         await xep.update_start_time()
         return
-    client = xeronoid_voixe.client
+    client = group_call.client
     download_dir = os.path.join(client.workdir, xeronoid_dl_dir)
-    xeronoid_voixe.input_filename = os.path.join(
+    group_call.input_filename = os.path.join(
     download_dir,
-    f"{xeronoid_music_list[1].audio.file_unique_id}.raw")
+    f"{group_call[1].audio.file_unique_id}.raw")
     await xep.update_start_time()
-    old_track = xeronoid_music_list.pop(0)
-    print(f"• START PLAYING: {xeronoid_music_list[0].audio.title}")
+    old_track = group_call.pop(0)
+    print(f"• START PLAYING: {group_call[0].audio.title}")
     await xep.send_playlist()
     os.remove(os.path.join(
         download_dir,
         f"{old_track.audio.file_unique_id}.raw")
     )
-    if len(xeronoid_music_list) == 1:
+    if len(group_call) == 1:
         return
-    await xeronoid_music_dl_handler(xeronoid_music_list[1])
+    await xeronoid_music_dl_handler(group_call[1])
 
 
 async def xeronoid_music_dl_handler(xemsg: xeromsg):
-    xeronoid_voixe = xep.xeronoid_voixe
-    client = xeronoid_voixe.client
+    group_call = xep.group_call
+    client = group_call.client
     raw_file = os.path.join(client.workdir, xeronoid_dl_dir,
                             f"{xemsg.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):

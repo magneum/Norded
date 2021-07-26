@@ -39,9 +39,9 @@ async def show_current_playing_time(_, xemsg: xeromsg):
         await xeronoid_current_purge((xeronoid_throw, xemsg), CURRENT_REMOVER)
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
-    if xep.xeronoid_msngr.get('current') is not None:
-        await xep.xeronoid_msngr['current'].delete()
-    xep.xeronoid_msngr['current'] = await xeronoid_music_list[0].reply_animation(
+    if xep.msg.get('current') is not None:
+        await xep.msg['current'].delete()
+    xep.msg['current'] = await xeronoid_music_list[0].reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n🎧 {utcnow - xeronoid_begin} {timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
         disable_notification=True

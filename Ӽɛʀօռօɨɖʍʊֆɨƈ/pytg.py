@@ -22,8 +22,8 @@ from Ӽɛʀօռօɨɖɖʟƈֆ import *
 
 
 async def xeronoid_msg_sender(text):
-    xeronoid_voixe = xep.xeronoid_voixe
-    client = xeronoid_voixe.client
+    group_call = xep.group_call
+    client = group_call.client
     xeronoid_chat_verify = xep.xeronoid_chat_verify
     message = await client.send_message(
     xeronoid_chat_verify,
