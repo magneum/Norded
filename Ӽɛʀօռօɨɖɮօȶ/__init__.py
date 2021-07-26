@@ -1,5 +1,5 @@
 """⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
-|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|
+|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| 
                           GNU GENERAL PUBLIC LICENSE
                             Version 3, 29 June 2007
                             
@@ -11,24 +11,65 @@
                         Telegram Music player userbot 
                 has been licensed under GNU General Public License
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
+|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+
+
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 from ɖօօʍ_ʀօօʍ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+if debuger_or_not == "NO":
+    cprint('Using Basic Info mode for LOGGER', 'green')
+    class InterceptHandler(logging.Handler):
+        LEVELS_MAP = {
+            logging.CRITICAL: "CRITICAL",
+            logging.ERROR: "ERROR",
+            logging.WARNING: "WARNING",
+            logging.INFO: "INFO",
+            logging.DEBUG: "DEBUG"}
+        def _get_level(self, record):
+            return self.LEVELS_MAP.get(record.levelno, record.levelno)
+        def emit(self, record):
+            logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
+            logger_opt.log(self._get_level(record), record.getMessage())
+    logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
+    LOGGER = logging.getLogger(__name__)
+elif debuger_or_not == "YES":
+    cprint('Using default Info mode for LOGGER', 'green')
+    class InterceptHandler(logging.Handler):
+        LEVELS_MAP = {
+            logging.CRITICAL: "CRITICAL",
+            logging.ERROR: "ERROR",
+            logging.WARNING: "WARNING",
+            logging.INFO: "INFO",
+            logging.DEBUG: "DEBUG"}
+        def _get_level(self, record):
+            return self.LEVELS_MAP.get(record.levelno, record.levelno)
+        def emit(self, record):
+            logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
+            logger_opt.log(self._get_level(record), record.getMessage())
+    logging.basicConfig(handlers=[InterceptHandler()], level=logging.DEBUG)
+    LOGGER = logging.getLogger(__name__)
+else:
+    cprint('Using default Info mode for LOGGER', 'green')
+    class InterceptHandler(logging.Handler):
+        LEVELS_MAP = {
+            logging.CRITICAL: "CRITICAL",
+            logging.ERROR: "ERROR",
+            logging.WARNING: "WARNING",
+            logging.INFO: "INFO",
+            logging.DEBUG: "DEBUG"}
+        def _get_level(self, record):
+            return self.LEVELS_MAP.get(record.levelno, record.levelno)
+        def emit(self, record):
+            logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
+            logger_opt.log(self._get_level(record), record.getMessage())
+    logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
+    LOGGER = logging.getLogger(__name__)
+    
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
