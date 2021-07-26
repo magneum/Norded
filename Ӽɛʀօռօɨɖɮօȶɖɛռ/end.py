@@ -33,7 +33,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(client, m: Message):
+async def stop_playing(client, xeMsg: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
     reply = await client.send_animation(
@@ -44,4 +44,4 @@ async def stop_playing(client, m: Message):
     )
     await xep.update_start_time(reset=True)
     xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
+    await xeronoid_end_purge((reply, xeMsg), CLEAN_REMOVER)

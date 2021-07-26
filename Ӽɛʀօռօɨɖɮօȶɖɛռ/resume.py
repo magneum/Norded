@@ -30,7 +30,7 @@ xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("resume", prefixes=DYNO_COMMANDK))
-async def pause_playing(client, m: Message):
+async def pause_playing(client, xeMsg: Message):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe
@@ -43,4 +43,4 @@ async def pause_playing(client, m: Message):
     caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
     )
     xep.xemsg['pause'] = reply
-    await m.delete()
+    await xeMsg.delete()
