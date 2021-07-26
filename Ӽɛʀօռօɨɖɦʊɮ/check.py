@@ -15,18 +15,32 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+
+
 
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-from .check import *
-from .end import *
-from .info import *
-from .next import *
-from .now import *
-from .off import *
-from .on import *
-from .pause import *
-from .raw import *
-from .replay import *
-from .resume import *
-from .sing import *
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& filters.regex("^!check$"))
+async def list_voice_chat(client, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    if xeronoid_voixe and xeronoid_voixe.is_connected:
+        xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+        chat = await client.get_chat(xeronoid_chat_verify)
+        reply = await m.reply_text(
+            f"{emoji.MUSICAL_NOTES} **currently in the voice chat**:\n"
+            f"• **{chat.title}**"
+        )
+    else:
+        reply = await m.reply_text(emoji.NO_ENTRY
+                                   + "didn't join any voice chat yet")
+    await xeronoid_check_purge((reply, m), CLEAN_REMOVER)
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'

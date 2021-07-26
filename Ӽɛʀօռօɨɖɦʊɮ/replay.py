@@ -14,4 +14,26 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from .delay_delete import *
+
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!replay$"))
+async def restart_playing(_, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    if not xep.xeronoid_music_list:
+        return
+    xeronoid_voixe.restart_playout()
+    await xep.update_start_time()
+    reply = await m.reply_text(
+        f"{emoji.COUNTERCLOCKWISE_ARROWS_BUTTON}  "
+        "playing from the beginning..."
+    )
+    await xeronoid_replay_purge((reply, m), CLEAN_REMOVER)

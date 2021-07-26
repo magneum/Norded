@@ -14,4 +14,31 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from .delay_delete import *
+
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import * 
+
+
+@Client.on_message(
+xero_basic_fils
+& xero_xemp_fils
+& filters.regex("^(\\/|!)now$"))
+async def show_current_playing_time(_, m: Message):
+    xeronoid_clock = xep.xeronoid_clock
+    xeronoid_music_list = xep.xeronoid_music_list
+    if not xeronoid_clock:
+        reply = await m.reply_text(f"{emoji.PLAY_BUTTON} unknown")
+        await xeronoid_now_purge((reply, m), CLEAN_REMOVER)
+        return
+    utcnow = datetime.utcnow().replace(microsecond=0)
+    if xep.xemsg.get('current') is not None:
+        await xep.xemsg['current'].delete()
+    xep.xemsg['current'] = await xeronoid_music_list[0].reply_text(
+        f"{emoji.PLAY_BUTTON}  {utcnow - xeronoid_clock} / "
+        f"{timedelta(seconds=xeronoid_music_list[0].audio.duration)}",
+        disable_notification=True
+    )
+    await m.delete()

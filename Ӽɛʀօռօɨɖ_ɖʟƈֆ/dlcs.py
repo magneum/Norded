@@ -13,22 +13,53 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+
+
 from ɖօօʍ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 
+async def skip_current_playing():
+    xeronoid_voixe = xep.xeronoid_voixe
+    xeronoid_music_list = xep.xeronoid_music_list
+    if not xeronoid_music_list:
+        return
+    if len(xeronoid_music_list) == 1:
+        await xep.update_start_time()
+        return
+    client = xeronoid_voixe.client
+    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
+    xeronoid_voixe.input_filename = os.path.join(
+    download_dir,
+    f"{xeronoid_music_list[1].audio.file_unique_id}.raw")
+    await xep.update_start_time()
+    # remove old track from xeronoid_music_list
+    old_track = xeronoid_music_list.pop(0)
+    print(f"• START PLAYING: {xeronoid_music_list[0].audio.title}")
+    await xep.send_playlist()
+    os.remove(os.path.join(
+        download_dir,
+        f"{old_track.audio.file_unique_id}.raw")
+    )
+    if len(xeronoid_music_list) == 1:
+        return
+    await download_audio(xeronoid_music_list[1])
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+async def download_audio(m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
+    raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
+                            f"{m.audio.file_unique_id}.raw")
+    if not os.path.isfile(raw_file):
+        original_file = await m.download()
+        ffmpeg.input(original_file).output(
+            raw_file,
+            format='s16le',
+            acodec='pcm_s16le',
+            ac=2,
+            ar='48k',
+            loglevel='error'
+        ).overwrite_output().run()
+        os.remove(original_file)

@@ -14,4 +14,27 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from .delay_delete import *
+
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+
+
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& filters.regex("^!on$"))
+async def join_group_call(client, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    if not xeronoid_voixe:
+        xep.xeronoid_voixe = GroupCallFactory(client).get_file_group_call()
+        xep.xeronoid_voixe.add_handler(network_status_changed_handler,
+                                  GroupCallFileAction.NETWORK_STATUS_CHANGED)
+        xep.xeronoid_voixe.add_handler(playout_ended_handler,
+                                  GroupCallFileAction.PLAYOUT_ENDED)
+        await xep.xeronoid_voixe.start(m.chat.id)
+        await m.delete()
+    if xeronoid_voixe and xeronoid_voixe.is_connected:
+        await m.reply_text(f"{emoji.ROBOT} already joined a voice chat")

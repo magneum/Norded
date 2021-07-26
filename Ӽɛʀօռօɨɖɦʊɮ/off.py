@@ -14,4 +14,21 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from .delay_delete import *
+
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!leave$"))
+async def leave_voice_chat(_, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    xep.xeronoid_music_list.clear()
+    xeronoid_voixe.input_filename = ''
+    await xeronoid_voixe.stop()
+    await m.delete()

@@ -14,4 +14,22 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
-from .delay_delete import *
+
+from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
+
+@Client.on_message(
+xero_basic_fils
+& xero_self_fils
+& xero_xemp_fils
+& filters.regex("^!pause"))
+async def pause_playing(_, m: Message):
+    xep.xeronoid_voixe.pause_playout()
+    await xep.update_start_time(reset=True)
+    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} paused",
+                               quote=False)
+    xep.xemsg['pause'] = reply
+    await m.delete()

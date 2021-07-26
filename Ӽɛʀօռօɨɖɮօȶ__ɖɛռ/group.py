@@ -14,21 +14,47 @@
 |••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+
+"|••••••••••••••••••        Below code is for the XeronoidBot only and will be used for logging purposes also       •••••••••••••••|"
+@Client.on_message(
+filters.command("group", prefixes=DYNO_COMMANDK))
+async def list_voice_chat(client, m: Message):
+    xeronoid_voixe = xep.xeronoid_voixe
+    if xeronoid_voixe and xeronoid_voixe.is_connected:
+        xeronoid_chat_verify =int("-100" + str(xeronoid_voixe.full_chat.id))
+        chat = await client.get_chat(xeronoid_chat_verify)
+
+        await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
+        )
+        
+        replybot = await m.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
+        )
+
+    else:
+        await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}The userbot has not joined any voice chat yet"
+        )
+        
+        replybot = await m.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has not joined any voice chat yet"
+        )
+
+    await xeronoid_check_purge((replybot, m), GROUP_REMOVER)

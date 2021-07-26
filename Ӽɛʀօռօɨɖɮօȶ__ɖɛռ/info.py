@@ -14,21 +14,30 @@
 |••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 from ɖօօʍ_ʀօօʍ import *
+from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
+from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+"Below code is for the XeronoidBot only and will be used for logging purposes also"
+@Client.on_message(
+filters.command("info", prefixes=DYNO_COMMANDK))
+async def show_help(client, m: Message):
+    await m.reply_chat_action("typing")
+    await client.send_animation(
+    animation=xerolink,
+    duration=10,
+    chat_id=LOGGER_ID,
+    caption=f"{XEXO}The userbot has been called for showing help for xeronoid"
+    )
+    
+    
+    xep.m['cmd'] = replybot = await m.reply_animation(
+    animation=xerolink,
+    caption=XERO_HELP
+    )
+    
+    
+    await xeronoid_help_purge((replybot, m), HELP_REMOVER)
