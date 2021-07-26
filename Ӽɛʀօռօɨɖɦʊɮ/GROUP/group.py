@@ -27,8 +27,8 @@ xeronoid_master_filter
 async def list_voice_chat(client, xemsg: xeromsg):
     group_call = xep.group_call
     if group_call and group_call.is_connected:
-        xeronoid_chatid = int("-100" + str(group_call.full_chat.id))
-        chat = await client.get_chat(xeronoid_chatid)
+        chat_id = int("-100" + str(group_call.full_chat.id))
+        chat = await client.get_chat(chat_id)
         await client.send_animation(
         chat_id=LOGGER_ID,
         animation=xerolink,

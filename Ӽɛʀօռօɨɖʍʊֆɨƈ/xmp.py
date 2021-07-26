@@ -23,7 +23,7 @@ class XeronoidSinger(object):
     def __init__(self):
         self.group_call = None
         self.client = None
-        self.xeronoid_chatid = None 
+        self.chat_id = None 
         self.xeronoid_begin = None
         self.playlist_temp = []
         self.msg = {}
@@ -33,7 +33,7 @@ class XeronoidSinger(object):
         self.xeronoid_begin = (None if reset else datetime.utcnow().replace(microsecond=0))
         
                 
-    async def xeronoid_show_playlist(self):
+    async def xeronoid_show_playlist(self, text):
         playlist_temp = self.playlist_temp
         if not playlist_temp:
             pl = f"empty playlist_temp"
@@ -57,7 +57,7 @@ xep = XeronoidSinger()
 async def xero_back_sender(text):
     group_call = xep.group_call
     client = group_call.client
-    chat_id = xep.xeronoid_chatid
+    chat_id = xep.chat_id
     message = await client.send_message(
         chat_id,
         text,
