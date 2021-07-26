@@ -71,7 +71,7 @@ async def play_track(client, xemsg: xeromsg):
         xeronoid_musical_xhat.input_filename = os.path.join(
             client.workdir,
             xeronoid_dl_dir,
-            caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
+            f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n🎧 {xeronoid_music_list[0].audio.file_unique_id}.raw"
             )
         await xeroclip.xeronoid_begin_clock()
         await m_status.delete()
