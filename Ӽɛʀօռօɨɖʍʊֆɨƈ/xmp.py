@@ -54,16 +54,14 @@ xep = XeronoidSinger()
 
 
 
-
-
-
 async def xero_back_sender(text):
     group_call = xep.group_call
     client = group_call.client
-    xeronoid_chatid = xep.xeronoid_chatid
+    chat_id = xep.xeronoid_chatid
     message = await client.send_message(
-    text,
-    chat_id=xeronoid_chatid,
-    disable_web_page_preview=True,
-    disable_notification=True)
+        chat_id,
+        text,
+        disable_web_page_preview=True,
+        disable_notification=True
+    )
     return message
