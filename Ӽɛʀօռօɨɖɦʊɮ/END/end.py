@@ -18,7 +18,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝    ••••••••|••••••••    ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 
 
 @Ӽɛʀօռօɨɖ.on_message(
@@ -30,12 +30,3 @@ async def stop_playing(client, xemsg: xeromsg):
     xeronoid_musical_xhat = xep.xeronoid_musical_xhat
     xeronoid_musical_xhat.stop_playout()
     cprint('🎧 𝐔𝐬𝐞𝐫 𝐚𝐬𝐤𝐞𝐝 𝐟𝐨𝐫 𝐬𝐭𝐨𝐩𝐩𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid music ender!")
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n stopped playing"
-    # )
-    # await xep.xeronoid_begin_clock(reset=True)
-    # xep.xeronoid_music_list.clear()
-    
-    # await xeronoid_stop_purge((xeronoid_throw, xemsg), STOP_REMOVER)

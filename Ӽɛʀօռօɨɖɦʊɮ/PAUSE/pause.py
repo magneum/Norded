@@ -18,7 +18,9 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝    ••••••••|••••••••    ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
 
 @Ӽɛʀօռօɨɖ.on_message(
 xeronoid_master_filter
@@ -29,13 +31,3 @@ async def pause_playing(client, xemsg: xeromsg):
     xep.xeronoid_musical_xhat.pause_playout()
     await xep.xeronoid_begin_clock(reset=True)
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗽𝗮𝘂𝘀𝗲 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid pause sequence!")
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\npaused",
-    # quote=False
-    # )
-    # xep.xeronoid_msngr['pause'] = xeronoid_throw
-    
-    # await xeronoid_pause_purge((xemsg, xemsg), PAUSE_REMOVER)
-    

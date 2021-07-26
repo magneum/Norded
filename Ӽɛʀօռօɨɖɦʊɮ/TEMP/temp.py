@@ -18,7 +18,8 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝    ••••••••|••••••••    ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
 
 
 @Ӽɛʀօռօɨɖ.on_message(
@@ -40,11 +41,3 @@ async def clean_raw_pcm(client, xemsg: xeromsg):
                 count += 1
                 os.remove(os.path.join(download_dir, fn))
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗰𝗹𝗲𝗮𝗻 𝘁𝗵𝗲 𝗿𝗮𝘄 𝗳𝗶𝗹𝗲𝘀 𝗼𝗳 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid master sequence!")            
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n
-    # 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 {count} 𝙧𝙖𝙬 𝙛𝙞𝙡𝙚𝙨    
-    # """)
-    
-    # await xeronoid_throw_purge((xeronoid_throw, xemsg), CLEAN_REMOVER)

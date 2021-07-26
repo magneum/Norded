@@ -18,7 +18,9 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 from ɖօօʍ_ʀօօʍ import *
 from ǟʊȶօ_քʊʀɢɛʀ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+'⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝    ••••••••|••••••••    ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
+
+
 
 @Ӽɛʀօռօɨɖ.on_message(
 xeronoid_master_filter
@@ -32,10 +34,3 @@ async def restart_playing(client, xemsg: xeromsg):
     xeronoid_musical_xhat.restart_playout()
     await xep.xeronoid_begin_clock()
     cprint('🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝘁𝗼 𝗿𝗲𝗽𝗹𝗮𝘆 𝗮𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝗯𝗼𝘁', 'yellow', attrs=['reverse'])
-    # xemsg.reply_text("Initiated xeronoid replay current music sequence!")
-    # xeronoid_throw = await xemsg.reply_animation(
-    # animation=xerolink,
-    # caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\nplaying from the beginning..."
-    # )
-    
-    # await xeronoid_replay_purge((xeronoid_throw, xemsg), REPLAY_REMOVER)
