@@ -39,7 +39,7 @@ async def play_track(client, xeMsg: XeronoidMessageType):
                 f"{str(MAX_MIN)} min won't be automatically "
                 "added to xeronoid_music_list"
             )
-            await delay_sing_messages((reply,), CLEAN_REMOVER)
+            await delay_sing_messages((reply,), PLAY_REMOVER)
             return
         m_audio = xeMsg
     elif xeMsg.reply_to_message and xeMsg.reply_to_message.audio:
@@ -49,7 +49,7 @@ async def play_track(client, xeMsg: XeronoidMessageType):
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(MAX_HOUR)} hours won't be added to xeronoid_music_list"
             )
-            await delay_sing_messages((reply,), CLEAN_REMOVER)
+            await delay_sing_messages((reply,), PLAY_REMOVER)
             return
     else:
         await xep.send_playlist()
@@ -59,7 +59,7 @@ async def play_track(client, xeMsg: XeronoidMessageType):
     if xeronoid_music_list and xeronoid_music_list[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
         reply = await xeMsg.reply_text(f"{emoji.ROBOT} already added")
-        await delay_sing_messages((reply, xeMsg), CLEAN_REMOVER)
+        await delay_sing_messages((reply, xeMsg), PLAY_REMOVER)
         return
     # add to xeronoid_music_list
     xeronoid_music_list.append(m_audio)
