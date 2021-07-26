@@ -15,6 +15,6 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 from pyrogram import Client, filters, emoji,idle
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
-from pyrogram.types import Message
+from pyrogram.types import Message as XeronoidMessageType
 from pyrogram.utils import MAX_CHANNEL_ID
 
