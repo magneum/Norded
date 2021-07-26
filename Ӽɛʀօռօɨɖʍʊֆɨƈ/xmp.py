@@ -21,13 +21,13 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 class XeronoidSinger(object):
     def __init__(self):
-        self.client = None
-        self.xeronoid_msngr = {}
-        self.xeronoid_begin = None
         self.xeronoid_voixe = None
+        self.client = None
         self.xeronoid_chatid = None 
+        self.xeronoid_begin = None
         self.xeronoid_musical_xhat = []
-              
+        self.xeronoid_msngr = {}
+   
                 
         
     async def xeronoid_begin_clock(self, reset=False):
