@@ -15,22 +15,51 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import mp
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
+
+async def skip_current_playing():
+    group_call = mp.group_call
+    playlist = mp.playlist
+    if not playlist:
+        return
+    if len(playlist) == 1:
+        await mp.update_start_time()
+        return
+    client = group_call.client
+    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
+    group_call.input_filename = os.path.join(
+        download_dir,
+        f"{playlist[1].audio.file_unique_id}.raw"
+    )
+    await mp.update_start_time()
+    # remove old track from playlist
+    old_track = playlist.pop(0)
+    print(f"- START PLAYING: {playlist[0].audio.title}")
+    await mp.send_playlist()
+    os.remove(os.path.join(
+        download_dir,
+        f"{old_track.audio.file_unique_id}.raw")
+    )
+    if len(playlist) == 1:
+        return
+    await download_audio(playlist[1])
 
 
-
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+async def download_audio(m: Message):
+    group_call = mp.group_call
+    client = group_call.client
+    raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
+                            f"{m.audio.file_unique_id}.raw")
+    if not os.path.isfile(raw_file):
+        original_file = await m.download()
+        ffmpeg.input(original_file).output(
+            raw_file,
+            format='s16le',
+            acodec='pcm_s16le',
+            ac=2,
+            ar='48k',
+            loglevel='error'
+        ).overwrite_output().run()
+        os.remove(original_file)

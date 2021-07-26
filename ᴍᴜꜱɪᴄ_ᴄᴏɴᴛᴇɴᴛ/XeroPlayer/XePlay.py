@@ -15,22 +15,52 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
+
+class MusicPlayer(object):
+    def __init__(self):
+        self.group_call = None
+        self.client = None
+        self.chat_id = None
+        self.start_time = None
+        self.playlist = []
+        self.msg = {}
+
+    async def update_start_time(self, reset=False):
+        self.start_time = (
+            None if reset
+            else datetime.utcnow().replace(microsecond=0)
+        )
+
+    async def send_playlist(self):
+        playlist = self.playlist
+        if not playlist:
+            pl = f"{emoji.NO_ENTRY} empty playlist"
+        else:
+            if len(playlist) == 1:
+                pl = f"{emoji.REPEAT_SINGLE_BUTTON} **Playlist**:\n"
+            else:
+                pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
+            pl += "\n".join([
+                f"**{i}**. **[{x.audio.title}]({x.link})**"
+                for i, x in enumerate(playlist)
+            ])
+        if mp.msg.get('playlist') is not None:
+            await mp.msg['playlist'].delete()
+        mp.msg['playlist'] = await send_text(pl)
 
 
+mp = MusicPlayer()
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+async def send_text(text):
+    group_call = mp.group_call
+    client = group_call.client
+    chat_id = mp.chat_id
+    message = await client.send_message(
+        chat_id,
+        text,
+        disable_web_page_preview=True,
+        disable_notification=True
+    )
+    return message

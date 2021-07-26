@@ -15,22 +15,50 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+@Client.on_message(
+main_filter
+& self_or_contact_filter
+& current_vc
+& filters.command("next", prefixes=["/"]))
+async def skip_track(_, m: Message):
+    playlist = mp.playlist
+    if len(m.command) == 1:
+        await skip_current_playing()
+    else:
+        try:
+            items = list(dict.fromkeys(m.command[1:]))
+            items = [int(x) for x in items if x.isdigit()]
+            items.sort(reverse=True)
+            text = []
+            for i in items:
+                if 2 <= i <= (len(playlist) - 1):
+                    audio = f"[{playlist[i].audio.title}]({playlist[i].link})"
+                    playlist.pop(i)
+                    text.append(f"{i}. **{audio}**")
+                else:
+                    text.append(f"{i}")
+            reply = await m.reply_text(
+                "\n".join(text),
+                disable_web_page_preview=True
+            )
+            await mp.send_playlist()
+        except (ValueError, TypeError):
+            reply = await m.reply_animation(
+                animation=xerolink,
+                caption=f"{XEXO}Recived Wrong Input.Try Properly",
+                disable_web_page_preview=True
+                )
+            
+            
+        await xeronoid_next_purge(
+            (reply, m),
+            SKIP_REMOVER)

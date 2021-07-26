@@ -15,22 +15,41 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+@Client.on_message(
+main_filter
+& current_vc
+& filters.command("now", prefixes=["/"]))
+async def show_current_playing_time(_, m: Message):
+    start_time = mp.start_time
+    playlist = mp.playlist
+    if not start_time:
+        empty = await m.reply_animation(
+            animation=xerolink,
+            captions=f"{XEXO}No Song is in xeronoid music server yet"
+        )
+        await xeronoid_now_purge(
+            (empty, m),
+            CURRENT_REMOVER)
+        return
+    
+
+    
+    if mp.msg.get('now') is not None:
+        await mp.msg['now'].delete()
+        
+        
+    mp.msg['now'] = await playlist[0].reply_text(
+        f"{utcnow - start_time} / {timedelta(seconds=playlist[0].audio.duration)}",
+        disable_notification=True
+    )
+    
+    await m.delete()

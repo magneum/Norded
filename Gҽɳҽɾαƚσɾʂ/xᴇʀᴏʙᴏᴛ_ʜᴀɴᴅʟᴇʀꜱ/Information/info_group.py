@@ -15,22 +15,30 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
-
-
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+@Client.on_message(
+filters.group
+& filters.command("info", prefixes=["/"]))
+async def show_help(client, m: Message):
+    await m.reply_chat_action("playing")
+    print(f"{XEXO}Userbot has requested Xeronoidbot to show help in group chat")
+    
+    mp.msg['info'] = await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}Userbot has requested Xeronoidbot to show help in group chat"
+    )
+ 
+    group_info = await m.reply_animation(
+        xerolink,
+        caption=XERO_HELP
+    ) 
+    # delete help info in group chats to keep it clean no matter what 
+    await xeronoid_help_purge(
+        (group_info,m),
+        HELP_REMOVER)

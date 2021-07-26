@@ -15,22 +15,50 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
 
-
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+@Client.on_message(
+main_filter
+& self_or_contact_filter
+& filters.command("on", prefixes=["/"]))
+async def join_group_call(client, m: Message):
+    group_call = mp.group_call
+    if not group_call:
+        mp.group_call = GroupCallFactory(client).get_file_group_call()
+        mp.group_call.add_handler(
+        network_status_changed_handler,
+        GroupCallFileAction.NETWORK_STATUS_CHANGED)
+        mp.group_call.add_handler(
+        playout_ended_handler,
+        GroupCallFileAction.PLAYOUT_ENDED)
+        await mp.group_call.start(m.chat.id)
+        await m.delete()
+        
+        
+        
+        
+    if group_call and group_call.is_connected:
+        "First Log this event using the userbot"
+        group_call = mp.group_call
+        chat_id = int("-100" + str(group_call.full_chat.id))
+        chat = await client.get_chat(chat_id)        
+        await client.send_animation(
+            animation=xerolink,
+            duration=10,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}Userbot has already joined group voice chat in **{chat.title}**"
+        )
+        
+        
+        "Now Send the joined info to the requested group"
+        await m.reply_animation(
+            animation=xerolink,
+            caption=f"{XEXO}Userbot has already joined group voice chat in **{chat.title}**"
+        )
+        
+        

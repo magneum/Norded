@@ -18,24 +18,27 @@ import os
 import subprocess
 from termcolor import *
 from sys import platform
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝   𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗖𝗢𝗟𝗢𝗥𝗦   ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
+XEXO = "一═••÷デ[ 🦋 Ӽɛʀօռօɨɖ 🦋 ]デ÷••═一 \nby 🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n"
+print(f"{XEXO}")
+print("The bot is going to run in"  +   platform.upper())
 
-
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝   𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗖𝗢𝗟𝗢𝗥𝗦   ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-cprint('♣       ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝', on_color='on_blue')
-cprint(f'{platform.upper()}','green')
-os.system("pip install -U pip;pip install -r Ӽɛʀօռօɨɖ.txt")
-os.system("clear")
-cprint('⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝', on_color='on_cyan')
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝   𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗖𝗢𝗟𝗢𝗥𝗦   ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-
-
-
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝   𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗖𝗢𝗟𝗢𝗥𝗦   ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
-shell=True,
-check=True)
-"""⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝   𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗖𝗢𝗟𝗢𝗥𝗦   ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
+HEROKU = os.environ.get('HEROKU').upper()
+if HEROKU == 'HEROKU':
+    # When HEROKU, req will be met before this point
+    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    shell=True,
+    check=True)
+elif HEROKU != 'HEROKU':
+    # This is for replit
+    os.system("pip install -U pip;pip install -r Ӽɛʀօռօɨɖ.txt")
+    os.system("clear")
+    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    shell=True,
+    check=True)
+else:
+    # This is to make sure code continues to propagate no matter what
+    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    shell=True,
+    check=True)

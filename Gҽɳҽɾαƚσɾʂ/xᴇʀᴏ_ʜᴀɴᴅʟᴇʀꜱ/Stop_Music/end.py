@@ -15,22 +15,42 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
 
+@Client.on_message(
+main_filter
+& self_or_contact_filter
+& current_vc
+& filters.command("end", prefixes=["/"]))
+async def stop_playing(client, m: Message):
+    group_call = mp.group_call
+    group_call.stop_playout()
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+ 
+    "Firsly Log this event using Xeronoid Userbot"
+    chat_id = int("-100" + str(group_call.full_chat.id))
+    chat = await client.get_chat(chat_id) 
+    await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}Xeronoid userbot has stopped playing music in **{chat.title}**"
+    )
+    
+    "Now end the music loop and send information in the requested chat"
+    reply = await m.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}Xeronoid userbot has stopped playing music in **{chat.title}**"
+        )
+    await mp.update_start_time(reset=True)
+        
+    # Now clean the chat room and player and then idle the player
+    mp.playlist.clear()
+    await xeronoid_end_purge(
+        (reply, m),
+        STOP_REMOVER)

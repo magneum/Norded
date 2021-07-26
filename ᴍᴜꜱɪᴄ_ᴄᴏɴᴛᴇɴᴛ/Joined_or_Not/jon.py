@@ -15,22 +15,32 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ʜᴏᴍᴇ import *
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.Playlist_Semi import skip_current_playing
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import mp
 from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
 
 
+async def send_text(text):
+    group_call = mp.group_call
+    client = group_call.client
+    chat_id = mp.chat_id
+    message = await client.send_message(
+        chat_id,
+        text,
+        disable_web_page_preview=True,
+        disable_notification=True
+    )
+    return message
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+async def network_status_changed_handler(context, is_connected: bool):
+    if is_connected:
+        mp.chat_id = MAX_CHANNEL_ID - context.full_chat.id
+        await send_text(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+    else:
+        await send_text(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        mp.chat_id = None
+
+
+async def playout_ended_handler(_, __):
+    await skip_current_playing()
