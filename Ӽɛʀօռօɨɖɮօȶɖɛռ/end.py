@@ -27,7 +27,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-
 @Ӽɛʀօռօɨɖ.on_message(
 xero_bot_fils
 & xero_self_fils
@@ -36,12 +35,18 @@ xero_bot_fils
 async def stop_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
-    reply = await client.send_animation(
+    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    chat = await client.get_chat(xeronoid_chat_verify)
+    replybot = await xeMsg.reply_animation(
+    animation=xerolink,
+    caption=f"{XEXO}The userbot has been successfully stopped in **{chat.title}**. Any future propagation won't run untill manually asked"
+    )
+    await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has stopped playing"
+    caption=f"{XEXO}The userbot has been successfully stopped in **{chat.title}**. Any future propagation won't run untill manually asked"
     )
     await xep.update_start_time(reset=True)
     xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, xeMsg), CLEAN_REMOVER)
+    await xeronoid_end_purge((replybot, xeMsg), CLEAN_REMOVER)

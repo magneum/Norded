@@ -32,11 +32,8 @@ async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     if xeronoid_voixe and xeronoid_voixe.is_connected:
         xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(xeronoid_chat_verify)
-        reply = await xeMsg.reply_text(
-            f"{emoji.MUSICAL_NOTES} **currently in the voice chat**:\n"
-            f"• **{chat.title}**"
-        )
+        cprint(f"Userbot is connected to **{chat.title}**", 'cyan')
+        pass
     else:
-        reply = await xeMsg.reply_text(emoji.NO_ENTRY
-                                   + "didn't join any voice chat yet")
-    await xeronoid_check_purge((reply, xeMsg), CLEAN_REMOVER)
+        cprint(f"Userbot is not connected to any group calls", 'red')
+        pass

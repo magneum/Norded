@@ -13,8 +13,6 @@
             𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 |••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|       
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
-
-
 from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖ.ǟʊȶօ_քʊʀɢɛʀ import *
 from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
@@ -30,33 +28,11 @@ xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
 & filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(_, xeMsg: XeronoidMessageType):
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_voixe.stop_playout()
-    reply = await xeMsg.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
-    await xep.update_start_time(reset=True)
-    xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, xeMsg), CLEAN_REMOVER)
-
-
-
-
-"Below code is for the XeronoidBot only and will be used for logging purposes also"
-
-@Ӽɛʀօռօɨɖ.on_message(
-xero_bot_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("end", prefixes=DYNO_COMMANDK))
 async def stop_playing(client, xeMsg: XeronoidMessageType):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
-    reply = await client.send_animation(
-    animation=xerolink,
-    duration=10,
-    chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has stopped playing"
-    )
+    xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
+    chat = await client.get_chat(xeronoid_chat_verify)
+    print(f"{XEXO}The userbot has been successfully stopped in **{chat.title}**. Any future propagation won't run untill manually asked")
     await xep.update_start_time(reset=True)
     xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, xeMsg), CLEAN_REMOVER)

@@ -22,7 +22,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
-
 @Ӽɛʀօռօɨɖ.on_message(
 xero_bot_fils
 & xero_self_fils
@@ -31,11 +30,11 @@ xero_bot_fils
 async def show_help(client, xeMsg: XeronoidMessageType):
     if xep.xemsg.get('info') is not None:
         await xep.xemsg['info'].delete()
-    xep.xemsg['info'] = await xeMsg.reply_text(XERO_HELP, quote=False)
+    xep.xemsg['info'] = replybot = await xeMsg.reply_text(XERO_HELP, quote=False)
     await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
     caption=f"{XEXO}The userbot has called for showing help for xeronoid"
     )
-    await xeronoid_info_purge((xeMsg), CLEAN_REMOVER)
+    await xeronoid_info_purge((replybot, xeMsg), CLEAN_REMOVER)

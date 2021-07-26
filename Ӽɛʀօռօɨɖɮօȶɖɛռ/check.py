@@ -33,17 +33,25 @@ async def list_voice_chat(client, xeMsg: XeronoidMessageType):
     if xeronoid_voixe and xeronoid_voixe.is_connected:
         xeronoid_chat_verify = int("•100" + str(xeronoid_voixe.full_chat.id))
         chat = await client.get_chat(xeronoid_chat_verify)
-        reply = await client.send_animation(
+        replybot = await xeMsg.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
+        )
+        await client.send_animation(
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
         caption=f"{XEXO}The userbot has join voice chat of • **{chat.title}**"
         )
     else:
-        reply = await client.send_animation(
+        replybot = await xeMsg.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}The userbot has not joined any voice chat yet"
+        )
+        await client.send_animation(
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
         caption=f"{XEXO}The userbot has not joined any voice chat yet"
         )
-    await xeronoid_check_purge((reply, xeMsg), CLEAN_REMOVER)
+    await xeronoid_check_purge((replybot, xeMsg), CLEAN_REMOVER)
