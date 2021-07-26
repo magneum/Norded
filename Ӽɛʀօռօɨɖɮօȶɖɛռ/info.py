@@ -44,4 +44,4 @@ async def show_help(client, xeMsg: XeronoidMessageType):
     chat_id=LOGGER_ID,
     caption=f"{XEXO}The userbot has been called for showing help for xeronoid in **{chat.title}**"
     )
-    await xeronoid_info_purge((replybot, xeMsg), CLEAN_REMOVER)
+    await xeronoid_info_purge((replybot, xeMsg), INFO_REMOVER)

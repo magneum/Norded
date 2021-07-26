@@ -46,4 +46,4 @@ async def pause_playing(client, xeMsg: XeronoidMessageType):
     caption=f"{XEXO}The Userbot has paused itself in the voice chat of • **{chat.title}**"
     )
     xep.xemsg['pause'] = reply
-    await xeronoid_pause_purge((replybot, xeMsg), CLEAN_REMOVER)
+    await xeronoid_pause_purge((replybot, xeMsg), PAUSE_REMOVER)

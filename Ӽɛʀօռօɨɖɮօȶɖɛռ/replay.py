@@ -47,4 +47,4 @@ async def restart_playing(client, xeMsg: XeronoidMessageType):
     chat_id=LOGGER_ID,
     caption=f"{XEXO}Xeronoid userbot is now playing from the beginning in **{chat.title}**"
     )
-    await xeronoid_replay_purge((replybot, xeMsg), CLEAN_REMOVER)
+    await xeronoid_replay_purge((replybot, xeMsg), REPLAY_REMOVER)

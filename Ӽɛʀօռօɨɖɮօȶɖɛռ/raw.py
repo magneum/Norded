@@ -58,4 +58,4 @@ async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
     chat_id=LOGGER_ID,
     caption=f"{XEXO} The userbot has successfully cleaned {count} files in **{chat.title}**"
     )
-    await xeronoid_raw_purge((replybot, xeMsg), CLEAN_REMOVER)
+    await xeronoid_raw_purge((replybot, xeMsg), RAW_REMOVER)

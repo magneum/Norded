@@ -54,4 +54,4 @@ async def list_voice_chat(client, xeMsg: XeronoidMessageType):
         chat_id=LOGGER_ID,
         caption=f"{XEXO}The userbot has not joined any voice chat yet"
         )
-    await xeronoid_check_purge((replybot, xeMsg), CLEAN_REMOVER)
+    await xeronoid_check_purge((replybot, xeMsg), GROUP_REMOVER)
