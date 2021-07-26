@@ -16,7 +16,7 @@
 from .xmp import xep
 from ɖօօʍ_ʀօօʍ import *
 from ʟɨɮʀǟʀʏ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖ_ɖʟƈֆ import *
+from Ӽɛʀօռօɨɖɖʟƈֆ import *
 
 
 
