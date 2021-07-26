@@ -24,4 +24,3 @@ from termcolor import *
 from sys import platform
 from loguru import logger
 from datetime import datetime, timedelta
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'

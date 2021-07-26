@@ -20,7 +20,7 @@ from Ӽɛʀօռօɨɖ.Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import xep
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 xero_basic_fils = (
 filters.group
 & filters.text
@@ -28,31 +28,31 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 )
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
+
 xero_bot_fils = (
 filters.text
 & filters.via_bot
 )
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
+
 xero_self_fils = filters.create(
 lambda _, __, message:
 (message.from_user and message.from_user.is_contact)
 or message.outgoing)
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
+
 async def xero_xemp_fils(_, __, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if not (xeronoid_voixe and xeronoid_voixe.is_connected):
@@ -62,4 +62,3 @@ async def xero_xemp_fils(_, __, m: Message):
         return True
     return False
 xero_xemp_fils = filters.create(xero_xemp_fils)
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '

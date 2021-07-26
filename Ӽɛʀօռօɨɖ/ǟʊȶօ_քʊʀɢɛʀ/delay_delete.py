@@ -17,7 +17,7 @@ from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def delay_sing_messages(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
@@ -25,7 +25,7 @@ async def delay_sing_messages(xemsgs: tuple, slow: int):
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '  
+  
 async def xeronoid_raw_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
@@ -33,98 +33,98 @@ async def xeronoid_raw_purge(xemsgs: tuple, slow: int):
 
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_now_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_check_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_info_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_join_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_leave_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_mute_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_pause_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_replay_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_resume_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()        
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_next_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()       
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_end_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()        
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_unmute_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def xeronoid_volume_purge(xemsgs: tuple, slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:
         await xemsg.delete()        
 
 
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| '
+
 async def delete_server(xemsgs: tuple,slow: int):
     await asyncio.sleep(slow)
     for xemsg in xemsgs:

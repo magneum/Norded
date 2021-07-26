@@ -16,4 +16,3 @@
 from .pyrogram import *
 from .pytgcalls import *
 from .system import *
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'

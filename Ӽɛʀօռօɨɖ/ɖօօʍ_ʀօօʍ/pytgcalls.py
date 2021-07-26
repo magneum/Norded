@@ -16,4 +16,3 @@
 from pytgcalls import GroupCall
 from pytgcalls import GroupCallFactory, GroupCallFileAction
 group_calls = GroupCall(None, path_to_log_file='')
-'|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
