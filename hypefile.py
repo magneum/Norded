@@ -30,18 +30,18 @@ print("The bot is going to run in"  +   platform.upper())
 HEROKU = os.environ.get('HEROKU')
 if HEROKU == 'HEROKU':
     # When HEROKU, req will be met before this point
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    subprocess.run("python -m Ӽɛʀօռօɨɖ & python -m Ӽɛʀօռօɨɖɮօȶ",
     shell=True,
     check=True)
 elif HEROKU != 'HEROKU':
     # This is for replit
     os.system("pip install -U pip;pip install -r Ӽɛʀօռօɨɖ.txt")
     os.system("clear")
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    subprocess.run("python -m Ӽɛʀօռօɨɖ & python -m Ӽɛʀօռօɨɖɮօȶ",
     shell=True,
     check=True)
 else:
     # This is to make sure code continues to propagate no matter what
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+    subprocess.run("python -m Ӽɛʀօռօɨɖ & python -m Ӽɛʀօռօɨɖɮօȶ",
     shell=True,
     check=True)
