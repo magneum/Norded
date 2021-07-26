@@ -27,8 +27,7 @@ from ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & current_vc
-& filters.audio
-& filters.command("sing", prefixes="/"))
+& filters.command("sing", prefixes="/") | filters.audio)
 async def play_track(client, m: Message):
     group_call = mp.group_call
     playlist = mp.playlist   
