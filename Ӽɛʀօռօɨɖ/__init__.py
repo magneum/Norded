@@ -15,8 +15,8 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 
 
-from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ import *
+from ɖօօʍ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {

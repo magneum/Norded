@@ -16,8 +16,8 @@
 
 
 
-from Ӽɛʀօռօɨɖ.ɖօօʍ_ʀօօʍ import *
-from Ӽɛʀօռօɨɖ.ʟɨɮʀǟʀʏ_ʀօօʍ.variables import HEROKU
+from ɖօօʍ_ʀօօʍ import *
+from ʟɨɮʀǟʀʏ_ʀօօʍ.variables import HEROKU
 
 
 
