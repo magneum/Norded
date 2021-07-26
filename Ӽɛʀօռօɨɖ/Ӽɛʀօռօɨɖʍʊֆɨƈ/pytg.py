@@ -31,12 +31,34 @@ async def xero_back_sender(text):
     disable_notification=True)
     return message
 
+async def xeronoid_bot_msg_sender(text):
+    xeronoid_voixe = xep.xeronoid_voixe
+    client = xeronoid_voixe.client
+    xeronoid_chat_verify = LOGGER_ID
+    xero_send_msgnr = await client.send_animation(
+    xeronoid_chat_verify,
+    text,
+    animation=xerolink,
+    disable_web_page_preview=False,
+    disable_notification=False
+    )
+    return xero_send_msgnr
+
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         xep.xeronoid_chat_verify = MAX_CHANNEL_ID - context.full_chat.id
-        await xero_back_sender(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+        await xero_back_sender(f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙥𝙡𝙪𝙜𝙜𝙚𝙙 𝙞𝙣 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 
+        `{CHAT_ID}`'s 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩""")
+        await xeronoid_bot_msg_sender(
+        f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙥𝙡𝙪𝙜𝙜𝙚𝙙"
+        )
     else:
-        await xero_back_sender(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        await xero_back_sender(f"""{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙪𝙣𝙥𝙡𝙪𝙜𝙜𝙚𝙙 𝙛𝙧𝙤𝙢 𝙩𝙝𝙚 𝙜𝙧𝙤𝙪𝙥 
+        `{CHAT_ID}`'s 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩
+        """)
+        await xeronoid_bot_msg_sender(
+        f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙪𝙣𝙥𝙡𝙪𝙜𝙜𝙚𝙙"
+		)
         xep.xeronoid_chat_verify = None
 
 
