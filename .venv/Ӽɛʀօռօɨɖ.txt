@@ -1,0 +1,8 @@
+TgCrypto
+ffmpeg-python
+psutil
+pytgcalls
+pyrogram
+wheel
+loguru
+termcolor
