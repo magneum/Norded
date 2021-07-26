@@ -113,7 +113,7 @@ async def play_track(client, xemsg: xeromsg):
             await delay_play_messages((reply,), PLAY_REMOVER)
             return
     else:
-        await xep.send_playlist()
+        await xep.xeronoid_show_playlist()
         await xemsg.delete()
         return
     # check already added
@@ -137,7 +137,7 @@ async def play_track(client, xemsg: xeromsg):
         await xep.xeronoid_begin_clock()
         await m_status.delete()
         print(f"- START PLAYING: {playlist_temp[0].audio.title}")
-    await xep.send_playlist()
+    await xep.xeronoid_show_playlist()
     for track in playlist_temp[:2]:
         await xeronoid_music_dl_handler(track)
     if not xemsg.audio:
