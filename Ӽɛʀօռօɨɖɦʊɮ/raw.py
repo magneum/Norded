@@ -23,7 +23,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-@Client.on_message(
+@Ӽɛʀօռօɨɖ.on_message(
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
@@ -49,7 +49,7 @@ async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 
-@Client.on_message(
+@Ӽɛʀօռօɨɖ.on_message(
 xero_bot_fils
 & xero_self_fils
 & xero_xemp_fils

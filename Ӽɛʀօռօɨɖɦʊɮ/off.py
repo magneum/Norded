@@ -24,7 +24,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-@Client.on_message(
+@Ӽɛʀօռօɨɖ.on_message(
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils

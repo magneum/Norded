@@ -16,7 +16,7 @@
 from . import *
 
 
-Ӽɛʀօռօɨɖ = Client(
+Ӽɛʀօռօɨɖ = Ӽɛʀօռօɨɖ(
 session_name=XERONOID_SESSION,
 api_id=API_ID,
 api_hash=API_HASH,

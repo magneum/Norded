@@ -23,7 +23,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-@Client.on_message(
+@Ӽɛʀօռօɨɖ.on_message(
 filters.group
 & ~filters.edited
 & xero_xemp_fils
