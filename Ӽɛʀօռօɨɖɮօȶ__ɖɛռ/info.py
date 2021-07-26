@@ -25,14 +25,15 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 @Ӽɛʀօռօɨɖ.on_message(
 filters.command("info", prefixes=DYNO_COMMANDK))
 async def show_help(client, xeMsg: XeronoidMessageType):
-    replybot = await xeMsg.reply_animation(
-    animation=xerolink,
-    caption=XERO_HELP
-    )
+    await xeMsg.reply_chat_action("typing")
     await client.send_animation(
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
     caption=f"{XEXO}The userbot has been called for showing help for xeronoid"
+    )
+    xep.xemsg['cmd'] = replybot = await xeMsg.reply_animation(
+    animation=xerolink,
+    caption=XERO_HELP
     )
     await xeronoid_info_purge((replybot, xeMsg), INFO_REMOVER)

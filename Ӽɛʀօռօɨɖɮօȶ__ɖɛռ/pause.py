@@ -31,7 +31,7 @@ async def pause_playing(client, xeMsg: XeronoidMessageType):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)
     xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_chat_verify = CHAT_ID #int("-100" + str(xeronoid_voixe.full_chat.id))
+    xeronoid_chat_verify =int("-100" + str(xeronoid_voixe.full_chat.id))
     chat = await client.get_chat(xeronoid_chat_verify)
     replybot = xeMsg.reply_animation(
     animation=xerolink,

@@ -33,7 +33,7 @@ async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_voixe.stop_playout()
-    xeronoid_chat_verify = CHAT_ID #int("-100" + str(xeronoid_voixe.full_chat.id))
+    xeronoid_chat_verify =int("-100" + str(xeronoid_voixe.full_chat.id))
     chat = await client.get_chat(xeronoid_chat_verify)
     all_fn: list[str] = os.listdir(download_dir)
     for track in xep.xeronoid_music_list[:2]:
