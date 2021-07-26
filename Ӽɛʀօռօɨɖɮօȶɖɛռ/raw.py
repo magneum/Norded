@@ -26,8 +26,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Ӽɛʀօռօɨɖ.on_message(
-xero_self_fils
-& xero_xemp_fils
+xero_xemp_fils
 & filters.command("raw", prefixes=DYNO_COMMANDK))
 async def clean_raw_pcm(client, xeMsg: XeronoidMessageType):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)

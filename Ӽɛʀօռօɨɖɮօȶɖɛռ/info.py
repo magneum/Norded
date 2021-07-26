@@ -23,9 +23,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Ӽɛʀօռօɨɖ.on_message(
-xero_self_fils
-& xero_xemp_fils
-& filters.command("info", prefixes=DYNO_COMMANDK))
+filters.command("info", prefixes=DYNO_COMMANDK))
 async def show_help(client, xeMsg: XeronoidMessageType):
     if xep.xemsg.get('info') is not None:
         await xep.xemsg['info'].delete()
