@@ -29,33 +29,30 @@ filters.group
 async def list_voice_chat(client, m: Message):
     group_call = mp.group_call
     if group_call and group_call.is_connected:
-        chat_id = int("-100" + str(group_call.full_chat.id))
-        chat = await client.get_chat(chat_id)
-        await m.reply_chat_action("playing")
         
-        print(f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_GROUP)")
+        print(f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged ")
         
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_GROUP=**{chat.title}**)"
+            caption=f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged"
         )
         
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}Userbot is plugged in the voice chat of **{chat.title}**"    
+            caption=f"{XEXO}Userbot is plugged in the voice chat"    
         )
         
         
     else:
-        print(f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_GROUP)")
+        print(f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged")
         
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_GROUP) but uderbot is not plugged yet"
+            caption=f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged but userbot is not plugged yet"
         )
         
         group_info = await m.reply_animation(

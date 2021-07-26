@@ -31,29 +31,29 @@ async def list_voice_chat(client, m: Message):
         chat = await client.get_chat(chat_id)
         await m.reply_chat_action("playing")
         
-        print(f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_PRIVATE)")
+        print(f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged ")
         
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_PRIVATE=**{chat.title}**)"
+            caption=f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged"
         )
         
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}Userbot is plugged in the voice chat of **{chat.title}**"    
+            caption=f"{XEXO}Userbot is plugged in the voice chat"    
         )
         
         
     else:
-        print(f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_PRIVATE)")
+        print(f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged")
         
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}Userbot has requested Xeronoidbot to show where the userbot is_plugged (IN_PRIVATE) but uderbot is not plugged yet"
+            caption=f"{XEXO}(IN_PRIVATE)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged but uderbot is not plugged yet"
         )
         
         group_info = await m.reply_animation(
