@@ -22,29 +22,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-@Client.on_message(
-xero_basic_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("raw", prefixes=DYNO_COMMANDK))
-async def clean_raw_pcm(client, m: Message):
-    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
-    all_fn: list[str] = os.listdir(download_dir)
-    for track in xep.xeronoid_music_list[:2]:
-        track_fn = f"{track.audio.file_unique_id}.raw"
-        if track_fn in all_fn:
-            all_fn.remove(track_fn)
-    count = 0
-    if all_fn:
-        for fn in all_fn:
-            if fn.endswith(".raw"):
-                count += 1
-                os.remove(os.path.join(download_dir, fn))
-    reply = await m.reply_text(f"{emoji.WASTEBASKET} cleaned {count} files")
-    await xeronoid_raw_purge((reply, m), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"

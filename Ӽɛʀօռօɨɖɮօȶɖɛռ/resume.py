@@ -21,22 +21,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-@Client.on_message(
-xero_basic_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("resume", prefixes=DYNO_COMMANDK))
-async def resume_playing(_, m: Message):
-    xep.xeronoid_voixe.resume_playout()
-    reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} resumed",
-                               quote=False)
-    if xep.xemsg.get('pause') is not None:
-        await xep.xemsg['pause'].delete()
-    await m.delete()
-    await xeronoid_resume_purge((reply,), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"

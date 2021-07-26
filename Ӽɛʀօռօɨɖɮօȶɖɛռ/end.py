@@ -24,21 +24,6 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-@Client.on_message(
-xero_basic_fils
-& xero_self_fils
-& xero_xemp_fils
-& filters.command("end", prefixes=DYNO_COMMANDK))
-async def stop_playing(_, m: Message):
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_voixe.stop_playout()
-    reply = await m.reply_text(f"{emoji.STOP_BUTTON} stopped playing")
-    await xep.update_start_time(reset=True)
-    xep.xeronoid_music_list.clear()
-    await xeronoid_end_purge((reply, m), CLEAN_REMOVER)
-'|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-
 
 
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
