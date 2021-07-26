@@ -134,7 +134,7 @@ async def play_track(client, xemsg: xeromsg):
             xeronoid_dl_dir,
             f"{playlist_temp[0].audio.file_unique_id}.raw"
         )
-        await xep.update_start_time()
+        await xep.xeronoid_begin_clock()
         await m_status.delete()
         print(f"- START PLAYING: {playlist_temp[0].audio.title}")
     await xep.send_playlist()
