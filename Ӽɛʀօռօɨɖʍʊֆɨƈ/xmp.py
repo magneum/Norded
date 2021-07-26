@@ -62,8 +62,8 @@ async def xero_back_sender(text):
     client = group_call.client
     xeronoid_chatid = xep.xeronoid_chatid
     message = await client.send_message(
-    xeronoid_chatid,
     text,
+    chat_id=xeronoid_chatid,
     disable_web_page_preview=True,
     disable_notification=True)
     return message
