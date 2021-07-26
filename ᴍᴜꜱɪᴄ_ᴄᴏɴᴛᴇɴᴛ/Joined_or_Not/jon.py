@@ -33,21 +33,14 @@ async def send_text(text):
     )
     return message
 
-async def network_status_changed_handler(client, context, is_connected: bool):
+async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         mp.chat_id = MAX_CHANNEL_ID - context.full_chat.id
 
-        group_call = mp.group_call
-        chat_id = int("-100" + str(group_call.full_chat.id))
-        chat = await client.get_chat(chat_id)
-
-        await send_text(f"{XEXO}Xeronoid Userbot has been connected to **{chat.title}**")
+        await send_text(f"{XEXO}Xeronoid Userbot has been connected")
     else:
-        group_call = mp.group_call
-        chat_id = int("-100" + str(group_call.full_chat.id))
-        chat = await client.get_chat(chat_id)
         
-        await send_text(f"{XEXO}Xeronoid Userbot left the voice chat of **{chat.title}**")
+        await send_text(f"{XEXO}Xeronoid Userbot left the voice chat")
         mp.chat_id = None
 
 
