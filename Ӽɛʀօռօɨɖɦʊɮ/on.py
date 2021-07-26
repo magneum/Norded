@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
-& filters.regex("^!on$"))
+& filters.command("on", prefixes=DYNO_COMMANDK))
 async def join_group_call(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xeronoid_voixe:

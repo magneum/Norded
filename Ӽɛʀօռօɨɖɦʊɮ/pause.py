@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.regex("^!pause"))
+& filters.command("pause", prefixes=DYNO_COMMANDK))
 async def pause_playing(_, m: Message):
     xep.xeronoid_voixe.pause_playout()
     await xep.update_start_time(reset=True)

@@ -26,7 +26,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 filters.group
 & ~filters.edited
 & xero_xemp_fils
-& (filters.regex("^(\\/|!)sing$") | filters.audio))
+& (filters.command("sing", prefixes=DYNO_COMMANDK) | filters.audio))
 async def play_track(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     xeronoid_music_list = xep.xeronoid_music_list

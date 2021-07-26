@@ -27,6 +27,8 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 "Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Client.on_message(
 xero_xemp_fils
+& filters.via_bot
+& filters.chat(CHAT_ID)
 & filters.command("end", prefixes=DYNO_COMMANDK))
 async def stop_playing(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe

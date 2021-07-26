@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.regex("^!leave$"))
+& filters.command("off", prefixes=DYNO_COMMANDK))
 async def leave_voice_chat(_, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     xep.xeronoid_music_list.clear()

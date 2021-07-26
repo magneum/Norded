@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.regex("^!replay$"))
+& filters.command("replay", prefixes=DYNO_COMMANDK))
 async def restart_playing(_, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if not xep.xeronoid_music_list:

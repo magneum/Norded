@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.regex("^!resume"))
+& filters.command("resume", prefixes=DYNO_COMMANDK))
 async def resume_playing(_, m: Message):
     xep.xeronoid_voixe.resume_playout()
     reply = await m.reply_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} resumed",

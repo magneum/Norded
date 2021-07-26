@@ -19,25 +19,22 @@ from ʟɨɮʀǟʀʏ_ʀօօʍ import *
 from Ӽɛʀօռօɨɖʍʊֆɨƈ import *
 from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
-
-
-"Below code is for the XeronoidBot only and will be used for logging purposes also"
 @Client.on_message(
-filters.command("info", prefixes=DYNO_COMMANDK))
+filters.group
+& filters.command("info", prefixes=DYNO_COMMANDK))
 async def show_help(client, m: Message):
     await m.reply_chat_action("typing")
+    
     await client.send_animation(
+    chat_id=LOGGER_ID,
     animation=xerolink,
     duration=10,
-    chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has been called for showing help for xeronoid"
+    caption=f"{XEXO}🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n|========	🎧 𝗨𝘀𝗲𝗿 𝗮𝘀𝗸𝗲𝗱 𝗳𝗼𝗿 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀"
     )
     
-    
-    xep.m['cmd'] = replybot = await m.reply_animation(
+    xep.m['info']= hawk = await m.reply_animation(
     animation=xerolink,
     caption=XERO_HELP
     )
     
-    
-    await xeronoid_help_purge((replybot, m), HELP_REMOVER)
+    await xeronoid_help_purge((m, hawk), HELP_REMOVER)

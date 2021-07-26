@@ -29,7 +29,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 @Client.on_message(
 xero_basic_fils
 & xero_self_fils
-& filters.regex("^!check$"))
+& filters.command("group", prefixes=DYNO_COMMANDK))
 async def list_voice_chat(client, m: Message):
     xeronoid_voixe = xep.xeronoid_voixe
     if xeronoid_voixe and xeronoid_voixe.is_connected:

@@ -18,14 +18,13 @@
 
 '|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 from .check import *
-from .end import *
-from .info import *
+from .stop import *
 from .next import *
 from .now import *
 from .off import *
 from .on import *
 from .pause import *
-from .raw import *
+from .clean import *
 from .replay import *
 from .resume import *
 from .sing import *

@@ -26,7 +26,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 xero_basic_fils
 & xero_self_fils
 & xero_xemp_fils
-& filters.command("next", prefixes="!"))
+& filters.command("next", prefixes=DYNO_COMMANDK))
 async def skip_track(_, m: Message):
     xeronoid_music_list = xep.xeronoid_music_list
     if len(m.command) == 1:

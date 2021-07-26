@@ -25,7 +25,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 @Client.on_message(
 xero_basic_fils
 & xero_xemp_fils
-& filters.regex("^(\\/|!)now$"))
+& filters.command("now", prefixes=DYNO_COMMANDK))
 async def show_current_playing_time(_, m: Message):
     xeronoid_clock = xep.xeronoid_clock
     xeronoid_music_list = xep.xeronoid_music_list
