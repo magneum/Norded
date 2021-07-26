@@ -25,13 +25,7 @@ from Ӽɛʀօռօɨɖ.ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 @Ӽɛʀօռօɨɖ.on_message(
 filters.command("info", prefixes=DYNO_COMMANDK))
 async def show_help(client, xeMsg: XeronoidMessageType):
-    if xep.xemsg.get('info') is not None:
-        await xep.xemsg['info'].delete()
-    xeronoid_voixe = xep.xeronoid_voixe
-    xeronoid_voixe.stop_playout()
-    xeronoid_chat_verify = int("-100" + str(xeronoid_voixe.full_chat.id))
-    chat = await client.get_chat(xeronoid_chat_verify)
-    xep.xemsg['info'] = replybot = await xeMsg.reply_animation(
+    replybot = await xeMsg.reply_animation(
     animation=xerolink,
     caption=XERO_HELP
     )
@@ -39,6 +33,6 @@ async def show_help(client, xeMsg: XeronoidMessageType):
     animation=xerolink,
     duration=10,
     chat_id=LOGGER_ID,
-    caption=f"{XEXO}The userbot has been called for showing help for xeronoid in **{chat.title}**"
+    caption=f"{XEXO}The userbot has been called for showing help for xeronoid"
     )
     await xeronoid_info_purge((replybot, xeMsg), INFO_REMOVER)
