@@ -23,7 +23,11 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 @Ӽɛʀօռօɨɖ.on_message(
-xero_basic_fils
+filters.group
+& filters.chat(CHAT_ID)
+& ~filters.edited
+& ~filters.text
+& ~filters.via_bot
 & xero_xemp_fils
 & filters.command("now", prefixes="!"))
 async def show_current_playing_time(_, xeMsg: XeronoidMessageType):

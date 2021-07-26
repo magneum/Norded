@@ -24,7 +24,11 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 @Ӽɛʀօռօɨɖ.on_message(
-xero_basic_fils
+filters.group
+& filters.chat(CHAT_ID)
+& ~filters.edited
+& ~filters.text
+& ~filters.via_bot
 & xero_self_fils
 & filters.command("on", prefixes=DYNO_COMMANDK))
 async def join_group_call(client, xeMsg: XeronoidMessageType):

@@ -20,14 +20,6 @@ from Ӽɛʀօռօɨɖʍʊֆɨƈ.xmp import xep
 
 
 
-xero_basic_fils = (
-filters.group
-& filters.chat(CHAT_ID)
-& ~filters.edited
-& ~filters.text
-& ~filters.via_bot)
-
-
 xero_self_fils = filters.create(
 lambda _, __, message:
 (message.from_user and message.from_user.is_contact)
