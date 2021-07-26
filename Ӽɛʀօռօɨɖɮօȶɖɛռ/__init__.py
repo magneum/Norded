@@ -15,7 +15,8 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝"""
 from .group import *
 from .end import *
-from .info import *
+from .info_private import *
+from .info_group import *
 from .pause import *
 from .raw import *
 from .replay import *
