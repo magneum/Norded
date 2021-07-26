@@ -24,8 +24,7 @@ from ƈʊֆȶօʍ_ʄɨʟȶɛʀֆ import *
 
 
 @Ӽɛʀօռօɨɖ.on_message(
-filters.group
-& filters.chat(CHAT_ID)
+filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.text
 & ~filters.via_bot
