@@ -51,14 +51,14 @@ async def join_group_call(client, m: Message):
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}Userbot has already joined group voice chat in **{chat.title}**"
+            caption=f"{XEXO}🎧 Userbot has already joined group voice chat in **{chat.title}**"
         )
         
         
         "Now Send the joined info to the requested group"
         await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}Userbot has already joined group voice chat in **{chat.title}**"
+            caption=f"{XEXO}🎧 Userbot has already joined group voice chat in **{chat.title}**"
         )
         
         

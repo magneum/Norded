@@ -15,29 +15,29 @@
 ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋 Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from Gҽɳҽɾαƚσɾʂ.xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ.Group_Name import list_voice_chat_group
 from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
 from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 
-
-
 @Client.on_message(
 filters.group
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
-    if list_voice_chat_group is True:
+    group_call = mp.group_call
+    if group_call and group_call.is_connected:
+        chat_id = int("-100" + str(group_call.full_chat.id))
+        chat = await client.get_chat(chat_id)
         await client.send_animation(
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged"
+            caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has been plugged in the voice chat of:**{chat.title}**"
         )
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}Userbot is plugged in the voice chat"    
+            caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**"    
         )
        
     else:
@@ -45,13 +45,15 @@ async def list_voice_chat(client, m: Message):
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}(IN_GROUP)\nUserbot has requested Xeronoidbot to show where the userbot is_plugged but userbot is not plugged yet"
+            caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has not been plugged yet"
         )
         
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}Userbot is not plugged in any voice chat yet")
+            caption=f"{XEXO}🎧 Userbot is not plugged in any voice chat yet"
+            )
         
+
     # delete help info in group chats to keep it clean no matter what 
     await xeronoid_help_purge(
         (group_info,m),

@@ -31,7 +31,7 @@ async def show_help(client, m: Message):
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}Userbot has requested Xeronoidbot to show help in private chat"
+        caption=f"{XEXO}🎧 Userbot has requested Xeronoidbot to show help in private chat"
     )
  
     await m.reply_animation(

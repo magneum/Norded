@@ -39,13 +39,13 @@ async def stop_playing(client, m: Message):
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}Xeronoid userbot has stopped playing music in **{chat.title}**"
+        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
     )
     
     "Now end the music loop and send information in the requested chat"
     reply = await m.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}Xeronoid userbot has stopped playing music in **{chat.title}**"
+        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
         )
     await mp.update_start_time(reset=True)
         

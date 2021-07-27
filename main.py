@@ -26,21 +26,7 @@
 
 
 
-@Client.on_message(main_filter
-                   & self_or_contact_filter
-                   & current_vc
-                   & filters.regex("^!replay$"))
-async def restart_playing(_, m: Message):
-    group_call = mp.group_call
-    if not mp.playlist:
-        return
-    group_call.restart_playout()
-    await mp.update_start_time()
-    reply = await m.reply_text(
-        f"{emoji.COUNTERCLOCKWISE_ARROWS_BUTTON}  "
-        "playing from the beginning..."
-    )
-    await _delay_delete_messages((reply, m), DELETE_DELAY)
+
 
 
 @Client.on_message(main_filter

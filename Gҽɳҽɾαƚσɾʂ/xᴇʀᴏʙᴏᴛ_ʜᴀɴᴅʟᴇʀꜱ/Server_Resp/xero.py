@@ -23,23 +23,37 @@ from ʜᴏᴍᴇ import *
 
 
 @Client.on_message(
-main_filter
-& self_or_contact_filter
-& current_vc
-& filters.command("off", prefixes="/"))
-async def leave_voice_chat(client, m: Message):
-    group_call = mp.group_call
-    mp.playlist.clear()
-    group_call.input_filename = ''
-    await group_call.stop()
-    
-    "Log this event using xeronoid userbot"
+filters.group
+& filters.command("replay", prefixes="/"))
+async def pong(client, m: Message):
+    start = datetime.now()
+    end = datetime.now()
+    delta_energy1 = (end - start).seconds
+    delta_energy2= (end - start).microseconds
+
+
     await client.send_animation(
-        animation=xerolink,
+		chat_id=LOGGER_ID,
+		animation=xerolink,
         duration=10,
-        chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Xeronoid userbot has successfully left the voice chat"
-    )
-    
-    # Now just clean up the chat room and idle the code
-    await m.delete()
+		caption=f"{XEXO}🎧 𝗦𝗲𝗿𝘃𝗲𝗿 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗶𝗺𝗲 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗳𝗲𝘁𝗰𝗵𝗲𝗱 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿"
+		)
+
+
+
+    zeto = await m.reply_animation(
+    animation=xerolink,
+    caption=f"""{XEXO}
+
+|   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
+📡 **{delta_energy1}** `seconds` 
+📡 **{delta_energy2}** `microseconds`       
+""")
+
+
+
+    # Let's Clean this also lol.....
+    await delete_server(
+        (zeto,  m),
+         SERVER_REMOVER)
+    return 

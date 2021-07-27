@@ -34,7 +34,7 @@ async def show_current_playing_time(_, m: Message):
     if not start_time:
         empty = await m.reply_animation(
             animation=xerolink,
-            captions=f"{XEXO}No Song is in xeronoid music server yet"
+            captions=f"{XEXO}🎧 No Song is in xeronoid music server yet"
         )
         await xeronoid_now_purge(
             (empty, m),
