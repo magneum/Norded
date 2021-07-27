@@ -18,7 +18,7 @@
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
-class MusicPlayer(object):
+class XeroPlayer(object):
     def __init__(self):
         self.group_call = None
         self.client = None
@@ -51,7 +51,7 @@ class MusicPlayer(object):
         XePlay.msg['playlist'] = await send_text(pl)
 
 
-XePlay = MusicPlayer()
+XePlay = XeroPlayer()
 
 async def send_text(text):
     group_call = XePlay.group_call
