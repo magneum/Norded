@@ -15,17 +15,17 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import mp
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import XePlay
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 async def skip_current_playing():
-    group_call = mp.group_call
-    playlist = mp.playlist
+    group_call = XePlay.group_call
+    playlist = XePlay.playlist
     if not playlist:
         return
     if len(playlist) == 1:
-        await mp.update_start_time()
+        await XePlay.update_start_time()
         return
     client = group_call.client
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
@@ -33,11 +33,11 @@ async def skip_current_playing():
         download_dir,
         f"{playlist[1].audio.file_unique_id}.raw"
     )
-    await mp.update_start_time()
+    await XePlay.update_start_time()
     # remove old track from playlist
     old_track = playlist.pop(0)
     print(f"- START PLAYING: {playlist[0].audio.title}")
-    await mp.send_playlist()
+    await XePlay.send_playlist()
     os.remove(os.path.join(
         download_dir,
         f"{old_track.audio.file_unique_id}.raw")
@@ -48,7 +48,7 @@ async def skip_current_playing():
 
 
 async def download_audio(m: Message):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     client = group_call.client
     raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
                             f"{m.audio.file_unique_id}.raw")

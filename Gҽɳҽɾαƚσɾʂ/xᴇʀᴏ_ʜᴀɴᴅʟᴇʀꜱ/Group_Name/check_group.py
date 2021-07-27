@@ -26,7 +26,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     if group_call and group_call.is_connected:
         chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)

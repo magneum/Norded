@@ -16,15 +16,15 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
 from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.Playlist_Semi import skip_current_playing
-from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import mp
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import XePlay
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 
 async def send_text(text):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     client = group_call.client
-    chat_id = mp.chat_id
+    chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,
         text,
@@ -35,13 +35,13 @@ async def send_text(text):
 
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
-        mp.chat_id = MAX_CHANNEL_ID - context.full_chat.id
+        XePlay.chat_id = MAX_CHANNEL_ID - context.full_chat.id
 
         await send_text(f"{XEXO}Xeronoid Userbot has been connected")
     else:
         
         await send_text(f"{XEXO}Xeronoid Userbot left the voice chat")
-        mp.chat_id = None
+        XePlay.chat_id = None
 
 
 async def playout_ended_handler(_, __):

@@ -27,7 +27,7 @@ async def show_help(client, m: Message):
     await m.reply_chat_action("playing")
     print("Userbot has requested Xeronoidbot to show help in private chat")
     
-    mp.msg['info'] = await client.send_animation(
+    XePlay.msg['info'] = await client.send_animation(
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,

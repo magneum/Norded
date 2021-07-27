@@ -33,7 +33,7 @@ filters.group
 & current_vc
 & filters.command("next", prefixes="/"))
 async def skip_track(_, m: Message):
-    playlist = mp.playlist
+    playlist = XePlay.playlist
     if len(m.command) == 1:
         await skip_current_playing()
     else:
@@ -53,7 +53,7 @@ async def skip_track(_, m: Message):
                 "\n".join(text),
                 disable_web_page_preview=True
             )
-            await mp.send_playlist()
+            await XePlay.send_playlist()
         except (ValueError, TypeError):
             reply = await m.reply_animation(
                 animation=xerolink,

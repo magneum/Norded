@@ -46,17 +46,17 @@ class MusicPlayer(object):
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
                 for i, x in enumerate(playlist)
             ])
-        if mp.msg.get('playlist') is not None:
-            await mp.msg['playlist'].delete()
-        mp.msg['playlist'] = await send_text(pl)
+        if XePlay.msg.get('playlist') is not None:
+            await XePlay.msg['playlist'].delete()
+        XePlay.msg['playlist'] = await send_text(pl)
 
 
-mp = MusicPlayer()
+XePlay = MusicPlayer()
 
 async def send_text(text):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     client = group_call.client
-    chat_id = mp.chat_id
+    chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,
         text,

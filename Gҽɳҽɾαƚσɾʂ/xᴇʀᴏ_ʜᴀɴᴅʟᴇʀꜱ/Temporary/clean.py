@@ -34,7 +34,7 @@ filters.group
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
-    for track in mp.playlist[:2]:
+    for track in XePlay.playlist[:2]:
         track_fn = f"{track.audio.file_unique_id}.raw"
         if track_fn in all_fn:
             all_fn.remove(track_fn)
@@ -44,7 +44,7 @@ async def clean_raw_pcm(client, m: Message):
             if fn.endswith(".raw"):
                 count += 1
                 os.remove(os.path.join(download_dir, fn))
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     chat_id = int("-100" + str(group_call.full_chat.id))
     chat = await client.get_chat(chat_id)
 

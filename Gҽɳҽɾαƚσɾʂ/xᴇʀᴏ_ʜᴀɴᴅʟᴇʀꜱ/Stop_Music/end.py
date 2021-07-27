@@ -31,7 +31,7 @@ filters.group
 & current_vc
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, m: Message):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     group_call.stop_playout()
 
  
@@ -50,10 +50,10 @@ async def stop_playing(client, m: Message):
         animation=xerolink,
         caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
         )
-    await mp.update_start_time(reset=True)
+    await XePlay.update_start_time(reset=True)
         
     # Now clean the chat room and player and then idle the player
-    mp.playlist.clear()
+    XePlay.playlist.clear()
     await xeronoid_end_purge(
         (reply, m),
         STOP_REMOVER)

@@ -31,8 +31,8 @@ filters.group
 & current_vc
 & filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, m: Message):
-    group_call = mp.group_call
-    mp.playlist.clear()
+    group_call = XePlay.group_call
+    XePlay.playlist.clear()
     group_call.input_filename = ''
     await group_call.stop()
     

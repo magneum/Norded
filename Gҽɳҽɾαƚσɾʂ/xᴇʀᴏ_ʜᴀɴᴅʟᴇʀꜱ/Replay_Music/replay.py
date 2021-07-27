@@ -31,11 +31,11 @@ filters.group
 & current_vc
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, m: Message):
-    group_call = mp.group_call
-    if not mp.playlist:
+    group_call = XePlay.group_call
+    if not XePlay.playlist:
         return
     group_call.restart_playout()
-    await mp.update_start_time()
+    await XePlay.update_start_time()
 
     
     reply = await m.reply_text(

@@ -31,8 +31,8 @@ filters.group
 & current_vc
 & filters.command("sing", prefixes="/"))
 async def play_track(client, m: Message):
-    group_call = mp.group_call
-    playlist = mp.playlist   
+    group_call = XePlay.group_call
+    playlist = XePlay.playlist   
     print("Userbot is now downloading audio and sending to server...")    
     
     
@@ -60,7 +60,7 @@ async def play_track(client, m: Message):
                 PLAY_REMOVER)
             return
     else:
-        await mp.send_playlist()
+        await XePlay.send_playlist()
         await m.delete()
         return
     
@@ -105,7 +105,7 @@ async def play_track(client, m: Message):
             DEFAULT_DOWNLOAD_DIR,
             f"{playlist[0].audio.file_unique_id}.raw"
         )
-        await mp.update_start_time()
+        await XePlay.update_start_time()
         await m_status.delete()
         
         
@@ -120,7 +120,7 @@ async def play_track(client, m: Message):
         )
         # Only userbot is going to log this event. So we need not to worry about Xeronoidbot
         
-    await mp.send_playlist()
+    await XePlay.send_playlist()
     for track in playlist[:2]:
         await download_audio(track)
     if not m.audio:

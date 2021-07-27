@@ -32,8 +32,8 @@ filters.group
 & current_vc
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, m: Message):
-    start_time = mp.start_time
-    playlist = mp.playlist
+    start_time = XePlay.start_time
+    playlist = XePlay.playlist
     if not start_time:
         empty = await m.reply_animation(
             animation=xerolink,
@@ -46,11 +46,11 @@ async def show_current_playing_time(_, m: Message):
     
 
     
-    if mp.msg.get('now') is not None:
-        await mp.msg['now'].delete()
+    if XePlay.msg.get('now') is not None:
+        await XePlay.msg['now'].delete()
         
         
-    mp.msg['now'] = await playlist[0].reply_text(
+    XePlay.msg['now'] = await playlist[0].reply_text(
         f"{utcnow - start_time} / {timedelta(seconds=playlist[0].audio.duration)}",
         disable_notification=True
     )

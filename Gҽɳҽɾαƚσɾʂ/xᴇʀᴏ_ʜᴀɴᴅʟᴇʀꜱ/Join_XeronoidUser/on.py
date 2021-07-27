@@ -30,16 +30,16 @@ filters.group
 & self_or_contact_filter
 & filters.command("on", prefixes="/"))
 async def join_group_call(client, m: Message):
-    group_call = mp.group_call
+    group_call = XePlay.group_call
     if not group_call:
-        mp.group_call = GroupCallFactory(client).get_file_group_call()
-        mp.group_call.add_handler(
+        XePlay.group_call = GroupCallFactory(client).get_file_group_call()
+        XePlay.group_call.add_handler(
         network_status_changed_handler,
         GroupCallFileAction.NETWORK_STATUS_CHANGED)
-        mp.group_call.add_handler(
+        XePlay.group_call.add_handler(
         playout_ended_handler,
         GroupCallFileAction.PLAYOUT_ENDED)
-        await mp.group_call.start(m.chat.id)
+        await XePlay.group_call.start(m.chat.id)
         await m.delete()
         
         
@@ -47,7 +47,7 @@ async def join_group_call(client, m: Message):
         
     if group_call and group_call.is_connected:
         "First Log this event using the userbot"
-        group_call = mp.group_call
+        group_call = XePlay.group_call
         chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)        
         await client.send_animation(
