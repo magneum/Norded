@@ -40,7 +40,7 @@ else:
 if HEROKU is not None and HEROKU == "HEROKU":
     CHAT_ID = int(os.environ.get('CHAT_ID', None))
 else:
-    CHAT_ID = [-1001561595012,-1001472203238, -1001549079508]
+    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
 '|---------------------------------------------------------------------------|'
 if HEROKU is not None and HEROKU == "HEROKU":
     OWNER_ID = int(os.environ.get('OWNER_ID', None))
@@ -50,7 +50,7 @@ else:
 if HEROKU is not None and HEROKU == "HEROKU":
     MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
 else:
-    MUSIC_ADMIN_IDS = [1848646989,1650583471] 
+    MUSIC_ADMIN_IDS = [1650583471] 
 '|---------------------------------------------------------------------------|'
 if HEROKU is not None and HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
