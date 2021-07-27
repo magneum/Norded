@@ -34,8 +34,12 @@ Xero_Singer = filters.create(Xero_Singing)
 
 
 
-async def Xero_Sudos(_, __, m: Message):
-    if not MUSIC_ADMIN_IDS and OWNER_ID:
+async def Xero_Sudos(client, __, m: Message):
+    if not MUSIC_ADMIN_IDS:
+        await m.reply_text("If You are not an Authorized Xeronoid userbot member then you cannot use this command")
+        return False
+    if not OWNER_ID:
+        await m.reply_text("Please Check Your Owner ID in heroku Vars")
         return False
     return True
 Xero_Music_Admins = filters.create(Xero_Sudos)
