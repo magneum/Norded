@@ -59,7 +59,8 @@ async def clean_raw_pcm(client, m: Message):
 
     reply = await m.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**"
+        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**",
+        reply_markup = MIB
         )
 
 

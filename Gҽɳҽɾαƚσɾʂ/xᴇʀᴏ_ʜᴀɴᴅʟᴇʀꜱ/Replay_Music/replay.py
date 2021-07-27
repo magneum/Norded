@@ -38,8 +38,10 @@ async def restart_playing(_, m: Message):
     await XePlay.update_start_time()
 
     
-    reply = await m.reply_text(
-        f"{XEXO}🎧 playing from the beginning..."
+    reply = await m.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🎧 playing from the beginning...",
+        reply_markup = MIB
     )
 
     # Hence now delete the replay info

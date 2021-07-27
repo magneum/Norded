@@ -36,7 +36,8 @@ async def show_help(client, m: Message):
  
     group_info = await m.reply_animation(
         xerolink,
-        caption=XERO_HELP
+        caption=XERO_HELP,
+        reply_markup = MIB
     ) 
     # delete help info in group chats to keep it clean no matter what 
     await xeronoid_help_purge(

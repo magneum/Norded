@@ -36,7 +36,8 @@ async def show_help(client, m: Message):
  
     await m.reply_animation(
         xerolink,
-        caption=XERO_HELP
+        caption=XERO_HELP,
+        reply_markup = MIB
     ) 
     
     # do not delete help info in private chat but delete call command

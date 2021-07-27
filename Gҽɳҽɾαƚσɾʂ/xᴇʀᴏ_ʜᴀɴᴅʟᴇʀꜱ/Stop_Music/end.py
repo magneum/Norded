@@ -49,6 +49,7 @@ async def stop_playing(client, m: Message):
     reply = await m.reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
+        reply_markup = MIB
         )
     await XePlay.update_start_time(reset=True)
         

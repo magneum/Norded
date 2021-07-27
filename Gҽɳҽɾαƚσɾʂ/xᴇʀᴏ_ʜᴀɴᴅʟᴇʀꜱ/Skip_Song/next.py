@@ -58,6 +58,7 @@ async def skip_track(_, m: Message):
             reply = await m.reply_animation(
                 animation=xerolink,
                 caption=f"{XEXO}🎧 Recived Wrong Input.Try Properly",
+                reply_markup = MIB,
                 disable_web_page_preview=True
                 )
             

@@ -19,3 +19,4 @@ from pyrogram import Client, filters, emoji,idle
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
 from pyrogram.utils import MAX_CHANNEL_ID
+from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton

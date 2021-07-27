@@ -38,7 +38,8 @@ async def list_voice_chat(client, m: Message):
         )
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**"    
+            caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**",
+            reply_markup = MIB    
         )
        
     else:
@@ -51,7 +52,8 @@ async def list_voice_chat(client, m: Message):
         
         group_info = await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Userbot is not plugged in any voice chat yet"
+            caption=f"{XEXO}🎧 Userbot is not plugged in any voice chat yet",
+            reply_markup = MIB
             )
         
 

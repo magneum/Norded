@@ -62,7 +62,8 @@ async def join_group_call(client, m: Message):
         "Now Send the joined info to the requested group"
         await m.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Userbot has already joined group voice chat in **{chat.title}**"
+            caption=f"{XEXO}🎧 Userbot has already joined group voice chat in **{chat.title}**",
+            reply_markup = MIB
         )
         
         
