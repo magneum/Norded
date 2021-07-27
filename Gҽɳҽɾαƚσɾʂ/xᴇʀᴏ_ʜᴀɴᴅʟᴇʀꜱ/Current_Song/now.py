@@ -25,7 +25,10 @@ from ʜᴏᴍᴇ import *
 
 
 @Client.on_message(
-main_filter
+filters.group
+& filters.chat(CHAT_ID)
+& ~filters.edited
+& ~filters.via_bot
 & current_vc
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, m: Message):

@@ -25,7 +25,10 @@ from ʜᴏᴍᴇ import *
 
 
 @Client.on_message(
-main_filter
+filters.group
+& filters.chat(CHAT_ID)
+& ~filters.edited
+& ~filters.via_bot
 & self_or_contact_filter
 & current_vc
 & filters.command("next", prefixes="/"))

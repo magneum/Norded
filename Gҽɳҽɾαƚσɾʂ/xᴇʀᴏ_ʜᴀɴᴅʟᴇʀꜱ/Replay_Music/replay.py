@@ -22,47 +22,27 @@ from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 
-
 @Client.on_message(
 filters.group
+& filters.chat(CHAT_ID)
 & ~filters.edited
+& ~filters.via_bot
 & self_or_contact_filter
 & current_vc
-& filters.command("clean", prefixes="/"))
-async def clean_raw_pcm(client, m: Message):
-    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
-    all_fn: list[str] = os.listdir(download_dir)
-    for track in mp.playlist[:2]:
-        track_fn = f"{track.audio.file_unique_id}.raw"
-        if track_fn in all_fn:
-            all_fn.remove(track_fn)
-    count = 0
-    if all_fn:
-        for fn in all_fn:
-            if fn.endswith(".raw"):
-                count += 1
-                os.remove(os.path.join(download_dir, fn))
+& filters.command("replay", prefixes="/"))
+async def restart_playing(_, m: Message):
     group_call = mp.group_call
-    chat_id = int("-100" + str(group_call.full_chat.id))
-    chat = await client.get_chat(chat_id)
+    if not mp.playlist:
+        return
+    group_call.restart_playout()
+    await mp.update_start_time()
 
-
-    await client.send_animation(
-        animation=xerolink,
-        duration=10,
-        chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**"
+    
+    reply = await m.reply_text(
+        f"{XEXO}🎧 playing from the beginning..."
     )
 
-
-    reply = await m.rreply_animation(
-        animation=xerolink,
-        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**"
-        )
-
-
-
-    # clean in groups
-    await xeronoid_raw_purge(
+    # Hence now delete the replay info
+    await xeronoid_replay_purge(
         (reply, m),
-        CLEAN_REMOVER)
+        REPLAY_REMOVER)

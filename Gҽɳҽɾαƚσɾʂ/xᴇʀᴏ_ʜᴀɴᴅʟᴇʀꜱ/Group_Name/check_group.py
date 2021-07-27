@@ -23,6 +23,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
     group_call = mp.group_call

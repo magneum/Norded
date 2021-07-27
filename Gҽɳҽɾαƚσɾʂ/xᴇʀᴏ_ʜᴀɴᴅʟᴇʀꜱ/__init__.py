@@ -21,3 +21,5 @@ from .Join_XeronoidUser import *
 from .Sing_Main import *
 from .Skip_Song import *
 from .Stop_Music import *
+from .Replay_Music import *
+from .Temporary import *

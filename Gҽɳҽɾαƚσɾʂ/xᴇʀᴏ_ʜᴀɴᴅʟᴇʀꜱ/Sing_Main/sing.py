@@ -25,7 +25,9 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& filters.chat(CHAT_ID)
 & ~filters.edited
+& ~filters.via_bot
 & current_vc
 & filters.command("sing", prefixes="/"))
 async def play_track(client, m: Message):
