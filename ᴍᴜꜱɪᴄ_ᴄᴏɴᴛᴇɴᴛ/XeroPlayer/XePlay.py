@@ -34,19 +34,19 @@ class XeroPlayer(object):
     async def send_playlist(self):
         playlist = self.playlist
         if not playlist:
-            pl = f"{emoji.NO_ENTRY} empty playlist"
+            Xero_Music_List = f"{emoji.NO_ENTRY} empty playlist"
         else:
             if len(playlist) == 1:
-                pl = f"{emoji.REPEAT_SINGLE_BUTTON} **Playlist**:\n"
+                Xero_Music_List = f"{emoji.REPEAT_SINGLE_BUTTON} **Playlist**:\n"
             else:
-                pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
-            pl += "\n".join([
+                Xero_Music_List = f"{emoji.PLAY_BUTTON} **Playlist**:\n"
+            Xero_Music_List += "\n".join([
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
                 for i, x in enumerate(playlist)
             ])
         if XePlay.msg.get('playlist') is not None:
             await XePlay.msg['playlist'].delete()
-        XePlay.msg['playlist'] = await XePlay_Texter(pl)
+        XePlay.msg['playlist'] = await XePlay_Texter(Xero_Music_List)
 
     async def update_start_time(self, reset=False):
         self.Xero_Clock = (None if reset else datetime.utcnow().replace(microsecond=0))
