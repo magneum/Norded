@@ -20,10 +20,10 @@ from ʜᴏᴍᴇ import *
 
 class XeroPlayer(object):
     def __init__(self):
-        self.group_call = None
+        self.Xero_Voixe = None #group_call
         self.client = None
         self.chat_id = None
-        self.Xero_Clock = None #Xero_Clock
+        self.Xero_Clock = None #start_time
         self.playlist = []
         self.msg = {}
 
@@ -54,8 +54,8 @@ class XeroPlayer(object):
 XePlay = XeroPlayer()
 
 async def send_text(text):
-    group_call = XePlay.group_call
-    client = group_call.client
+    Xero_Voixe = XePlay.Xero_Voixe
+    client = Xero_Voixe.client
     chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,

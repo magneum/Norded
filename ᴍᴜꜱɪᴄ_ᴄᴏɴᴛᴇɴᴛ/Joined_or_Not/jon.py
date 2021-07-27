@@ -22,8 +22,8 @@ from ʜᴏᴍᴇ import *
 
 
 async def send_text(text):
-    group_call = XePlay.group_call
-    client = group_call.client
+    Xero_Voixe = XePlay.Xero_Voixe
+    client = Xero_Voixe.client
     chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,

@@ -20,16 +20,16 @@ from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 async def skip_current_playing():
-    group_call = XePlay.group_call
+    Xero_Voixe = XePlay.Xero_Voixe
     playlist = XePlay.playlist
     if not playlist:
         return
     if len(playlist) == 1:
         await XePlay.update_start_time()
         return
-    client = group_call.client
+    client = Xero_Voixe.client
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
-    group_call.input_filename = os.path.join(
+    Xero_Voixe.input_filename = os.path.join(
         download_dir,
         f"{playlist[1].audio.file_unique_id}.raw"
     )
@@ -48,8 +48,8 @@ async def skip_current_playing():
 
 
 async def download_audio(m: Message):
-    group_call = XePlay.group_call
-    client = group_call.client
+    Xero_Voixe = XePlay.Xero_Voixe
+    client = Xero_Voixe.client
     raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
                             f"{m.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):

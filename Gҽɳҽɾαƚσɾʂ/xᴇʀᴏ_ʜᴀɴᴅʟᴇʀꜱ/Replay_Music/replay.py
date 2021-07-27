@@ -31,10 +31,10 @@ filters.group
 & current_vc
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, m: Message):
-    group_call = XePlay.group_call
+    Xero_Voixe = XePlay.Xero_Voixe
     if not XePlay.playlist:
         return
-    group_call.restart_playout()
+    Xero_Voixe.restart_playout()
     await XePlay.update_start_time()
 
     

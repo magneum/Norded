@@ -31,12 +31,12 @@ filters.group
 & current_vc
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, m: Message):
-    group_call = XePlay.group_call
-    group_call.stop_playout()
+    Xero_Voixe = XePlay.Xero_Voixe
+    Xero_Voixe.stop_playout()
 
  
     "Firsly Log this event using Xeronoid Userbot"
-    chat_id = int("-100" + str(group_call.full_chat.id))
+    chat_id = int("-100" + str(Xero_Voixe.full_chat.id))
     chat = await client.get_chat(chat_id) 
     await client.send_animation(
         animation=xerolink,
