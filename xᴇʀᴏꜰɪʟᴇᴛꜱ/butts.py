@@ -17,10 +17,16 @@
 """
 from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton
 
-MAIN_INFO_BUTTS = MIB = InlineKeyboardMarkup(
-              [[
-InlineKeyboardButton("『Support Group』",url="https://t.me/HypeVoids"), 
-InlineKeyboardButton("『Update Channel』",url="https://t.me/HypeVoidLab")      
-              ],[
-InlineKeyboardButton("『Developers』",url="https://t.me/HypeVoidBot")
-                ])
+MIB = InlineKeyboardMarkup([[
+InlineKeyboardButton(text="🏷Group ",  url="https://t.me/HYPEVOIDS"),
+InlineKeyboardButton(text="💰Channel", url="https://t.me/HYPEVOIDLAB"),
+InlineKeyboardButton(text="⚜️Dev+Git",  url="https://t.me/HYPEVOIDBOT")],
+[InlineKeyboardButton(text="🧸Master Bot",  url="https://t.me/XERONOIDBOT")
+]])
+
+SIB = InlineKeyboardMarkup([[
+InlineKeyboardButton(text="🏷Group ",  url="https://t.me/HYPEVOIDS"),
+InlineKeyboardButton(text="💰Channel", url="https://t.me/HYPEVOIDLAB"),
+InlineKeyboardButton(text="⚜️Dev+Git",  url="https://t.me/HYPEVOIDBOT")],
+[InlineKeyboardButton(text="🧸Master Bot",  url="https://t.me/XERONOIDBOT")
+]])

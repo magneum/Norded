@@ -15,8 +15,10 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
+from xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
 from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
 from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
@@ -35,7 +37,9 @@ async def list_voice_chat(client, m: Message):
             duration=10,
             chat_id=LOGGER_ID,
             caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has been plugged in the voice chat of:**{chat.title}**"
-        )
+            )
+
+
         group_info = await m.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**",
@@ -48,7 +52,9 @@ async def list_voice_chat(client, m: Message):
             duration=10,
             chat_id=LOGGER_ID,
             caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has not been plugged yet"
-        )
+            )
+
+
         
         group_info = await m.reply_animation(
             animation=xerolink,

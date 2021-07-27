@@ -15,6 +15,7 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
+from xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
 from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
 from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from xᴇʀᴏꜰɪʟᴇᴛꜱ import *
@@ -48,7 +49,7 @@ async def stop_playing(client, m: Message):
     "Now end the music loop and send information in the requested chat"
     reply = await m.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
+        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**",
         reply_markup = MIB
         )
     await XePlay.update_start_time(reset=True)
