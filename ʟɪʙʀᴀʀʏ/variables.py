@@ -65,7 +65,7 @@ else:
 
 
 """purge handlers' timings"""
-CLEAN_REMOVER = 4
+CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
 GROUP_REMOVER = 6
 HELP_REMOVER = 60

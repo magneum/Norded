@@ -26,11 +26,13 @@ from ʜᴏᴍᴇ import *
 async def Xero_Server_Stats(context, is_connected: bool):
     if is_connected:
         XePlay.chat_id = MAX_CHANNEL_ID - context.full_chat.id
-
-        await XePlay_Texter(f"{XEXO}Xeronoid Userbot has been connected")
+        ON = await XePlay_Texter(f"{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)")
+        await asyncio.sleep(3)
+        await ON.delete()
     else:
-        
-        await XePlay_Texter(f"{XEXO}Xeronoid Userbot left the voice chat")
+        OFF = await XePlay_Texter(f"{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗹𝗲𝗳𝘁 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)")
+        await asyncio.sleep(3)
+        await OFF.delete()
         XePlay.chat_id = None
 
 
@@ -48,7 +50,7 @@ async def XePlay_Texter(text):
     message = await client.send_message(
         chat_id,
         text,
-        disable_web_page_preview=True,
+        disable_web_page_preview=False,
         disable_notification=True
     )
     return message
