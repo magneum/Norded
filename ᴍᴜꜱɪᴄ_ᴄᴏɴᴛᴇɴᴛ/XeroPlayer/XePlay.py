@@ -18,6 +18,8 @@
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
+
+
 class XeroPlayer(object):
     def __init__(self):
         self.Xero_Voixe = None #group_call
@@ -27,11 +29,7 @@ class XeroPlayer(object):
         self.playlist = []
         self.msg = {}
 
-    async def update_start_time(self, reset=False):
-        self.Xero_Clock = (
-            None if reset
-            else datetime.utcnow().replace(microsecond=0)
-        )
+
 
     async def send_playlist(self):
         playlist = self.playlist
@@ -48,12 +46,16 @@ class XeroPlayer(object):
             ])
         if XePlay.msg.get('playlist') is not None:
             await XePlay.msg['playlist'].delete()
-        XePlay.msg['playlist'] = await send_text(pl)
+        XePlay.msg['playlist'] = await XePlay_Texter(pl)
 
+    async def update_start_time(self, reset=False):
+        self.Xero_Clock = (None if reset else datetime.utcnow().replace(microsecond=0))
 
 XePlay = XeroPlayer()
 
-async def send_text(text):
+
+
+async def XePlay_Texter(text):
     Xero_Voixe = XePlay.Xero_Voixe
     client = Xero_Voixe.client
     chat_id = XePlay.chat_id

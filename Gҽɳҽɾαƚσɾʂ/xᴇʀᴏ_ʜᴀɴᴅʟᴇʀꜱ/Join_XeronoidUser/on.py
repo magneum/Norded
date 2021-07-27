@@ -34,7 +34,7 @@ async def join_group_call(client, m: Message):
     if not Xero_Voixe:
         XePlay.Xero_Voixe = GroupCallFactory(client).get_file_group_call()
         XePlay.Xero_Voixe.add_handler(
-        network_status_changed_handler,
+        Xero_Server_Stats,
         GroupCallFileAction.NETWORK_STATUS_CHANGED)
         XePlay.Xero_Voixe.add_handler(
         playout_ended_handler,

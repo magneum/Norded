@@ -21,7 +21,27 @@ from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 
-async def send_text(text):
+
+
+async def Xero_Server_Stats(context, is_connected: bool):
+    if is_connected:
+        XePlay.chat_id = MAX_CHANNEL_ID - context.full_chat.id
+
+        await XePlay_Texter(f"{XEXO}Xeronoid Userbot has been connected")
+    else:
+        
+        await XePlay_Texter(f"{XEXO}Xeronoid Userbot left the voice chat")
+        XePlay.chat_id = None
+
+
+
+
+async def playout_ended_handler(_, __):
+    await skip_current_playing()
+
+
+
+async def XePlay_Texter(text):
     Xero_Voixe = XePlay.Xero_Voixe
     client = Xero_Voixe.client
     chat_id = XePlay.chat_id
@@ -32,17 +52,3 @@ async def send_text(text):
         disable_notification=True
     )
     return message
-
-async def network_status_changed_handler(context, is_connected: bool):
-    if is_connected:
-        XePlay.chat_id = MAX_CHANNEL_ID - context.full_chat.id
-
-        await send_text(f"{XEXO}Xeronoid Userbot has been connected")
-    else:
-        
-        await send_text(f"{XEXO}Xeronoid Userbot left the voice chat")
-        XePlay.chat_id = None
-
-
-async def playout_ended_handler(_, __):
-    await skip_current_playing()
