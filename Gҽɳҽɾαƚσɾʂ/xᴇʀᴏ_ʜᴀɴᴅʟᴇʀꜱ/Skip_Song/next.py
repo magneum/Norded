@@ -29,7 +29,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& self_or_contact_filter
+& Known_User
 & current_vc
 & filters.command("next", prefixes="/"))
 async def skip_track(_, m: Message):

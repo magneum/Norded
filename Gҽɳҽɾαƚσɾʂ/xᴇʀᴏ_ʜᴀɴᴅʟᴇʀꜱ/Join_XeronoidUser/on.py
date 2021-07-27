@@ -27,7 +27,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& self_or_contact_filter
+& Known_User
 & filters.command("on", prefixes="/"))
 async def join_group_call(client, m: Message):
     group_call = XePlay.group_call

@@ -28,7 +28,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& self_or_contact_filter
+& Known_User
 & current_vc
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, m: Message):

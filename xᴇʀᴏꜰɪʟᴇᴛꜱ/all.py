@@ -19,7 +19,9 @@ from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
-self_or_contact_filter = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
+Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact))
+
+# or message.outgoing)
 
 
 async def current_vc_filter(_, __, m: Message):

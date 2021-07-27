@@ -27,7 +27,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& self_or_contact_filter
+& Known_User
 & current_vc
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, m: Message):
