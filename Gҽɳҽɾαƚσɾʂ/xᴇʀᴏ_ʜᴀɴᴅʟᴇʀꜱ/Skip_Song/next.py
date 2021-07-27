@@ -30,7 +30,7 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 & Known_User
-& current_vc
+& Xero_Singer
 & filters.command("next", prefixes="/"))
 async def skip_track(_, m: Message):
     playlist = XePlay.playlist

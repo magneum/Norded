@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 & Known_User
-& current_vc
+& Xero_Singer
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, m: Message):
     Xero_Voixe = XePlay.Xero_Voixe

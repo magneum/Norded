@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 & Known_User
-& current_vc
+& Xero_Singer
 & filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, m: Message):
     Xero_Voixe = XePlay.Xero_Voixe

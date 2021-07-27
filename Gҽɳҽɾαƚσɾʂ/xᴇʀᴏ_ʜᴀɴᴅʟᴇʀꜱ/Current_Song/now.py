@@ -29,7 +29,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& current_vc
+& Xero_Singer
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, m: Message):
     Xero_Clock = XePlay.Xero_Clock

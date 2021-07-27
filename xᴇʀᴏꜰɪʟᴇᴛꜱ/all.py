@@ -22,7 +22,7 @@ from ʜᴏᴍᴇ import *
 Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact))# or message.outgoing)
 
 
-async def current_vc_filter(_, __, m: Message):
+async def Xero_Singing(_, __, m: Message):
     Xero_Voixe = XePlay.Xero_Voixe
     if not (Xero_Voixe and Xero_Voixe.is_connected):
         return False
@@ -30,4 +30,4 @@ async def current_vc_filter(_, __, m: Message):
     if m.chat.id == chat_id:
         return True
     return False
-current_vc = filters.create(current_vc_filter)
+Xero_Singer = filters.create(Xero_Singing)

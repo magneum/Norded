@@ -28,7 +28,7 @@ filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
 & ~filters.via_bot
-& current_vc
+& Xero_Singer
 & filters.command("sing", prefixes="/"))
 async def play_track(client, m: Message):
     Xero_Voixe = XePlay.Xero_Voixe

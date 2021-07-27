@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 & Known_User
-& current_vc
+& Xero_Singer
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, m: Message):
     Xero_Voixe = XePlay.Xero_Voixe

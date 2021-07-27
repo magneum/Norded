@@ -29,7 +29,7 @@ filters.group
 & ~filters.edited
 & ~filters.via_bot
 & Known_User
-& current_vc
+& Xero_Singer
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
