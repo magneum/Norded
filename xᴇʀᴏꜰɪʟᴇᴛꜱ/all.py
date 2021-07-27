@@ -19,27 +19,27 @@ from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
-Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact))# or message.outgoing)
+Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
 
 
-async def Xero_Singing(_, __, m: Message):
+async def Xero_Singing(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not (group_call and group_call.is_connected):
         return False
     chat_id = int("-100" + str(group_call.full_chat.id))
-    if m.chat.id == chat_id:
+    if XS.chat.id == chat_id:
         return True
     return False
 Xero_Singer = filters.create(Xero_Singing)
 
 
 
-async def Xero_Sudos(client, __, m: Message):
+async def Xero_Sudos(client, __, XS: XeroSpeak):
     if not MUSIC_ADMIN_IDS:
-        await m.reply_text("If You are not an Authorized Xeronoid userbot member then you cannot use this command")
+        await XS.reply_text("If You are not an Authorized Xeronoid userbot member then you cannot use this command")
         return False
     if not OWNER_ID:
-        await m.reply_text("Please Check Your Owner ID in heroku Vars")
+        await XS.reply_text("Please Check Your Owner ID in heroku Vars")
         return False
     return True
 Xero_Music_Admins = filters.create(Xero_Sudos)
