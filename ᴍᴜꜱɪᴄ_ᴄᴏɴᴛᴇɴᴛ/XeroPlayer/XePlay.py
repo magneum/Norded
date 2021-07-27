@@ -37,17 +37,16 @@ class XeroPlayer(object):
 
 
         if not playlist:
-            Xero_Music_List = f"{XEXO}🎧 𝙢𝙪𝙨𝙞𝙘 𝙡𝙞𝙨𝙩 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩"
+            Xero_Music_List = f"""{XEXO}🎧 𝙢𝙪𝙨𝙞𝙘 𝙡𝙞𝙨𝙩 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩"""
 
         else:
             if len(playlist) == 1:
-                Xero_Music_List = f"""{XEXO}  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
-(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n"""
+                Xero_Music_List = f"""{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif) 
+(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
 
             else:
-                Xero_Music_List = f"""{XEXO}  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁  』[❄️ ʜʏᴘᴇᴠᴏɪᴅ ɪɴᴄʟ.](https://telegra.ph/file/136c238b287f9c7d5174c.jpg) 
-(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n"""
-
+                Xero_Music_List = f"""{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif) 
+(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
 
             Xero_Music_List += "\n".join([
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
@@ -58,6 +57,7 @@ class XeroPlayer(object):
         if XePlay.msg.get('playlist') is not None:
             await XePlay.msg['playlist'].delete()
         XePlay.msg['playlist'] = await XePlay_Texter(Xero_Music_List)
+
 
 
 
@@ -75,9 +75,9 @@ async def XePlay_Texter(text):
     client = group_call.client
     chat_id = XePlay.chat_id
     message = await client.send_message(
-        chat_id,
-        text,
-        disable_web_page_preview=True,
-        disable_notification=False
+    chat_id,
+    text,
+    disable_web_page_preview=False,
+    disable_notification=False
     )
     return message

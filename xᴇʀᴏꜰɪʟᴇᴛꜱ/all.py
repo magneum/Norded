@@ -31,3 +31,11 @@ async def Xero_Singing(_, __, m: Message):
         return True
     return False
 Xero_Singer = filters.create(Xero_Singing)
+
+
+
+async def Xero_Sudos(_, __, m: Message):
+    if not MUSIC_ADMIN_IDS:
+        return False
+    return True
+Xero_Music_Admins = filters.create(Xero_Sudos)
