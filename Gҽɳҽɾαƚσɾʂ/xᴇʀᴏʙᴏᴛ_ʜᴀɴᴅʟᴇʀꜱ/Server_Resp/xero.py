@@ -23,33 +23,29 @@ from ʜᴏᴍᴇ import *
 
 
 @Client.on_message(
-filters.group
-& filters.command("replay", prefixes="/"))
+filters.command("xero", prefixes="/"))
 async def pong(client, m: Message):
+    await m.reply_chat_action("playing")
+
     start = datetime.now()
     end = datetime.now()
     delta_energy1 = (end - start).seconds
     delta_energy2= (end - start).microseconds
-
-
+    
     await client.send_animation(
-		chat_id=LOGGER_ID,
-		animation=xerolink,
+        animation=xerolink,
         duration=10,
-		caption=f"{XEXO}🎧 𝗦𝗲𝗿𝘃𝗲𝗿 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗶𝗺𝗲 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗳𝗲𝘁𝗰𝗵𝗲𝗱 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿"
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🎧 𝗦𝗲𝗿𝘃𝗲𝗿 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗶𝗺𝗲 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗳𝗲𝘁𝗰𝗵𝗲𝗱 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿"
 		)
-
-
-
+ 
     zeto = await m.reply_animation(
-    animation=xerolink,
-    caption=f"""{XEXO}
-
-|   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
-📡 **{delta_energy1}** `seconds` 
-📡 **{delta_energy2}** `microseconds`       
-""")
-
+        xerolink,
+        caption=f"""{XEXO}
+        |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
+                📡 **{delta_energy1}** `seconds` 
+                📡 **{delta_energy2}** `microseconds`
+                """) 
 
 
     # Let's Clean this also lol.....
