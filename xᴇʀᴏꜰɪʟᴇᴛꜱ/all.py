@@ -23,10 +23,10 @@ Known_User = filters.create(lambda _, __, message:(message.from_user and message
 
 
 async def Xero_Singing(_, __, m: Message):
-    Xero_Voixe = XePlay.Xero_Voixe
-    if not (Xero_Voixe and Xero_Voixe.is_connected):
+    group_call = XePlay.group_call
+    if not (group_call and group_call.is_connected):
         return False
-    chat_id = int("-100" + str(Xero_Voixe.full_chat.id))
+    chat_id = int("-100" + str(group_call.full_chat.id))
     if m.chat.id == chat_id:
         return True
     return False

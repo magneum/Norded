@@ -22,7 +22,7 @@ from ʜᴏᴍᴇ import *
 
 class XeroPlayer(object):
     def __init__(self):
-        self.Xero_Voixe = None #group_call
+        self.group_call = None 
         self.client = None
         self.chat_id = None
         self.Xero_Clock = None #start_time
@@ -81,8 +81,8 @@ XePlay = XeroPlayer()
 
 
 async def XePlay_Texter(text):
-    Xero_Voixe = XePlay.Xero_Voixe
-    client = Xero_Voixe.client
+    group_call = XePlay.group_call
+    client = group_call.client
     chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,

@@ -31,7 +31,7 @@ filters.group
 & Xero_Singer
 & filters.command("sing", prefixes="/"))
 async def play_track(client, m: Message):
-    Xero_Voixe = XePlay.Xero_Voixe
+    group_call = XePlay.group_call
     playlist = XePlay.playlist   
     print("Userbot is now downloading audio and sending to server...")    
     
@@ -100,7 +100,7 @@ async def play_track(client, m: Message):
         await download_audio(playlist[0])
         
         
-        Xero_Voixe.input_filename = os.path.join(
+        group_call.input_filename = os.path.join(
             client.workdir,
             DEFAULT_DOWNLOAD_DIR,
             f"{playlist[0].audio.file_unique_id}.raw"

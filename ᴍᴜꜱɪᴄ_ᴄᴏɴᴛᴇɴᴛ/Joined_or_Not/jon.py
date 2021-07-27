@@ -42,8 +42,8 @@ async def playout_ended_handler(_, __):
 
 
 async def XePlay_Texter(text):
-    Xero_Voixe = XePlay.Xero_Voixe
-    client = Xero_Voixe.client
+    group_call = XePlay.group_call
+    client = group_call.client
     chat_id = XePlay.chat_id
     message = await client.send_message(
         chat_id,

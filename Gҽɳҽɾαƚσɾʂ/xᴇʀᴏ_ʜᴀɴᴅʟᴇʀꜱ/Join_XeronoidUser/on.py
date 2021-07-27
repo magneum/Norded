@@ -30,25 +30,25 @@ filters.group
 & Known_User
 & filters.command("on", prefixes="/"))
 async def join_group_call(client, m: Message):
-    Xero_Voixe = XePlay.Xero_Voixe
-    if not Xero_Voixe:
-        XePlay.Xero_Voixe = GroupCallFactory(client).get_file_group_call()
-        XePlay.Xero_Voixe.add_handler(
+    group_call = XePlay.group_call
+    if not group_call:
+        XePlay.group_call = GroupCallFactory(client).get_file_group_call()
+        XePlay.group_call.add_handler(
         Xero_Server_Stats,
         GroupCallFileAction.NETWORK_STATUS_CHANGED)
-        XePlay.Xero_Voixe.add_handler(
+        XePlay.group_call.add_handler(
         playout_ended_handler,
         GroupCallFileAction.PLAYOUT_ENDED)
-        await XePlay.Xero_Voixe.start(m.chat.id)
+        await XePlay.group_call.start(m.chat.id)
         await m.delete()
         
         
         
         
-    if Xero_Voixe and Xero_Voixe.is_connected:
+    if group_call and group_call.is_connected:
         "First Log this event using the userbot"
-        Xero_Voixe = XePlay.Xero_Voixe
-        chat_id = int("-100" + str(Xero_Voixe.full_chat.id))
+        group_call = XePlay.group_call
+        chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)        
         await client.send_animation(
             animation=xerolink,

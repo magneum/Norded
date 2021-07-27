@@ -44,8 +44,8 @@ async def clean_raw_pcm(client, m: Message):
             if fn.endswith(".raw"):
                 count += 1
                 os.remove(os.path.join(download_dir, fn))
-    Xero_Voixe = XePlay.Xero_Voixe
-    chat_id = int("-100" + str(Xero_Voixe.full_chat.id))
+    group_call = XePlay.group_call
+    chat_id = int("-100" + str(group_call.full_chat.id))
     chat = await client.get_chat(chat_id)
 
 

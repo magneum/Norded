@@ -26,9 +26,9 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, m: Message):
-    Xero_Voixe = XePlay.Xero_Voixe
-    if Xero_Voixe and Xero_Voixe.is_connected:
-        chat_id = int("-100" + str(Xero_Voixe.full_chat.id))
+    group_call = XePlay.group_call
+    if group_call and group_call.is_connected:
+        chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)
         await client.send_animation(
             animation=xerolink,

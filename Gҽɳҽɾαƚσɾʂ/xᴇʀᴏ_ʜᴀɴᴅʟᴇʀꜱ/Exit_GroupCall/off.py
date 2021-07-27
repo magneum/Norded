@@ -31,10 +31,10 @@ filters.group
 & Xero_Singer
 & filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, m: Message):
-    Xero_Voixe = XePlay.Xero_Voixe
+    group_call = XePlay.group_call
     XePlay.playlist.clear()
-    Xero_Voixe.input_filename = ''
-    await Xero_Voixe.stop()
+    group_call.input_filename = ''
+    await group_call.stop()
     
     "Log this event using xeronoid userbot"
     await client.send_animation(
