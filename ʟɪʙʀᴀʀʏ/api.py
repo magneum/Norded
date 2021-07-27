@@ -28,10 +28,10 @@ if HEROKU is not None and HEROKU == "HEROKU":
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
     XERONOID_SESSION = os.environ.get('XERONOID_SESSION')
 elif HEROKU != "HEROKU":
-    API_ID = 6372795 
-    API_HASH = "4b7731b0a6d8e15bef82863887feb293"
+    API_ID = 5397317 
+    API_HASH = "7ed80948c3b916010963407eaccd1752"
     BOT_TOKEN = "1631463971:AAG8m2_kx-fxfWlOq8NA7pq5_rSxHWLzn9Y"
-    XERONOID_SESSION = "BQAO0V1Yuir9Lv-OPW-vJEc9Rwo4UsmGjN-8QygT-rPWVjtriObqp2ivthicAQLGSswOaR1l8I3o-uXDPaJEhPygx_AvAc3TaApqNp4kTQZYki8gFFLeqAQ5ghpakW9hZ0T5r3n1Kzru2DLyFB0pONy1RTyOXGlU5qxIct7MY3SLLXW7ajFYLoAfqL2voTB1Sqw33TdxGC7UnTBUyv_Wg_HF8-rlFdW4wJPu4-CPUlvpBkpkhOmEdUd-yZ1AGEf-yEK5us462a98Cg7nVJhlJ6j0OI5PbdTsb-N2Gks_LE-_jiq3nFDyDmlB_Iq9LoM6eqyrbVN4Tsd2CgI-EEbqyXbdbXPecgA" 
+    XERONOID_SESSION = "BQDF2H8tazqK34_7MJS2jTKRId_v3A7EN7lmFUGTSmIJTCyltEsGoTglzsty9XeaMut495fsmlF9KiVszVjSsnkbHYsQjw1dbact5pwTAtnMqXFyo-BqYmYDgFkKz9kKtaPum_3Vuq5e-0N9grgVpvwBM-XPmnqeL1lYwhw1JWXxSHCpG3eGfNfDzJVx8Zjym9bMAcH7cGQjs-RUlcltzSDd-_sQEhA4--TmNA0m85HyWccSS5nYJtAWEEnnUDaxoPJ7zpw0W6KIRl--d0GCEwlUyuHgqR_2_2pJTx40Vr9Qba_DcDYHp1BiFLS3agwpV6ErRGhnYjA-IofGc135L4ErbjAdTQA" 
 else:
     cprint('Please recheck all the needed variables and restart the bot.',on_color='on_red')
     cprint('Exiting Xeronoid now','magenta', attrs=['concealed'])

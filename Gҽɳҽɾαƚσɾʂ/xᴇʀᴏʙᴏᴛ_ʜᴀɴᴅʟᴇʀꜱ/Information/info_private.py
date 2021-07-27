@@ -25,7 +25,7 @@ filters.private
 & filters.command("info", prefixes="/"))
 async def show_help(client, m: Message):
     await m.reply_chat_action("playing")
-    print(f"{XEXO}Userbot has requested Xeronoidbot to show help in private chat")
+    print("Userbot has requested Xeronoidbot to show help in private chat")
     
     mp.msg['info'] = await client.send_animation(
         animation=xerolink,

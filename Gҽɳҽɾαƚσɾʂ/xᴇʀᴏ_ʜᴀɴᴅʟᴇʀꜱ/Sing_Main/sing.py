@@ -31,7 +31,7 @@ filters.group
 async def play_track(client, m: Message):
     group_call = mp.group_call
     playlist = mp.playlist   
-    print(f"{XEXO}Userbot is now downloading audio and sending to server...")    
+    print("Userbot is now downloading audio and sending to server...")    
     
     
     "Check Wherether audio duration matches with the specified time mentioned in the code"

@@ -22,7 +22,7 @@ from sys import platform
 
 XEXO = "一═••÷デ[ 🦋 Ӽɛʀօռօɨɖ 🦋 ]デ÷••═一 \nby 🚀🔥 ΉYPΣ VӨID LΛB 🔥🚀\n\n"
 print(f"{XEXO}")
-print("The bot is going to run in"  +   platform.upper())
+print("The bot is going to run in   >"  +   platform.upper())
 
 
 
