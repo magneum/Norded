@@ -27,6 +27,6 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & filters.command("on", prefixes="/"))
-async def join_group_call(client, m: Message):
-    await m.reply_chat_action("playing")
+async def join_group_call(client, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")
         

@@ -32,7 +32,7 @@ filters.group
 & Known_User
 & Xero_Singer
 & filters.command("off", prefixes="/"))
-async def leave_voice_chat(client, m: Message):
+async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     XePlay.playlist.clear()
     group_call.input_filename = ''
@@ -47,4 +47,4 @@ async def leave_voice_chat(client, m: Message):
     )
     
     # Now just clean up the chat room and idle the code
-    await m.delete()
+    await XS.delete()

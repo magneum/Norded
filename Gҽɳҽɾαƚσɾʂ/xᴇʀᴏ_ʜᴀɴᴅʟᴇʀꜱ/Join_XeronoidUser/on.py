@@ -31,7 +31,7 @@ filters.group
 & ~filters.via_bot
 & Known_User
 & filters.command("on", prefixes="/"))
-async def join_group_call(client, m: Message):
+async def join_group_call(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not group_call:
         XePlay.group_call = GroupCallFactory(client).get_file_group_call()
@@ -41,8 +41,8 @@ async def join_group_call(client, m: Message):
         XePlay.group_call.add_handler(
         playout_ended_handler,
         GroupCallFileAction.PLAYOUT_ENDED)
-        await XePlay.group_call.start(m.chat.id)
-        await m.delete()
+        await XePlay.group_call.start(XS.chat.id)
+        await XS.delete()
         
         
         
@@ -61,7 +61,7 @@ async def join_group_call(client, m: Message):
         
         
         "Now Send the joined info to the requested group"
-        await m.reply_animation(
+        await XS.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧 Userbot has already joined group voice chat in **{chat.title}**",
             reply_markup = MIB

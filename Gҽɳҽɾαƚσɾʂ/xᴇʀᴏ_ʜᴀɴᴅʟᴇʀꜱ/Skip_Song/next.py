@@ -33,13 +33,13 @@ filters.group
 & Known_User
 & Xero_Singer
 & filters.command("next", prefixes="/"))
-async def skip_track(_, m: Message):
+async def skip_track(_, XS: XeroSpeak):
     playlist = XePlay.playlist
-    if len(m.command) == 1:
+    if len(XS.command) == 1:
         await skip_current_playing()
     else:
         try:
-            items = list(dict.fromkeys(m.command[1:]))
+            items = list(dict.fromkeys(XS.command[1:]))
             items = [int(x) for x in items if x.isdigit()]
             items.sort(reverse=True)
             text = []
@@ -50,13 +50,13 @@ async def skip_track(_, m: Message):
                     text.append(f"{i}. **{audio}**")
                 else:
                     text.append(f"{i}")
-            reply = await m.reply_text(
+            reply = await XS.reply_text(
                 "\n".join(text),
                 disable_web_page_preview=True
             )
             await XePlay.send_playlist()
         except (ValueError, TypeError):
-            reply = await m.reply_animation(
+            reply = await XS.reply_animation(
                 animation=xerolink,
                 caption=f"{XEXO}🎧 Recived Wrong Input.Try Properly",
                 reply_markup = MIB,
@@ -65,5 +65,5 @@ async def skip_track(_, m: Message):
             
             
         await xeronoid_next_purge(
-            (reply, m),
+            (reply, XS),
             SKIP_REMOVER)

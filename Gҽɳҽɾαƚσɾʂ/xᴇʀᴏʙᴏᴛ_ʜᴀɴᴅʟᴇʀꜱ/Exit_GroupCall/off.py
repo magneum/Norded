@@ -27,5 +27,5 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & filters.command("off", prefixes="/"))
-async def leave_voice_chat(client, m: Message):
-    await m.reply_chat_action("playing")
+async def leave_voice_chat(client, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")

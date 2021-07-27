@@ -27,7 +27,7 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
-async def list_voice_chat(client, m: Message):
+async def list_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     if group_call and group_call.is_connected:
         chat_id = int("-100" + str(group_call.full_chat.id))
@@ -40,7 +40,7 @@ async def list_voice_chat(client, m: Message):
             )
 
 
-        group_info = await m.reply_animation(
+        group_info = await XS.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**",
             reply_markup = MIB    
@@ -56,7 +56,7 @@ async def list_voice_chat(client, m: Message):
 
 
         
-        group_info = await m.reply_animation(
+        group_info = await XS.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧 Userbot is not plugged in any voice chat yet",
             reply_markup = MIB
@@ -65,5 +65,5 @@ async def list_voice_chat(client, m: Message):
 
     # delete help info in group chats to keep it clean no matter what 
     await xeronoid_help_purge(
-        (group_info,m),
+        (group_info,XS),
         GROUP_REMOVER)

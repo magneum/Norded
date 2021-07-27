@@ -24,8 +24,8 @@ from ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & filters.command("info", prefixes="/"))
-async def show_help(client, m: Message):
-    await m.reply_chat_action("playing")
+async def show_help(client, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")
     print("Userbot has requested Xeronoidbot to show help in group chat")
     
     XePlay.msg['info'] = await client.send_animation(
@@ -35,12 +35,12 @@ async def show_help(client, m: Message):
         caption=f"{XEXO}🎧 Userbot has requested Xeronoidbot to show help in group chat"
     )
  
-    group_info = await m.reply_animation(
+    group_info = await XS.reply_animation(
         xerolink,
         caption=XERO_HELP,
         reply_markup = MIB
     ) 
     # delete help info in group chats to keep it clean no matter what 
     await xeronoid_help_purge(
-        (group_info,m),
+        (group_info,XS),
         HELP_REMOVER)

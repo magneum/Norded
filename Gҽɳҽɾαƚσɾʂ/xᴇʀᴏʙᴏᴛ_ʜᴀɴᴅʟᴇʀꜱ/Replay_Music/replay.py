@@ -27,5 +27,5 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & filters.command("replay", prefixes="/"))
-async def restart_playing(_, m: Message):
-    await m.reply_chat_action("playing")
+async def restart_playing(_, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")

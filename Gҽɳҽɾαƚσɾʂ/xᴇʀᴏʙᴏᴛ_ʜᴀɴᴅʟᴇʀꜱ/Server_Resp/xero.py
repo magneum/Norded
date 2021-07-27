@@ -24,8 +24,8 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.command("xero", prefixes="/"))
-async def pong(client, m: Message):
-    await m.reply_chat_action("playing")
+async def pong(client, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")
 
     start = datetime.now()
     end = datetime.now()
@@ -39,7 +39,7 @@ async def pong(client, m: Message):
         caption=f"{XEXO}🎧 𝗦𝗲𝗿𝘃𝗲𝗿 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗶𝗺𝗲 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗳𝗲𝘁𝗰𝗵𝗲𝗱 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿"
 		)
  
-    zeto = await m.reply_animation(
+    zeto = await XS.reply_animation(
         xerolink,
         caption=f"""{XEXO}
         |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
@@ -50,6 +50,6 @@ async def pong(client, m: Message):
 
     # Let's Clean this also lol.....
     await delete_server(
-        (zeto,  m),
+        (zeto,  XS),
          SERVER_REMOVER)
     return 

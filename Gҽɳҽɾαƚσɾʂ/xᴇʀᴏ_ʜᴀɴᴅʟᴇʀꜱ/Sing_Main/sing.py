@@ -31,16 +31,16 @@ filters.group
 & ~filters.via_bot
 & Xero_Singer
 & filters.command("sing", prefixes="/"))
-async def play_track(client, m: Message):
+async def play_track(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     playlist = XePlay.playlist   
     print("Userbot is now downloading audio and sending to server...")    
     
     
     "Check Wherether audio duration matches with the specified time mentioned in the code"
-    if m.audio:
-        if m.audio.duration > (MAX_MIN * 60):
-            reply = await m.reply_animation(
+    if XS.audio:
+        if XS.audio.duration > (MAX_MIN * 60):
+            reply = await XS.reply_animation(
                 animation=xerolink,
                 caption=f"{XEXO}🎧 Audio which duration longer than {str(MAX_MIN)} min won't be automatically added to playlist",
                 reply_markup = MIB
@@ -49,11 +49,11 @@ async def play_track(client, m: Message):
                 (reply,),
                 PLAY_REMOVER)
             return
-        m_audio = m
-    elif m.reply_to_message and m.reply_to_message.audio:
-        m_audio = m.reply_to_message
+        m_audio = XS
+    elif XS.reply_to_message and XS.reply_to_message.audio:
+        m_audio = XS.reply_to_message
         if m_audio.audio.duration > (MAX_HOUR * 60 * 60):
-            reply = await m.reply_animation(
+            reply = await XS.reply_animation(
                 animation=xerolink,
                 caption=f"{XEXO}🎧 Audio which duration longer than {str(MAX_HOUR)} hours won't be added to playlist",
                 reply_markup = MIB
@@ -64,7 +64,7 @@ async def play_track(client, m: Message):
             return
     else:
         await XePlay.send_playlist()
-        await m.delete()
+        await XS.delete()
         return
     
     
@@ -74,7 +74,7 @@ async def play_track(client, m: Message):
     "Check Wherether audio is already added in the playlist or not"
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
-        reply = await m.reply_animation(
+        reply = await XS.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧  That music is already added to the xeronoid playlist",
             reply_markup = MIB
@@ -98,7 +98,7 @@ async def play_track(client, m: Message):
         )
         
         
-        m_status = await m.reply_animation(
+        m_status = await XS.reply_animation(
             animation=xerolink,
             caption=f"{XEXO}🎧 Please wait for xeronoid to link with userbot's server...\nGreater audio size, more time to add to server",
             reply_markup = MIB
@@ -129,6 +129,6 @@ async def play_track(client, m: Message):
     await XePlay.send_playlist()
     for track in playlist[:2]:
         await download_audio(track)
-    if not m.audio:
-        await m.delete()
+    if not XS.audio:
+        await XS.delete()
         

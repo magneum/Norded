@@ -32,7 +32,7 @@ filters.group
 & Known_User
 & Xero_Singer
 & filters.command("clean", prefixes="/"))
-async def clean_raw_pcm(client, m: Message):
+async def clean_raw_pcm(client, XS: XeroSpeak):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
     for track in XePlay.playlist[:2]:
@@ -58,7 +58,7 @@ async def clean_raw_pcm(client, m: Message):
     )
 
 
-    reply = await m.reply_animation(
+    reply = await XS.reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**",
         reply_markup = MIB
@@ -68,5 +68,5 @@ async def clean_raw_pcm(client, m: Message):
 
     # clean in groups
     await xeronoid_raw_purge(
-        (reply, m),
+        (reply, XS),
         CLEAN_REMOVER)

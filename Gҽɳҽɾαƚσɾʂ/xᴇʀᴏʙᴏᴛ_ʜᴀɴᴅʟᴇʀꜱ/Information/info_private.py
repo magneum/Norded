@@ -24,8 +24,8 @@ from ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.private
 & filters.command("info", prefixes="/"))
-async def show_help(client, m: Message):
-    await m.reply_chat_action("playing")
+async def show_help(client, XS: XeroSpeak):
+    await XS.reply_chat_action("playing")
     print("Userbot has requested Xeronoidbot to show help in private chat")
     
     XePlay.msg['info'] = await client.send_animation(
@@ -35,7 +35,7 @@ async def show_help(client, m: Message):
         caption=f"{XEXO}🎧 Userbot has requested Xeronoidbot to show help in private chat"
     )
  
-    await m.reply_animation(
+    await XS.reply_animation(
         xerolink,
         caption=XERO_HELP,
         reply_markup = MIB

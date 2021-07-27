@@ -49,15 +49,15 @@ async def skip_current_playing():
 
 
 
-async def download_audio(m: Message):
+async def download_audio(XS: XeroSpeak):
     group_call = XePlay.group_call
     client = group_call.client
     raw_file = os.path.join(
     client.workdir,
     DEFAULT_DOWNLOAD_DIR,
-    f"{m.audio.file_unique_id}.raw")
+    f"{XS.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):
-        original_file = await m.download()
+        original_file = await XS.download()
         ffmpeg.input(original_file).output(
             raw_file,
             format='s16le',
