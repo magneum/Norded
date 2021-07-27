@@ -23,12 +23,12 @@ class XeroPlayer(object):
         self.group_call = None
         self.client = None
         self.chat_id = None
-        self.start_time = None
+        self.Xero_Clock = None #Xero_Clock
         self.playlist = []
         self.msg = {}
 
     async def update_start_time(self, reset=False):
-        self.start_time = (
+        self.Xero_Clock = (
             None if reset
             else datetime.utcnow().replace(microsecond=0)
         )
