@@ -18,6 +18,11 @@
 import os
 import sys
 import time
+import asyncio
+import math
+import heroku3
+import requests
+import urllib3
 import ffmpeg
 import asyncio
 import logging

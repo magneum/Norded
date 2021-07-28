@@ -27,6 +27,8 @@ if HEROKU is not None and HEROKU == "HEROKU":
     API_HASH = os.environ.get('API_HASH')
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
     XERONOID_SESSION = os.environ.get('XERONOID_SESSION')
+    HEROKU_APP_NAME = os.environ.get('HEROKU_APP_NAME')
+    HEROKU_API_KEY = os.environ.get('HEROKU_API_KEY')
 elif HEROKU != "HEROKU":
     API_ID = 5397317 
     API_HASH = "7ed80948c3b916010963407eaccd1752"
