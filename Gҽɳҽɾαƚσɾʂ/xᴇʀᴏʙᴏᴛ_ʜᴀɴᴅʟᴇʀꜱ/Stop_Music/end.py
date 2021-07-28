@@ -29,4 +29,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

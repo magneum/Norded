@@ -38,7 +38,7 @@ async def show_current_playing_time(_, XS: XeroSpeak):
     if not Xero_Clock:
         empty = await XS.reply_animation(
             animation=xerolink,
-            captions=f"{XEXO}🎧 No Song is in xeronoid music server yet",
+            caption=f"{XEXO}🎧 No Song is in xeronoid music server yet",
             reply_markup = MIB
         )
         await xeronoid_now_purge(

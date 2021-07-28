@@ -29,4 +29,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

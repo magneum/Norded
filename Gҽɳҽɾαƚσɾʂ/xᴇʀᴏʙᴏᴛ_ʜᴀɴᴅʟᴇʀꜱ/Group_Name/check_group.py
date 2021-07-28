@@ -29,4 +29,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

@@ -31,4 +31,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("next", prefixes="/"))
 async def skip_track(_, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

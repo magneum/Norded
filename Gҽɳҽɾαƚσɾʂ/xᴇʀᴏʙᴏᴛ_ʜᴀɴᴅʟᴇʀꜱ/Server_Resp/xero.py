@@ -25,7 +25,7 @@ from ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.command("xero", prefixes="/"))
 async def pong(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")
 
     start = datetime.now()
     end = datetime.now()

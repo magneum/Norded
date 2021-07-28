@@ -25,7 +25,7 @@ from ʜᴏᴍᴇ import *
 filters.private
 & filters.command("info", prefixes="/"))
 async def show_help(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")
     print("Userbot has requested Xeronoidbot to show help in private chat")
     
     XePlay.msg['info'] = await client.send_animation(

@@ -30,4 +30,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

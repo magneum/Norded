@@ -30,4 +30,4 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("sing", prefixes="/"))
 async def play_track(client, XS: XeroSpeak):
-    await XS.reply_chat_action("playing")
+    await XS.reply_chat_action("typing")

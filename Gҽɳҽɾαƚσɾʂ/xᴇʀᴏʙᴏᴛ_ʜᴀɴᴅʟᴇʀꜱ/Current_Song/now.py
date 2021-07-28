@@ -29,5 +29,5 @@ filters.group
 & filters.chat(CHAT_ID)
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, XS: XeroSpeak):
+    await XS.reply_chat_action("typing")
     await XS.reply_text("Here is the Xeronoid Playlist")
-    await XS.reply_chat_action("playing")
