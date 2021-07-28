@@ -27,7 +27,7 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
-& ~filters.via_bot
+# & ~filters.via_bot
 & Known_User
 & Xero_Singer
 & filters.command("end", prefixes="/"))

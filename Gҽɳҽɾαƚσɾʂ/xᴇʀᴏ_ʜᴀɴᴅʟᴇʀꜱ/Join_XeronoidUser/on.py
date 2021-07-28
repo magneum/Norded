@@ -28,7 +28,7 @@ filters.group
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
 & ~filters.edited
-& ~filters.via_bot
+# & ~filters.via_bot
 & Known_User
 & filters.command("on", prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):

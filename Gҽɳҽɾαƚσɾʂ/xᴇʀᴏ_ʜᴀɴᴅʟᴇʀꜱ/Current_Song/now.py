@@ -29,7 +29,7 @@ from ʜᴏᴍᴇ import *
 filters.group
 & filters.chat(CHAT_ID)
 & ~filters.edited
-& ~filters.via_bot
+# & ~filters.via_bot
 & Xero_Singer
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, XS: XeroSpeak):
