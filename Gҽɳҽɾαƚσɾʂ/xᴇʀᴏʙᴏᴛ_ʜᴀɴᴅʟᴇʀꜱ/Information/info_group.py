@@ -26,13 +26,12 @@ filters.group
 & filters.command("info", prefixes="/"))
 async def show_help(client, XS: XeroSpeak):
     await XS.reply_chat_action("typing")
-    print("Userbot has requested Xeronoidbot to show help in group chat")
     
     XePlay.msg['info'] = await client.send_animation(
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Userbot has requested Xeronoidbot to show help in group chat"
+        caption=f"{XEXO}🎧  𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱𝗯𝗼𝘁 𝘁𝗼 𝘀𝗵𝗼𝘄 𝗵𝗲𝗹𝗽 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝗰𝗵𝗮𝘁"
     )
  
     group_info = await XS.reply_animation(

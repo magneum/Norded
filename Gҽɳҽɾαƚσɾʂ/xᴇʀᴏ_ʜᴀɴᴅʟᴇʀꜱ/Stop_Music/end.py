@@ -43,13 +43,13 @@ async def stop_playing(client, XS: XeroSpeak):
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**"
+        caption=f"{XEXO}🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻\n**{chat.title}**"
     )
     
     "Now end the music loop and send information in the requested chat"
     reply = await XS.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🎧 Xeronoid userbot has stopped playing music in **{chat.title}**",
+        caption=f"{XEXO}🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻\n**{chat.title}**",
         reply_markup = MIB
         )
     await XePlay.update_start_time(reset=True)

@@ -41,29 +41,29 @@ async def list_voice_chat(client, XS: XeroSpeak):
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has been plugged in the voice chat of:**{chat.title}**"
+            caption=f"{XEXO}🎧 (IN_GROUP)\n𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗼𝗳:**{chat.title}**"
             )
 
 
         group_info = await XS.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Userbot is plugged in the voice chat of **{chat.title}**",
+            caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗶𝘀 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗼𝗳 **{chat.title}**",
             reply_markup = MIB    
         )
        
     else:
-        await client.send_animation(
-            animation=xerolink,
-            duration=10,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has not been plugged yet"
-            )
+        # await client.send_animation(
+        #     animation=xerolink,
+        #     duration=10,
+        #     chat_id=LOGGER_ID,
+        #     caption=f"{XEXO}🎧 (IN_GROUP)\nXeronoid Userbot has not been plugged yet"
+        #     )
 
 
         
         group_info = await XS.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Userbot is not plugged in any voice chat yet",
+            caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗶𝗻 𝗮𝗻𝘆 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝘆𝗲𝘁",
             reply_markup = MIB
             )
         

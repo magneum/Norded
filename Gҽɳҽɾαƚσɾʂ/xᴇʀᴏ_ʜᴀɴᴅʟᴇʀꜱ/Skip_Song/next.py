@@ -58,7 +58,7 @@ async def skip_track(_, XS: XeroSpeak):
         except (ValueError, TypeError):
             reply = await XS.reply_animation(
                 animation=xerolink,
-                caption=f"{XEXO}🎧 Recived Wrong Input.Try Properly",
+                caption=f"{XEXO}🎧 𝗥𝗲𝗰𝗶𝘃𝗲𝗱 𝗪𝗿𝗼𝗻𝗴 𝗜𝗻𝗽𝘂𝘁.𝗧𝗿𝘆 𝗣𝗿𝗼𝗽𝗲𝗿𝗹y",
                 reply_markup = MIB,
                 disable_web_page_preview=True
                 )

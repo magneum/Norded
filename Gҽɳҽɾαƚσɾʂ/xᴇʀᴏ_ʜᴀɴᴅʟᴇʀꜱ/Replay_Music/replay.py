@@ -41,7 +41,7 @@ async def restart_playing(_, XS: XeroSpeak):
     
     reply = await XS.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🎧 playing from the beginning...",
+        caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
         reply_markup = MIB
     )
 

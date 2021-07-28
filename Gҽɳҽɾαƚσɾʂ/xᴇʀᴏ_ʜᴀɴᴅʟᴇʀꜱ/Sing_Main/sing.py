@@ -35,15 +35,14 @@ filters.group
 async def play_track(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     playlist = XePlay.playlist   
-    print("Userbot is now downloading audio and sending to server...")    
-    
+   
     
     "Check Wherether audio duration matches with the specified time mentioned in the code"
     if XS.audio:
         if XS.audio.duration > (MAX_MIN * 60):
             reply = await XS.reply_animation(
                 animation=xerolink,
-                caption=f"{XEXO}🎧 Audio which duration longer than {str(MAX_MIN)} min won't be automatically added to playlist",
+                caption=f"{XEXO}🎧 𝗔𝘂𝗱𝗶𝗼 𝘄𝗵𝗶𝗰𝗵 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗹𝗼𝗻𝗴𝗲𝗿 𝘁𝗵𝗮𝗻 {str(MAX_MIN)} 𝗺𝗶𝗻 𝘄𝗼𝗻'𝘁 𝗯𝗲 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰𝗮𝗹𝗹𝘆 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁",
                 reply_markup = MIB
             )
             await xeronoid_sing_purge(
@@ -56,7 +55,7 @@ async def play_track(client, XS: XeroSpeak):
         if m_audio.audio.duration > (MAX_HOUR * 60 * 60):
             reply = await XS.reply_animation(
                 animation=xerolink,
-                caption=f"{XEXO}🎧 Audio which duration longer than {str(MAX_HOUR)} hours won't be added to playlist",
+                caption=f"{XEXO}🎧 𝗔𝘂𝗱𝗶𝗼 𝘄𝗵𝗶𝗰𝗵 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗹𝗼𝗻𝗴𝗲𝗿 𝘁𝗵𝗮𝗻 {str(MAX_HOUR)} 𝗵𝗼𝘂𝗿𝘀 𝘄𝗼𝗻'𝘁 𝗯𝗲 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁",
                 reply_markup = MIB
             )
             await xeronoid_sing_purge(
@@ -77,7 +76,7 @@ async def play_track(client, XS: XeroSpeak):
             == m_audio.audio.file_unique_id:
         reply = await XS.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧  That music is already added to the xeronoid playlist",
+            caption=f"{XEXO}🎧  𝗧𝗵𝗮𝘁 𝗺𝘂𝘀𝗶𝗰 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘅𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁",
             reply_markup = MIB
             )
         await xeronoid_sing_purge(
@@ -95,13 +94,13 @@ async def play_track(client, XS: XeroSpeak):
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}🎧 Music has been sent to the server...\nPlease wait"
+            caption=f"{XEXO}🎧 𝗠𝘂𝘀𝗶𝗰 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝘀𝗲𝗻𝘁 𝘁𝗼 𝘁𝗵𝗲 𝘀𝗲𝗿𝘃𝗲𝗿...\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩"
         )
         
         
         m_status = await XS.reply_animation(
             animation=xerolink,
-            caption=f"{XEXO}🎧 Please wait for xeronoid to link with userbot's server...\nGreater audio size, more time to add to server",
+            caption=f"{XEXO}🎧 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘅𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘁𝗼 𝗹𝗶𝗻𝗸 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗿𝗯𝗼𝘁'𝘀 𝘀𝗲𝗿𝘃𝗲𝗿...\n𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧",
             reply_markup = MIB
         )
         await download_audio(playlist[0])
@@ -123,7 +122,7 @@ async def play_track(client, XS: XeroSpeak):
             animation=xerolink,
             duration=10,
             chat_id=LOGGER_ID,
-            caption=f"{XEXO}🎧  Xeronoid userbot has started playing:\n{playlist[0].audio.title}"
+            caption=f"{XEXO}🎧  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘁𝗮𝗿𝘁𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴:\n\n{playlist[0].audio.title}"
         )
         # Only userbot is going to log this event. So we need not to worry about Xeronoidbot
         

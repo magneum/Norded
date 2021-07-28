@@ -42,7 +42,7 @@ async def leave_voice_chat(client, XS: XeroSpeak):
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Xeronoid userbot has successfully left the voice chat"
+        caption=f"{XEXO}🎧  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗹𝗲𝗳𝘁 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁"
     )
     
     # Now just clean up the chat room and idle the code

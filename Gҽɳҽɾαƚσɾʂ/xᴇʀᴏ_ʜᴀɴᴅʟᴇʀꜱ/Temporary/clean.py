@@ -54,13 +54,13 @@ async def clean_raw_pcm(client, XS: XeroSpeak):
         animation=xerolink,
         duration=10,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**"
+        caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**"
     )
 
 
     reply = await XS.reply_animation(
         animation=xerolink,
-        caption=f"{XEXO}🎧 Xeronoid Userbot has clean **{count}** files in group **{chat.title}**",
+        caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**",
         reply_markup = MIB
         )
 

@@ -40,13 +40,11 @@ class XeroPlayer(object):
             Xero_Music_List = f"""{XEXO}🎧 𝙢𝙪𝙨𝙞𝙘 𝙡𝙞𝙨𝙩 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩"""
 
         else:
-            if len(playlist) == 1:
-                Xero_Music_List = f"""{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif) 
-(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
+            if len(playlist) == 1:  
+                Xero_Music_List = f"""{XEXO}🎧 [♦  XΣЯӨПӨID DJ   ♦](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
 
             else:
-                Xero_Music_List = f"""{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗡𝗼𝘄-𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗟𝗶𝘀𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif) 
-(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
+                Xero_Music_List = f"""{XEXO}🎧 [♦  XΣЯӨПӨID DJ   ♦](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:-\n\n\n\n"""
 
             Xero_Music_List += "\n".join([
                 f"**{i}**. **[{x.audio.title}]({x.link})**"
