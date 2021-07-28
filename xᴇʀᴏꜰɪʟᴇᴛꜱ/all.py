@@ -19,7 +19,22 @@ from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
+
+
+
 Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
+
+
+
+
+async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
+    group_call = XePlay.group_call
+    if not (group_call and group_call.is_connected):
+        return False
+    return True
+Voixe_Check = filters.create(XeroBot_Voixe_Check)
+
+
 
 
 async def Xero_Singing(_, __, XS: XeroSpeak):
@@ -31,6 +46,7 @@ async def Xero_Singing(_, __, XS: XeroSpeak):
         return True
     return False
 Xero_Singer = filters.create(Xero_Singing)
+
 
 
 

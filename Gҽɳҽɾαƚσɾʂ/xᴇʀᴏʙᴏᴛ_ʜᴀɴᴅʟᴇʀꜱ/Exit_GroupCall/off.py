@@ -25,6 +25,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):

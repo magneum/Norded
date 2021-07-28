@@ -26,6 +26,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):

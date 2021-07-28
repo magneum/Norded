@@ -26,6 +26,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("sing", prefixes="/"))
 async def play_track(client, XS: XeroSpeak):

@@ -25,6 +25,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):

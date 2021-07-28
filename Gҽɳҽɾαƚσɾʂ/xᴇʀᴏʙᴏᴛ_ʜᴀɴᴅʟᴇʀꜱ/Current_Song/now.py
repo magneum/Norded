@@ -23,11 +23,11 @@ from ʟɪʙʀᴀʀʏ import *
 from ʜᴏᴍᴇ import *
 
 
-
-
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("now", prefixes="/"))
 async def show_current_playing_time(_, XS: XeroSpeak):
+    await XS.reply_text("Here is the Xeronoid Playlist")
     await XS.reply_chat_action("playing")

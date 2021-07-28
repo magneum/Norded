@@ -27,6 +27,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("next", prefixes="/"))
 async def skip_track(_, XS: XeroSpeak):

@@ -25,6 +25,7 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Voixe_Check
 & filters.chat(CHAT_ID)
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, XS: XeroSpeak):
