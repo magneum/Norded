@@ -1,4 +1,3 @@
-# This python3 file uses the following encoding: utf-8
 """⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| 
                           GNU GENERAL PUBLIC LICENSE
@@ -22,22 +21,13 @@ from sys import platform
 
 XEXO = "⇜⊷•♪ 🦋Ӽɛʀօռօɨɖ🦋 ♪•⊶⇝** by 🔥 ΉYPΣ VӨID LΛB 🔥\n"
 print(f"{XEXO}")
-print("The bot is going to run in   >"  +   platform.upper())
+print("The bot is going to run in>   "  +   platform.upper())
 
 
 
-HEROKU = os.environ.get('HEROKU')
-if HEROKU == 'HEROKU' and platform.startswith("LI"):
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
-    shell=True,
-    check=True)
-elif HEROKU != 'HEROKU'and platform.startswith("WI"):
-    os.system("pip install -U pip;pip install -r Ӽɛʀօռօɨɖ.txt")
-    os.system("clear")
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
-    shell=True,
-    check=True)
-else:
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
-    shell=True,
-    check=True)
+
+#os.system("pip install --upgrade pip;pip install -r Ӽɛʀօռօɨɖ.txt;clear")
+subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",
+shell=True,
+check=True
+)

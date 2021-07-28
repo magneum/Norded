@@ -26,9 +26,9 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Xero_Music_Admins
 & filters.chat(CHAT_ID)
 & ~filters.edited
-# & ~filters.via_bot
 & Known_User
 & Xero_Singer
 & filters.command("clean", prefixes="/"))

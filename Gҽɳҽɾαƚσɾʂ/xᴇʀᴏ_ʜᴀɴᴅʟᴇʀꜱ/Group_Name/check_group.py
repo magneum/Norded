@@ -25,6 +25,11 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Xero_Music_Admins
+& filters.chat(CHAT_ID)
+& ~filters.edited
+& Known_User
+& Xero_Singer
 & filters.chat(CHAT_ID)
 & filters.command("group", prefixes="/"))
 async def list_voice_chat(client, XS: XeroSpeak):

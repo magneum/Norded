@@ -32,6 +32,6 @@ workers=22
 cprint(ON_OFF_FEED,'green')
 cprint('一═••÷  ONLINE  ÷••═一', on_color='on_green')
 idle()
-# cprint(ON_OFF_FEED,'red')
-# cprint('一═••÷  OFFLINE ÷••═一', on_color='on_red')
+cprint(ON_OFF_FEED,'red')
+cprint('一═••÷  OFFLINE ÷••═一', on_color='on_red')
 Ӽɛʀօռօɨɖ.stop()
