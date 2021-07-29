@@ -25,10 +25,10 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Xero_Singer
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& Xero_Singer
 & filters.command("plug", prefixes="/") | filters.command("plug"+BOT_USERNAME, prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):
     group_call = XePlay.group_call

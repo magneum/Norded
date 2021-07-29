@@ -27,10 +27,10 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Xero_Singer
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& Xero_Singer
 & filters.command("next", prefixes="/") | filters.command("next"+BOT_USERNAME, prefixes="/"))
 async def skip_track(_, XS: XeroSpeak):
     playlist = XePlay.playlist

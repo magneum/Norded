@@ -26,10 +26,10 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& Xero_Singer
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& Xero_Singer
 & filters.command("exit", prefixes="/") | filters.command("exit"+BOT_USERNAME, prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
