@@ -30,7 +30,8 @@
 
 ## 📂 CӨMMΛNDS
 ```sh
-📌 - *DYNO_COMMANDK = Will be asked while deploying and you can keep any command prefix as per your needs!
+📌 - *DYNO_COMMANDK = Will be asked when deploying and you can 
+                    keep any command prefix as per your needs!
 
 
 📍⇜⊷°•♪  𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
