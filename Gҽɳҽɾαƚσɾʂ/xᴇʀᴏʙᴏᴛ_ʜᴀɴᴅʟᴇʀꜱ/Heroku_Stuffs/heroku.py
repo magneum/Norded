@@ -47,7 +47,7 @@
 # filters.group
 # & Xero_Music_Admins
 # & ~filters.edited
-# & Known_User
+# 
 # & Xero_Singer
 # & filters.command("restart", prefixes="/"))
 # async def re(client, XS: XeroSpeak):
@@ -62,7 +62,7 @@
 # filters.group
 # & Xero_Music_Admins
 # & ~filters.edited
-# & Known_User
+# 
 # & Xero_Singer
 # & filters.command("shutdown", prefixes="/"))
 # async def down(client, XS: XeroSpeak):
@@ -77,7 +77,7 @@
 # filters.group
 # & Xero_Music_Admins
 # & ~filters.edited
-# & Known_User
+# 
 # & Xero_Singer
 # & filters.command("usage", prefixes="/"))
 # async def dyno_usage(client, XS: XeroSpeak):

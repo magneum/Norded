@@ -27,11 +27,9 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& ~filters.edited
-& Known_User
-& Xero_Singer
 & filters.command("off", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call

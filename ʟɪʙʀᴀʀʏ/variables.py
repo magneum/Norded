@@ -41,7 +41,7 @@ else:
 if HEROKU is not None and HEROKU == "HEROKU":
     MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
 else:
-    MUSIC_ADMIN_IDS = [1650583471] 
+    MUSIC_ADMIN_IDS = [1650583471,1848646989] 
 if HEROKU is not None and HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
 else:

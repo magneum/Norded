@@ -25,11 +25,9 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& ~filters.edited
-& Known_User
-& Xero_Singer
 & filters.command("replay", prefixes="/"))
 async def restart_playing(_, XS: XeroSpeak):
     group_call = XePlay.group_call

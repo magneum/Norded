@@ -26,11 +26,9 @@ from ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.group
+& ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& ~filters.edited
-& Known_User
-& Xero_Singer
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)

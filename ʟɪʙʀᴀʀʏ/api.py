@@ -32,7 +32,7 @@ if HEROKU is not None and HEROKU == "HEROKU":
 elif HEROKU != "HEROKU":
     API_ID = 5397317 
     API_HASH = "7ed80948c3b916010963407eaccd1752"
-    BOT_TOKEN = "1631463971:AAG8m2_kx-fxfWlOq8NA7pq5_rSxHWLzn9Y"
+    BOT_TOKEN = "1631463971:AAFtMq4iEdHrdY7OkExEeogPnbW-yWX3uhk"
     XERONOID_SESSION = "BQDF2H8tazqK34_7MJS2jTKRId_v3A7EN7lmFUGTSmIJTCyltEsGoTglzsty9XeaMut495fsmlF9KiVszVjSsnkbHYsQjw1dbact5pwTAtnMqXFyo-BqYmYDgFkKz9kKtaPum_3Vuq5e-0N9grgVpvwBM-XPmnqeL1lYwhw1JWXxSHCpG3eGfNfDzJVx8Zjym9bMAcH7cGQjs-RUlcltzSDd-_sQEhA4--TmNA0m85HyWccSS5nYJtAWEEnnUDaxoPJ7zpw0W6KIRl--d0GCEwlUyuHgqR_2_2pJTx40Vr9Qba_DcDYHp1BiFLS3agwpV6ErRGhnYjA-IofGc135L4ErbjAdTQA" 
 else:
     cprint('Please recheck all the needed variables and restart the bot.',on_color='on_red')
