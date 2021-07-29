@@ -22,5 +22,8 @@
 "required":false},
 "BOT_TOKEN":{
 "description": "Your @BotFather BOT Token.",
+"required":true},
+"HEROKU":{"description": "Keep it HEROKU",
+"value": "HEROKU",
 "required":true}},
 "buildpacks": [{"url": "heroku/python"}]}
