@@ -23,9 +23,12 @@ USERBOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ")
 BOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏʙᴏᴛ_ʜᴀɴᴅʟᴇʀꜱ")
 HEROKU = os.environ.get('HEROKU', None)
 xeroobj = object
-WHITE_COMMANDK = '/'
-DYNO_COMMANDK = '/'
+
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
+if HEROKU is not None and HEROKU == "HEROKU":
+    DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK', None)
+else:
+    DYNO_COMMANDK = '/'
 if HEROKU is not None and HEROKU == "HEROKU":
     CHAT_ID = int(os.environ.get('CHAT_ID', None))
 else:
