@@ -16,24 +16,24 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
 
-from .variables import XEXO, WHITE_COMMANDK, DYNO_COMMANDK
+from .variables import XEXO, DYNO_COMMANDK
 
 
 
 XERO_HELP = f"""{XEXO}
 ⇜⊷°•♪  𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
-- {WHITE_COMMANDK}sing: ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
-- {WHITE_COMMANDK}sing: ᴀʟꜱᴏ ᴜꜱᴇᴅ ᴛᴏ ᴄʜᴇᴄᴋ ᴘʟᴀʏʟɪꜱᴛ
+- {DYNO_COMMANDK}sing: ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
+- {DYNO_COMMANDK}sing: ᴀʟꜱᴏ ᴜꜱᴇᴅ ᴛᴏ ᴄʜᴇᴄᴋ ᴘʟᴀʏʟɪꜱᴛ
 - {DYNO_COMMANDK}group: ɢᴇᴛ ᴛʜᴇ ᴠᴄ ɴᴀᴍᴇ ᴡʜᴇʀᴇ ɪꜰ ʙᴏᴛ ʜᴀꜱ ᴊᴏɪɴᴇᴅ.
 
 ⇜⊷°•♪  𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
-- {DYNO_COMMANDK}on   : ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ ᴀ ʙᴏꜱꜱ ᴛᴏ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ.
+- {DYNO_COMMANDK}plug : ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ ᴀ ʙᴏꜱꜱ ᴛᴏ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ.
 - {DYNO_COMMANDK}off  : ʟᴇᴀᴠᴇ ᴄᴜʀʀᴇɴᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴡʜᴇʀᴇ ɪꜱ ᴅᴊɪɴɢ.
 - {DYNO_COMMANDK}end  : ᴇɴᴅ ᴛʜᴇ ᴘʟᴀʏʟɪꜱᴛ ᴀɴᴅ ꜱᴛᴏᴘ ᴀʟʟ ᴍᴜꜱɪᴄ.
 - {DYNO_COMMANDK}pause: ᴘᴀᴜꜱᴇ!.
 - {DYNO_COMMANDK}resume: ʀᴇꜱᴜᴍᴇ!.
 - {DYNO_COMMANDK}replay: ᴘʟᴀʏ ꜰʀᴏᴍ ᴛʜᴇ ʙᴇɢɪɴɴɪɴɢ ᴏꜰ ᴄᴜʀʀᴇɴᴛ ᴍᴜꜱɪᴄ ʙᴇɪɴɢ ᴘʟᴀʏᴇᴅ.
-- {DYNO_COMMANDK}skip : ꜱᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴜꜱɪᴄ ᴏʀ ᴅᴇʟᴇᴛᴇ ᴀ ᴍᴜꜱɪᴄ ꜰʀᴏᴍ ᴘʟᴀʏʟɪꜱᴛ ʟɪᴋᴇ "skip 2".
+- {DYNO_COMMANDK}next : ꜱᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴜꜱɪᴄ ᴏʀ ᴅᴇʟᴇᴛᴇ ᴀ ᴍᴜꜱɪᴄ ꜰʀᴏᴍ ᴘʟᴀʏʟɪꜱᴛ ʟɪᴋᴇ "skip 2".
 - {DYNO_COMMANDK}raw  : ᴄʟᴇᴀɴ ᴛʜᴇ ᴛᴇᴍᴘ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴍᴜꜱɪᴄ ʙʏ ʙᴏᴛc. 
 - {DYNO_COMMANDK}server: ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
 - {DYNO_COMMANDK}vol  : ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ. ʟɪᴍɪᴛ 1-200

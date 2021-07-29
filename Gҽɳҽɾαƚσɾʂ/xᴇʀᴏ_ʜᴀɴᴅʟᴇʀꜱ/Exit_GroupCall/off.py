@@ -30,7 +30,7 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("off", prefixes="/"))
+& filters.command("exit", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     XePlay.playlist.clear()

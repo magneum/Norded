@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("on", prefixes="/"))
+& filters.command("plug", prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not group_call:
