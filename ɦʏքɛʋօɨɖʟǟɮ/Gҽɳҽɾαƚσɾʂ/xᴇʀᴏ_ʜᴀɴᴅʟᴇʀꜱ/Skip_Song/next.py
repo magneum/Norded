@@ -30,7 +30,8 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("next", prefixes="/"))
+& Xero_Singer
+& filters.command("next", prefixes="/") | filters.command("next"+BOT_USERNAME, prefixes="/"))
 async def skip_track(_, XS: XeroSpeak):
     playlist = XePlay.playlist
     if len(XS.command) == 1:

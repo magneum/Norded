@@ -28,7 +28,8 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("end", prefixes="/"))
+& Xero_Singer
+& filters.command("end", prefixes="/") | filters.command("end"+BOT_USERNAME, prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     group_call.stop_playout()

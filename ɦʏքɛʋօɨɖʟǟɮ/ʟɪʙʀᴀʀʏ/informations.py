@@ -28,14 +28,14 @@ XERO_HELP = f"""{XEXO}
 
 ⇜⊷°•♪  𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
 - {DYNO_COMMANDK}plug : ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ ᴀ ʙᴏꜱꜱ ᴛᴏ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ.
-- {DYNO_COMMANDK}off  : ʟᴇᴀᴠᴇ ᴄᴜʀʀᴇɴᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴡʜᴇʀᴇ ɪꜱ ᴅᴊɪɴɢ.
+- {DYNO_COMMANDK}exit  : ʟᴇᴀᴠᴇ ᴄᴜʀʀᴇɴᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴡʜᴇʀᴇ ɪꜱ ᴅᴊɪɴɢ.
 - {DYNO_COMMANDK}end  : ᴇɴᴅ ᴛʜᴇ ᴘʟᴀʏʟɪꜱᴛ ᴀɴᴅ ꜱᴛᴏᴘ ᴀʟʟ ᴍᴜꜱɪᴄ.
 - {DYNO_COMMANDK}pause: ᴘᴀᴜꜱᴇ!.
 - {DYNO_COMMANDK}resume: ʀᴇꜱᴜᴍᴇ!.
 - {DYNO_COMMANDK}replay: ᴘʟᴀʏ ꜰʀᴏᴍ ᴛʜᴇ ʙᴇɢɪɴɴɪɴɢ ᴏꜰ ᴄᴜʀʀᴇɴᴛ ᴍᴜꜱɪᴄ ʙᴇɪɴɢ ᴘʟᴀʏᴇᴅ.
 - {DYNO_COMMANDK}next : ꜱᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴜꜱɪᴄ ᴏʀ ᴅᴇʟᴇᴛᴇ ᴀ ᴍᴜꜱɪᴄ ꜰʀᴏᴍ ᴘʟᴀʏʟɪꜱᴛ ʟɪᴋᴇ "skip 2".
 - {DYNO_COMMANDK}raw  : ᴄʟᴇᴀɴ ᴛʜᴇ ᴛᴇᴍᴘ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴍᴜꜱɪᴄ ʙʏ ʙᴏᴛc. 
-- {DYNO_COMMANDK}server: ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
+- {DYNO_COMMANDK}xero: ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
 - {DYNO_COMMANDK}vol  : ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ. ʟɪᴍɪᴛ 1-200
 ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ʜᴀꜱ ʙᴇᴇɴ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ:[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"""
 

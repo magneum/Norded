@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("group", prefixes="/"))
+& filters.command("group", prefixes="/") | filters.command("group"+BOT_USERNAME, prefixes="/"))
 async def list_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     if group_call and group_call.is_connected:

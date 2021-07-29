@@ -28,7 +28,8 @@ filters.group
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("plug", prefixes="/"))
+& Xero_Singer
+& filters.command("plug", prefixes="/") | filters.command("plug"+BOT_USERNAME, prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not group_call:
@@ -50,12 +51,12 @@ async def join_group_call(client, XS: XeroSpeak):
         group_call = XePlay.group_call
         chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)        
-        # await client.send_animation(
-        #     animation=xerolink,
-        #     duration=10,
-        #     chat_id=LOGGER_ID,
-        #     caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗷𝗼𝗶𝗻𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗶𝗻**{chat.title}**"
-        # )
+        await client.send_animation(
+            animation=xerolink,
+            duration=10,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗷𝗼𝗶𝗻𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗶𝗻**{chat.title}**"
+        )
         
         
         "Now Send the joined info to the requested group"

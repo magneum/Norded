@@ -29,7 +29,9 @@ async def Xero_Server_Stats(context, is_connected: bool):
         ON = await XePlay_Texter(f"{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)")
         await asyncio.sleep(3)
         await ON.delete()
+        
     else:
+        
         OFF = await XePlay_Texter(f"{XEXO}🎧 [𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗹𝗲𝗳𝘁 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽](https://telegra.ph/file/cc35dba04ad629c0771b3.gif)")
         await asyncio.sleep(3)
         await OFF.delete()
