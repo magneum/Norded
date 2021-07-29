@@ -19,8 +19,8 @@ import os
 XERO = '⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 MAX_MIN = 8
 MAX_HOUR = 3
-USERBOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ")
-BOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏʙᴏᴛ_ʜᴀɴᴅʟᴇʀꜱ")
+USERBOT_PLANEL = dict(root="ɦʏքɛʋօɨɖʟǟɮ/Gҽɳҽɾαƚσɾʂ/xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ")
+BOT_PLANEL = dict(root="ɦʏքɛʋօɨɖʟǟɮ/Gҽɳҽɾαƚσɾʂ/xᴇʀᴏʙᴏᴛ_ʜᴀɴᴅʟᴇʀꜱ")
 HEROKU = os.environ.get('HEROKU')
 xeroobj = object
 

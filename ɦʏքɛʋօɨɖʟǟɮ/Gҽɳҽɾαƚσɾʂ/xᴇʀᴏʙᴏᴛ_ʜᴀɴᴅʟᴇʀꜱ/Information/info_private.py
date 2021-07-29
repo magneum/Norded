@@ -23,7 +23,7 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 @Client.on_message(
 filters.private
-& filters.command("info", prefixes="/"))
+& filters.command("info", prefixes="/") | filters.command("info"+BOT_USERNAME, prefixes="/"))
 async def show_help(client, XS: XeroSpeak):
     await XS.reply_chat_action("typing")
     

@@ -23,7 +23,7 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 
 @Client.on_message(
-filters.command("xero", prefixes="/"))
+filters.command("xero", prefixes="/") | filters.command("xero"+BOT_USERNAME, prefixes="/"))
 async def pong(client, XS: XeroSpeak):
     await XS.reply_chat_action("typing")
 
