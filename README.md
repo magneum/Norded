@@ -56,6 +56,7 @@
 
 ## 📜 PЯΣRΣQUISIƬΣS
 ```sh
+
 𝐈𝐟 𝐮𝐬𝐢𝐧𝐠 𝐇𝐞𝐫𝐨𝐤𝐮:
     -   BOT_TOKEN = From @BotFather Only
     -   API_TOKEN = From @HVApiBot Only
@@ -88,6 +89,7 @@
 ## 💠 DΣPLӨY  
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
 
+- 𝗡𝗼𝘄 𝗢𝗽𝗲𝗻 [config.py](config.py) 𝗮𝗻𝗱 𝗮𝗱𝗱 𝘆𝗼𝘂𝗿 𝘀𝘁𝘂𝗳𝗳𝘀
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Xeronoid.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
 - [![XERONOID_SESSION](https://img.shields.io/badge/XERONOID_SESSION-Vïå_REPLIT-red.svg)](https://replit.com/@HypeVoidSoul/Xeronoid-Pyrogram-Session#main.py)
