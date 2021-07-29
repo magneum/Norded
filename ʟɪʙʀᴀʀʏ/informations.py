@@ -38,3 +38,15 @@ XERO_HELP = f"""{XEXO}
 - {DYNO_COMMANDK}server: ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
 - {DYNO_COMMANDK}vol  : ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ. ʟɪᴍɪᴛ 1-200
 ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ʜᴀꜱ ʙᴇᴇɴ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ:[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"""
+
+
+IGNITE = f"""{XEXO}
+
+𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿 🍁
+
+ᴛʜɪꜱ ɪꜱ ᴀ ᴍᴜꜱɪᴄ ʙᴏᴛ ᴍᴀᴅᴇ -Dҽʋ Mҽɳƚισɳ: 
+ ☠️@HypeVoids   |   ☠️@HypeVoidLab   |   ☠️@HypeVoidBot
+
+ʏᴏᴜ ᴄᴀɴ ʟɪꜱᴛᴇɴ ᴛᴏ ᴀɴʏ ᴛʏᴘᴇ ᴏꜰ ᴍᴜꜱɪᴄ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴠɪᴀ xᴇʀᴏɴᴏɪᴅʙᴏᴛ.
+ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ɢɪᴛʜᴜʙ ꜰᴏʀ ꜰᴜʀᴛʜᴇʀ ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ
+ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ʜᴀꜱ ʙᴇᴇɴ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ:[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"""

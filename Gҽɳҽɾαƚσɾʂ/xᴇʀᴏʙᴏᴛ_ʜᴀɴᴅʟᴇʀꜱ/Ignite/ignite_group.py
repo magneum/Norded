@@ -15,13 +15,31 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-import os
-HEROKU = os.environ.get('HEROKU')
-if HEROKU == "HEROKU":
-    from .Heroku_Stuffs import *
-    from .Information import *
-    from .Server_Resp import *
-else:
-    from .Information import *
-    from .Server_Resp import *
-    from .Ignite import *
+from xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
+from ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from ʟɪʙʀᴀʀʏ import *
+from ʜᴏᴍᴇ import *
+
+@Client.on_message(
+filters.group
+& filters.command("start", prefixes="/"))
+async def show_help(client, XS: XeroSpeak):
+    await XS.reply_chat_action("typing")
+    
+    # XePlay.msg['start'] = await client.send_animation(
+    #     animation=xerolink,
+    #     duration=10,
+    #     chat_id=LOGGER_ID,
+    #     caption=f"{XEXO}🎧  𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱𝗯𝗼𝘁 𝘁𝗼 𝘀𝗵𝗼𝘄 𝗵𝗲𝗹𝗽 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝗰𝗵𝗮𝘁"
+    # )
+ 
+    group_info = await XS.reply_animation(
+        xerolink,
+        caption=IGNITE,
+        reply_markup = MIB
+    ) 
+    # delete help start in group chats to keep it clean no matter what 
+    await xeronoid_help_purge(
+        (group_info,XS),
+        HELP_REMOVER)

@@ -15,13 +15,5 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-import os
-HEROKU = os.environ.get('HEROKU')
-if HEROKU == "HEROKU":
-    from .Heroku_Stuffs import *
-    from .Information import *
-    from .Server_Resp import *
-else:
-    from .Information import *
-    from .Server_Resp import *
-    from .Ignite import *
+from .ignite_group import *
+from .ignite_private import *
