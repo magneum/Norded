@@ -22,8 +22,8 @@ from .variables import XEXO, DYNO_COMMANDK
 
 XERO_HELP = f"""{XEXO}
 ⇜⊷°•♪  𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
-- {DYNO_COMMANDK}sing: ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
-- {DYNO_COMMANDK}sing: ᴀʟꜱᴏ ᴜꜱᴇᴅ ᴛᴏ ᴄʜᴇᴄᴋ ᴘʟᴀʏʟɪꜱᴛ
+- {DYNO_COMMANDK}plug: ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
+- {DYNO_COMMANDK}plug: ᴀʟꜱᴏ ᴜꜱᴇᴅ ᴛᴏ ᴄʜᴇᴄᴋ ᴘʟᴀʏʟɪꜱᴛ
 - {DYNO_COMMANDK}group: ɢᴇᴛ ᴛʜᴇ ᴠᴄ ɴᴀᴍᴇ ᴡʜᴇʀᴇ ɪꜰ ʙᴏᴛ ʜᴀꜱ ᴊᴏɪɴᴇᴅ.
 
 ⇜⊷°•♪  𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
