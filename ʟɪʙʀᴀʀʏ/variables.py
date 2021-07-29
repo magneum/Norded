@@ -21,36 +21,36 @@ MAX_MIN = 8
 MAX_HOUR = 3
 USERBOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏ_ʜᴀɴᴅʟᴇʀꜱ")
 BOT_PLANEL = dict(root="Gҽɳҽɾαƚσɾʂ/xᴇʀᴏʙᴏᴛ_ʜᴀɴᴅʟᴇʀꜱ")
-HEROKU = os.environ.get('HEROKU', None)
+HEROKU = os.environ.get('HEROKU')
 xeroobj = object
 
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-if HEROKU is not None and HEROKU == "HEROKU":
-    DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK', None)
+if HEROKU == "HEROKU":
+    DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK')
+else:
+    DYNO_COMMANDK = "/"
+if HEROKU == "HEROKU":
+    CHAT_ID = set(int(x) for x in os.environ.get("CHAT_ID").split())
 else:
     CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
-if HEROKU is not None and HEROKU == "HEROKU":
-    CHAT_ID = int(os.environ.get('CHAT_ID', None))
-else:
-    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
-if HEROKU is not None and HEROKU == "HEROKU":
-    OWNER_ID = int(os.environ.get('OWNER_ID', None))
+if HEROKU == "HEROKU":
+    OWNER_ID = os.environ.get('OWNER_ID')
 else:
     OWNER_ID = [1848646989]
-if HEROKU is not None and HEROKU == "HEROKU":
-    OWNER_USERNAME = int(os.environ.get('OWNER_USERNAME', None))
+if HEROKU == "HEROKU":
+    OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
 else:
     OWNER_USERNAME = '@HypeVoidSoul'
-if HEROKU is not None and HEROKU == "HEROKU":
-    MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
+if HEROKU == "HEROKU":
+    MUSIC_ADMIN_IDS = set(int(x) for x in os.environ.get("MUSIC_ADMIN_IDS").split())
 else:
     MUSIC_ADMIN_IDS = [1650583471,1848646989] 
-if HEROKU is not None and HEROKU == "HEROKU":
+if HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
 else:
     BOT_USERNAME = "@XERONOIDBOT"
-if HEROKU is not None and HEROKU == "HEROKU":
-    LOGGER_ID = int(os.environ.get('LOGGER_ID'))
+if HEROKU == "HEROKU":
+    LOGGER_ID = set(int(x) for x in os.environ.get("LOGGER_ID", "").split())
 else:
     LOGGER_ID = (-1001513582173)
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
