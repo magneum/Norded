@@ -35,6 +35,10 @@ if HEROKU is not None and HEROKU == "HEROKU":
 else:
     OWNER_ID = [1848646989]
 if HEROKU is not None and HEROKU == "HEROKU":
+    OWNER_USERNAME = int(os.environ.get('OWNER_USERNAME', None))
+else:
+    OWNER_USERNAME = '@HypeVoidSoul'
+if HEROKU is not None and HEROKU == "HEROKU":
     MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
 else:
     MUSIC_ADMIN_IDS = [1650583471] 
@@ -46,6 +50,18 @@ if HEROKU is not None and HEROKU == "HEROKU":
     LOGGER_ID = int(os.environ.get('LOGGER_ID'))
 else:
     LOGGER_ID = (-1001513582173)
+if HEROKU is not None and HEROKU == "HEROKU":
+    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
+else:
+    print("Not Using Any Heroku Stuffs")
+if HEROKU is not None and HEROKU == "HEROKU":
+    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
+else:
+    print("Not Using Any Heroku Stuffs")
+if HEROKU is not None and HEROKU == "HEROKU":
+    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
+else:
+    print("Not Using Any Heroku Stuffs")
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
