@@ -15,22 +15,31 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
-from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʜᴏᴍᴇ import *
 
-
-
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+@Client.on_message(
+filters.group
+& filters.command("info", prefixes="/"))
+async def show_help(client, XS: XeroSpeak):
+    await XS.reply_chat_action("typing")
+    
+    XePlay.msg['info'] = await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🎧  𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱𝗯𝗼𝘁 𝘁𝗼 𝘀𝗵𝗼𝘄 𝗵𝗲𝗹𝗽 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝗰𝗵𝗮𝘁"
+    )
+ 
+    group_info = await XS.reply_animation(
+        xerolink,
+        caption=XERO_HELP,
+        reply_markup = MIB
+    ) 
+    # delete help info in group chats to keep it clean no matter what 
+    await xeronoid_help_purge(
+        (group_info,XS),
+        HELP_REMOVER)

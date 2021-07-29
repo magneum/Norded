@@ -15,22 +15,26 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
-from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʜᴏᴍᴇ import *
+from .variables import HEROKU
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+
+if HEROKU == "HEROKU":
+    API_ID = os.environ.get('API_ID')
+    API_HASH = os.environ.get('API_HASH')
+    BOT_TOKEN = os.environ.get('BOT_TOKEN')
+    XERONOID_SESSION = os.environ.get('XERONOID_SESSION')
+    HEROKU_APP_NAME = os.environ.get('HEROKU_APP_NAME')
+    HEROKU_API_KEY = os.environ.get('HEROKU_API_KEY')
+elif HEROKU != "HEROKU":
+    API_ID = 5397317 
+    API_HASH = "7ed80948c3b916010963407eaccd1752"
+    BOT_TOKEN = "1631463971:AAFtMq4iEdHrdY7OkExEeogPnbW-yWX3uhk"
+    XERONOID_SESSION = "BQDF2H8tazqK34_7MJS2jTKRId_v3A7EN7lmFUGTSmIJTCyltEsGoTglzsty9XeaMut495fsmlF9KiVszVjSsnkbHYsQjw1dbact5pwTAtnMqXFyo-BqYmYDgFkKz9kKtaPum_3Vuq5e-0N9grgVpvwBM-XPmnqeL1lYwhw1JWXxSHCpG3eGfNfDzJVx8Zjym9bMAcH7cGQjs-RUlcltzSDd-_sQEhA4--TmNA0m85HyWccSS5nYJtAWEEnnUDaxoPJ7zpw0W6KIRl--d0GCEwlUyuHgqR_2_2pJTx40Vr9Qba_DcDYHp1BiFLS3agwpV6ErRGhnYjA-IofGc135L4ErbjAdTQA" 
+else:
+    cprint('Please recheck all the needed variables and restart the bot.',on_color='on_red')
+    cprint('Exiting Xeronoid now','magenta', attrs=['concealed'])
+    sys.exit()

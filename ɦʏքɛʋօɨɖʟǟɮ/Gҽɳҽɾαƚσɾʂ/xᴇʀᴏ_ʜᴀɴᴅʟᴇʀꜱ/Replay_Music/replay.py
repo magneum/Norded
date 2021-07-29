@@ -15,22 +15,35 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
-from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.xᴇʀᴏꜰɪʟᴇᴛꜱ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʜᴏᴍᴇ import *
 
 
+@Client.on_message(
+filters.group
+& ~filters.edited
+& Xero_Music_Admins
+& filters.chat(CHAT_ID)
+& filters.command("replay", prefixes="/"))
+async def restart_playing(_, XS: XeroSpeak):
+    group_call = XePlay.group_call
+    if not XePlay.playlist:
+        return
+    group_call.restart_playout()
+    await XePlay.update_start_time()
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+    
+    reply = await XS.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
+        reply_markup = MIB
+    )
+
+    # Hence now delete the replay info
+    await xeronoid_replay_purge(
+        (reply, XS),
+        REPLAY_REMOVER)

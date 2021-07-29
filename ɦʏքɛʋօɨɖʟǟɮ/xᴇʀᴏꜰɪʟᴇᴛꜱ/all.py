@@ -15,22 +15,40 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
-from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʟɪʙʀᴀʀʏ import *
+from 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯.ʜᴏᴍᴇ import *
+
+
+async def Xero_Singing(_, __, XS: XeroSpeak):
+    group_call = XePlay.group_call
+    if not (group_call and group_call.is_connected):
+        return False
+    # chat_id = int("-100" + str(group_call.full_chat.id))
+    # if XS.chat.id == chat_id:
+    #     return True
+    return False
+Xero_Singer = filters.create(Xero_Singing)
+
+
+Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+
+async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
+    group_call = XePlay.group_call
+    if group_call and group_call.is_connected:
+        return True
+    return False
+Voixe_Check = filters.create(XeroBot_Voixe_Check)
+
+
+
+async def Xero_Sudos(_, __, XS: XeroSpeak):
+    if not MUSIC_ADMIN_IDS:
+        return False
+    if not OWNER_ID:
+        return False
+    return True
+Xero_Music_Admins = filters.create(Xero_Sudos)
