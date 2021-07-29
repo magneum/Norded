@@ -57,9 +57,9 @@
 ## 📜 PЯΣRΣQUISIƬΣS
 ```sh
 𝐈𝐟 𝐮𝐬𝐢𝐧𝐠 𝐇𝐞𝐫𝐨𝐤𝐮:
-    -   BOT_TOKEN = From @BotFather
-    -   API_TOKEN = From @HVApiBot
-    -   API_HASH  = From @HVApiBot
+    -   BOT_TOKEN = From @BotFather Only
+    -   API_TOKEN = From @HVApiBot Only
+    -   API_HASH  = From @HVApiBot Only
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot
@@ -70,8 +70,8 @@
 
 𝗜𝗳 𝘂𝘀𝗶𝗻𝗴 𝗦𝗲𝗹𝗳 𝗛𝗼𝘀𝘁𝗶𝗻𝗴:
     -   BOT_TOKEN = From @BotFather
-    -   API_TOKEN = From @HVApiBot
-    -   API_HASH  = From @HVApiBot
+    -   API_TOKEN = From @HVApiBot Only
+    -   API_HASH  = From @HVApiBot Only
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot

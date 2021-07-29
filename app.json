@@ -1,0 +1,26 @@
+{"logo": "https://telegra.ph/file/327ae4aca7dee0d5dd67c.jpg",
+"name": "🦋Ӽɛʀօռօɨɖ🦋",
+"repository": "https://github.com/HypeVoidSoul/Xeronoid.gi",
+"stack": "container",
+"description": "🦋Ӽɛʀօռօɨɖ🦋",
+"website": "https://t,me/hypevoids",
+"keywords": ["telegram","voice","pyrogram","musicbot","userbot"],
+"env": {"API_ID":{
+"description":"api_id part of your Telegram API Key From @HVApiBot Only",
+"required":true
+},"API_HASH":{
+"description":"api_hash part of your Telegram API Key From @HVApiBot Only",
+"required":true},
+"XERONOID_SESSION":{
+"description":"Put the Xeronoid session key you got from Xeronoid's GitHub Replit link",
+"required":true},
+"HEROKU_APP_NAME":{
+"description":"Name of your heroku app",
+"required":false
+},"HEROKU_API_KEY":{
+"description":"Your Heroku API_TOKEN",
+"required":false},
+"BOT_TOKEN":{
+"description": "Your @BotFather BOT Token.",
+"required":true}},
+"buildpacks": [{"url": "heroku/python"}]}
