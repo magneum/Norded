@@ -28,7 +28,7 @@ xeroobj = object
 if HEROKU is not None and HEROKU == "HEROKU":
     DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK', None)
 else:
-    DYNO_COMMANDK = '/'
+    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
 if HEROKU is not None and HEROKU == "HEROKU":
     CHAT_ID = int(os.environ.get('CHAT_ID', None))
 else:
