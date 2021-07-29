@@ -15,7 +15,7 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from pyrogram import Client, filters, emoji,idle
+from pyrogram import Client, filters, emoji,idle,StopPropagation
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message as XeroSpeak
 from pyrogram.utils import MAX_CHANNEL_ID

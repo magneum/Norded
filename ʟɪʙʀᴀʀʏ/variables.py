@@ -50,18 +50,6 @@ if HEROKU is not None and HEROKU == "HEROKU":
     LOGGER_ID = int(os.environ.get('LOGGER_ID'))
 else:
     LOGGER_ID = (-1001513582173)
-if HEROKU is not None and HEROKU == "HEROKU":
-    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
-else:
-    print("Not Using Any Heroku Stuffs")
-if HEROKU is not None and HEROKU == "HEROKU":
-    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
-else:
-    print("Not Using Any Heroku Stuffs")
-if HEROKU is not None and HEROKU == "HEROKU":
-    HEROKU_APP_NAME = int(os.environ.get('HEROKU_APP_NAME'))
-else:
-    print("Not Using Any Heroku Stuffs")
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8

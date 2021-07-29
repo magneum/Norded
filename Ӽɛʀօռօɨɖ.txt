@@ -6,3 +6,4 @@ pyrogram
 wheel
 loguru
 termcolor
+heroku3
