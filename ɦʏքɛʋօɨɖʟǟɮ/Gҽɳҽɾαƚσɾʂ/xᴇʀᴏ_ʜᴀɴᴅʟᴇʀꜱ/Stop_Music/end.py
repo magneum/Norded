@@ -26,10 +26,12 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & Xero_Singer
+& Known_User
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("end", prefixes="/") | filters.command("end"+BOT_USERNAME, prefixes="/"))
+& filters.command("end", prefixes=DYNO_COMMANDK)
+)
 async def stop_playing(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     group_call.stop_playout()

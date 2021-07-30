@@ -27,10 +27,12 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & Xero_Singer
+& Known_User
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("sing", prefixes="/") | filters.command("sing"+BOT_USERNAME, prefixes="/"))
+& filters.command("sing", prefixes=DYNO_COMMANDK)
+)
 async def play_track(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     playlist = XePlay.playlist   

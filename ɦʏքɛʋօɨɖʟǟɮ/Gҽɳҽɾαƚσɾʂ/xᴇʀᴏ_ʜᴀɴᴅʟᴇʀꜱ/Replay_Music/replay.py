@@ -26,10 +26,12 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & Xero_Singer
+& Known_User
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("replay", prefixes="/") | filters.command("replay"+BOT_USERNAME, prefixes="/"))
+& filters.command("replay", prefixes=DYNO_COMMANDK)
+)
 async def restart_playing(_, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not XePlay.playlist:

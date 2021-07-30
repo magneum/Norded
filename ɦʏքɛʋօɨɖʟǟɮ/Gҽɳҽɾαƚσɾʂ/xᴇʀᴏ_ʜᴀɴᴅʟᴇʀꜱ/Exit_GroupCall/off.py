@@ -27,10 +27,12 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & Xero_Singer
+& Known_User
 & ~filters.edited
 & Xero_Music_Admins
 & filters.chat(CHAT_ID)
-& filters.command("exit", prefixes="/") | filters.command("exit"+BOT_USERNAME, prefixes="/"))
+& filters.command("exit", prefixes=DYNO_COMMANDK)
+)
 async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call
     XePlay.playlist.clear()

@@ -29,35 +29,19 @@ if HEROKU == "HEROKU":
     DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK')
 else:
     DYNO_COMMANDK = "/"
-# if HEROKU == "HEROKU":
-#     CHAT_ID = set(int(x) for x in os.environ.get("CHAT_ID").split())
-# else:
-#     CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
-# if HEROKU == "HEROKU":
-#     OWNER_ID = os.environ.get('OWNER_ID')
-# else:
-#     OWNER_ID = [1848646989]
 if HEROKU == "HEROKU":
     OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
 else:
     OWNER_USERNAME = '@HypeVoidSoul'
-# if HEROKU == "HEROKU":
-#     MUSIC_ADMIN_IDS = set(int(x) for x in os.environ.get("MUSIC_ADMIN_IDS").split())
-# else:
-#     MUSIC_ADMIN_IDS = [1650583471,1848646989] 
 if HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
 else:
     BOT_USERNAME = "@XERONOIDBOT"
-# if HEROKU == "HEROKU":
-#     LOGGER_ID = set(int(x) for x in os.environ.get("LOGGER_ID", "").split())
-# else:
-#     LOGGER_ID = (-1001513582173)
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
 GROUP_REMOVER = 6
-HELP_REMOVER = 60
+HELP_REMOVER = 30
 JOIN_REMOVER = 4
 LEAVE_REMOVER = 4
 MUTE_REMOVER = 8
@@ -71,7 +55,7 @@ UNMUTE_REMOVER = 6
 VOLUME_REMOVER = 6
 SERVER_REMOVER = 12
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
-XEXO = "            **⇜⊷•♪ 🦋Ӽɛʀօռօɨɖ🦋 ♪•⊶⇝**\n`by` **🔥 ΉYPΣ VӨID LΛB 🔥**\n\n"
+XEXO = "**🦋Ӽɛʀօռօɨɖ🦋**\n`by` **🔥 ΉYPΣ VӨID LΛB 🔥**\n"
 xerolink = "https://telegra.ph/file/cc35dba04ad629c0771b3.gif"
 ON_OFF_FEED ="""
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••| 
