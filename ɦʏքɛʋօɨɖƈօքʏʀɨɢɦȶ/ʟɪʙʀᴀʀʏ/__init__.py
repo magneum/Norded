@@ -18,3 +18,4 @@
 from .informations import *
 from .variables import *
 from .api import *
+from .igure import *
