@@ -38,5 +38,5 @@
 "MUSIC_ADMIN_USERNAMES":{
 "description": "@Usernames of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid",
 "required":true,
-"value":"put like this > @hypevoidsoul,@DEVLIXIE,@kalitronx {PUT @ and comma}"}},
+"value":"!! put like this > '@hypevoidsoul,@DEVLIXIE,@kalitronx' {PUT @ and commas properly}"}},
 "buildpacks": [{"url": "heroku/python"}]}
