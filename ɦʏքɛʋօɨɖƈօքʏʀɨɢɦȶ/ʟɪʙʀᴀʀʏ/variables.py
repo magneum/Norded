@@ -16,7 +16,6 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
 import os
-from sys import platform
 from termcolor import *
 HEROKU = os.environ.get('HEROKU', None)
 if HEROKU is not None and HEROKU == "HEROKU":   
@@ -24,14 +23,8 @@ if HEROKU is not None and HEROKU == "HEROKU":
     OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
     MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
-
     LOGGER_ID_TEMP = os.environ.get('LOGGER_ID')
     LOGGER_ID = int(LOGGER_ID_TEMP)
-
-
-
-
-
 else:
     OWNER_ID = [1848646989]
     OWNER_USERNAME = '@HYPEVOIDSOUL'
@@ -39,9 +32,6 @@ else:
     LOGGER_ID = int("-1001513582173")
     GROUP_USERNAME = '@kalocksX'
     MUSIC_ADMIN_USERNAMES = '@HYPEVOIDSOUL,@DEVLIXIE,@KALITRONX'
-
-
-
 XERO = '⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 MAX_MIN = 8
 MAX_HOUR = 3
@@ -51,8 +41,6 @@ xeroobj = object
 WHITE_COMMANDK = '/'
 DYNO_COMMANDK = '/'
 XEROPRINT = cprint
-
-
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
 GROUP_REMOVER = 6
@@ -69,9 +57,6 @@ STOP_REMOVER = 6
 UNMUTE_REMOVER = 6
 VOLUME_REMOVER = 6
 SERVER_REMOVER = 12
-
-
-
 XEXO = "            **⇜⊷•♪ 🦋Ӽɛʀօռօɨɖ🦋 ♪•⊶⇝**\n`by` **🔥 ΉYPΣ VӨID LΛB 🔥**\n\n"
 xerolink = "https://telegra.ph/file/cc35dba04ad629c0771b3.gif"
 ON_OFF_FEED ="""
@@ -91,7 +76,3 @@ ON_OFF_FEED ="""
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-
-
-
-

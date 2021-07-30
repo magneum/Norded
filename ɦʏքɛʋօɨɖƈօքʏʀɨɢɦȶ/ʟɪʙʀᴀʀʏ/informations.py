@@ -18,8 +18,6 @@
 
 from .variables import XEXO, DYNO_COMMANDK
 
-
-
 XERO_HELP = f"""{XEXO}
 ⇜⊷°•♪  𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀  ♪•°⊶⇝
 - {DYNO_COMMANDK}sing: ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀɴ ᴀᴜᴅɪᴏ ᴛᴏ ᴘʟᴀʏ/Qᴜᴇᴜᴇ ɪᴛ.
