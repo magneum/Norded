@@ -27,6 +27,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
+& Xero_Singer
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
