@@ -30,10 +30,10 @@ if HEROKU == "HEROKU":
     HEROKU_APP_NAME = os.environ.get('HEROKU_APP_NAME')
     HEROKU_API_KEY = os.environ.get('HEROKU_API_KEY')
 elif HEROKU != "HEROKU":
-    API_ID = 66666 
-    API_HASH = ""
-    BOT_TOKEN = ""
-    XERONOID_SESSION = "Qba_DcDYHp1BiFLS3agwpV6ErRGhnYjA-IofGc135L4ErbjAdTQA" 
+    API_ID = 6372795 
+    API_HASH = "4b7731b0a6d8e15bef82863887feb293"
+    BOT_TOKEN = "1631463971:AAFtMq4iEdHrdY7OkExEeogPnbW-yWX3uhk"
+    XERONOID_SESSION = "BQAPdAWmIn8T5v7JZLVxv0o8MLdAqY5uvzDpsGXlaP1dbxTltXuInJZUFDgixX5c9cA1HRBTELueE52HkJLawGR3ebkleU5WsB6s3Ir8Oviy45zfnaeBwbDWkT0VYofkswxvI29lWWNkq_ovzH0RpexEavvlxr1yX9BD5jwp0O5FCSTl5Mi3noqNNqD5KPtzMAARa23dJBNc5uln9WOAG0AdvXKotiBuOXOWX2U0WluepUmXPO_GX3lvMQVhqr1YbR8wdzIYW4djtOdo8_563JSVXkP4Vixgcj8FEQNaYOoLbzNJMpqKLA-L8dUORKKUWNelejjkv-v7ow7o15ZiE5wUbXPecgA" 
 else:
     cprint('Please recheck all the needed variables and restart the bot.',on_color='on_red')
     cprint('Exiting Xeronoid now','magenta', attrs=['concealed'])

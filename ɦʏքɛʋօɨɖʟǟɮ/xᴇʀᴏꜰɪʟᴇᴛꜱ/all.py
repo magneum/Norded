@@ -20,10 +20,6 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
 from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 
 
-
-
-
-'|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
 async def Xero_Singing(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not (group_call and group_call.is_connected):
@@ -33,13 +29,25 @@ async def Xero_Singing(_, __, XS: XeroSpeak):
         return True
     return False
 Xero_Singer = filters.create(Xero_Singing)
-'|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+
+
+
+# async def Xero_Singing(_, __, XS: XeroSpeak):
+#     group_call = XePlay.group_call
+#     if not (group_call and group_call.is_connected):
+#         return False
+#     chat_id = int("-100" + str(group_call.full_chat.id))
+#     if XS.chat.id == chat_id:
+#         return True
+#     return False
+# Xero_Singer = filters.create(Xero_Singing)
+
+
 Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
-'|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+
 async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call
     if group_call and group_call.is_connected:
         return True
     return False
 Voixe_Check = filters.create(XeroBot_Voixe_Check)
-'|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'

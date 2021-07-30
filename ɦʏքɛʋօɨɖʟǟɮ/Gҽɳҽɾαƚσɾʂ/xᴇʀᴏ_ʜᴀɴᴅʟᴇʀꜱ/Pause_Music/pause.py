@@ -31,15 +31,15 @@ filters.group
 & filters.command("pause", prefixes=DYNO_COMMANDK)
 )
 async def pause_playing(_, XS: XeroSpeak):
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     XePlay.group_call.pause_playout()
     await XePlay.update_start_time(reset=True)
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     reply = await XS.reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🎧 𝗣𝗮𝘂𝘀𝗲𝗱 𝗠𝘂𝘀𝗶𝗰 𝗶𝗻 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁...",
         reply_markup = MIB    )
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     XePlay.msg['pause'] = reply
     await xeronoid_pause_purge(
         (reply, XS),

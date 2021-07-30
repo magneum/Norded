@@ -31,17 +31,17 @@ filters.group
 & filters.command("resume", prefixes=DYNO_COMMANDK)
 )
 async def resume_playing(_, XS: XeroSpeak):
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     XePlay.group_call.resume_playout()
     reply = await XS.reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🎧 𝗥𝗲𝘀𝘂𝗺𝗲𝗱 𝗠𝘂𝘀𝗶𝗰 𝗶𝗻 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁...",
         reply_markup = MIB    )
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     if XePlay.msg.get('pause') is not None:
         await XePlay.msg['pause'].delete()
     await XS.delete()
-    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    
     await xeronoid_resume_purge(
         (reply, XS),
         RESUME_REMOVER)
