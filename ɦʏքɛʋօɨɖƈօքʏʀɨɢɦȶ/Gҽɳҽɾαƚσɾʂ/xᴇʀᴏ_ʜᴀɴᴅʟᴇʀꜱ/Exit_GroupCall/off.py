@@ -30,18 +30,31 @@ filters.group
 & Known_admins
 & filters.command("exit", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):
-    group_call = XePlay.group_call
-    XePlay.playlist.clear()
-    group_call.input_filename = ''
-    await group_call.stop()
+    try:
+        group_call = XePlay.group_call
+        XePlay.playlist.clear()
+        group_call.input_filename = ''
+        await group_call.stop()
     
-    "Log this event using xeronoid userbot"
-    await client.send_animation(
-        animation=xerolink,
-        duration=10,
-        chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗹𝗲𝗳𝘁 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁"
-    )
+        "Log this event using xeronoid userbot"
+        await client.send_animation(
+            animation=xerolink,
+            duration=10,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}🎧  𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗹𝗲𝗳𝘁 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁"    )
     
-    # Now just clean up the chat room and idle the code
-    await XS.delete()
+        # Now just clean up the chat room and idle the code
+        await XS.delete()
+
+        
+    except Exception as SHIT:
+        await client.send_animation(
+            animation=xerolink,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}\n\n{SHIT}"
+        )   
+
+        await XS.reply_animation(
+            xerolink,
+            caption=f"{XEXO}\n\n{SHIT}"
+        ) 

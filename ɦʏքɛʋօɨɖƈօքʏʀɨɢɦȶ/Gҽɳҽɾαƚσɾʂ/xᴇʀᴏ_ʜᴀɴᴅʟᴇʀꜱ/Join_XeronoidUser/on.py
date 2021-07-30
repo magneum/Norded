@@ -62,8 +62,13 @@ async def join_group_call(client, XS: XeroSpeak):
                 caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗷𝗼𝗶𝗻𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗶𝗻 **{chat.title}**",
                 reply_markup = MIB        )
     except Exception as SHIT:
-        await XS.send_animation(
+        await client.send_animation(
             animation=xerolink,
             chat_id=LOGGER_ID,
             caption=f"{XEXO}\n\n{SHIT}"
-        )      
+        )   
+
+        await XS.reply_animation(
+            xerolink,
+            caption=f"{XEXO}\n\n{SHIT}"
+        ) 

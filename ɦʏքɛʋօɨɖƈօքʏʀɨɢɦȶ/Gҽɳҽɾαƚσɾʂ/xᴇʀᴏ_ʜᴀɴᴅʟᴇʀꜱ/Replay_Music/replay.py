@@ -28,21 +28,32 @@ filters.group
 & Known_admins
 & Voixe_Check
 & filters.command("replay", prefixes="/"))
-async def restart_playing(_, XS: XeroSpeak):
-    group_call = XePlay.group_call
-    if not XePlay.playlist:
-        return
-    group_call.restart_playout()
-    await XePlay.update_start_time()
+async def restart_playing(client, XS: XeroSpeak):
+    try:
+        group_call = XePlay.group_call
+        if not XePlay.playlist:
+            return
+        group_call.restart_playout()
+        await XePlay.update_start_time()
 
     
-    reply = await XS.reply_animation(
-        animation=xerolink,
-        caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
-        reply_markup = MIB
-    )
+        reply = await XS.reply_animation(
+            animation=xerolink,
+            caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
+            reply_markup = MIB    )
 
-    # Hence now delete the replay info
-    await xeronoid_replay_purge(
-        (reply, XS),
-        REPLAY_REMOVER)
+        # Hence now delete the replay info
+        await xeronoid_replay_purge(
+            (reply, XS),
+            REPLAY_REMOVER)
+    except Exception as SHIT:
+        await client.send_animation(
+            animation=xerolink,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}\n\n{SHIT}"
+        )   
+
+        await XS.reply_animation(
+            xerolink,
+            caption=f"{XEXO}\n\n{SHIT}"
+        )     
