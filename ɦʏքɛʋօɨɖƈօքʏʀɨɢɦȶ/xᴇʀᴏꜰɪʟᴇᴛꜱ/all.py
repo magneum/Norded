@@ -39,8 +39,6 @@ async def Known_admins_SSS(_, __, message):
     return False
 Known_admins = filters.create(Known_admins_SSS)
 
-
-
 async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call
     if group_call and group_call.is_connected:

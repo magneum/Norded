@@ -1,3 +1,13 @@
-GROUP_USERNAME_TEMP = "@kalocksX","@hypevoids"
-GROUP_USERNAME = [GROUP_USERNAME_TEMP]
-print(GROUP_USERNAME)
+
+
+
+
+
+TEST = input('Texts:    \n')
+
+if TEST.startswith("'"):
+    TEST = TEST.upper().replace('"','')
+
+
+
+print([TEST])

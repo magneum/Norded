@@ -27,7 +27,6 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& filters.chat(GROUP_USERNAME)
 & filters.command("sing", prefixes="/"))
 async def play_track(client, XS: XeroSpeak):
     group_call = XePlay.group_call

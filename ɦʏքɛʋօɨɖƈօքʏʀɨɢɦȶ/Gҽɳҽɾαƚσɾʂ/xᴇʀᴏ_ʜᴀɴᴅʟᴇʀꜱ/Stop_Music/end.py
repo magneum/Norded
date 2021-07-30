@@ -26,7 +26,6 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& filters.chat(GROUP_USERNAME)
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):
     group_call = XePlay.group_call

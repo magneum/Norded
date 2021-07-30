@@ -64,7 +64,6 @@
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot
     -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-    -   GROUP_USERNAMES = Usernames of the groups where you are admin and want to play music
     -   HEROKU_APP_NAME = Name of your heroku app
     -   HEROKU_API_KEY = Your Heroku API_TOKEN 
 
@@ -76,7 +75,6 @@
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot
     -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-    -   GROUP_USERNAMES = Usernames of the groups where you are admin and want to play music
 ```
 
 
