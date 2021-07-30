@@ -27,19 +27,33 @@ WHITE_COMMANDK = '/'
 DYNO_COMMANDK = '/'
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 if HEROKU is not None and HEROKU == "HEROKU":
-    CHAT_ID = int(os.environ.get('CHAT_ID', None))
-    OWNER_ID = int(os.environ.get('OWNER_ID', None))
-    OWNER_USERNAME = int(os.environ.get('OWNER_USERNAME', None))
-    MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
+    '_______________________________________________'
+    CHAT_ID = os.environ.get('CHAT_ID')
+    CHAT_ID_TEMP = list(map(int, CHAT_ID.split()))
+    CHAT_ID = CHAT_ID_TEMP
+    '_______________________________________________'
+    OWNER_ID = os.environ.get('CHAT_ID')
+    OWNER_ID_TEMP = list(map(int, OWNER_ID))
+    OWNER_ID = OWNER_ID_TEMP
+    '_______________________________________________'
+    OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
-    LOGGER_ID = int(os.environ.get('LOGGER_ID'))
+    '_______________________________________________'
+    MUSIC_ADMIN_IDS = os.environ.get('MUSIC_ADMIN_IDS')
+    MUSIC_ADMIN_IDS_TEMP = list(map(int, MUSIC_ADMIN_IDS.split()))
+    MUSIC_ADMIN_IDS = MUSIC_ADMIN_IDS
+    '_______________________________________________'
+    LOGGER_ID = os.environ.get('LOGGER_ID')
+    LOGGER_ID_TEMP = list(map(int, LOGGER_ID.split()))
+    LOGGER_ID = LOGGER_ID_TEMP
+    '_______________________________________________'
 else:
-    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
     OWNER_ID = [1848646989]
     OWNER_USERNAME = '@HypeVoidSoul'
-    MUSIC_ADMIN_IDS = [1650583471,1848646989] 
     BOT_USERNAME = "@XERONOIDBOT"
     LOGGER_ID = (-1001513582173)
+    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
+    MUSIC_ADMIN_IDS = [1650583471,1848646989]
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
