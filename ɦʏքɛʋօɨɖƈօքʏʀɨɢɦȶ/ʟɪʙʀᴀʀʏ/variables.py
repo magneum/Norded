@@ -22,7 +22,8 @@ HEROKU = os.environ.get('HEROKU', None)
 if HEROKU is not None and HEROKU == "HEROKU":
     '_______________________________________________'
     CHAT_ID = os.environ.get('CHAT_ID')
-    CHAT_ID_TEMP = list(map(int, CHAT_ID.split()))
+    #CHAT_ID_TEMP = list(map(int, CHAT_ID.split()))
+    CHAT_ID_TEMP = map(int, CHAT_ID.split())
     CHAT_ID = CHAT_ID_TEMP
     '_______________________________________________'
     OWNER_ID = os.environ.get('OWNER_ID')
