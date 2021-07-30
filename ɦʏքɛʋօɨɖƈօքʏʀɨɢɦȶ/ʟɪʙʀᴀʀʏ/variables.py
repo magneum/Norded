@@ -16,6 +16,8 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
 import os
+from sys import platform
+from termcolor import *
 HEROKU = os.environ.get('HEROKU', None)
 if HEROKU is not None and HEROKU == "HEROKU":
     '_______________________________________________'
@@ -56,13 +58,13 @@ BOT_PLANEL = dict(root="ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ/Gҽɳҽɾαƚσɾʂ/x
 xeroobj = object
 WHITE_COMMANDK = '/'
 DYNO_COMMANDK = '/'
-
+XEROPRINT = cprint
 
 
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8
 GROUP_REMOVER = 6
-HELP_REMOVER = 60
+HELP_REMOVER = 30
 JOIN_REMOVER = 4
 LEAVE_REMOVER = 4
 MUTE_REMOVER = 8
