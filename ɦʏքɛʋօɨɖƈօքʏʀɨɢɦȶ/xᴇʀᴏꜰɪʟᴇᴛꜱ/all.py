@@ -30,9 +30,6 @@ async def Xero_Singing(_, __, XS: XeroSpeak):
     return False
 Xero_Singer = filters.create(Xero_Singing)
 
-
-
-
 async def Known_admins_SSS(_, __, message):
     if message.from_user.username in MUSIC_ADMIN_USERNAMES.capitalize():
         return True
