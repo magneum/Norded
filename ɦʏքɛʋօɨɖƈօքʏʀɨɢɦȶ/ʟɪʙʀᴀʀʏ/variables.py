@@ -28,27 +28,17 @@ DYNO_COMMANDK = '/'
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 if HEROKU is not None and HEROKU == "HEROKU":
     CHAT_ID = int(os.environ.get('CHAT_ID', None))
-else:
-    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
-if HEROKU is not None and HEROKU == "HEROKU":
     OWNER_ID = int(os.environ.get('OWNER_ID', None))
-else:
-    OWNER_ID = [1848646989]
-if HEROKU is not None and HEROKU == "HEROKU":
     OWNER_USERNAME = int(os.environ.get('OWNER_USERNAME', None))
-else:
-    OWNER_USERNAME = '@HypeVoidSoul'
-if HEROKU is not None and HEROKU == "HEROKU":
     MUSIC_ADMIN_IDS = int(os.environ.get('MUSIC_ADMIN_IDS', None))
-else:
-    MUSIC_ADMIN_IDS = [1650583471,1848646989] 
-if HEROKU is not None and HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
-else:
-    BOT_USERNAME = "@XERONOIDBOT"
-if HEROKU is not None and HEROKU == "HEROKU":
     LOGGER_ID = int(os.environ.get('LOGGER_ID'))
 else:
+    CHAT_ID = [-1001561595012,-1001472203238,-1001549079508]
+    OWNER_ID = [1848646989]
+    OWNER_USERNAME = '@HypeVoidSoul'
+    MUSIC_ADMIN_IDS = [1650583471,1848646989] 
+    BOT_USERNAME = "@XERONOIDBOT"
     LOGGER_ID = (-1001513582173)
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
