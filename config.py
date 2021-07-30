@@ -16,6 +16,15 @@
 """
 
 import os 
-CHAT_ID = set(int(os.environ.get("CHAT_ID", "-1001472203238,-1001549079508,-1001561595012").split()))
-MUSIC_ADMIN_IDS = set(int(os.environ.get("MUSIC_ADMIN_IDS", "1848646989,1650583471").split()))
-LOGGER_ID = os.environ.get("LOGGER_ID", "-1001510481746")
+
+CHAT_ID  = os.environ.get("CHAT_ID")
+if CHAT_ID :
+    CHAT_ID  = int(CHAT_ID.split()) #-1001472203238 -1001549079508 -1001561595012
+
+MUSIC_ADMIN_IDS  = os.environ.get("MUSIC_ADMIN_IDS")
+if MUSIC_ADMIN_IDS:
+    MUSIC_ADMIN_IDS  = int(MUSIC_ADMIN_IDS.split()) # 1848646989 1650583471
+
+LOGGER_ID = os.environ.get("LOGGER_ID")
+if LOGGER_ID :
+    LOGGER_ID  = int(LOGGER_ID) # -1001510481746
