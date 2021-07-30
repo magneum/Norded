@@ -28,7 +28,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& Xero_Singer
+& Voixe_Check
 & filters.command("next", prefixes="/"))
 async def skip_track(_, XS: XeroSpeak):
     playlist = XePlay.playlist

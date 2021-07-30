@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& Xero_Singer
+& Voixe_Check
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):
     group_call = XePlay.group_call
