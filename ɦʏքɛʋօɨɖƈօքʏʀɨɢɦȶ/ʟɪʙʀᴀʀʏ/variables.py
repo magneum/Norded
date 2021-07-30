@@ -20,6 +20,8 @@ from termcolor import *
 HEROKU = os.environ.get('HEROKU', None)
 if HEROKU is not None and HEROKU == "HEROKU":   
     GROUP_USERNAME = os.environ.get('GROUP_USERNAME')
+    if GROUP_USERNAME:
+        GROUP_USERNAME = GROUP_USERNAME.capitalize()
     OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
     MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
