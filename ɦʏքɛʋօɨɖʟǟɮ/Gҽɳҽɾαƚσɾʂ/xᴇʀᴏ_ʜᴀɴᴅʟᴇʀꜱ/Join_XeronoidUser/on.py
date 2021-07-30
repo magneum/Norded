@@ -28,7 +28,7 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-& Xero_Music_Admins
+
 & filters.chat(CHAT_ID)
 & filters.command("plug", prefixes=DYNO_COMMANDK)
 )

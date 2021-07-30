@@ -43,8 +43,3 @@ async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
     return False
 Voixe_Check = filters.create(XeroBot_Voixe_Check)
 '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
-async def Xero_Sudos(_, __, XS: XeroSpeak):
-    if not MUSIC_ADMIN_IDS:
-        return False
-    return True
-Xero_Music_Admins = filters.create(Xero_Sudos)
