@@ -15,8 +15,7 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
 
-
-CHAT_ID = [-1001472203238,-1001549079508,-1001561595012]
-OWNER_ID = [1848646989]
-MUSIC_ADMIN_IDS = [1848646989,1650583471] 
-LOGGER_ID = (-1001510481746) # only one 
+import os 
+CHAT_ID = set(int(os.environ.get("CHAT_ID", "-1001472203238,-1001549079508,-1001561595012").split()))
+MUSIC_ADMIN_IDS = set(int(os.environ.get("MUSIC_ADMIN_IDS", "1848646989,1650583471").split()))
+LOGGER_ID = os.environ.get("LOGGER_ID", "-1001510481746")

@@ -48,7 +48,5 @@ Voixe_Check = filters.create(XeroBot_Voixe_Check)
 async def Xero_Sudos(_, __, XS: XeroSpeak):
     if not MUSIC_ADMIN_IDS:
         return False
-    if not OWNER_ID:
-        return False
     return True
 Xero_Music_Admins = filters.create(Xero_Sudos)
