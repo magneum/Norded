@@ -22,7 +22,7 @@ HEROKU = os.environ.get('HEROKU', None)
 if HEROKU is not None and HEROKU == "HEROKU":
     '_______________________________________________'
     CHAT_ID = os.environ.get('CHAT_ID')
-    CHAT_ID_TEMP = list(str, map(CHAT_ID.split()))
+    CHAT_ID_TEMP = list(CHAT_ID.split())
     #CHAT_ID_TEMP = list(map(int, CHAT_ID.split()))
     CHAT_ID = CHAT_ID_TEMP
     '_______________________________________________'
