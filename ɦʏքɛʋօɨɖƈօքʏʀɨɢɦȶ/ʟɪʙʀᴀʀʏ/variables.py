@@ -19,25 +19,11 @@ import os
 from sys import platform
 from termcolor import *
 HEROKU = os.environ.get('HEROKU', None)
-if HEROKU is not None and HEROKU == "HEROKU":
-    # 
-    # CHAT_ID = os.environ.get('CHAT_ID')
-    # CHAT_ID_TEMP = list(map(int, CHAT_ID.split()))
-    # CHAT_ID = CHAT_ID_TEMP
-    # 
-    # OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
-    # BOT_USERNAME = os.environ.get('BOT_USERNAME')
-    # 
-    # LOGGER_ID = os.environ.get('LOGGER_ID')
-    # LOGGER_ID_TEMP = list(LOGGER_ID.split())
-    # LOGGER_ID = LOGGER_ID_TEMP
-    # 
-    
-    CHAT_ID_TEMP = os.environ.get('CHAT_ID')
-    CHAT_ID = int(CHAT_ID_TEMP)
-    
+if HEROKU is not None and HEROKU == "HEROKU":   
+    GROUP_USERNAME = os.environ.get('GROUP_USERNAME')
     OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
+    MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
 
     LOGGER_ID_TEMP = os.environ.get('LOGGER_ID')
     LOGGER_ID = int(LOGGER_ID_TEMP)
@@ -48,10 +34,11 @@ if HEROKU is not None and HEROKU == "HEROKU":
 
 else:
     OWNER_ID = [1848646989]
-    OWNER_USERNAME = '@HypeVoidSoul'
+    OWNER_USERNAME = '@HYPEVOIDSOUL'
     BOT_USERNAME = "@XERONOIDBOT"
     LOGGER_ID = int("-1001513582173")
-    CHAT_ID = int("-1001561595012")
+    GROUP_USERNAME = '@kalocksX'
+    MUSIC_ADMIN_USERNAMES = '@HYPEVOIDSOUL,@DEVLIXIE,@KALITRONX'
 
 
 

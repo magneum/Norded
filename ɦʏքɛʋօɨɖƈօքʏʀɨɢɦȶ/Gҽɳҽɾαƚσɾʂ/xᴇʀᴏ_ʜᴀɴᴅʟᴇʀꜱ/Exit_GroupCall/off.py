@@ -27,8 +27,8 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_User
-& filters.chat(CHAT_ID)
+& Known_admins
+& filters.chat(GROUP_USERNAME)
 & filters.command("exit", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):
     group_call = XePlay.group_call

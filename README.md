@@ -63,10 +63,10 @@
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot
-    -   MUSIC_ADMIN_IDS = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+    -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+    -   GROUP_USERNAMES = Usernames of the groups where you are admin and want to play music
     -   HEROKU_APP_NAME = Name of your heroku app
     -   HEROKU_API_KEY = Your Heroku API_TOKEN 
-
 
 𝗜𝗳 𝘂𝘀𝗶𝗻𝗴 𝗦𝗲𝗹𝗳 𝗛𝗼𝘀𝘁𝗶𝗻𝗴:
     -   BOT_TOKEN = From @BotFather
@@ -75,7 +75,8 @@
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   OWNER_ID = Get it from @HVKlawBot
-    -   MUSIC_ADMIN_IDS = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+    -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+    -   GROUP_USERNAMES = Usernames of the groups where you are admin and want to play music
 ```
 
 
