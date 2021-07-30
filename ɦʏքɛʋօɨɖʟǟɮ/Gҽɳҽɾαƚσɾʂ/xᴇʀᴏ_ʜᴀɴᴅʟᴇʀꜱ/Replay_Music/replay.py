@@ -33,20 +33,18 @@ filters.group
 & filters.command("replay", prefixes=DYNO_COMMANDK)
 )
 async def restart_playing(_, XS: XeroSpeak):
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
     group_call = XePlay.group_call
     if not XePlay.playlist:
         return
     group_call.restart_playout()
     await XePlay.update_start_time()
-
-    
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
     reply = await XS.reply_animation(
         animation=xerolink,
         caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
-        reply_markup = MIB
-    )
-
-    # Hence now delete the replay info
+        reply_markup = MIB    )
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
     await xeronoid_replay_purge(
         (reply, XS),
         REPLAY_REMOVER)

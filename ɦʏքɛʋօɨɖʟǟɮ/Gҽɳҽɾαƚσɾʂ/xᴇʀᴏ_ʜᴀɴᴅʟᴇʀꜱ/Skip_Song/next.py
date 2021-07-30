@@ -35,6 +35,7 @@ filters.group
 & filters.command("next", prefixes=DYNO_COMMANDK)
 )
 async def skip_track(_, XS: XeroSpeak):
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
     playlist = XePlay.playlist
     if len(XS.command) == 1:
         await skip_current_playing()
@@ -53,18 +54,15 @@ async def skip_track(_, XS: XeroSpeak):
                     text.append(f"{i}")
             reply = await XS.reply_text(
                 "\n".join(text),
-                disable_web_page_preview=True
-            )
+                disable_web_page_preview=True            )
             await XePlay.send_playlist()
         except (ValueError, TypeError):
             reply = await XS.reply_animation(
                 animation=xerolink,
                 caption=f"{XEXO}🎧 𝗥𝗲𝗰𝗶𝘃𝗲𝗱 𝗪𝗿𝗼𝗻𝗴 𝗜𝗻𝗽𝘂𝘁.𝗧𝗿𝘆 𝗣𝗿𝗼𝗽𝗲𝗿𝗹y",
                 reply_markup = MIB,
-                disable_web_page_preview=True
-                )
-            
-            
+                disable_web_page_preview=True                )
+        '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'            
         await xeronoid_next_purge(
             (reply, XS),
             SKIP_REMOVER)
