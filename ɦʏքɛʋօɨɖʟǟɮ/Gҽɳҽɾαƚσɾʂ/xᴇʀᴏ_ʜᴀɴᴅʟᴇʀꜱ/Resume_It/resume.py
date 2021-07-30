@@ -15,12 +15,36 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from .Exit_GroupCall import *
-from .Join_XeronoidUser import *
-from .Sing_Main import *
-from .Skip_Song import *
-from .Stop_Music import *
-from .Replay_Music import *
-from .Temporary import *
-from .Resume_It import *
-from .Pause_Music import *
+from ɦʏքɛʋօɨɖʟǟɮ.xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
+from ɦʏքɛʋօɨɖʟǟɮ.ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ɦʏքɛʋօɨɖʟǟɮ.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
+from ɦʏքɛʋօɨɖʟǟɮ.xᴇʀᴏꜰɪʟᴇᴛꜱ import *
+from ɦʏքɛʋօɨɖʟǟɮ.ʟɪʙʀᴀʀʏ import *
+from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
+
+
+@Client.on_message(
+filters.group
+& Xero_Singer
+& Known_User
+& ~filters.edited
+& Xero_Music_Admins
+& filters.chat(CHAT_ID)
+& filters.command("resume", prefixes=DYNO_COMMANDK)
+)
+async def resume_playing(_, XS: XeroSpeak):
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    XePlay.group_call.resume_playout()
+    reply = await XS.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🎧 𝗥𝗲𝘀𝘂𝗺𝗲𝗱 𝗠𝘂𝘀𝗶𝗰 𝗶𝗻 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁...",
+        reply_markup = MIB    )
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    if XePlay.msg.get('pause') is not None:
+        await XePlay.msg['pause'].delete()
+    await XS.delete()
+    '|-------------------------------🦋Ӽɛʀօռօɨɖ🦋------------------------------|'
+    await xeronoid_resume_purge(
+        (reply, XS),
+        RESUME_REMOVER)
+
