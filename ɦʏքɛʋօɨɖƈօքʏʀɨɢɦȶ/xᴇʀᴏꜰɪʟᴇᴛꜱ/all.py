@@ -24,15 +24,22 @@ async def Xero_Singing(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call
     if not (group_call and group_call.is_connected):
         return False
-    # chat_id = int("-100" + str(group_call.full_chat.id))
-    # if XS.chat.id == chat_id:
-    #     return True
+    chat_id = int("-100" + str(group_call.full_chat.id))
+    if XS.chat.id == chat_id:
+        return True
     return False
 Xero_Singer = filters.create(Xero_Singing)
 
 
 Known_User = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
 
+
+
+async def Known_admins_SSS(_, __, XS: XeroSpeak):
+    if XS.from_user.is_contact and XS.from_user:
+        return True
+    return False
+Known_admins = filters.create(Known_admins_SSS)
 
 
 
@@ -42,13 +49,3 @@ async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
         return True
     return False
 Voixe_Check = filters.create(XeroBot_Voixe_Check)
-
-
-
-async def Xero_Sudos(_, __, XS: XeroSpeak):
-    if not MUSIC_ADMIN_IDS:
-        return False
-    if not OWNER_ID:
-        return False
-    return True
-Xero_Music_Admins = filters.create(Xero_Sudos)

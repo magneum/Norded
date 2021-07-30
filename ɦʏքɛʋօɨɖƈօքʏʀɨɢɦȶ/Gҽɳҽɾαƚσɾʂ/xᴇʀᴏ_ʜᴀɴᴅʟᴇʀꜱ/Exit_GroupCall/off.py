@@ -27,7 +27,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Xero_Music_Admins
+& Known_User
 & filters.chat(CHAT_ID)
 & filters.command("exit", prefixes="/"))
 async def leave_voice_chat(client, XS: XeroSpeak):

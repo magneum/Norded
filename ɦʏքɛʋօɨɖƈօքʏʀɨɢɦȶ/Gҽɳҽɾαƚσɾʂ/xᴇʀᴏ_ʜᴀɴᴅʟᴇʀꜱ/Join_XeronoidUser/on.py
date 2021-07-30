@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Xero_Music_Admins
+& Known_admins
 & filters.chat(CHAT_ID)
 & filters.command("plug", prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):

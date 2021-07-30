@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Xero_Music_Admins
+& Known_admins
 & filters.chat(CHAT_ID)
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):

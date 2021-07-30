@@ -20,3 +20,4 @@ from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message as XeroSpeak
 from pyrogram.utils import MAX_CHANNEL_ID
 from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton
+from pyrogram.types import ChatMember

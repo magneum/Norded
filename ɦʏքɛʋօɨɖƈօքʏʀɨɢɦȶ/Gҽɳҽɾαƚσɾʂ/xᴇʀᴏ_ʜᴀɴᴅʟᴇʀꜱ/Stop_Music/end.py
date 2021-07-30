@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Xero_Music_Admins
+& Known_admins
 & filters.chat(CHAT_ID)
 & filters.command("end", prefixes="/"))
 async def stop_playing(client, XS: XeroSpeak):
