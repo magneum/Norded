@@ -15,22 +15,41 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʟɪʙʀᴀʀʏ import *
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 
 
+@Client.on_message(
+filters.command("xero", prefixes="/"))
+async def pong(client, XS: XeroSpeak):
+    await XS.reply_chat_action("typing")
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+    start = datetime.now()
+    end = datetime.now()
+    delta_energy1 = (end - start).seconds
+    delta_energy2= (end - start).microseconds
+    
+    await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🎧 𝗦𝗲𝗿𝘃𝗲𝗿 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗶𝗺𝗲 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗳𝗲𝘁𝗰𝗵𝗲𝗱 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿"
+		)
+ 
+    zeto = await XS.reply_animation(
+        xerolink,
+        caption=f"""{XEXO}
+        |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
+                📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
+                📡 **{delta_energy2}** `𝙢𝙞𝙘𝙧𝙤𝙨𝙚𝙘𝙤𝙣𝙙𝙨`""",
+        reply_markup = MIB) 
+
+
+    # Let's Clean this also lol.....
+    await delete_server(
+        (zeto,  XS),
+         SERVER_REMOVER)
+    return 

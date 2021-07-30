@@ -15,22 +15,55 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
-from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ.XeroPlayer import XePlay
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʟɪʙʀᴀʀʏ import *
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 
 
 
-class InterceptHandler(logging.Handler):
-    LEVELS_MAP = {
-        logging.CRITICAL: "CRITICAL",
-        logging.ERROR: "ERROR",
-        logging.WARNING: "WARNING",
-        logging.INFO: "INFO",
-        logging.DEBUG: "DEBUG"}
-    def _get_level(self, record):
-        return self.LEVELS_MAP.get(record.levelno, record.levelno)
-    def emit(self, record):
-        logger_opt = logger.opt(depth=6, exception=record.exc_info, ansi=True, lazy=True)
-        logger_opt.log(self._get_level(record), record.getMessage())
-logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
+async def skip_current_playing():
+    group_call = XePlay.group_call
+    playlist = XePlay.playlist
+    if not playlist:
+        return
+    if len(playlist) == 1:
+        await XePlay.update_start_time()
+        return
+    client = group_call.client
+    Xeronoid_Temp = os.path.join(
+    client.workdir,
+    DEFAULT_DOWNLOAD_DIR)
+    group_call.input_filename = os.path.join(
+    Xeronoid_Temp,
+    f"{playlist[1].audio.file_unique_id}.raw")
+    await XePlay.update_start_time()
+    old_track = playlist.pop(0)
+    await XePlay.send_playlist()
+    os.remove(os.path.join(
+    Xeronoid_Temp,
+    f"{old_track.audio.file_unique_id}.raw"))
+    if len(playlist) == 1:
+        return
+    await download_audio(playlist[1])
+
+
+
+
+async def download_audio(XS: XeroSpeak):
+    group_call = XePlay.group_call
+    client = group_call.client
+    raw_file = os.path.join(
+    client.workdir,
+    DEFAULT_DOWNLOAD_DIR,
+    f"{XS.audio.file_unique_id}.raw")
+    if not os.path.isfile(raw_file):
+        original_file = await XS.download()
+        ffmpeg.input(original_file).output(
+            raw_file,
+            format='s16le',
+            acodec='pcm_s16le',
+            ac=2,
+            ar='48k',
+            loglevel='error'
+        ).overwrite_output().run()
+        os.remove(original_file)
