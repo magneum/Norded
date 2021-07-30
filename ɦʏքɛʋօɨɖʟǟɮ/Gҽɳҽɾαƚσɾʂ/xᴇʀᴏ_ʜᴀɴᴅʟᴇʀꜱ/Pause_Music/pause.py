@@ -28,8 +28,6 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("pause", prefixes=DYNO_COMMANDK)
 )
 async def pause_playing(_, XS: XeroSpeak):

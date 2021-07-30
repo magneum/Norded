@@ -23,7 +23,6 @@ USERBOT_PLANEL = dict(root="ɦʏքɛʋօɨɖʟǟɮ/Gҽɳҽɾαƚσɾʂ/xᴇʀᴏ
 BOT_PLANEL = dict(root="ɦʏքɛʋօɨɖʟǟɮ/Gҽɳҽɾαƚσɾʂ/xᴇʀᴏʙᴏᴛ_ʜᴀɴᴅʟᴇʀꜱ")
 HEROKU = os.environ.get('HEROKU')
 xeroobj = object
-from config import *
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 if HEROKU == "HEROKU":
     DYNO_COMMANDK = os.environ.get('DYNO_COMMANDK')
@@ -37,6 +36,11 @@ if HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
 else:
     BOT_USERNAME = "@XERONOIDBOT"
+if HEROKU == "HEROKU":
+    LD = os.environ.get('LOGGER_ID')
+    LOGGER_ID = int(LD)
+else:
+    LOGGER_ID = -1001510481746
 '|•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|'
 CLEAN_REMOVER = 2
 CURRENT_REMOVER = 8

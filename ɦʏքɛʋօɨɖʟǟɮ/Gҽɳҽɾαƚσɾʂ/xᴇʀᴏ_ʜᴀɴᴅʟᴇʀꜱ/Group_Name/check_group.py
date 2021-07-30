@@ -27,8 +27,6 @@ from ɦʏքɛʋօɨɖʟǟɮ.ʜᴏᴍᴇ import *
 filters.group
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("group", prefixes=DYNO_COMMANDK)
 )
 async def list_voice_chat(client, XS: XeroSpeak):

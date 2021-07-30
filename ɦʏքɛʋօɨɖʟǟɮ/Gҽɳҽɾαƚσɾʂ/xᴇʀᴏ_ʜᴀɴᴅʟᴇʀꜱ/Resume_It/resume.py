@@ -28,8 +28,6 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("resume", prefixes=DYNO_COMMANDK)
 )
 async def resume_playing(_, XS: XeroSpeak):

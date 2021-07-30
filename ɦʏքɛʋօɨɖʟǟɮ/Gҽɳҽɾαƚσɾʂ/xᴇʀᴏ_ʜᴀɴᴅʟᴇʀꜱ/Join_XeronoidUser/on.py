@@ -28,8 +28,6 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("plug", prefixes=DYNO_COMMANDK)
 )
 async def join_group_call(client, XS: XeroSpeak):

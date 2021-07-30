@@ -29,8 +29,6 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("clean", prefixes=DYNO_COMMANDK) 
 )
 async def clean_raw_pcm(client, XS: XeroSpeak):

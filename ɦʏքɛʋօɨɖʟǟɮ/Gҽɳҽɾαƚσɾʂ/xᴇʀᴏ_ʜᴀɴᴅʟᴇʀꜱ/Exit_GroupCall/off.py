@@ -29,8 +29,6 @@ filters.group
 & Xero_Singer
 & Known_User
 & ~filters.edited
-
-& filters.chat(CHAT_ID)
 & filters.command("exit", prefixes=DYNO_COMMANDK)
 )
 async def leave_voice_chat(client, XS: XeroSpeak):
