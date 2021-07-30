@@ -1,3 +1,3 @@
-CHAT_ID_TEMP = input(': ')
-CHAT_ITEMPR = int(CHAT_ID_TEMP)
-print([CHAT_ITEMPR])
+GROUP_USERNAME_TEMP = "@kalocksX","@hypevoids"
+GROUP_USERNAME = [GROUP_USERNAME_TEMP]
+print(GROUP_USERNAME)

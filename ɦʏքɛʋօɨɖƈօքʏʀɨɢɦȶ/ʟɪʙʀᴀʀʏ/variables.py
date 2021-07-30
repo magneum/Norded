@@ -26,7 +26,8 @@ if HEROKU is not None and HEROKU == "HEROKU":
         '⇜⊷°•♪🦋♪•°⊶⇝'
     OWNER_USERNAME = os.environ.get('OWNER_USERNAME')
     if OWNER_USERNAME:
-        OWNER_USERNAME = OWNER_USERNAME.upper()
+        OWNER_USERNAME_TEMP = OWNER_USERNAME.upper()
+        OWNER_USERNAME = [OWNER_USERNAME]
         '⇜⊷°•♪🦋♪•°⊶⇝'
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
     if BOT_USERNAME:
@@ -49,7 +50,7 @@ else:
     OWNER_USERNAME = '@HYPEVOIDSOUL'
     BOT_USERNAME = "@XERONOIDBOT"
     LOGGER_ID = int("-1001513582173")
-    GROUP_USERNAME = '@kalocksX,@HypeVoids'
+    GROUP_USERNAME = '@kalocksX'
     MUSIC_ADMIN_USERNAMES = '@hypevoidsoul,@DEVLIXIE,@kalitronx'
 '⇜⊷°•♪🦋♪•°⊶⇝'
 XERO = '⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
