@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-#& Known_admins
+& Known_admins
 & filters.command("group", prefixes=DYNO_COMMANDK))
 async def list_voice_chat(client, XS: XeroSpeak):
     try:
