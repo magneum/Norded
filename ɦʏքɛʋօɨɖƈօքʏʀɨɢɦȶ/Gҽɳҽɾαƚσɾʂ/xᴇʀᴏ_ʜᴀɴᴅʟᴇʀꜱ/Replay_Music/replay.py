@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & Voixe_Check
 & filters.command("replay", prefixes=DYNO_COMMANDK))
 async def restart_playing(client, XS: XeroSpeak):

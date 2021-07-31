@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & Voixe_Check
 & filters.command("clean", prefixes=DYNO_COMMANDK))
 async def clean_raw_pcm(client, XS: XeroSpeak):

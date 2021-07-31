@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & Voixe_Check
 & filters.command("sing", prefixes=DYNO_COMMANDK))
 async def play_track(client, XS: XeroSpeak):

@@ -27,8 +27,6 @@ if HEROKU is not None and HEROKU == "HEROKU":
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
     if BOT_USERNAME:
         BOT_USERNAME = BOT_USERNAME.upper()
-        
-    MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
 
         
     LOGGER_ID_TEMP = os.environ.get('LOGGER_ID')

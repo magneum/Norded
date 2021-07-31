@@ -30,13 +30,8 @@ async def Xero_Singing(_, __, XS: XeroSpeak):
     return False
 Xero_Singer = filters.create(Xero_Singing)
 
+Xeronoid_Known_Users = filters.create(lambda _, __, message:(message.from_user and message.from_user.is_contact) or message.outgoing)
 
-
-async def Known_admins_SSS(_, __, message):
-    if message.from_user.username in MUSIC_ADMIN_USERNAMES.capitalize():
-        return True
-    return False
-Known_admins = filters.create(Known_admins_SSS)
 
 async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
     group_call = XePlay.group_call

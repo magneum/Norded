@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & Voixe_Check
 & filters.command("end", prefixes=DYNO_COMMANDK))
 async def stop_playing(client, XS: XeroSpeak):

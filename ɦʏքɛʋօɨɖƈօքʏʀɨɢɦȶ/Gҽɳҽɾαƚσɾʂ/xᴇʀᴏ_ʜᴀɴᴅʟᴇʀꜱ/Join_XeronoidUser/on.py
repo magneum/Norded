@@ -25,7 +25,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & filters.command("plug", prefixes=DYNO_COMMANDK))
 async def join_group_call(client, XS: XeroSpeak):
     try:
