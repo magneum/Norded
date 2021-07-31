@@ -70,4 +70,10 @@ async def list_voice_chat(client, XS: XeroSpeak):
         await XS.reply_animation(
         xerolink,
         caption=f"{XEXO}🚫 {SHIT}"
-        )  
+        )
+
+        await client.send_animation(
+        animation=xerolink,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🚫 {SHIT}"
+        )

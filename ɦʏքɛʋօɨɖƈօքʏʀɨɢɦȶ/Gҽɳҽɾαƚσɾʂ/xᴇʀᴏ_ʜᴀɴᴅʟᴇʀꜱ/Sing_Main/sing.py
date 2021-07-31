@@ -134,3 +134,9 @@ async def play_track(client, XS: XeroSpeak):
         xerolink,
         caption=f"{XEXO}🚫 {SHIT}"
         )
+
+        await client.send_animation(
+        animation=xerolink,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🚫 {SHIT}"
+        )
