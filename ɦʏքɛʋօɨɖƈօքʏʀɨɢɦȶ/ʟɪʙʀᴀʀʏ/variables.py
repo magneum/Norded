@@ -28,16 +28,16 @@ if HEROKU is not None and HEROKU == "HEROKU":
     if BOT_USERNAME:
         BOT_USERNAME = BOT_USERNAME.upper()
         '⇜⊷°•♪🦋♪•°⊶⇝'
-    MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
-    if MUSIC_ADMIN_USERNAMES:
-        MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES.upper()
-    #     if MUSIC_ADMIN_USERNAMES.startswith("'"):
-    #         MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES
-    #     elif MUSIC_ADMIN_USERNAMES.startswith('"'):
-    #         MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES.replace('"',"'")
-    #     else:
-    #         print("MUSIC_ADMIN_USERNAMES Layout is wrong! Please fix it")
-        # '⇜⊷°•♪🦋♪•°⊶⇝'
+    MUSIC_TEMP = os.environ.get('MUSIC_ADMIN_USERNAMES')
+    if MUSIC_TEMP:
+        MUSIC_TEMP = MUSIC_TEMP.upper()
+        if MUSIC_TEMP.startswith("'"):
+            MUSIC_ADMIN_USERNAMES = MUSIC_TEMP
+        elif MUSIC_TEMP.startswith('"'):
+            MUSIC_ADMIN_USERNAMES = MUSIC_TEMP.replace('"',"'")
+        else:
+            print("MUSIC_ADMIN_USERNAMES Layout is wrong! Please fix it")
+        '⇜⊷°•♪🦋♪•°⊶⇝'
     LOGGER_ID_TEMP = os.environ.get('LOGGER_ID')
     if LOGGER_ID_TEMP:
         LOGGER_ID = int(LOGGER_ID_TEMP)
