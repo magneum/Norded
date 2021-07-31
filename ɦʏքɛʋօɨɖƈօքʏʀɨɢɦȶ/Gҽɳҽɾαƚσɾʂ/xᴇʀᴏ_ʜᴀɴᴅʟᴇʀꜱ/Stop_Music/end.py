@@ -27,7 +27,7 @@ filters.group
 & ~filters.edited
 & Known_admins
 & Voixe_Check
-& filters.command("end", prefixes="/"))
+& filters.command("end", prefixes=DYNO_COMMANDK))
 async def stop_playing(client, XS: XeroSpeak):
     try:
         group_call = XePlay.group_call

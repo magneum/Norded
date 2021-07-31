@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & Known_admins
 & Voixe_Check
-& filters.command("clean", prefixes="/"))
+& filters.command("clean", prefixes=DYNO_COMMANDK))
 async def clean_raw_pcm(client, XS: XeroSpeak):
     try:
         download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)

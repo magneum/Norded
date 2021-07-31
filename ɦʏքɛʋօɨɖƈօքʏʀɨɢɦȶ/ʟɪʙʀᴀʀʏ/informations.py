@@ -36,4 +36,9 @@ XERO_HELP = f"""{XEXO}
 •♪ `{DYNO_COMMANDK}raw`   ⇝Cʟᴇᴀɴ ᴛʜᴇ ᴛᴇᴍᴘ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴍᴜꜱɪᴄ ʙʏ ʙᴏᴛc. 
 •♪ `{DYNO_COMMANDK}server`⇝Tᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ꜱᴛᴀᴛᴜꜱ ᴡɪᴛʜ ꜱᴇʀᴠᴇʀ.
 •♪ `{DYNO_COMMANDK}vol`   ⇝Cʜᴀɴɢᴇ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ. ʟɪᴍɪᴛ 1-200
+
+
+•♪ `{DYNO_COMMANDK}shutdown ⇝Tᴜʀɴ ᴏꜰꜰ xᴇʀᴏɴᴏɪᴅʙᴏᴛ ᴀɴᴅ xᴇʀᴏɴᴏɪᴅᴜꜱᴇʀʙᴏᴛ ɪɴ ʜᴇʀᴏᴋᴜ
+•♪ `{DYNO_COMMANDK}restart  ⇝Rᴇʙᴏᴏᴛ xᴇʀᴏɴᴏɪᴅʙᴏᴛ ᴀɴᴅ xᴇʀᴏɴᴏɪᴅᴜꜱᴇʀʙᴏᴛ ɪɴ ʜᴇʀᴏᴋᴜ
+•♪ `{DYNO_COMMANDK}usage    ⇝Fɪɴᴅ ᴅʏɴᴏ ᴜꜱᴀɢᴇ ᴏꜰ xᴇʀᴏɴᴏɪᴅʙᴏᴛ ᴀɴᴅ xᴇʀᴏɴᴏɪᴅᴜꜱᴇʀʙᴏᴛ ɪɴ ʜᴇʀᴏᴋᴜ
 ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ʜᴀꜱ ʙᴇᴇɴ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ:[𝙂𝙉𝙐 𝙇𝙞𝙘𝙚𝙣𝙨𝙚](https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"""

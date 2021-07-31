@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& filters.command("plug", prefixes="/"))
+& filters.command("plug", prefixes=DYNO_COMMANDK))
 async def join_group_call(client, XS: XeroSpeak):
     try:
         group_call = XePlay.group_call

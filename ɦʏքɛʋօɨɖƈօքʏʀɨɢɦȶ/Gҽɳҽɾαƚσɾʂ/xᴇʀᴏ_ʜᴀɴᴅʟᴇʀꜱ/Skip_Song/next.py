@@ -29,7 +29,7 @@ filters.group
 & ~filters.edited
 & Known_admins
 & Voixe_Check
-& filters.command("next", prefixes="/"))
+& filters.command("next", prefixes=DYNO_COMMANDK))
 async def skip_track(client, XS: XeroSpeak):
     try:
         playlist = XePlay.playlist

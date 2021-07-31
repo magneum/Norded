@@ -28,7 +28,7 @@ filters.group
 & ~filters.edited
 & Known_admins
 & Voixe_Check
-& filters.command("sing", prefixes="/"))
+& filters.command("sing", prefixes=DYNO_COMMANDK))
 async def play_track(client, XS: XeroSpeak):
     try:
         group_call = XePlay.group_call

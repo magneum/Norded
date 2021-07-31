@@ -15,45 +15,73 @@
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
+from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.xᴇʀᴏꜰɪʟᴇᴛꜱ.butts import MIB,SIB
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ᴘᴜʀɢᴇ_ᴍᴇᴄʜᴀɴɪꜱᴍ import * 
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ᴍᴜꜱɪᴄ_ᴄᴏɴᴛᴇɴᴛ import *
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.xᴇʀᴏꜰɪʟᴇᴛꜱ import *
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʟɪʙʀᴀʀʏ import *
 from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
+from .heroku import *
 
 
 @Client.on_message(
 filters.group
 & ~filters.edited
 & Known_admins
-& Voixe_Check
-& filters.command("replay", prefixes=DYNO_COMMANDK))
-async def restart_playing(client, XS: XeroSpeak):
+& filters.command("usage", prefixes=DYNO_COMMANDK))
+async def dyno_usage(client, XS: XeroSpeak):
+    event = await XS.reply_text( "`Processing...`")
+    useragent = (
+        "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/80.0.3987.149 Mobile Safari/537.36"
+    )
+    user_id = Heroku.account().id
+    headers = {
+        "User-Agent": useragent,
+        "Authorization": f"Bearer {HEROKU_API_KEY}",
+        "Accept": "application/vnd.heroku+json; version=3.account-quotas",
+    }
+    path = "/accounts/" + user_id + "/actions/get-quota"
+    r = requests.get(heroku_api + path, headers=headers)
+    if r.status_code != 200:
+        return await event.edit(
+            "`Error: something bad happened`\n\n" f">.`{r.reason}`\n"
+        )
+    result = r.json()
+    quota = result["account_quota"]
+    quota_used = result["quota_used"]
+
+    """ - Used - """
+    remaining_quota = quota - quota_used
+    percentage = math.floor(remaining_quota / quota * 100)
+    minutes_remaining = remaining_quota / 60
+    hours = math.floor(minutes_remaining / 60)
+    minutes = math.floor(minutes_remaining % 60)
+
+    """ - Current - """
+    App = result["apps"]
     try:
-        group_call = XePlay.group_call
-        if not XePlay.playlist:
-            return
-        group_call.restart_playout()
-        await XePlay.update_start_time()
+        App[0]["quota_used"]
+    except IndexError:
+        AppQuotaUsed = 0
+        AppPercentage = 0
+    else:
+        AppQuotaUsed = App[0]["quota_used"] / 60
+        AppPercentage = math.floor(App[0]["quota_used"] * 100 / quota)
+    AppHours = math.floor(AppQuotaUsed / 60)
+    AppMinutes = math.floor(AppQuotaUsed % 60)
 
-    
-        reply = await XS.reply_animation(
-            animation=xerolink,
-            caption=f"{XEXO}🎧 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...",
-            reply_markup = MIB    )
+    await asyncio.sleep(1.5)
 
-        # Hence now delete the replay info
-        await xeronoid_replay_purge(
-            (reply, XS),
-            REPLAY_REMOVER) 
-    except Exception as SHIT:
-        await XS.reply_animation(
-        xerolink,
-        caption=f"{XEXO}🚫 {SHIT}\n**Check Logger Channel for more information**"
-        )
-
-        await client.send_animation(
-        animation=xerolink,
-        chat_id=LOGGER_ID,
-        caption=f"{XEXO}🚫 {SHIT}\n**If Error Persists then do a restart or report to @HypeVoids**"
-        )
+    return await event.edit(
+        "⚡ **Dyno Usage** ⚡:\n\n"
+        f" ➠ __Dyno usage for__ • **{HEROKU_APP_NAME}** • :\n"
+        f"     ★  `{AppHours}`**h**  `{AppMinutes}`**m**  "
+        f"**|**  `{AppPercentage}`**%**"
+        "\n\n"
+        " ➠ __Dyno hours remaining this month__ :\n"
+        f"     ★  `{hours}`**h**  `{minutes}`**m**  "
+        f"**|**  `{percentage}`**%**"
+        f"\n\n**Owner :** {OWNER_USERNAME}"
+    )

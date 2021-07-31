@@ -16,3 +16,6 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 """
 from .heroku import *
+from .reboot import *
+from .usage import *
+from .down import *

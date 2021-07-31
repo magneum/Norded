@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& filters.command("group", prefixes="/"))
+& filters.command("group", prefixes=DYNO_COMMANDK))
 async def list_voice_chat(client, XS: XeroSpeak):
     try:
         group_call = XePlay.group_call
