@@ -14,21 +14,5 @@
 |•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|        
 ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝
 """
-import os
 import subprocess
-from sys import platform
-
-
-
-XEXO = "⇜⊷•♪ 🦋Ӽɛʀօռօɨɖ🦋 ♪•⊶⇝** by 🔥 ΉYPΣ VӨID LΛB 🔥\n"
-print(f"{XEXO}")
-print("The bot is going to run in>   "  +   platform.upper())
-
-
-
-HEROKU = os.environ.get('HEROKU', None)
-if HEROKU is not None and HEROKU == "HEROKU": # For heroku, docker container will do it initially
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",shell=True)
-else: # This is basically for auto downloading reqs in WSL and or Replit
-    os.system("pip3 install --upgrade pip;pip3 install -r Ӽɛʀօռօɨɖ.txt;clear")
-    subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",shell=True)
+subprocess.run("python3 -m Ӽɛʀօռօɨɖ & python3 -m Ӽɛʀօռօɨɖɮօȶ",shell=True)
