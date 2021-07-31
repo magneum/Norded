@@ -31,46 +31,34 @@ filters.group
 & Voixe_Check
 & filters.command("next", prefixes="/"))
 async def skip_track(client, XS: XeroSpeak):
-    try: 
-        playlist = XePlay.playlist
-        if len(XS.command) == 1:
-            await skip_current_playing()
-        else:
-            try:
-                items = list(dict.fromkeys(XS.command[1:]))
-                items = [int(x) for x in items if x.isdigit()]
-                items.sort(reverse=True)
-                text = []
-                for i in items:
-                    if 2 <= i <= (len(playlist) - 1):
-                        audio = f"[{playlist[i].audio.title}]({playlist[i].link})"
-                        playlist.pop(i)
-                        text.append(f"{i}. **{audio}**")
-                    else:
-                        text.append(f"{i}")
-                reply = await XS.reply_text(
-                    "\n".join(text),
-                    disable_web_page_preview=True                )
-                await XePlay.send_playlist()
-            except (ValueError, TypeError):
-                reply = await XS.reply_animation(
-                    animation=xerolink,
-                    caption=f"{XEXO}🎧 𝗥𝗲𝗰𝗶𝘃𝗲𝗱 𝗪𝗿𝗼𝗻𝗴 𝗜𝗻𝗽𝘂𝘁.𝗧𝗿𝘆 𝗣𝗿𝗼𝗽𝗲𝗿𝗹y",
-                    reply_markup = MIB,
-                    disable_web_page_preview=True                    )
+    playlist = XePlay.playlist
+    if len(XS.command) == 1:
+        await skip_current_playing()
+    else:
+        try:
+            items = list(dict.fromkeys(XS.command[1:]))
+            items = [int(x) for x in items if x.isdigit()]
+            items.sort(reverse=True)
+            text = []
+            for i in items:
+                if 2 <= i <= (len(playlist) - 1):
+                    audio = f"[{playlist[i].audio.title}]({playlist[i].link})"
+                    playlist.pop(i)
+                    text.append(f"{i}. **{audio}**")
+                else:
+                    text.append(f"{i}")
+            reply = await XS.reply_text(
+                "\n".join(text),
+                disable_web_page_preview=True                )
+            await XePlay.send_playlist()
+        except (ValueError, TypeError):
+            reply = await XS.reply_animation(
+                animation=xerolink,
+                caption=f"{XEXO}🎧 𝗥𝗲𝗰𝗶𝘃𝗲𝗱 𝗪𝗿𝗼𝗻𝗴 𝗜𝗻𝗽𝘂𝘁.𝗧𝗿𝘆 𝗣𝗿𝗼𝗽𝗲𝗿𝗹y",
+                reply_markup = MIB,
+                disable_web_page_preview=True                    )
             
             
-            await xeronoid_next_purge(
-                (reply, XS),
-                SKIP_REMOVER)
-    except Exception as SHIT:
-        await client.send_animation(
-            animation=xerolink,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}\n\n{SHIT}"
-        )   
-
-        await XS.reply_animation(
-            xerolink,
-            caption=f"{XEXO}\n\n{SHIT}"
-        ) 
+        await xeronoid_next_purge(
+            (reply, XS),
+            SKIP_REMOVER)

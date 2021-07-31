@@ -26,31 +26,26 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
-& Voixe_Check
-& filters.command("end", prefixes="/"))
-async def stop_playing(client, XS: XeroSpeak):
-    group_call = XePlay.group_call
-    group_call.stop_playout()
-
- 
-    "Firsly Log this event using Xeronoid Userbot"
-    chat_id = int("-100" + str(group_call.full_chat.id))
-    chat = await client.get_chat(chat_id) 
-    await client.send_animation(
-        animation=xerolink,
-        duration=10,
-        chat_id=LOGGER_ID,
-        caption=f"{XEXO}🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻\n**{chat.title}**"    )
-    
-    "Now end the music loop and send information in the requested chat"
-    reply = await XS.reply_animation(
-        animation=xerolink,
-        caption=f"{XEXO}🎧 𝗫𝗲𝗿𝗼𝗻𝗼𝗶𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻\n**{chat.title}**",
-        reply_markup = MIB        )
-    await XePlay.update_start_time(reset=True)
-        
-    # Now clean the chat room and player and then idle the player
-    XePlay.playlist.clear()
-    await xeronoid_end_purge(
-        (reply, XS),
-        STOP_REMOVER)
+& filters.command("plug", prefixes="/"))
+async def join_group_call(client, XS: XeroSpeak):
+    try:
+        group_call = XePlay.group_call
+        if not group_call:
+            XePlay.group_call = GroupCallFactory(client).get_file_group_call()
+            XePlay.group_call.add_handler(
+            Xero_Server_Stats,
+            GroupCallFileAction.NETWORK_STATUS_CHANGED)
+            XePlay.group_call.add_handler(
+            playout_ended_handler,
+            GroupCallFileAction.PLAYOUT_ENDED)
+            await XePlay.group_call.start(XS.chat.id)
+            await XS.delete()
+        if group_call and group_call.is_connected:
+            "First Log this event using the userbot"
+            group_call = XePlay.group_call
+            pass
+    except Exception as SHIT:
+        await XS.reply_animation(
+            xerolink,
+            caption=f"{XEXO}\n\n{SHIT}"
+        ) 

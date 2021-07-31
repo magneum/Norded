@@ -30,51 +30,38 @@ filters.group
 & Voixe_Check
 & filters.command("clean", prefixes="/"))
 async def clean_raw_pcm(client, XS: XeroSpeak):
-    try:
-        download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
-        all_fn: list[str] = os.listdir(download_dir)
-        for track in XePlay.playlist[:2]:
-            track_fn = f"{track.audio.file_unique_id}.raw"
-            if track_fn in all_fn:
-                all_fn.remove(track_fn)
-        count = 0
-        if all_fn:
-            for fn in all_fn:
-                if fn.endswith(".raw"):
-                    count += 1
-                    os.remove(os.path.join(download_dir, fn))
-        group_call = XePlay.group_call
-        chat_id = int("-100" + str(group_call.full_chat.id))
-        chat = await client.get_chat(chat_id)
+    download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
+    all_fn: list[str] = os.listdir(download_dir)
+    for track in XePlay.playlist[:2]:
+        track_fn = f"{track.audio.file_unique_id}.raw"
+        if track_fn in all_fn:
+            all_fn.remove(track_fn)
+    count = 0
+    if all_fn:
+        for fn in all_fn:
+            if fn.endswith(".raw"):
+                count += 1
+                os.remove(os.path.join(download_dir, fn))
+    group_call = XePlay.group_call
+    chat_id = int("-100" + str(group_call.full_chat.id))
+    chat = await client.get_chat(chat_id)
 
 
-        await client.send_animation(
-            animation=xerolink,
-            duration=10,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**"    )
+    await client.send_animation(
+        animation=xerolink,
+        duration=10,
+        chat_id=LOGGER_ID,
+        caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**"    )
 
 
-        reply = await XS.reply_animation(
-            animation=xerolink,
-            caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**",
-            reply_markup = MIB        )
+    reply = await XS.reply_animation(
+        animation=xerolink,
+        caption=f"{XEXO}🎧 𝙓𝙚𝙧𝙤𝙣𝙤𝙞𝙙 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣 **{count}** 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 **{chat.title}**",
+        reply_markup = MIB        )
 
 
 
-        # clean in groups
-        await xeronoid_raw_purge(
-            (reply, XS),
-            CLEAN_REMOVER)
-
-    except Exception as SHIT:
-        await client.send_animation(
-            animation=xerolink,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}\n\n{SHIT}"
-        )   
-
-        await XS.reply_animation(
-            xerolink,
-            caption=f"{XEXO}\n\n{SHIT}"
-        ) 
+    # clean in groups
+    await xeronoid_raw_purge(
+        (reply, XS),
+        CLEAN_REMOVER)
