@@ -27,7 +27,7 @@ from .heroku import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & filters.command("usage", prefixes=DYNO_COMMANDK))
 async def dyno_usage(client, XS: XeroSpeak):
     event = await XS.reply_text( "`Processing...`")

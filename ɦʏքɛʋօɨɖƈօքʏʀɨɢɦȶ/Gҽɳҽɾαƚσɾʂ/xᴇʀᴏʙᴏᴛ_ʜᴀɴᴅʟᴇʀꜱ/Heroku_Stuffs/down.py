@@ -27,7 +27,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 @Client.on_message(
 filters.group
 & ~filters.edited
-& Known_admins
+& Xeronoid_Known_Users
 & filters.command("shutdown", prefixes=DYNO_COMMANDK))
 async def down(client, XS: XeroSpeak):
     event = await XS.reply_text( "`Turing Off Heroku Dynos...`")
