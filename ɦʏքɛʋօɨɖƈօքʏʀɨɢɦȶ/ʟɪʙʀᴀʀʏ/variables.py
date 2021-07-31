@@ -23,29 +23,23 @@ if HEROKU is not None and HEROKU == "HEROKU":
     if OWNER_USERNAME:
         OWNER_USERNAME_TEMP = OWNER_USERNAME.upper()
         OWNER_USERNAME = [OWNER_USERNAME]
-        '⇜⊷°•♪🦋♪•°⊶⇝'
+        
     BOT_USERNAME = os.environ.get('BOT_USERNAME')
     if BOT_USERNAME:
         BOT_USERNAME = BOT_USERNAME.upper()
-        '⇜⊷°•♪🦋♪•°⊶⇝'
+        
     MUSIC_ADMIN_USERNAMES = os.environ.get('MUSIC_ADMIN_USERNAMES')
     if MUSIC_ADMIN_USERNAMES:
         MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES.capitalize()
-        if MUSIC_ADMIN_USERNAMES.startswith("'"):
-            MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES
-        elif MUSIC_ADMIN_USERNAMES.startswith('"'):
-            MUSIC_ADMIN_USERNAMES = MUSIC_ADMIN_USERNAMES.replace('"',"'")
-        else:
-            print("MUSIC_ADMIN_USERNAMES Layout is wrong! Please fix it")
-        '⇜⊷°•♪🦋♪•°⊶⇝'
+        
     LOGGER_ID_TEMP = os.environ.get('LOGGER_ID')
     if LOGGER_ID_TEMP:
         LOGGER_ID = int(LOGGER_ID_TEMP)
-        '⇜⊷°•♪🦋♪•°⊶⇝'
+        
     OWNER_ID_TEMP = os.environ.get('OWNER_ID')
     if OWNER_ID_TEMP:
         OWNER_ID= int(OWNER_ID_TEMP)
-        '⇜⊷°•♪🦋♪•°⊶⇝'
+        
 else:
     OWNER_ID = [1848646989]
     OWNER_USERNAME = '@HYPEVOIDSOUL'
@@ -54,7 +48,7 @@ else:
     MUSIC_ADMIN_USERNAMES = '@hypevoidsoul,@DEVLIXIE,@kalitronx'
 
     
-'⇜⊷°•♪🦋♪•°⊶⇝'
+
 XERO = '⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝         |           ⇜⊷°•♪   🦋Ӽɛʀօռօɨɖ🦋   ♪•°⊶⇝'
 MAX_MIN = 8
 MAX_HOUR = 3
