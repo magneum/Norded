@@ -58,11 +58,11 @@ async def stop_playing(client, XS: XeroSpeak):
     except Exception as SHIT:
         await XS.reply_animation(
         xerolink,
-        caption=f"{XEXO}🚫 {SHIT}"
+        caption=f"{XEXO}🚫 {SHIT}\n**Check Logger Channel for more information**"
         )
 
         await client.send_animation(
         animation=xerolink,
         chat_id=LOGGER_ID,
-        caption=f"{XEXO}🚫 {SHIT}"
+        caption=f"{XEXO}🚫 {SHIT}\n**If Error Persists then do a restart or report to @HypeVoids**"
         )
