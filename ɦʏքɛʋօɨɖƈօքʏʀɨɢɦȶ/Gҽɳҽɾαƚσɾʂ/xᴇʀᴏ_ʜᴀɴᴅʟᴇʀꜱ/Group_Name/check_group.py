@@ -67,13 +67,7 @@ async def list_voice_chat(client, XS: XeroSpeak):
 
             
     except Exception as SHIT:
-        await client.send_animation(
-            animation=xerolink,
-            chat_id=LOGGER_ID,
-            caption=f"{XEXO}\n\n{SHIT}"
-        )   
-
         await XS.reply_animation(
-            xerolink,
-            caption=f"{XEXO}\n\n{SHIT}"
-        )    
+        xerolink,
+        caption=f"{XEXO}🚫 {SHIT}"
+        )  
