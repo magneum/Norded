@@ -26,6 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Known_admins
+& Voixe_Check
 & filters.command("plug", prefixes="/"))
 async def join_group_call(client, XS: XeroSpeak):
     group_call = XePlay.group_call
@@ -39,7 +40,28 @@ async def join_group_call(client, XS: XeroSpeak):
         GroupCallFileAction.PLAYOUT_ENDED)
         await XePlay.group_call.start(XS.chat.id)
         await XS.delete()
+        
+        
+        
+        
     if group_call and group_call.is_connected:
         "First Log this event using the userbot"
         group_call = XePlay.group_call
-        pass
+        chat_id = int("-100" + str(group_call.full_chat.id))
+        chat = await client.get_chat(chat_id)        
+        await client.send_animation(
+            animation=xerolink,
+            duration=10,
+            chat_id=LOGGER_ID,
+            caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗷𝗼𝗶𝗻𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗶𝗻**{chat.title}**"
+        )
+        
+        
+        "Now Send the joined info to the requested group"
+        await XS.reply_animation(
+            animation=xerolink,
+            caption=f"{XEXO}🎧 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗷𝗼𝗶𝗻𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝗶𝗻 **{chat.title}**",
+            reply_markup = MIB
+        )
+        
+        
