@@ -34,8 +34,7 @@ Xeronoid_Known_Users = filters.create(lambda _, __, message:(message.from_user a
 
 
 async def XeroBot_Voixe_Check(_, __, XS: XeroSpeak):
-    group_call = XePlay.group_call
-    if group_call and group_call.is_connected:
+    if XS.from_user.message in OWNER_USERNAME:
         return True
     return False
 Voixe_Check = filters.create(XeroBot_Voixe_Check)

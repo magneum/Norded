@@ -24,9 +24,9 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 from .heroku import *
 
 @Client.on_message(
-filters.group
+filters.chat(LOGGER_ID)
 & ~filters.edited
-& Xeronoid_Known_Users
+& Voixe_Check
 & filters.command("restart", prefixes=DYNO_COMMANDK))
 async def re(client, XS: XeroSpeak):
     event = await XS.reply_text( "Restarting Dynos ...")

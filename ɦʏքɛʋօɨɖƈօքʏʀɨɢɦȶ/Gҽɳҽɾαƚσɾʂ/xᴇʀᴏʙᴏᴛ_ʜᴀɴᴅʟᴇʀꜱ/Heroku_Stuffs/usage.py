@@ -25,17 +25,13 @@ from .heroku import *
 
 
 @Client.on_message(
-filters.group
-& ~filters.edited
-& Xeronoid_Known_Users
-& filters.command("usage", prefixes=DYNO_COMMANDK))
-async def dyno_usage(client, XS: XeroSpeak):
-    event = await XS.reply_text( "`Processing...`")
+filters.command("usage", prefixes=DYNO_COMMANDK))
+async def dyno_usage(_, XS: XeroSpeak):
+    WEBK = await XS.reply_text(caption=f"{XEXO}`Processing...`",reply_markup = MIB)
     useragent = (
-        "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/80.0.3987.149 Mobile Safari/537.36"
-    )
+    "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/80.0.3987.149 Mobile Safari/537.36"    )
     user_id = Heroku.account().id
     headers = {
         "User-Agent": useragent,
@@ -45,8 +41,8 @@ async def dyno_usage(client, XS: XeroSpeak):
     path = "/accounts/" + user_id + "/actions/get-quota"
     r = requests.get(heroku_api + path, headers=headers)
     if r.status_code != 200:
-        return await event.edit(
-            "`Error: something bad happened`\n\n" f">.`{r.reason}`\n"
+        return await WEBK.edit(
+            f"{XEXO}`Error: something bad happened`\n\n" f">.`{r.reason}`\n"
         )
     result = r.json()
     quota = result["account_quota"]
@@ -74,14 +70,15 @@ async def dyno_usage(client, XS: XeroSpeak):
 
     await asyncio.sleep(1.5)
 
-    return await event.edit(
-        "⚡ **Dyno Usage** ⚡:\n\n"
-        f" ➠ __Dyno usage for__ • **{HEROKU_APP_NAME}** • :\n"
-        f"     ★  `{AppHours}`**h**  `{AppMinutes}`**m**  "
-        f"**|**  `{AppPercentage}`**%**"
-        "\n\n"
-        " ➠ __Dyno hours remaining this month__ :\n"
-        f"     ★  `{hours}`**h**  `{minutes}`**m**  "
-        f"**|**  `{percentage}`**%**"
-        f"\n\n**Owner :** {OWNER_USERNAME}"
-    )
+    return await WEBK.edit(
+    caption="""
+    ⚡ **Dyno Usage** ⚡:\n\n
+➠ __Dyno usage for__ • **{HEROKU_APP_NAME}** • 
+★  `{AppHours}`**h**  `{AppMinutes}`**m** 
+**|**  `{AppPercentage}`**%**"
+
+➠ __Dyno hours remaining this month__ :
+★  `{hours}`**h**  `{minutes}`**m**
+**|**  `{percentage}`**%**
+**Owner :** {OWNER_USERNAME}""",
+        reply_markup = MIB)
