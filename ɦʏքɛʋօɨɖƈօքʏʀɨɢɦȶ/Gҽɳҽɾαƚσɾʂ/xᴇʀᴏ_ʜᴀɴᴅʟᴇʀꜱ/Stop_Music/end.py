@@ -26,7 +26,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Xeronoid_Known_Users
-& Voixe_Check
+& Xero_Singer
 & filters.command("end", prefixes=DYNO_COMMANDK))
 async def stop_playing(client, XS: XeroSpeak):
     try:

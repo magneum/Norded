@@ -28,6 +28,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Xeronoid_Known_Users
+& Xero_Singer
 & filters.command("exit", prefixes=DYNO_COMMANDK))
 async def leave_voice_chat(client, XS: XeroSpeak):
     try:

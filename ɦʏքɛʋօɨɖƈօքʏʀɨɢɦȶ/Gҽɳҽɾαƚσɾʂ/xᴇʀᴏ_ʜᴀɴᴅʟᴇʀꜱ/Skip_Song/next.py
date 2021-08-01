@@ -28,7 +28,7 @@ from ɦʏքɛʋօɨɖƈօքʏʀɨɢɦȶ.ʜᴏᴍᴇ import *
 filters.group
 & ~filters.edited
 & Xeronoid_Known_Users
-& Voixe_Check
+& Xero_Singer
 & filters.command("next", prefixes=DYNO_COMMANDK))
 async def skip_track(client, XS: XeroSpeak):
     try:
