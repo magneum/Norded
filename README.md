@@ -81,21 +81,26 @@
     -   API_HASH  = From @HVApiBot Only
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
-    -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
     -   HEROKU_APP_NAME = Name of your heroku app
     -   HEROKU_API_KEY = Your Heroku API_TOKEN 
-    -   LOGGER_ID = Your personal group id where xeronoidbot & userbot will use as log home
     -   BOT_USERNAME = Your Bot @Username
+    -   DYNO = Keep any command prefix as per your needs!
+    -   CLEANER = Put the value to auto clean the notifications by 🎧NӨЯDΣD©️🎧
+    -   CHAT_ID = Group chat IDs where your 🎧NӨЯDΣD©️🎧 player can play music.Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
+    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid.Put like this > 1868088205 1941593018 [with a space between]
+
 
 𝗜𝗳 𝘂𝘀𝗶𝗻𝗴 𝗦𝗲𝗹𝗳 𝗛𝗼𝘀𝘁𝗶𝗻𝗴:
-    -   BOT_TOKEN = From @BotFather
+    -   BOT_TOKEN = From @BotFather Only
     -   API_TOKEN = From @HVApiBot Only
     -   API_HASH  = From @HVApiBot Only
     -   XERONOID_SESSION = Get it from below replit link
     -   OWNER_USERNAME = Your Username like @HypeVoids
-    -   MUSIC_ADMIN_USERNAMES = IDs of the memebers your bot will get 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-    -   LOGGER_ID = Your personal group id where xeronoidbot & userbot will use as log home
     -   BOT_USERNAME = Your Bot @Username
+    -   DYNO = Keep any command prefix as per your needs!
+    -   CLEANER = Put the value to auto clean the notifications by 🎧NӨЯDΣD©️🎧
+    -   CHAT_ID = Group chat IDs where your 🎧NӨЯDΣD©️🎧 player can play music.Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
+    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid.Put like this > 1868088205 1941593018 [with a space between]
 ```
 
 

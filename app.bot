@@ -13,7 +13,7 @@
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
 "required":true},
 "NӨЯDΣD_NAME":{
-"description":"Put the Xeronoid session key you got from Xeronoid's GitHub Replit link",
+"description":"Put the NӨЯDΣD_NAME you got from Xeronoid's GitHub Replit link",
 "required":true},
 "HEROKU_APP_NAME":{
 "description":"Name of your heroku app",
