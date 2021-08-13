@@ -158,7 +158,7 @@ from pyrogram import Client, filters, idle
 from pyrogram.raw.base import InputGroupCall
 from pyrogram.types import Message as NordLink
 utcnow = datetime.utcnow().replace(microsecond=0)
-group_calls = GroupCall(None, path_to_log_file="")
+group_calls = GroupCall#(None, path_to_log_file="")
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from pytgcalls import GroupCallFactory, GroupCallFileAction
 from pyrogram.raw.functions.phone import EditGroupCallTitle
@@ -577,12 +577,16 @@ async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         ռօʀɖɦօք.chat_id = MAX_CHANNEL_ID - context.full_chat.id
         kai = await NorDAnimatE(f"{ӼɛӼօ}𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!")
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await kai.delete()
     else:
         kai = await NorDAnimatE(f"{ӼɛӼօ}𝐍𝐨𝐫𝐝𝐞𝐝 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐡𝐚𝐬 𝐥𝐞𝐟𝐭 𝐚𝐧𝐝 𝐮𝐧𝐩𝐥𝐮𝐠𝐠𝐞𝐝 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐲𝐞𝐫 𝐢𝐧 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭!")
         ռօʀɖɦօք.chat_id = None
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await kai.delete()
 async def playout_ended_handler(_, __):
     await NorDIgnoreNow()
@@ -803,7 +807,9 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await asyncio.sleep(CLEANER)
+                await asyncio.sleep(
+            CLEANER
+            )
                 await psychodelic.delete()
                 return
             m_audio = ɳɾԃ
@@ -829,7 +835,9 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await asyncio.sleep(CLEANER)
+                await asyncio.sleep(
+            CLEANER
+            )
                 await psychodelic.delete()
                 return
 
@@ -860,7 +868,9 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await asyncio.sleep(CLEANER)
+            await asyncio.sleep(
+            CLEANER
+            )
             await psychodelic.delete()
             return
 
@@ -1048,7 +1058,9 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await asyncio.sleep(CLEANER)
+                await asyncio.sleep(
+            CLEANER
+            )
                 await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1231,7 +1243,9 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await asyncio.sleep(CLEANER)
+            await asyncio.sleep(
+            CLEANER
+            )
             await psychodelic.delete()
 
             """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
@@ -1253,7 +1267,9 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
             await ɳɾԃ.delete()
-            await asyncio.sleep(CLEANER)
+            await asyncio.sleep(
+            CLEANER
+            )
             await join.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1363,7 +1379,9 @@ client,
         except FloodWait:
             pass
         ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ.clear()
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1461,7 +1479,9 @@ client,
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
         ]]))
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1659,7 +1679,9 @@ client,
         ]]))
         if ռօʀɖɦօք.ռօʀɖʍֆɢʀ.get("pause") is not None:
             await ռօʀɖɦօք.ռօʀɖʍֆɢʀ["pause"].delete()
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1770,7 +1792,9 @@ client,
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
         ]]))
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -1964,7 +1988,9 @@ client,
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
         ]]))
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_photo(
@@ -2442,7 +2468,9 @@ client,
 #                 text="🤖 ΉYPΣ VӨID BӨT",
 #                 url=f"https://t.me/hypevoidbot")
 #                 ]]))
-#                 await asyncio.sleep(CLEANER)
+#                 await asyncio.sleep(
+#            CLEANER
+#           )
 #                 await psychodelic.delete()
 #                 return
 #         except Exception as Σ:
@@ -2461,15 +2489,17 @@ client,
 #             text="🤖 ΉYPΣ VӨID BӨT",
 #             url=f"https://t.me/hypevoidbot")
 #             ]]))
-#             await asyncio.sleep(CLEANER)
+#             await asyncio.sleep(
+#           CLEANER
+#           )
 #             await psychodelic.delete()
 #             return
 #         try:
-#             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-#                 info_dict = ydl.extract_info(link, download=False)
-#                 audio_file = ydl.prepare_filename(info_dict)
-#                 ydl.process_info(info_dict)
-#             rep = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
+#             with youtube_dl.YoutubeDL(ydl_opts) as nordl:
+#                 info_dict = nordl.extract_info(link, download=False)
+#                 audio_file = nordl.prepare_filename(info_dict)
+#                 nordl.process_info(info_dict)
+#             nordlcap = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
 #             secmul, dur, dur_arr = 1, 0, duration.split(':')
 #             for i in range(len(dur_arr)-1, -1, -1):
 #                 dur += (int(dur_arr[i]) * secmul)
@@ -2477,7 +2507,7 @@ client,
 #             chat_id = int(str(ɳɾԃ.chat.id))
 #             ADU = await ɳɾԃ.reply_audio(
 #             audio=audio_file,
-#             caption=rep,
+#             caption=nordlcap,
 #             title=title,
 #             duration=dur,
 #             thumb=NӨЯDΣD_THUMBNAIL
@@ -2544,6 +2574,10 @@ client,
                     max_results=1).to_dict()
                 count += 1
             try:
+                psychode =  await ɳɾԃ.reply_animation(
+                animation="worklord/norded_dling.gif",
+                duration=4,
+                caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n[Please Wait till](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [downloads and converts Audio for streaming in the group voice chat!](https://t.me/hypevoidbot)")
                 link = f"https://youtube.com{results[0]['url_suffix']}"
                 title = results[
                 0][
@@ -2557,17 +2591,16 @@ client,
                 views = results[
                 0][
                 "views"]
-                NӨЯDΣD_THUMBNAIL = f'NӨЯDΣD{ɳɾԃ.message_id}.jpg'
+                NӨЯDΣD_THUMBNAIL = f'🎧•NӨЯDΣD•🎧 by 🔥ΉYPΣ VӨID LΛB🔥-NӨЯDΣD{ɳɾԃ.message_id}.jpg'
                 thumb = requests.get(
                 thumbnail,
-                allow_redirects=True)
+                allow_redirects=False)#True
                 open(
                 NӨЯDΣD_THUMBNAIL,
                 'wb').write(
-                thumb.content)
-                psychode =  await ɳɾԃ.reply_photo(
-                photo=nordlinker,
-                caption=f"[Please Wait till](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [downloads and converts Audio for streaming in the group voice chat!](https://t.me/hypevoidbot)")
+                thumb.content
+                )
+
             except Exception as Σ:
                 psychodelic =  await ɳɾԃ.reply_photo(
                 photo=nordlinker,
@@ -2584,9 +2617,12 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await asyncio.sleep(CLEANER)
+                await asyncio.sleep(
+            CLEANER
+            )
                 await psychodelic.delete()
                 return
+                
         except Exception as Σ:
             psychodelic = await ɳɾԃ.reply_photo(
             photo=nordlinker,
@@ -2603,30 +2639,50 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await asyncio.sleep(CLEANER)
+            await asyncio.sleep(
+            CLEANER
+            )
             await psychodelic.delete()
             return
         try:
-            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                info_dict = ydl.extract_info(link, download=False)
-                audio_file = ydl.prepare_filename(info_dict)
-                ydl.process_info(info_dict)
-            rep = f"""
+            with youtube_dl.YoutubeDL(ydl_opts) as nordl:
+                info_dict = nordl.extract_info(
+                link,
+                download=False
+                )
+                audio_file = nordl.prepare_filename(
+                info_dict
+                )
+                nordl.process_info(
+                info_dict
+                )
+
+            nordlcap = f"""
 📜`ᴀᴜᴅɪᴏ ᴛɪᴛʟᴇ`: **[{title[:35]}]({link})**
 ⏳`ᴀᴜᴅɪᴏ ᴅᴜʀᴀᴛɪᴏɴ`: **[{duration}]({link})**
 👁‍🗨`ᴀᴜᴅɪᴏ ᴠɪᴇᴡꜱ`: **[{views}]({link})**
 
 
-☢️[This Audio is sent by](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [for only streamig in VOICE_CHATS.](https://t.me/hypevoidbot)❗️
-🤖[Please use Below Bots to download any other YouTube Video/Audio in UHD](https://t.me/hypevoidbot)
+☢️[𝚃𝚑𝚒𝚜 𝙰𝚞𝚍𝚒𝚘 𝚒𝚜 𝚜𝚎𝚗𝚝 𝚋𝚢](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [𝚏𝚘𝚛 𝚘𝚗𝚕𝚢 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚐 𝚒𝚗 𝚅𝙾𝙸𝙲𝙴_𝙲𝙷𝙰𝚃𝚂.](https://t.me/hypevoidbot)❗️
+🤖[𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 𝘉𝘦𝘭𝘰𝘸 𝘉𝘰𝘵𝘴 𝘵𝘰 𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘢𝘯𝘺 𝘰𝘵𝘩𝘦𝘳 𝘠𝘰𝘶𝘛𝘶𝘣𝘦 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘪𝘯 𝘜𝘏𝘋](https://t.me/hypevoidbot)
 """
             secmul, dur, dur_arr = 1, 0, duration.split(':')
             for i in range(len(dur_arr)-1, -1, -1):
-                dur += (int(dur_arr[i]) * secmul)
+                dur += (int(
+                dur_arr[i]) * secmul)
                 secmul *= 60
+
+            await psychode.delete()
+            psychoded = await ɳɾԃ.reply_animation(
+            animation="worklord/norded_done.mp4",
+            caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n🔥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜰɪɴɪꜱʜᴇᴅ\n𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ**"
+            )
+            
+
+
             ADU = await ɳɾԃ.reply_audio(
             audio=audio_file,
-            caption=rep,
+            caption=nordlcap,
             title=title,
             duration=dur,
             thumb=NӨЯDΣD_THUMBNAIL,
@@ -2641,16 +2697,21 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await psychode.delete()
+
+            await psychoded.delete()
             await ADU.reply_photo(
             photo=NӨЯDΣD_THUMBNAIL,
-            caption=NORN)
+            caption=NORN
+            )
+
         except Exception as Σ:
             psychodelic = await ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n❌ Error\n\n`{Σ}`")
             await psychodelic.delete()
         try:
             os.remove(audio_file)
             os.remove(NӨЯDΣD_THUMBNAIL)
+            os.system("clear")
+            cprint("Success and Cleared Screen", "cyan")
         except Exception as Σ:
             psychodelic = await ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{Σ}`")
     except Exception as Σ:
@@ -2661,6 +2722,14 @@ client,
 🥶 {mntn} 
 ⚠️ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ\n\n `__{Σ}__`
 """)
+
+
+
+
+
+
+
+
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -2720,9 +2789,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/stream]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/stream]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2764,9 +2835,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/pause]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/pause]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2808,9 +2881,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/resume]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/resume]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2852,9 +2927,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/unplug]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/unplug]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2896,9 +2973,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/temp]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/temp]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2940,9 +3019,11 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/yt SONG.NAME]
+⚠️ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ **__{chat.title}__** ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.\nᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ **__{chat.title}__** ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ [/yt SONG.NAME]
 """)
-        await asyncio.sleep(CLEANER)
+        await asyncio.sleep(
+        CLEANER
+        )
         await psychodelic.delete()
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
@@ -2973,14 +3054,14 @@ try:
     NӨЯDΣD.start()
     LOGGER.info("\n\n\n\n🟢\n"+"ONLINE\n"+"🤖\n"+"NӨЯDΣD BOT\n"+"🤖\n"+"ONLINE\n"+"🟢\n\n\n\n")
     NӨЯDBӨƬ.start()
-    LOGGER.info(f"\n\n\n\n{LICE}")
+    cprint(f"\n\n\n\n{LICE}","green")
     idle()
     os.system("clear")
     LOGGER.info("\n\n\n\🔴\n"+"OFFLINE\n"+"🎶\n"+"NӨЯDΣD USERBOT\n"+"🎶\n"+"OFFLINE\n"+"🔴\n\n\n\n")
     NӨЯDΣD.stop()
     LOGGER.info("\n\n\n\n🔴\n"+"OFFLINE\n"+"🤖\n"+"NӨЯDΣD BOT\n"+"🤖\n"+"OFFLINE\n"+"🔴\n\n\n\n")
     NӨЯDBӨƬ.stop()
-    LOGGER.info(f"\n\n\n\n{LICE}")
+    cprint(f"\n\n\n\n{LICE}","red")
     sys.exit()
 except Exception as Σ:
     print(Σ)
