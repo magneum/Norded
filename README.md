@@ -1,7 +1,7 @@
 |🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # ⭐️『 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 - 🎧NӨЯDΣD©️🎧 』⭐️
-<p align="centre"><img  width="60%" height="100%" img src="https://telegra.ph/file/cc35dba04ad629c0771b3.gif" /></p>
+<p align="centre"><img  width="60%" height="100%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
 <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
@@ -87,7 +87,7 @@
 ## 💠 DΣPLӨY  
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Xeronoid.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Norded.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
 - [![XERONOID_SESSION](https://img.shields.io/badge/XERONOID_SESSION-Vïå_REPLIT-red.svg)](https://replit.com/@HypeVoidSoul/Xeronoid-Pyrogram-Session#main.py)
 
