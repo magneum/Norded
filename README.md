@@ -33,16 +33,16 @@
 
 ## 📷 SCЯΣΣПSΉӨƬS
 # 🎧NӨЯDΣD©️🎧 Userbot Joined:
-<p align="left"><img  width="50%" height="50%" img src="worklord/NORD_USER.jpg" /></p>
+<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_USER.jpg" /></p>
 
 # 🎧NӨЯDΣD©️🎧 Help Query:
-<p align="right"><img  width="50%" height="50%" img src="worklord/NORD_HELP.jpg" /></p>
+<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_HELP.jpg" /></p>
 
 # 🎧NӨЯDΣD©️🎧 Music Player:
-<p align="left"><img  width="50%" height="50%" img src="worklord/NORD_PLAYER.jpg" /></p>
+<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_PLAYER.jpg" /></p>
 
 # 🎧NӨЯDΣD©️🎧 YouTube Downloader:
-<p align="right"><img  width="50%" height="50%" img src="worklord/NORD_DOWNLOADER.jpg" /></p>
+<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_DOWNLOADER.jpg" /></p>
 
 
 
