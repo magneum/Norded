@@ -87,9 +87,9 @@
     -   DYNO = Keep any command prefix as per your needs!
     -   CLEANER = Put the value to auto clean the notifications by 🎧NӨЯDΣD©️🎧
     -   CHAT_ID = Group chat IDs where your 🎧NӨЯDΣD©️🎧 player can play music.
-                Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
+Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
     -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid.
-                Put like this > 1868088205 1941593018 [with a space between]
+Put like this > 1868088205 1941593018 [with a space between]
 
 
 𝗜𝗳 𝘂𝘀𝗶𝗻𝗴 𝗦𝗲𝗹𝗳 𝗛𝗼𝘀𝘁𝗶𝗻𝗴:
