@@ -4,7 +4,7 @@
 <p align="centre"><img  width="80%" height="100%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
 
 
-## ❓ WΉY MΛDΣ ƬΉIS BӨƬ?   
+# ❓ WΉY MΛDΣ ƬΉIS BӨƬ?   
 ```sh
 --(••÷[🎧NӨЯDΣD©️🎧]÷••--
 
@@ -21,7 +21,7 @@
 ❄️ 𝐀𝐧𝐝 𝐌𝐚𝐧𝐲 𝐌𝐨𝐫𝐞!
 ```
 
-## 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS   
+# 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS   
 - [![Generic badge](https://img.shields.io/badge/NӨЯDΣD-Vïå_ßð†-red.svg)](https://t.me/XERONOIDBOT)
 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
@@ -31,22 +31,22 @@
 
 
 
-## 📷 SCЯΣΣПSΉӨƬS
-* 🎧NӨЯDΣD©️🎧 Userbot Joined:
-<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_USER.jpg" /></p>
+# 📷 SCЯΣΣПSΉӨƬS
+## 🎧NӨЯDΣD©️🎧 Userbot Joined:
+<p align="centre"><img  width="25%" height="25%" img src="worklord/NORD_USER.jpg" /></p>
 
-* 🎧NӨЯDΣD©️🎧 Help Query:
-<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_HELP.jpg" /></p>
+## 🎧NӨЯDΣD©️🎧 Help Query:
+<p align="centre"><img  width="25%" height="25%" img src="worklord/NORD_HELP.jpg" /></p>
 
-* 🎧NӨЯDΣD©️🎧 Music Player:
-<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_PLAYER.jpg" /></p>
+## 🎧NӨЯDΣD©️🎧 Music Player:
+<p align="centre"><img  width="25%" height="25%" img src="worklord/NORD_PLAYER.jpg" /></p>
 
-* 🎧NӨЯDΣD©️🎧 YouTube Downloader:
-<p align="centre"><img  width="50%" height="50%" img src="worklord/NORD_DOWNLOADER.jpg" /></p>
+## 🎧NӨЯDΣD©️🎧 YouTube Downloader:
+<p align="centre"><img  width="25%" height="25%" img src="worklord/NORD_DOWNLOADER.jpg" /></p>
 
 
 
-## 📂 CӨMMΛNDS
+# 📂 CӨMMΛNDS
 ```sh
 📌 - *DYNO = Will be asked when deploying and you can 
                     keep any command prefix as per your needs!
@@ -79,7 +79,7 @@
 
 
 
-## 📜 PЯΣRΣQUISIƬΣS
+# 📜 PЯΣRΣQUISIƬΣS
 ```sh
 𝐈𝐟 𝐮𝐬𝐢𝐧𝐠 𝐇𝐞𝐫𝐨𝐤𝐮:
     -   BOT_TOKEN = From @BotFather Only
@@ -105,7 +105,7 @@
 ```
 
 
-## 💠 DΣPLӨY  
+# 💠 DΣPLӨY  
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
 
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Norded.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
@@ -114,7 +114,7 @@
 
 
 
-## 📜 LICΣПSΣ    
+# 📜 LICΣПSΣ    
 -  𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 - NӨЯDΣD 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0[GNU V3.0](LICENSE)
 
 
