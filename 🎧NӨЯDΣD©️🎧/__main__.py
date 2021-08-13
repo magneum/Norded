@@ -375,7 +375,7 @@ else:
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
     cprint(CHAT_ID,"yellow")
     DYNO="/"
-    CLEANER=12 #BEST
+    CLEANER=8 #BEST FOR TESTING
     HEROKU_API_KEY=None
     HEROKU_APP_NAME=None
     BOT_TOKEN="1879122684:AAG5to29LnQI2s0ySuAEG2o_eelXz1KI4BA"
@@ -431,7 +431,8 @@ LICENSE =""""[🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ Telegram Music player 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 nordlinker="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
 norderror = "https://telegra.ph/file/3b0adb8bdcf025bd61ccd.mp4"
-ӼɛӼօ = "[🎧•NӨЯDΣD•🎧 by 🔥ΉYPΣ VӨID LΛB🔥](https://t.me/hypevoidbot)\n\n"
+nordanimer="https://telegra.ph/file/745b406e98758fe8c9089.gif"
+ӼɛӼօ = "🕊==========================🕊\n[•NӨЯDΣD•🎧](https://t.me/hypevoidbot) **by** [🔺ΉYPΣ VӨID LΛB](https://t.me/hypevoidbot)\n🕊==========================🕊\n\n"
 LINK = "(https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"
 DURATION_PLAY_HOUR = 3
 HRKU = heroku3.from_key(HEROKU_API_KEY)
@@ -711,9 +712,13 @@ client,
         await ռօʀɖɦօք.ռօʀɖʀɨռɢ.start(ɳɾԃ.chat.id)
         await ɳɾԃ.delete()
     if ռօʀɖʀɨռɢ and ռօʀɖʀɨռɢ.is_connected:
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.delete()
+        xy = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n `𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!`")
+        await asyncio.sleep(CLEANER)
+        await xy.delete()
+
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         ռօʀɖɦօք.chat_id = MAX_CHANNEL_ID - context.full_chat.id
@@ -753,16 +758,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -823,16 +825,13 @@ client,
     await ɳɾԃ.delete()
     try:
         if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and SERVER == "SERVER":
-            wait = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            wait = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption="⚠️❗️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐭𝐢𝐥𝐥 𝐜𝐨𝐝𝐞 𝐜𝐥𝐞𝐚𝐧𝐬 𝐚𝐧𝐝 𝐫𝐞𝐬𝐭𝐚𝐫𝐭𝐬 𝐢𝐭𝐬𝐞𝐥𝐟.\n𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -840,16 +839,13 @@ client,
             await restart(f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\nREBOOTED")
             await wait.delete()
         else:
-            await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption="⚠️❗️ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 `/restart` 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗮𝘀 𝗶𝘁 𝗶𝘀 𝗶𝗻 𝗡𝗢𝗡-𝗛𝗘𝗥𝗢𝗞𝗨 𝗺𝗼𝗱𝗲",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -886,16 +882,13 @@ client,
     mntn = ɳɾԃ.from_user.mention
     await ɳɾԃ.delete()
     try:
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -980,16 +973,13 @@ client,
         if ɳɾԃ.audio:
             if ɳɾԃ.audio.duration > (
                 DURATION_AUTOPLAY_MIN * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60):
-                psychodelic = await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                psychodelic = await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{str(DURATION_AUTOPLAY_MIN)}",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -1008,16 +998,13 @@ client,
             m_audio = ɳɾԃ.reply_to_message
             if m_audio.audio.duration > (
                 DURATION_PLAY_HOUR * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60):
-                psychodelic = await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                psychodelic = await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{str(DURATION_PLAY_HOUR)}",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -1041,16 +1028,13 @@ client,
 
         if ռօʀɖքʟǟʏɛʀʟɨֆȶ and ռօʀɖքʟǟʏɛʀʟɨֆȶ[-1].audio.file_unique_id \
                 == m_audio.audio.file_unique_id:
-            psychodelic = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            psychodelic = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n That Audio file was successfully already added",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -1066,16 +1050,13 @@ client,
 
         ռօʀɖքʟǟʏɛʀʟɨֆȶ.append(m_audio)
         if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-            m_status = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            m_status = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n`𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘁𝗼 𝗹𝗶𝗻𝗸 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝘀𝗲𝗿𝘃𝗲𝗿...`\n𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -1104,8 +1085,8 @@ client,
                 chatID = ɳɾԃ.chat.id
                 EditGroupCallTitle(call=chatID, title=NORD_TITLE)
             except Exception:
-                await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ}\n[ERROR]: FAILED TO EDIT VC TITLE, MAKE ME ADMIN."
                 )
                 pass
@@ -1149,16 +1130,13 @@ client,
     mntn = ɳɾԃ.from_user.mention
     try:
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1230,16 +1208,13 @@ client,
                         text.append(f" {i}. **{audio}**")
                     else:
                         text.append(f" {i}")
-                psychodelic = await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                psychodelic = await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption="\n".join(text),disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -1250,16 +1225,13 @@ client,
                 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
             except (ValueError, TypeError):
-                psychodelic = await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                psychodelic = await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️  𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙞𝙣𝙥𝙪𝙩",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -1300,16 +1272,13 @@ client,
     mntn = ɳɾԃ.from_user.mention
     try:
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1364,7 +1333,9 @@ async def nord(bot, update):
         reply_markup=reply_markup)
     except Exception as Σ:
         ɳɾԃ = NordLink
-        await ɳɾԃ.reply_photo(photo=nordlinker,caption=f"{ӼɛӼօ}⚠️There was an error processing the previous request.\nPlease check below to learn more\n `__{Σ}__`")
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
+        caption=f"{ӼɛӼօ}⚠️There was an error processing the previous request.\nPlease check below to learn more\n `__{Σ}__`")
 
 
 
@@ -1398,7 +1369,8 @@ async def cb_data(bot, update):
             return False
     except Exception as Σ:
         ɳɾԃ = NordLink
-        await ɳɾԃ.reply_photo(photo=nordlinker,caption=f"{ӼɛӼօ}⚠️There was an error processing the previous request.\nPlease check below to learn more\n `__{Σ}__`")
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,caption=f"{ӼɛӼօ}⚠️There was an error processing the previous request.\nPlease check below to learn more\n `__{Σ}__`")
 
 
 
@@ -1471,16 +1443,13 @@ client,
         if ռօʀɖʀɨռɢ and ռօʀɖʀɨռɢ.is_connected:
             chat_id = int("-100" + str(ռօʀɖʀɨռɢ.full_chat.id))
             chat = await client.get_chat(chat_id)
-            psychodelic = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            psychodelic = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"**NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝘀 𝗰𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**:\n- **__{chat.title}__**",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -1494,16 +1463,13 @@ client,
             """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
         else:
-            join = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            join = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️ **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗱𝗶𝗱 𝗻𝗼𝘁 𝗷𝗼𝗶𝗻 𝗮𝗻𝘆 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝘆𝗲𝘁",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -1545,16 +1511,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1612,16 +1575,13 @@ client,
         await ɳɾԃ.delete()
         ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
         ռօʀɖʀɨռɢ.stop_playout()
-        psychodelic = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⏹❗️ **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴**",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1676,16 +1636,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1746,16 +1703,13 @@ client,
             return
         ռօʀɖʀɨռɢ.restart_playout()
         await ռօʀɖɦօք.NorDClocK()
-        psychodelic = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⏹❗️ **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝗼𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...**",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1796,16 +1750,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1863,16 +1814,13 @@ client,
         await ɳɾԃ.delete()
         ռօʀɖɦօք.ռօʀɖʀɨռɢ.pause_playout()
         await ռօʀɖɦօք.NorDClocK(reset=True)
-        psychodelic = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗽𝗮𝘂𝘀𝗲𝗱 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1917,16 +1865,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -1983,16 +1928,13 @@ client,
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
         ռօʀɖɦօք.ռօʀɖʀɨռɢ.resume_playout()
-        psychodelic = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗿𝗲𝘀𝘂𝗺𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2035,16 +1977,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2118,16 +2057,13 @@ client,
                     os.path.join(
                     download_dir,
                     ʀǟաƈ))
-        psychodelic = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n **NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗰𝗹𝗲𝗮𝗻𝗲𝗱 {count} 𝘁𝗲𝗺𝗽/𝗿𝗮𝘄 𝗳𝗶𝗹𝗲𝘀",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2168,16 +2104,13 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=NӨЯDΣDBΣ,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2232,9 +2165,9 @@ class NORDPLAYER(object):
             NeoN = f"{ӼɛӼօ}[🔥 𝗡𝗢𝗥𝗗 𝗠𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)"
         else:
             if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-                NeoN = f"{ӼɛӼօ}[NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
+                NeoN = f"{ӼɛӼօ}[🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
             else:
-                NeoN = f"{ӼɛӼօ}[NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)\n(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
+                NeoN = f"{ӼɛӼօ}[🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)\n(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
             
             NeoN += "\n".join([
                 f"""
@@ -2258,10 +2191,10 @@ async def NorDAnimatE(text):
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
     client = ռօʀɖʀɨռɢ.client
     chat_id = ռօʀɖɦօք.chat_id   
-    photo=nordlinker
-    message = await client.send_photo(
+    animation="https://telegra.ph/file/976f71e4175c2f626fe04.mp4"
+    message = await client.send_animation(
     chat_id,
-    photo,
+    animation,
     text
     )
     return message
@@ -2350,9 +2283,6 @@ client,
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
         InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
-        InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
         ]]))
@@ -2398,16 +2328,13 @@ _,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=LICENSE,
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2455,10 +2382,10 @@ _,
             await PERM.delete()
             await ɳɾԃ.delete()
         except Exception:
-            await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+            await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"""{ӼɛӼօ}
-    @Admins Please make [NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) admin.
+    @Admins Please make [🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) admin.
 
     **Bot is missing required permissions to work properly.**
         `❌ CHAT_ADMIN`
@@ -2492,19 +2419,16 @@ _,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"""{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n
-    **I am** [NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) **for playing music in the voice chats of Telegram Groups & Channels**.
+    **I am** [🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) **for playing music in the voice chats of Telegram Groups & Channels**.
 
     Send me `/nord` for more info.""",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
         url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🔖ɢɪᴛʜᴜʙ",
-        url=f"https://t.me/hypevoidbot",),],[
         InlineKeyboardButton(
         text="🤖 ΉYPΣ VӨID BӨT",
         url=f"https://t.me/hypevoidbot")
@@ -2553,16 +2477,13 @@ client,
         mntn = ɳɾԃ.from_user.mention
         if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None:
             await ɳɾԃ.delete()
-            await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️   𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝗿𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗛𝗲𝗿𝗼𝗸𝘂-𝗗𝘆𝗻𝗼.\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 30𝙨𝙚𝙘-1𝙢𝙞𝙣",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -2570,86 +2491,71 @@ client,
             HEROKU = heroku3.from_key(HEROKU_API_KEY)
             app = HEROKU.apps()[HEROKU_APP_NAME]
             await app.restart()
-            await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n  **NӨЯDΣD 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
             InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
-            InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            lic = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            lic = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n{LICENSE}")
             await asyncio.sleep(12)
             await lic.delete()
         else:
             if HEROKU_API_KEY is None:
                 await ɳɾԃ.delete()
-                await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️   𝗦𝗲𝗲𝗺𝘀 𝗹𝗶𝗸𝗲 𝘆𝗼𝘂 𝗵𝗮𝘃𝗲 𝘀𝗲𝘁 𝗮𝗻 𝗶𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗜_𝗞𝗘𝗬.\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
                 InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
-                InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
             elif HEROKU_APP_NAME is None:
                 await ɳɾԃ.delete()
-                await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️   𝗦𝗲𝗲𝗺𝘀 𝗹𝗶𝗸𝗲 𝘆𝗼𝘂 𝗵𝗮𝘃𝗲 𝘀𝗲𝘁 𝗮𝗻 𝗶𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗣_𝗡𝗔𝗠𝗘.\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
                 InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
-                InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
             elif HEROKU_API_KEY is None and HEROKU_APP_NAME is None:
                 await ɳɾԃ.delete()
-                await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️   𝗦𝗲𝗲𝗺𝘀 𝗹𝗶𝗸𝗲 𝘆𝗼𝘂 𝗵𝗮𝘃𝗲 𝘀𝗲𝘁 𝗮𝗻 𝗶𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗜_𝗞𝗘𝗬 𝗮𝗻𝗱 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗣_𝗡𝗔𝗠𝗘.\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
                 InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
-                InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
             else:
                 await ɳɾԃ.delete()
-                await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n  𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐇𝐞𝐫𝐨𝐤𝐮 𝐥𝐨𝐠𝐬 𝐭𝐨 @HypeVoids 𝐢𝐟 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐰𝐫𝐨𝐧𝐠 𝐡𝐚𝐩𝐩𝐞𝐧𝐬",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -2697,8 +2603,8 @@ client,
     try:
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
-        shuts = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        shuts = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️  `𝗧𝘂𝗿𝗶𝗻𝗴 𝗢𝗳𝗳 𝗛𝗲𝗿𝗼𝗸𝘂 𝗗𝘆𝗻𝗼𝘀 𝗳𝗼𝗿 NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿.\n𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝘁𝘂𝗿𝗻 𝗶𝘁 𝗼𝗻 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝗮𝗴𝗮𝗶𝗻.`")
         await asyncio.sleep(2)
         await shuts.delete()
@@ -2743,8 +2649,8 @@ client,
 ɳɾԃ: NordLink):
     try:
         mntn = ɳɾԃ.from_user.mention
-        event = await ɳɾԃ.reply_photo(
-        photo=nordlinker,
+        event = await ɳɾԃ.reply_animation(
+        animation=nordanimer,
         caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n⚠️❗️  **𝗔𝘀𝗸𝗶𝗻𝗴 𝗛𝗲𝗿𝗼𝗸𝘂 𝗮𝗻𝗱 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗲𝘀𝘁**")
         useragent = (
             "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
@@ -3003,7 +2909,7 @@ client,
                 psychode =  await ɳɾԃ.reply_animation(
                 animation="worklord/norded_dling.gif",
                 duration=4,
-                caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n[Please Wait till](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [downloads and converts Audio for streaming in the group voice chat!](https://t.me/hypevoidbot)")
+                caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n[Please Wait till](https://t.me/hypevoidbot) **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹** [downloads and converts Audio for streaming in the group voice chat!](https://t.me/hypevoidbot)")
                 link = f"https://youtube.com{results[0]['url_suffix']}"
                 title = results[
                 0][
@@ -3028,17 +2934,14 @@ client,
                 )
 
             except Exception as Σ:
-                psychodelic =  await ɳɾԃ.reply_photo(
-                photo=nordlinker,
+                psychodelic =  await ɳɾԃ.reply_animation(
+                animation=nordanimer,
                 caption=f"""
                 {ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
                 reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🔖ɢɪᴛʜᴜʙ",
-                url=f"https://t.me/hypevoidbot",),],[
                 InlineKeyboardButton(
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
@@ -3050,17 +2953,14 @@ client,
                 return
                 
         except Exception as Σ:
-            psychodelic = await ɳɾԃ.reply_photo(
-            photo=nordlinker,
+            psychodelic = await ɳɾԃ.reply_animation(
+            animation=nordanimer,
             caption=f"""
             {ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
-            text="🔖ɢɪᴛʜᴜʙ",
-            url=f"https://t.me/hypevoidbot",),],[
             InlineKeyboardButton(
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
@@ -3089,7 +2989,7 @@ client,
 👁‍🗨`ᴀᴜᴅɪᴏ ᴠɪᴇᴡꜱ`: **[{views}]({link})**
 
 
-☢️[𝚃𝚑𝚒𝚜 𝙰𝚞𝚍𝚒𝚘 𝚒𝚜 𝚜𝚎𝚗𝚝 𝚋𝚢](https://t.me/hypevoidbot) **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ** [𝚏𝚘𝚛 𝚘𝚗𝚕𝚢 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚐 𝚒𝚗 𝚅𝙾𝙸𝙲𝙴_𝙲𝙷𝙰𝚃𝚂.](https://t.me/hypevoidbot)❗️
+☢️[𝚃𝚑𝚒𝚜 𝙰𝚞𝚍𝚒𝚘 𝚒𝚜 𝚜𝚎𝚗𝚝 𝚋𝚢](https://t.me/hypevoidbot) **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹** [𝚏𝚘𝚛 𝚘𝚗𝚕𝚢 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚐 𝚒𝚗 𝚅𝙾𝙸𝙲𝙴_𝙲𝙷𝙰𝚃𝚂.](https://t.me/hypevoidbot)❗️
 🤖[𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 𝘉𝘦𝘭𝘰𝘸 𝘉𝘰𝘵𝘴 𝘵𝘰 𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘢𝘯𝘺 𝘰𝘵𝘩𝘦𝘳 𝘠𝘰𝘶𝘛𝘶𝘣𝘦 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘪𝘯 𝘜𝘏𝘋](https://t.me/hypevoidbot)
 """
             secmul, dur, dur_arr = 1, 0, duration.split(':')
@@ -3101,7 +3001,7 @@ client,
             await psychode.delete()
             psychoded = await ɳɾԃ.reply_animation(
             animation="https://telegra.ph/file/c8f986b67bb8b3ab566b3.mp4",
-            caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n🔥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜰɪɴɪꜱʜᴇᴅ\n𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 **NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ**"
+            caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n🔥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜰɪɴɪꜱʜᴇᴅ\n𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹**"
             )
 
             ADU = await ɳɾԃ.reply_audio(
@@ -3127,6 +3027,9 @@ client,
             photo=NӨЯDΣD_THUMBNAIL,
             caption=NORN
             )
+            await asyncio.sleep(CLEANER)
+            await ADU.delete()
+
 
         except Exception as Σ:
             psychodelic = await ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n❌ Error\n\n`{Σ}`")
