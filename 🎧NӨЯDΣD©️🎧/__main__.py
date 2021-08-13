@@ -4,12 +4,12 @@
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
-COLOR_CODES =       "||________🟢=SERVER STUFFS________||________🔵=🎧NӨЯDΣD©️🎧 STUFFS________||________🟤=RADIO STUFFS________||"
+COLOR_CODES =       "||________🟢=SERVER STUFFS________||________🔵=🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ STUFFS________||________🟤=RADIO STUFFS________||"
 import os
 import io
 from re import I
@@ -31,7 +31,7 @@ from time import sleep
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -102,7 +102,7 @@ except ImportError:
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -137,12 +137,12 @@ importlib.reload(youtube_dl)
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
-load_dotenv("🎧NӨЯDΣD©️🎧/🎧NӨЯDΣD©️🎧.env")
+load_dotenv("🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️/🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.env")
 os.system("mk")
 file = open("db.py", "w") 
 file.write("def init():\n    global db\n    db = {}") 
@@ -172,7 +172,7 @@ from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -263,7 +263,7 @@ InlineKeyboardButton(
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -274,10 +274,10 @@ if SERVER == "SERVER":
     API_ID = int(os.environ.get("API_ID",None))
     API_HASH = os.environ.get("API_HASH",None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
-    XERONOID_NAME = os.environ.get("XERONOID_NAME",None)
+    NӨЯDΣD_NAME = os.environ.get("NӨЯDΣD_NAME",None)
     NORD_ADMINS = os.environ.get("NORD_ADMINS",None)
     CHAT_ID = os.environ.get("CHAT_ID",None)
-    DYNO_COMMANDK= os.environ.get("DYNO_COMMANDK",None)
+    DYNO= os.environ.get("DYNO",None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME",None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY",None)
     CLEANER = os.environ.get("CLEANER",None)
@@ -296,13 +296,13 @@ else:
     cprint(API_ID,"yellow")
     API_HASH=getenv("APP_HASH")
     cprint(API_HASH,"yellow")
-    XERONOID_NAME=getenv("XER0NOID_NAM")
-    cprint(XERONOID_NAME,"yellow")
+    NӨЯDΣD_NAME=getenv("XER0NOID_NAM")
+    cprint(NӨЯDΣD_NAME,"yellow")
     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
     cprint(NORD_ADMINS,"yellow")
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
     cprint(CHAT_ID,"yellow")
-    DYNO_COMMANDK="/"
+    DYNO="/"
     CLEANER=12 #BEST
     HEROKU_API_KEY=None
     HEROKU_APP_NAME=None
@@ -318,7 +318,7 @@ else:
 GROUP_CALLS = {}
 FFMPEG_PROCESSES = {}
 NӨЯDΣD = Client(
-XERONOID_NAME,
+NӨЯDΣD_NAME,
 API_ID,
 API_HASH)
 NӨЯDBӨƬ = Client(
@@ -333,78 +333,78 @@ heroku_api = "https://api.heroku.com"
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
 DURATION_AUTOPLAY_MIN = 10
-LICENSE =""""[🎧NӨЯDΣD©️🎧 Telegram Music player userbot has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀.GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation,Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.](https://github.com/HypeVoidSoul/Xeronoid/blob/VOID/LICENSE)"""
+LICENSE =""""[🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ Telegram Music player userbot has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀.GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation,Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.](https://github.com/HypeVoidSoul/Xeronoid/blob/VOID/LICENSE)"""
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 nordlinker="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
 ӼɛӼօ = "[🎧•NӨЯDΣD•🎧 by 🔥ΉYPΣ VӨID LΛB🔥](https://t.me/hypevoidbot)\n\n"
 LINK = "(https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"
 DURATION_PLAY_HOUR = 3
 HRKU = heroku3.from_key(HEROKU_API_KEY)
-NordFix = prefixes=DYNO_COMMANDK
+NordFix = prefixes=DYNO
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
                                                          Version 3, 29 June 2007
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
 MEMBER_CATEG=f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
-**{DYNO_COMMANDK}stream**
-•♪ 𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰 🎧NӨЯDΣD©️🎧.
-**{DYNO_COMMANDK}stream**
-•♪ 𝘜𝘴𝘦 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬𝘰𝘶𝘵 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘰𝘧 🎧NӨЯDΣD©️🎧.
-**{DYNO_COMMANDK}ping**   
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘵𝘩𝘦 𝘱𝘪𝘯𝘨 𝘴𝘵𝘢𝘵𝘶𝘴 𝘰𝘧 🎧NӨЯDΣD©️🎧.
-**{DYNO_COMMANDK}license**
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘭𝘪𝘤𝘦𝘯𝘴𝘦 𝘰𝘧 🎧NӨЯDΣD©️🎧.
-**{DYNO_COMMANDK}yt**
-•♪ __Direct youtube music download and play with 🎧NӨЯDΣD©️🎧.__
+**{DYNO}stream**
+•♪ 𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+**{DYNO}stream**
+•♪ 𝘜𝘴𝘦 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬𝘰𝘶𝘵 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+**{DYNO}ping**   
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘵𝘩𝘦 𝘱𝘪𝘯𝘨 𝘴𝘵𝘢𝘵𝘶𝘴 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+**{DYNO}license**
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘭𝘪𝘤𝘦𝘯𝘴𝘦 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+**{DYNO}yt**
+•♪ __Direct youtube music download and play with 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.__
 """
 
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
 ADMIN_CATEG=f"""{ӼɛӼօ}[𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
-**{DYNO_COMMANDK}norded** 
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘸𝘩𝘦𝘳𝘦 𝘪𝘴 𝘵𝘩𝘦 🎧NӨЯDΣD©️🎧 𝘶𝘴𝘦𝘳𝘣𝘰𝘵 𝘱𝘭𝘶𝘨𝘨𝘦𝘥.
-**{DYNO_COMMANDK}plug**   
-•♪ 🎧NӨЯDΣD©️🎧 𝘑𝘰𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-**{DYNO_COMMANDK}unplug** 
-•♪ 𝘓𝘦𝘢𝘷𝘦 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘸𝘩𝘦𝘳𝘦 🎧NӨЯDΣD©️🎧 𝘸𝘢𝘴 𝘱𝘭𝘢𝘺𝘪𝘯𝘨.
-**{DYNO_COMMANDK}end**    
+**{DYNO}norded** 
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘸𝘩𝘦𝘳𝘦 𝘪𝘴 𝘵𝘩𝘦 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘶𝘴𝘦𝘳𝘣𝘰𝘵 𝘱𝘭𝘶𝘨𝘨𝘦𝘥.
+**{DYNO}plug**   
+•♪ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘑𝘰𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
+**{DYNO}unplug** 
+•♪ 𝘓𝘦𝘢𝘷𝘦 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘸𝘩𝘦𝘳𝘦 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘸𝘢𝘴 𝘱𝘭𝘢𝘺𝘪𝘯𝘨.
+**{DYNO}end**    
 •♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘢𝘯𝘥 𝘴𝘵𝘰𝘱 𝘢𝘭𝘭 𝘮𝘶𝘴𝘪𝘤.
-**{DYNO_COMMANDK}pause**  
+**{DYNO}pause**  
 •♪ 𝘗𝘢𝘶𝘴𝘦 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-**{DYNO_COMMANDK}resume** 
+**{DYNO}resume** 
 •♪ 𝘜𝘯-𝘱𝘢𝘶𝘴𝘦 𝘵𝘩𝘦 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-**{DYNO_COMMANDK}replay** 
+**{DYNO}replay** 
 •♪ 𝘗𝘭𝘢𝘺 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘣𝘦𝘨𝘪𝘯𝘯𝘪𝘯𝘨 𝘰𝘨 𝘤𝘶𝘳𝘳𝘦𝘯𝘵 𝘮𝘶𝘴𝘪𝘤 𝘣𝘦𝘪𝘯𝘨 𝘱𝘭𝘢𝘺𝘦𝘥.
-**{DYNO_COMMANDK}next**   
+**{DYNO}next**   
 •♪ 𝘔𝘰𝘷𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘯𝘦𝘹𝘵 𝘵𝘳𝘢𝘤𝘬 𝘰𝘳 𝘚𝘬𝘪𝘱 𝘵𝘳𝘢𝘤𝘬 𝘪𝘯 𝘲𝘶𝘦𝘶𝘦 𝘭𝘪𝘬𝘦 : "𝘯𝘦𝘹𝘵 2".
-**{DYNO_COMMANDK}temp**   
-•♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘦𝘮𝘱 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦𝘴 𝘪𝘯 𝘴𝘦𝘳𝘷𝘦𝘳 𝘰𝘧 🎧NӨЯDΣD©️🎧.
+**{DYNO}temp**   
+•♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘦𝘮𝘱 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦𝘴 𝘪𝘯 𝘴𝘦𝘳𝘷𝘦𝘳 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
 """
 
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
 HEROKU_CATEG=f"""{ӼɛӼօ}[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
-**{DYNO_COMMANDK}shutdown**
-•♪ 𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳 🎧NӨЯDΣD©️🎧.
-**{DYNO_COMMANDK}restart**
-•♪ 𝘙𝘦𝘣𝘰𝘰𝘵 🎧NӨЯDΣD©️🎧 𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.
-**{DYNO_COMMANDK}usage**  
-•♪ 𝘍𝘪𝘯𝘥 🎧NӨЯDΣD©️🎧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦
+**{DYNO}shutdown**
+•♪ 𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+**{DYNO}restart**
+•♪ 𝘙𝘦𝘣𝘰𝘰𝘵 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.
+**{DYNO}usage**  
+•♪ 𝘍𝘪𝘯𝘥 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦
 """
 INFO_CATEG = f"""{ӼɛӼօ}**__Please press below buttons to check the available commands.__**
 
@@ -417,38 +417,38 @@ NORN = f"""{ӼɛӼօ}**__Audio is here.__**\n**Please reply to the audio file wi
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
 XERO_HELP = f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
-**{DYNO_COMMANDK}stream**   
-•♪ 𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰 🎧NӨЯDΣD©️🎧.
-`{DYNO_COMMANDK}stream`   
-•♪ 𝘜𝘴𝘦 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬𝘰𝘶𝘵 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘰𝘧 🎧NӨЯDΣD©️🎧.
-`{DYNO_COMMANDK}ping`   
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘵𝘩𝘦 𝘱𝘪𝘯𝘨 𝘴𝘵𝘢𝘵𝘶𝘴 𝘰𝘧 🎧NӨЯDΣD©️🎧.
-`{DYNO_COMMANDK}license`
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘭𝘪𝘤𝘦𝘯𝘴𝘦 𝘰𝘧 🎧NӨЯDΣD©️🎧.\n\n[𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
-`{DYNO_COMMANDK}norded` 
-•♪ 𝘊𝘩𝘦𝘤𝘬 𝘸𝘩𝘦𝘳𝘦 𝘪𝘴 𝘵𝘩𝘦 🎧NӨЯDΣD©️🎧 𝘶𝘴𝘦𝘳𝘣𝘰𝘵 𝘱𝘭𝘶𝘨𝘨𝘦𝘥.
-`{DYNO_COMMANDK}plug`   
-•♪ 🎧NӨЯDΣD©️🎧 𝘑𝘰𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-`{DYNO_COMMANDK}unplug` 
-•♪ 𝘓𝘦𝘢𝘷𝘦 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘸𝘩𝘦𝘳𝘦 🎧NӨЯDΣD©️🎧 𝘸𝘢𝘴 𝘱𝘭𝘢𝘺𝘪𝘯𝘨.
-`{DYNO_COMMANDK}end`    
+**{DYNO}stream**   
+•♪ 𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+`{DYNO}stream`   
+•♪ 𝘜𝘴𝘦 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬𝘰𝘶𝘵 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+`{DYNO}ping`   
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘵𝘩𝘦 𝘱𝘪𝘯𝘨 𝘴𝘵𝘢𝘵𝘶𝘴 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+`{DYNO}license`
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘭𝘪𝘤𝘦𝘯𝘴𝘦 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.\n\n[𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
+`{DYNO}norded` 
+•♪ 𝘊𝘩𝘦𝘤𝘬 𝘸𝘩𝘦𝘳𝘦 𝘪𝘴 𝘵𝘩𝘦 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘶𝘴𝘦𝘳𝘣𝘰𝘵 𝘱𝘭𝘶𝘨𝘨𝘦𝘥.
+`{DYNO}plug`   
+•♪ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘑𝘰𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
+`{DYNO}unplug` 
+•♪ 𝘓𝘦𝘢𝘷𝘦 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘸𝘩𝘦𝘳𝘦 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘸𝘢𝘴 𝘱𝘭𝘢𝘺𝘪𝘯𝘨.
+`{DYNO}end`    
 •♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘩𝘦 𝘱𝘭𝘢𝘺𝘭𝘪𝘴𝘵 𝘢𝘯𝘥 𝘴𝘵𝘰𝘱 𝘢𝘭𝘭 𝘮𝘶𝘴𝘪𝘤.
-`{DYNO_COMMANDK}pause`  
+`{DYNO}pause`  
 •♪ 𝘗𝘢𝘶𝘴𝘦 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-`{DYNO_COMMANDK}resume` 
+`{DYNO}resume` 
 •♪ 𝘜𝘯-𝘱𝘢𝘶𝘴𝘦 𝘵𝘩𝘦 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵.
-`{DYNO_COMMANDK}replay` 
+`{DYNO}replay` 
 •♪ 𝘗𝘭𝘢𝘺 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘣𝘦𝘨𝘪𝘯𝘯𝘪𝘯𝘨 𝘰𝘨 𝘤𝘶𝘳𝘳𝘦𝘯𝘵 𝘮𝘶𝘴𝘪𝘤 𝘣𝘦𝘪𝘯𝘨 𝘱𝘭𝘢𝘺𝘦𝘥.
-`{DYNO_COMMANDK}next`   
+`{DYNO}next`   
 •♪ 𝘔𝘰𝘷𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘯𝘦𝘹𝘵 𝘵𝘳𝘢𝘤𝘬 𝘰𝘳 𝘚𝘬𝘪𝘱 𝘵𝘳𝘢𝘤𝘬 𝘪𝘯 𝘲𝘶𝘦𝘶𝘦 𝘭𝘪𝘬𝘦 : "𝘯𝘦𝘹𝘵 2".
-`{DYNO_COMMANDK}temp`   
-•♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘦𝘮𝘱 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦𝘴 𝘪𝘯 𝘴𝘦𝘳𝘷𝘦𝘳 𝘰𝘧 🎧NӨЯDΣD©️🎧.\n\n[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
-`{DYNO_COMMANDK}shutdown`
-•♪ 𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳 🎧NӨЯDΣD©️🎧.
-`{DYNO_COMMANDK}restart`
-•♪ 𝘙𝘦𝘣𝘰𝘰𝘵 🎧NӨЯDΣD©️🎧 𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.
-`{DYNO_COMMANDK}usage`  
-•♪ 𝘍𝘪𝘯𝘥 🎧NӨЯDΣD©️🎧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦
+`{DYNO}temp`   
+•♪ 𝘊𝘭𝘦𝘢𝘯 𝘵𝘦𝘮𝘱 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦𝘴 𝘪𝘯 𝘴𝘦𝘳𝘷𝘦𝘳 𝘰𝘧 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.\n\n[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
+`{DYNO}shutdown`
+•♪ 𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+`{DYNO}restart`
+•♪ 𝘙𝘦𝘣𝘰𝘰𝘵 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.
+`{DYNO}usage`  
+•♪ 𝘍𝘪𝘯𝘥 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦
 """
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -456,47 +456,47 @@ XERO_HELP = f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
 """
-𝐑𝐞𝐩𝐥𝐲 𝐭𝐨 𝐚𝐮𝐝𝐢𝐨 𝐟𝐢𝐥𝐞 𝐭𝐨 𝐩𝐥𝐚𝐲/𝐪𝐮𝐞𝐮𝐞 𝐭𝐨 🎧NӨЯDΣD©️🎧.
-𝐔𝐬𝐞 𝐭𝐨 𝐜𝐡𝐞𝐜𝐤𝐨𝐮𝐭 𝐭𝐡𝐞 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 𝐨𝐟 🎧NӨЯDΣD©️🎧.
-𝐂𝐡𝐞𝐜𝐤 𝐭𝐡𝐞 𝐩𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐮𝐬 𝐨𝐟 🎧NӨЯDΣD©️🎧. 
-𝐂𝐡𝐞𝐜𝐤 𝐥𝐢𝐜𝐞𝐧𝐬𝐞 𝐨𝐟 🎧NӨЯDΣD©️🎧.
-𝐂𝐡𝐞𝐜𝐤 𝐰𝐡𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 🎧NӨЯDΣD©️🎧 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐩𝐥𝐮𝐠𝐠𝐞𝐝
+𝐑𝐞𝐩𝐥𝐲 𝐭𝐨 𝐚𝐮𝐝𝐢𝐨 𝐟𝐢𝐥𝐞 𝐭𝐨 𝐩𝐥𝐚𝐲/𝐪𝐮𝐞𝐮𝐞 𝐭𝐨 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝐔𝐬𝐞 𝐭𝐨 𝐜𝐡𝐞𝐜𝐤𝐨𝐮𝐭 𝐭𝐡𝐞 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 𝐨𝐟 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝐂𝐡𝐞𝐜𝐤 𝐭𝐡𝐞 𝐩𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐮𝐬 𝐨𝐟 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️. 
+𝐂𝐡𝐞𝐜𝐤 𝐥𝐢𝐜𝐞𝐧𝐬𝐞 𝐨𝐟 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝐂𝐡𝐞𝐜𝐤 𝐰𝐡𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐩𝐥𝐮𝐠𝐠𝐞𝐝
 𝐉𝐨𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭.
-𝐋𝐞𝐚𝐯𝐞 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭 𝐰𝐡𝐞𝐫𝐞 🎧NӨЯDΣD©️🎧. 𝐰𝐚𝐬 𝐩𝐥𝐚𝐲𝐢𝐧𝐠.
+𝐋𝐞𝐚𝐯𝐞 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭 𝐰𝐡𝐞𝐫𝐞 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️. 𝐰𝐚𝐬 𝐩𝐥𝐚𝐲𝐢𝐧𝐠.
 𝐂𝐥𝐞𝐚𝐧 𝐭𝐡𝐞 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 𝐚𝐧𝐝 𝐬𝐭𝐨𝐩 𝐚𝐥𝐥 𝐦𝐮𝐬𝐢𝐜..
 𝐏𝐚𝐮𝐬𝐞 𝐦𝐮𝐬𝐢𝐜 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭.
 𝐔𝐧-𝐩𝐚𝐮𝐬𝐞 𝐭𝐡𝐞 𝐦𝐮𝐬𝐢𝐜 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭.
 𝐏𝐥𝐚𝐲 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐛𝐞𝐠𝐢𝐧𝐧𝐢𝐧𝐠 𝐨𝐠 𝐜𝐮𝐫𝐫𝐞𝐧𝐭 𝐦𝐮𝐬𝐢𝐜 𝐛𝐞𝐢𝐧𝐠 𝐩𝐥𝐚𝐲𝐞𝐝.
 𝐌𝐨𝐯𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐧𝐞𝐱𝐭 𝐭𝐫𝐚𝐜𝐤 𝐨𝐫 𝐒𝐤𝐢𝐩 𝐭𝐫𝐚𝐜𝐤 𝐢𝐧 𝐪𝐮𝐞𝐮𝐞 𝐥𝐢𝐤𝐞 : "𝐧𝐞𝐱𝐭 𝟐".
-𝐂𝐥𝐞𝐚𝐧 𝐭𝐞𝐦𝐩 𝐚𝐮𝐝𝐢𝐨 𝐟𝐢𝐥𝐞𝐬 𝐢𝐧 𝐬𝐞𝐫𝐯𝐞𝐫 𝐨𝐟 🎧NӨЯDΣD©️🎧.
-𝐓𝐮𝐫𝐧 𝐨𝐟𝐟 𝐇𝐄𝐑𝐎𝐊𝐔 𝐃𝐲𝐧𝐨 𝐟𝐨𝐫 🎧NӨЯDΣD©️🎧.
-𝐑𝐞𝐛𝐨𝐨𝐭 🎧NӨЯDΣD©️🎧 𝐦𝐚𝐧𝐮𝐚𝐥𝐥𝐲 𝐢𝐧 𝐇𝐄𝐑𝐎𝐊𝐔.
-𝐅𝐢𝐧𝐝 🎧NӨЯDΣD©️🎧 𝐇𝐄𝐑𝐎𝐊𝐔 𝐝𝐲𝐧𝐨 𝐮𝐬𝐚𝐠𝐞
+𝐂𝐥𝐞𝐚𝐧 𝐭𝐞𝐦𝐩 𝐚𝐮𝐝𝐢𝐨 𝐟𝐢𝐥𝐞𝐬 𝐢𝐧 𝐬𝐞𝐫𝐯𝐞𝐫 𝐨𝐟 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝐓𝐮𝐫𝐧 𝐨𝐟𝐟 𝐇𝐄𝐑𝐎𝐊𝐔 𝐃𝐲𝐧𝐨 𝐟𝐨𝐫 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝐑𝐞𝐛𝐨𝐨𝐭 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝐦𝐚𝐧𝐮𝐚𝐥𝐥𝐲 𝐢𝐧 𝐇𝐄𝐑𝐎𝐊𝐔.
+𝐅𝐢𝐧𝐝 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝐇𝐄𝐑𝐎𝐊𝐔 𝐝𝐲𝐧𝐨 𝐮𝐬𝐚𝐠𝐞
 
-𝗥𝗲𝗽𝗹𝘆 𝘁𝗼 𝗮𝘂𝗱𝗶𝗼 𝗳𝗶𝗹𝗲 𝘁𝗼 𝗽𝗹𝗮𝘆/𝗾𝘂𝗲𝘂𝗲 𝘁𝗼 🎧NӨЯDΣD©️🎧.
-𝗨𝘀𝗲 𝘁𝗼 𝗰𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝘁𝗵𝗲 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁 𝗼𝗳 🎧NӨЯDΣD©️🎧.
-𝗖𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗽𝗶𝗻𝗴 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 🎧NӨЯDΣD©️🎧.
-𝗖𝗵𝗲𝗰𝗸 𝗹𝗶𝗰𝗲𝗻𝘀𝗲 𝗼𝗳 🎧NӨЯDΣD©️🎧.
-𝗖𝗵𝗲𝗰𝗸 𝘄𝗵𝗲𝗿𝗲 𝗶𝘀 𝘁𝗵𝗲 🎧NӨЯDΣD©️🎧 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗽𝗹𝘂𝗴𝗴𝗲𝗱
+𝗥𝗲𝗽𝗹𝘆 𝘁𝗼 𝗮𝘂𝗱𝗶𝗼 𝗳𝗶𝗹𝗲 𝘁𝗼 𝗽𝗹𝗮𝘆/𝗾𝘂𝗲𝘂𝗲 𝘁𝗼 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗨𝘀𝗲 𝘁𝗼 𝗰𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝘁𝗵𝗲 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁 𝗼𝗳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗖𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗽𝗶𝗻𝗴 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗖𝗵𝗲𝗰𝗸 𝗹𝗶𝗰𝗲𝗻𝘀𝗲 𝗼𝗳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗖𝗵𝗲𝗰𝗸 𝘄𝗵𝗲𝗿𝗲 𝗶𝘀 𝘁𝗵𝗲 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗽𝗹𝘂𝗴𝗴𝗲𝗱
 𝗝𝗼𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁.
-𝗟𝗲𝗮𝘃𝗲 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝘄𝗵𝗲𝗿𝗲 🎧NӨЯDΣD©️🎧 𝘄𝗮𝘀 𝗽𝗹𝗮𝘆𝗶𝗻𝗴.
+𝗟𝗲𝗮𝘃𝗲 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁 𝘄𝗵𝗲𝗿𝗲 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘄𝗮𝘀 𝗽𝗹𝗮𝘆𝗶𝗻𝗴.
 𝗖𝗹𝗲𝗮𝗻 𝘁𝗵𝗲 𝗽𝗹𝗮𝘆𝗹𝗶𝘀𝘁 𝗮𝗻𝗱 𝘀𝘁𝗼𝗽 𝗮𝗹𝗹 𝗺𝘂𝘀𝗶𝗰..
 𝗣𝗮𝘂𝘀𝗲 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁.
 𝗨𝗻-𝗽𝗮𝘂𝘀𝗲 𝘁𝗵𝗲 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁.
 𝗣𝗹𝗮𝘆 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴 𝗼𝗴 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗺𝘂𝘀𝗶𝗰 𝗯𝗲𝗶𝗻𝗴 𝗽𝗹𝗮𝘆𝗲𝗱.
 𝗠𝗼𝘃𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗻𝗲𝘅𝘁 𝘁𝗿𝗮𝗰𝗸 𝗼𝗿 𝗦𝗸𝗶𝗽 𝘁𝗿𝗮𝗰𝗸 𝗶𝗻 𝗾𝘂𝗲𝘂𝗲 𝗹𝗶𝗸𝗲 : "𝗻𝗲𝘅𝘁 𝟮".
-𝗖𝗹𝗲𝗮𝗻 𝘁𝗲𝗺𝗽 𝗮𝘂𝗱𝗶𝗼 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝘀𝗲𝗿𝘃𝗲𝗿 𝗼𝗳 🎧NӨЯDΣD©️🎧.
-𝗧𝘂𝗿𝗻 𝗼𝗳𝗳 𝗛𝗘𝗥𝗢𝗞𝗨 𝗗𝘆𝗻𝗼 𝗳𝗼𝗿 🎧NӨЯDΣD©️🎧.
-𝗥𝗲𝗯𝗼𝗼𝘁 🎧NӨЯDΣD©️🎧 𝗺𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝗶𝗻 𝗛𝗘𝗥𝗢𝗞𝗨.
-𝗙𝗶𝗻𝗱 🎧NӨЯDΣD©️🎧 𝗛𝗘𝗥𝗢𝗞𝗨 𝗱𝘆𝗻𝗼 𝘂𝘀𝗮𝗴𝗲
+𝗖𝗹𝗲𝗮𝗻 𝘁𝗲𝗺𝗽 𝗮𝘂𝗱𝗶𝗼 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝘀𝗲𝗿𝘃𝗲𝗿 𝗼𝗳 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗧𝘂𝗿𝗻 𝗼𝗳𝗳 𝗛𝗘𝗥𝗢𝗞𝗨 𝗗𝘆𝗻𝗼 𝗳𝗼𝗿 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️.
+𝗥𝗲𝗯𝗼𝗼𝘁 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝗺𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝗶𝗻 𝗛𝗘𝗥𝗢𝗞𝗨.
+𝗙𝗶𝗻𝗱 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝗛𝗘𝗥𝗢𝗞𝗨 𝗱𝘆𝗻𝗼 𝘂𝘀𝗮𝗴𝗲
 """
-NӨЯDΣDBΣ=f"""{ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ɴᴏʀᴅ ᴀᴅᴍɪɴꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ 🎧NӨЯDΣD©️🎧 ɪꜱ ᴘʟᴜɢɢᴇᴅ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.`
+NӨЯDΣDBΣ=f"""{ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ɴᴏʀᴅ ᴀᴅᴍɪɴꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ ɪꜱ ᴘʟᴜɢɢᴇᴅ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.`
 **__If needed to know the commands then use /nord__**
 
 [𝗣𝗹𝗲𝗮𝘀𝗲 𝘂𝘀𝗲 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽𝘀.](https://t.me/hypevoids)"""
@@ -506,7 +506,7 @@ NӨЯDΣDBΣ=f"""{ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰ�
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -542,7 +542,7 @@ Nord_Ghost = filters.create(Nord_Ghost_Filter)
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -636,7 +636,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -749,7 +749,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -769,7 +769,7 @@ async def restart(text):
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -872,7 +872,7 @@ client,
         if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
             m_status = await ɳɾԃ.reply_photo(
             photo=nordlinker,
-            caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n`𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 🎧NӨЯDΣD©️🎧 𝘁𝗼 𝗹𝗶𝗻𝗸 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝘀𝗲𝗿𝘃𝗲𝗿...`\n𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧",
+            caption=f"{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n`𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ 𝘁𝗼 𝗹𝗶𝗻𝗸 𝘄𝗶𝘁𝗵 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝘀𝗲𝗿𝘃𝗲𝗿...`\n𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
@@ -979,7 +979,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1109,7 +1109,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1195,7 +1195,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1314,7 +1314,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1423,7 +1423,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1522,7 +1522,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1623,7 +1623,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1719,7 +1719,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1830,7 +1830,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1930,7 +1930,7 @@ async def ռօʀɖɖօառʟօǟɖɛʀ(ɳɾԃ: NordLink):
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -1982,7 +1982,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2025,7 +2025,7 @@ _,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2110,7 +2110,7 @@ _,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2247,7 +2247,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2289,7 +2289,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2347,7 +2347,7 @@ client,
         AppMinutes = math.floor(AppQuotaUsed % 60)
         await asyncio.sleep(1.5)
         return await event.edit(f""""
-    ⚡ **Dyno Usage** ⚡:\n\n
+    👾 **Dyno Usage** 👾:\n\n
     ➠ __Dyno usage for__ • **{HEROKU_APP_NAME}** • :\n
         ★  `{AppHours}**h**  `{AppMinutes}**YΣ**  
     **|**  `{AppPercentage}**%**"
@@ -2370,7 +2370,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️   
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2669,7 +2669,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2694,7 +2694,7 @@ Version 3, 29 June 2007
 Copyright (C) 2007 Free Software Foundation
 Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-🎧NӨЯDΣD©️🎧   
+🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️   
 Telegram Music player userbot 
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2721,7 +2721,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/stream]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/stream]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2765,7 +2765,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/pause]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/pause]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2809,7 +2809,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/resume]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/resume]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2853,7 +2853,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/unplug]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/unplug]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2897,7 +2897,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/temp]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/temp]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2941,7 +2941,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/yt SONG.NAME]
+⚠️Seems like 🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/yt SONG.NAME]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
@@ -2963,7 +2963,7 @@ client,
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -2993,7 +2993,7 @@ except Exception as Σ:
                                                 Copyright (C) 2007 Free Software Foundation
                                             Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
                                                 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
+                                                        🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️  
                                                     Telegram Music player userbot 
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀

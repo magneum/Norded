@@ -1,23 +1,24 @@
-{"logo": "https://telegra.ph/file/a0ebc6fc761f58286ee75.jpg",
-"name": "🎧NӨЯDΣD©️🎧",
+{"logo": "https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg",
+"name": "🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️",
 "repository": "https://github.com/HypeVoidSoul/Norded.git",
 "stack": "container",
 "description": "🎧NӨЯDΣD©️🎧",
 "website": "https://t,me/hypevoids",
 "keywords": ["telegram","voice","pyrogram","musicbot","userbot"],
-"env": {"API_ID":{
+"env": {
+"API_ID":{
 "description":"api_id part of your Telegram API Key From @HVApiBot Only",
-"required":true
-},"API_HASH":{
+"required":true},
+"API_HASH":{
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
 "required":true},
-"XERONOID_SESSION":{
+"NӨЯDΣD_NAME":{
 "description":"Put the Xeronoid session key you got from Xeronoid's GitHub Replit link",
 "required":true},
 "HEROKU_APP_NAME":{
 "description":"Name of your heroku app",
-"required":false
-},"HEROKU_API_KEY":{
+"required":false},
+"HEROKU_API_KEY":{
 "description":"Your Heroku API_TOKEN",
 "required":false},
 "OWNER_USERNAME":{
@@ -31,12 +32,20 @@
 "BOT_TOKEN":{
 "description": "Your @BotFather BOT Token.",
 "required":true},
-"LOGGER_ID":{
-"description": "Your personal group id where xeronoidbot & userbot will use as log home",
+"DYNO":{
+"description": "Keep any command prefix as per your needs!",
 "required":true,
-"value":"-1001513582173"},
-"MUSIC_ADMIN_USERNAMES":{
-"description": "@Usernames of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid",
+"value":"/"},
+"CLEANER":{
+"description": "Put the value to auto clean the notifications by 🎧NӨЯDΣD©️🎧",
 "required":true,
-"value":"!! put like this > '@hypevoidsoul,@DEVLIXIE,@kalitronx' {PUT @ and commas properly}"}},
+"value":"12"},
+"CHAT_ID":{
+"description": "Group chat IDs where your 🎧NӨЯDΣD©️🎧 player can play music",
+"required":true,
+"value":"Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]"},
+"NORD_ADMINS":{
+"description": "User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid",
+"required":true,
+"value":"Put like this > 1868088205 1941593018 [with a space between]"}},
 "buildpacks": [{"url": "heroku/python"}]}
