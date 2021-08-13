@@ -1,2 +1,0 @@
-language = "bash"
-run = "python3 -m hypefile.py"
