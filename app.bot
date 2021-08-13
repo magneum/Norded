@@ -1,0 +1,42 @@
+{"logo": "https://telegra.ph/file/a0ebc6fc761f58286ee75.jpg",
+"name": "🦋Ӽɛʀօռօɨɖ🦋",
+"repository": "https://github.com/HypeVoidSoul/Xeronoid.git",
+"stack": "container",
+"description": "🦋Ӽɛʀօռօɨɖ🦋",
+"website": "https://t,me/hypevoids",
+"keywords": ["telegram","voice","pyrogram","musicbot","userbot"],
+"env": {"API_ID":{
+"description":"api_id part of your Telegram API Key From @HVApiBot Only",
+"required":true
+},"API_HASH":{
+"description":"api_hash part of your Telegram API Key From @HVApiBot Only",
+"required":true},
+"XERONOID_SESSION":{
+"description":"Put the Xeronoid session key you got from Xeronoid's GitHub Replit link",
+"required":true},
+"HEROKU_APP_NAME":{
+"description":"Name of your heroku app",
+"required":false
+},"HEROKU_API_KEY":{
+"description":"Your Heroku API_TOKEN",
+"required":false},
+"OWNER_USERNAME":{
+"description": "Your Username like @HypeVoids",
+"required":true,
+"value":"@HYPEVOIDSOUL"},
+"BOT_USERNAME":{
+"description": "Your Bot @Username",
+"required":true,
+"value":"@XERONOIDBOT"},
+"BOT_TOKEN":{
+"description": "Your @BotFather BOT Token.",
+"required":true},
+"LOGGER_ID":{
+"description": "Your personal group id where xeronoidbot & userbot will use as log home",
+"required":true,
+"value":"-1001513582173"},
+"MUSIC_ADMIN_USERNAMES":{
+"description": "@Usernames of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid",
+"required":true,
+"value":"!! put like this > '@hypevoidsoul,@DEVLIXIE,@kalitronx' {PUT @ and commas properly}"}},
+"buildpacks": [{"url": "heroku/python"}]}
