@@ -1220,7 +1220,7 @@ client,
             chat = await client.get_chat(chat_id)
             psychodelic = await ɳɾԃ.reply_photo(
             photo=nordlinker,
-            caption=f"**NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝘀 𝗰𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**:\n- **{chat.title}**",
+            caption=f"**NӨЯDΣD©️ 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝘀 𝗰𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**:\n- **__{chat.title}__**",
             reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(
             text="🕊DΣV GЯӨЦP",
@@ -2688,17 +2688,17 @@ class InterceptHandler(logging.Handler):
         logger_opt.log(self._get_level(record), record.getMessage())
 logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
-LICE="""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-                                                        GNU GENERAL PUBLIC LICENSE 
-                                                         Version 3, 29 June 2007
-                                                Copyright (C) 2007 Free Software Foundation
-                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                                🎧NӨЯDΣD©️🎧   
-                                                    Telegram Music player userbot 
-                                            has been licensed under GNU General Public License
-                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+LICE="""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🎧NӨЯDΣD©️🎧   
+Telegram Music player userbot 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 "Time to code for each false or dumb command's error handlers"
 @NӨЯDBӨƬ.on_message(
 filters.chat(
@@ -2712,7 +2712,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2721,12 +2721,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/stream]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/stream]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2753,7 +2756,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2762,12 +2765,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/pause]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/pause]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2794,7 +2800,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2803,12 +2809,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/resume]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/resume]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2835,7 +2844,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2844,12 +2853,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/unplug]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/unplug]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2876,7 +2888,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2885,12 +2897,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/temp]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/temp]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2917,7 +2932,7 @@ async def yt(
 client,
 ɳɾԃ: NordLink):
     try:
-        chat_id = int(str(ɳɾԃ.full_chat.id))
+        chat_id = int(str(ɳɾԃ.chat.id))
         chat = await client.get_chat(chat_id)
         mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.delete()
@@ -2926,12 +2941,15 @@ client,
         caption=
         f"""{ӼɛӼօ}
         {mntn}
-⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **{chat.title}** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **{chat.title}** to turn it on first and retry [/yt SONG.NAME]
+⚠️Seems like 🎧NӨЯDΣD©️🎧 has not been plugged yet and **__{chat.title}__** has it's voice chat/call not connected yet.\nPlease ask NORD-ADMINS of **__{chat.title}__** to turn it on first and retry [/yt SONG.NAME]
 """)
         await asyncio.sleep(CLEANER)
         await psychodelic.delete()
     except Exception as Σ:
-        await ɳɾԃ.reply_text("😵")
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
         await ɳɾԃ.reply_photo(
         photo=nordlinker,
         caption=
@@ -2939,8 +2957,6 @@ client,
 🥶 {mntn} 
 ⚠️ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ\n\n `__{Σ}__`
 """)
-
-
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
                                                          Version 3, 29 June 2007
@@ -2966,6 +2982,7 @@ try:
     LOGGER.info("\n\n\n\n🔴\n"+"OFFLINE\n"+"🤖\n"+"NӨЯDΣD BOT\n"+"🤖\n"+"OFFLINE\n"+"🔴\n\n\n\n")
     NӨЯDBӨƬ.stop()
     LOGGER.info(f"\n\n\n\n{LICE}")
+    sys.exit()
 except Exception as Σ:
     print(Σ)
     print("Overriding to exit system")
