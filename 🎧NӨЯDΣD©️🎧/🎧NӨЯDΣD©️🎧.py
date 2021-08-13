@@ -142,7 +142,7 @@ importlib.reload(youtube_dl)
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
-load_dotenv("🎧NӨЯDΣD©️🎧.env")
+load_dotenv("🎧NӨЯDΣD©️🎧/🎧NӨЯDΣD©️🎧.env")
 os.system("mk")
 file = open("db.py", "w") 
 file.write("def init():\n    global db\n    db = {}") 
