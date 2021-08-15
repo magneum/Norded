@@ -3077,7 +3077,7 @@ client,
         except Exception as Σ:
             psychodelic = ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{Σ}`")
     except Exception as Σ:
-        zygote = ɳɾԃ.reply_animation(
+        ɳɾԃ.reply_animation(
         animation=norderror,
         caption=
        f"""{ӼɛӼօ}
@@ -3085,8 +3085,6 @@ client,
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
 """
 )
-        asyncio.sleep(CLEANER)
-        zygote.delete()
 
 
 
