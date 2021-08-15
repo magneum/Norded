@@ -21,6 +21,7 @@ RUN cd 🎧NӨЯDΣD©️🎧
 RUN git clone https://github.com/HypeVoidSoul/Norded.git
 RUN cd Norded
 WORKDIR /Norded
+RUN pip install -r NӨЯDΣD.txt
 CMD python3 hypefile.py
 # ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
 #                                                        GNU GENERAL PUBLIC LICENSE 
