@@ -2920,12 +2920,12 @@ CHAT_ID
 & filters.command(
 "yt",
 NordFix))
-async def yt(
+def yt(
 client,
 ɳɾԃ: NordLink):
     try:
         mntn = ɳɾԃ.from_user.mention
-        await ɳɾԃ.delete()
+        ɳɾԃ.delete()
         query = ''
         for i in ɳɾԃ.command[1:]:
             query += ' ' + str(i)
@@ -2942,7 +2942,7 @@ client,
                     max_results=1).to_dict()
                 count += 1
             try:
-                psychode =  await ɳɾԃ.reply_animation(
+                psychode =  ɳɾԃ.reply_animation(
                 animation="worklord/norded_dling.gif",
                 duration=4,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n[Please Wait till](https://t.me/hypevoidbot) **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹** [downloads and converts Audio for streaming in the group voice chat!](https://t.me/hypevoidbot)")
@@ -2970,7 +2970,7 @@ client,
                 )
 
             except Exception as Σ:
-                psychodelic =  await ɳɾԃ.reply_animation(
+                psychodelic =  ɳɾԃ.reply_animation(
                 animation=nordanimer,
                 caption=f"""
                 {ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
@@ -2982,14 +2982,14 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await asyncio.sleep(
+                asyncio.sleep(
             CLEANER
             )
-                await psychodelic.delete()
+                psychodelic.delete()
                 return
                 
         except Exception as Σ:
-            psychodelic = await ɳɾԃ.reply_animation(
+            psychodelic = ɳɾԃ.reply_animation(
             animation=nordanimer,
             caption=f"""
             {ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
@@ -3001,10 +3001,10 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await asyncio.sleep(
+            asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
+            psychodelic.delete()
             return
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as nordl:
@@ -3034,13 +3034,13 @@ client,
                 dur_arr[i]) * secmul)
                 secmul *= 60
 
-            await psychode.delete()
-            psychoded = await ɳɾԃ.reply_animation(
+            psychode.delete()
+            psychoded = ɳɾԃ.reply_animation(
             animation="https://telegra.ph/file/c8f986b67bb8b3ab566b3.mp4",
             caption=f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n🔥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜰɪɴɪꜱʜᴇᴅ\n𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹**"
             )
 
-            ADU = await ɳɾԃ.reply_audio(
+            ADU = ɳɾԃ.reply_audio(
             audio=audio_file,
             caption=nordlcap,
             title=title,
@@ -3058,26 +3058,26 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
 
-            await psychoded.delete()
-            await ADU.reply_photo(
+            psychoded.delete()
+            ADU.reply_photo(
             photo=NOЯDΣD_THUMBNAIL,
             caption=NORN
             )
-            await asyncio.sleep(CLEANER)
+            asyncio.sleep(CLEANER)
 
 
         except Exception as Σ:
-            psychodelic = await ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n❌ Error\n\n`{Σ}`")
-            await psychodelic.delete()
+            psychodelic = ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n❌ Error\n\n`{Σ}`")
+            psychodelic.delete()
         try:
             os.remove(audio_file)
             os.remove(NOЯDΣD_THUMBNAIL)
             os.system("clear")
             cprint("Success and Cleared Screen", "cyan")
         except Exception as Σ:
-            psychodelic = await ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{Σ}`")
+            psychodelic = ɳɾԃ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{Σ}`")
     except Exception as Σ:
-        zygote = await ɳɾԃ.reply_animation(
+        zygote = ɳɾԃ.reply_animation(
         animation=norderror,
         caption=
        f"""{ӼɛӼօ}
@@ -3085,8 +3085,8 @@ client,
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
 """
 )
-        await asyncio.sleep(CLEANER)
-        await zygote.delete()
+        asyncio.sleep(CLEANER)
+        zygote.delete()
 
 
 
