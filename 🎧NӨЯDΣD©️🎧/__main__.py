@@ -61,10 +61,6 @@ try:
 except ImportError:
     os.system("pip install youtube_search")
 try:
-    import tswift
-except ImportError:
-    os.system("pip install tswift")
-try:
     import youtube_dl
 except ImportError:
     os.system("pip install youtube_dl")
@@ -136,7 +132,6 @@ import termcolor
 import dotenv
 import requests
 import youtube_search
-import tswift
 import youtube_dl
 import signal
 importlib.reload(pyrogram)
@@ -148,7 +143,6 @@ importlib.reload(termcolor)
 importlib.reload(dotenv)
 importlib.reload(requests)
 importlib.reload(youtube_search)
-importlib.reload(tswift)
 importlib.reload(signal)
 importlib.reload(youtube_dl)
 
@@ -174,7 +168,6 @@ load_dotenv("🎧NӨЯDΣD©️🎧/🎧NӨЯDΣD©️🎧.env")
 file = open("db.py", "w") 
 file.write("def init():\n    global db\n    db = {}") 
 file.close()
-from tswift import Song
 import db
 db.init()
 from db import db
