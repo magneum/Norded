@@ -433,7 +433,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 nordlinker="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
 norderror = "https://telegra.ph/file/3b0adb8bdcf025bd61ccd.mp4"
 nordanimer="https://telegra.ph/file/745b406e98758fe8c9089.gif"
-ӼɛӼօ = "🕊==========================🕊\n[•NOЯDΣD•🎧](https://t.me/hypevoidbot) **by** [🔺ΉYPΣ VӨID LΛB](https://t.me/hypevoidbot)\n🕊==========================🕊\n\n"
+ӼɛӼօ = "[•NOЯDΣD•🎧](https://t.me/hypevoidbot) **by** [🔺ΉYPΣ VӨID LΛB](https://t.me/hypevoidbot)\n🕊==========================🕊\n\n"
 LINK = "(https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"
 DURATION_PLAY_HOUR = 3
 HRKU = heroku3.from_key(HEROKU_API_KEY)
