@@ -2206,9 +2206,8 @@ class NORDPLAYER(object):
             
             NeoN += "\n".join([
                 f"""
-**ᴀᴜᴅɪᴏ ᴛɪᴛʟᴇ**: {i}.[{x.audio.title}]({x.link})
-**ᴀᴜᴅɪᴏ ᴅᴜʀᴀᴛɪᴏɴ**: **{x.audio.duration}sec**
-——÷÷ 🕊NOЯDΣD🕊 ÷÷——"""
+**ᴛɪᴛʟᴇ**: {i}.[{x.audio.title}]({x.link}) |**{x.audio.duration}sec**
+÷ 🕊NOЯDΣD🕊 ÷"""
                 for i, x in enumerate(ռօʀɖքʟǟʏɛʀʟɨֆȶ)
                 ])
         if ռօʀɖɦօք.ռօʀɖʍֆɢʀ.get("ռօʀɖքʟǟʏɛʀʟɨֆȶ") is not None:
@@ -3029,8 +3028,6 @@ client,
             nordlcap = f"""
 📜`ᴀᴜᴅɪᴏ ᴛɪᴛʟᴇ`: **[{title[:35]}]({link})**
 ⏳`ᴀᴜᴅɪᴏ ᴅᴜʀᴀᴛɪᴏɴ`: **[{duration}]({link})**
-👁‍🗨`ᴀᴜᴅɪᴏ ᴠɪᴇᴡꜱ`: **[{views}]({link})**
-
 
 ☢️[𝚃𝚑𝚒𝚜 𝙰𝚞𝚍𝚒𝚘 𝚒𝚜 𝚜𝚎𝚗𝚝 𝚋𝚢](https://t.me/hypevoidbot) **🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹** [𝚏𝚘𝚛 𝚘𝚗𝚕𝚢 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚐 𝚒𝚗 𝚅𝙾𝙸𝙲𝙴_𝙲𝙷𝙰𝚃𝚂.](https://t.me/hypevoidbot)❗️
 🤖[𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 𝘉𝘦𝘭𝘰𝘸 𝘉𝘰𝘵𝘴 𝘵𝘰 𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘢𝘯𝘺 𝘰𝘵𝘩𝘦𝘳 𝘠𝘰𝘶𝘛𝘶𝘣𝘦 𝘝𝘪𝘥𝘦𝘰/𝘈𝘶𝘥𝘪𝘰 𝘪𝘯 𝘜𝘏𝘋](https://t.me/hypevoidbot)
