@@ -351,6 +351,20 @@ if HEROKU == "HEROKU":
     else:
         BOT_USERNAME = "@"+BOT_USERNAME
 
+
+print(API_ID)
+print(API_HASH)
+print(BOT_TOKEN)
+print(NORDED_SESSION)
+print(NORD_ADMINS)
+print(CHAT_ID)
+print(DYNO)
+print(HEROKU_APP_NAME)
+print(HEROKU_API_KEY)
+print(CLEANER)
+print(BOT_USERNAME)
+
+
 #     """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 #     """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
