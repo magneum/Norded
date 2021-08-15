@@ -1,8 +1,8 @@
 {"logo": "https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg",
-"name": "🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️",
+"name": "—••÷[🕊NӨЯDΣD🕊]÷••—",
 "repository": "https://github.com/HypeVoidSoul/Norded.git",
 "stack": "container",
-"description": "🎧NӨЯDΣD©️🎧",
+"description": "—••÷[🕊NӨЯDΣD🕊]÷••—",
 "website": "https://t,me/hypevoids",
 "keywords": ["telegram","voice","pyrogram","musicbot","userbot"],
 "env": {
@@ -36,11 +36,11 @@
 "required":true,
 "value":"/"},
 "CLEANER":{
-"description": "Put the value to auto clean the notifications by 🎧NӨЯDΣD©️🎧",
+"description": "Put the value to auto clean the notifications by —••÷[🕊NӨЯDΣD🕊]÷••—",
 "required":true,
 "value":"12"},
 "CHAT_ID":{
-"description": "Group chat IDs where your 🎧NӨЯDΣD©️🎧 player can play music",
+"description": "Group chat IDs where your —••÷[🕊NӨЯDΣD🕊]÷••— player can play music",
 "required":true,
 "value":"Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]"},
 "NORD_ADMINS":{
