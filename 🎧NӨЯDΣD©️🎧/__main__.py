@@ -13,7 +13,7 @@
 
 
 
-COLOR_CODES =       "||________🟢=SERVER STUFFS________||________🔵=🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ STUFFS________||________🟤=RADIO STUFFS________||"
+COLOR_CODES =       "||________🟢=HEROKU STUFFS________||________🔵=🎧NӨЯDΣD_SMΛЯƬ_MUSIC_PLΛYΣЯ©️ STUFFS________||________🟤=RADIO STUFFS________||"
 import os
 import io
 from re import I
@@ -340,8 +340,8 @@ InlineKeyboardButton(
 
 
 
-SERVER = os.environ.get("SERVER")#,None)
-if SERVER == "SERVER":
+HEROKU = os.environ.get("HEROKU")#,None)
+if HEROKU == "HEROKU":
     API_ID = os.environ.get("API_ID")#,None)
     API_HASH = os.environ.get("API_HASH")#,None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
@@ -831,7 +831,7 @@ client,
     await ռօʀɖʀɨռɢ.stop()
     await ɳɾԃ.delete()
     try:
-        if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and SERVER == "SERVER":
+        if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and HEROKU == "HEROKU":
             wait = await ɳɾԃ.reply_animation(
             animation=nordanimer,
             caption="⚠️❗️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐭𝐢𝐥𝐥 𝐜𝐨𝐝𝐞 𝐜𝐥𝐞𝐚𝐧𝐬 𝐚𝐧𝐝 𝐫𝐞𝐬𝐭𝐚𝐫𝐭𝐬 𝐢𝐭𝐬𝐞𝐥𝐟.\n𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣",

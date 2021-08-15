@@ -12,8 +12,8 @@
 "API_HASH":{
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
 "required":true},
-"SERVER":{
-"description":"KEEP IT SERVER!!!!!!!",
+"HEROKU":{
+"description":"KEEP IT HEROKU!!!!!!!",
 "required":true},
 "NӨЯDΣD_NAME":{
 "description":"Put the NӨЯDΣD_NAME you got from Xeronoid's GitHub Replit link",
