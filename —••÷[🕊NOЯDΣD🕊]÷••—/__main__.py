@@ -339,7 +339,7 @@ if HEROKU == "HEROKU":
     API_HASH = getenv("API_HASH")#,None)
     BOT_TOKEN = getenv("BOT_TOKEN")#,None)
     NORDED_SESSION = getenv("NORDED_SESSION")#,None)
-    NORD_ADMINS = getenv("NORD_ADMINS")#,None)
+    NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
     DYNO= getenv("DYNO")#,None)
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")#,None)
