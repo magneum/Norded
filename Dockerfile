@@ -9,13 +9,10 @@
 #                                             has been licensed under GNU General Public License
 #                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 # ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
-FROM python:latest
-ENV VIRTUAL_ENV "/venv"
-RUN python -m venv $VIRTUAL_ENV
-ENV PATH "$VIRTUAL_ENV/bin:$PATH"
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y ffmpeg opus-tools bpm-tools
-RUN python -m pip install --upgrade pip
+FROM kalilinux/kali-rolling
+RUN sudo apt update && sudo apt upgrade -y && sudo apt install git -y && sudo apt install python3 -y
+RUN sudo apt install python3-pip -y
+RUN sudo apt install -y ffmpeg opus-tools bpm-tools
 RUN mkdir 🎧NӨЯDΣD©️🎧
 RUN cd 🎧NӨЯDΣD©️🎧
 RUN git clone https://github.com/HypeVoidSoul/Norded.git
