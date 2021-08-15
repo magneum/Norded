@@ -2206,7 +2206,7 @@ class NORDPLAYER(object):
             
             NeoN += "\n".join([
                 f"""÷ 🕊`__NOЯDΣD MUSIC__`🕊÷
-🍪**ᴛɪᴛʟᴇ**: {i}.[{x.audio.title}]({x.link}) |**{x.audio.duration}sec**
+🍪**ᴛɪᴛʟᴇ**: **{i}.**[{x.audio.title}]({x.link}) |**{x.audio.duration}sec**
 """
                 for i, x in enumerate(ռօʀɖքʟǟʏɛʀʟɨֆȶ)
                 ])
