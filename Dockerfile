@@ -18,9 +18,9 @@ RUN apt-get install -y ffmpeg opus-tools bpm-tools
 RUN python -m pip install --upgrade pip
 RUN mkdir 🎧NӨЯDΣD©️🎧
 RUN cd 🎧NӨЯDΣD©️🎧
-RUN git clone https://github.com/HypeVoidSoul/Xeronoid.git
-RUN cd Xeronoid
-WORKDIR /Xeronoid
+RUN git clone https://github.com/HypeVoidSoul/Norded.git
+RUN cd Norded
+WORKDIR /Norded
 CMD python3 hypefile.py
 # ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
 #                                                        GNU GENERAL PUBLIC LICENSE 
