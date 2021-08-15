@@ -833,6 +833,7 @@ client,
         HEROKU = heroku3.from_key(HEROKU_API_KEY)
         app = HEROKU.apps()[HEROKU_APP_NAME]
         app.restart()
+        await ɳɾԃ.reply_animation(f"{ӼɛӼօ} 🕊**NOЯDΣD REBOOTED and AUTO_CLEANED**")
     except Exception as Σ:
         await ɳɾԃ.reply_text(f"{ӼɛӼօ}Please use /restart before replugging as auto reboot failed")
         return
