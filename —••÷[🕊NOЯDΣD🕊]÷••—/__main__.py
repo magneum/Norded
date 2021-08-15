@@ -828,6 +828,7 @@ NordFix))
 async def unplug(
 client,
 ɳɾԃ: NordLink):
+    await ɳɾԃ.delete()
     try:
         HEROKU = heroku3.from_key(HEROKU_API_KEY)
         app = HEROKU.apps()[HEROKU_APP_NAME]
