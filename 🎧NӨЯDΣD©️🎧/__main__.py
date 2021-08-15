@@ -333,48 +333,48 @@ InlineKeyboardButton(
 
 
 
-# HEROKU = os.environ.get("HEROKU")#,None)
-# if HEROKU == "HEROKU":
-API_ID = os.environ.get("API_ID")#,None)
-API_HASH = os.environ.get("API_HASH")#,None)
-BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
-NORDED_SESSION = os.environ.get("NORDED_SESSION")#,None)
-NORD_ADMINS = os.environ.get("NORD_ADMINS")#,None)
-CHAT_ID = os.environ.get("CHAT_ID")#,None)
-DYNO= os.environ.get("DYNO")#,None)
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")#,None)
-HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")#,None)
-CLEANER = os.environ.get("CLEANER")#,None)
-BOT_USERNAME = os.environ.get("BOT_USERNAME")#,None)
-if BOT_USERNAME.startswith("@"):
-    BOT_USERNAME = BOT_USERNAME
+HEROKU = os.environ.get("HEROKU")#,None)
+if HEROKU == "HEROKU":
+    API_ID = os.environ.get("API_ID")#,None)
+    API_HASH = os.environ.get("API_HASH")#,None)
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
+    NORDED_SESSION = os.environ.get("NORDED_SESSION")#,None)
+    NORD_ADMINS = os.environ.get("NORD_ADMINS")#,None)
+    CHAT_ID = os.environ.get("CHAT_ID")#,None)
+    DYNO= os.environ.get("DYNO")#,None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")#,None)
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")#,None)
+    CLEANER = os.environ.get("CLEANER")#,None)
+    BOT_USERNAME = os.environ.get("BOT_USERNAME")#,None)
+    if BOT_USERNAME.startswith("@"):
+        BOT_USERNAME = BOT_USERNAME
+    else:
+        BOT_USERNAME = "@"+BOT_USERNAME
+
+    """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+    """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+
 else:
-    BOT_USERNAME = "@"+BOT_USERNAME
-
-    """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
-    """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
-
-# else:
-#     API_ID=getenv("AP_iD")
-#     cprint(API_ID,"cyan")
-#     API_HASH=getenv("APP_HASH")
-#     cprint(API_HASH,"cyan")
-#     NORDED_SESSION=getenv("XER0NOID_NAM")
-#     cprint(NORDED_SESSION,"cyan")
-#     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
-#     cprint(NORD_ADMINS,"cyan")
-#     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
-#     cprint(CHAT_ID,"cyan")
-#     DYNO="/"
-#     CLEANER=8 #BEST FOR TESTING
-#     HEROKU_API_KEY=None
-#     HEROKU_APP_NAME=None
-#     BOT_TOKEN="1879122684:AAG5to29LnQI2s0ySuAEG2o_eelXz1KI4BA"
-#     BOT_USERNAME="tfgfeqdbOT"
-#     if BOT_USERNAME.startswith("@"):
-#         BOT_USERNAME = BOT_USERNAME
-#     else:
-#         BOT_USERNAME = "@"+BOT_USERNAME
+    API_ID=getenv("AP_iD")
+    cprint(API_ID,"cyan")
+    API_HASH=getenv("APP_HASH")
+    cprint(API_HASH,"cyan")
+    NORDED_SESSION=getenv("XER0NOID_NAM")
+    cprint(NORDED_SESSION,"cyan")
+    NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
+    cprint(NORD_ADMINS,"cyan")
+    CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
+    cprint(CHAT_ID,"cyan")
+    DYNO="/"
+    CLEANER=8 #BEST FOR TESTING
+    HEROKU_API_KEY=None
+    HEROKU_APP_NAME=None
+    BOT_TOKEN="1879122684:AAG5to29LnQI2s0ySuAEG2o_eelXz1KI4BA"
+    BOT_USERNAME="tfgfeqdbOT"
+    if BOT_USERNAME.startswith("@"):
+        BOT_USERNAME = BOT_USERNAME
+    else:
+        BOT_USERNAME = "@"+BOT_USERNAME
 
 
 
