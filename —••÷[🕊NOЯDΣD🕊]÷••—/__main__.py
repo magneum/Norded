@@ -828,6 +828,13 @@ NordFix))
 async def unplug(
 client,
 ɳɾԃ: NordLink):
+    try:
+        HEROKU = heroku3.from_key(HEROKU_API_KEY)
+        app = HEROKU.apps()[HEROKU_APP_NAME]
+        app.restart()
+    except Exception as Σ:
+        await ɳɾԃ.reply_text(f"{ӼɛӼօ}Please use /restart before replugging as auto reboot failed")
+        return
 
     mntn = ɳɾԃ.from_user.mention
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
@@ -835,6 +842,7 @@ client,
     ռօʀɖʀɨռɢ.input_filename = ""
     await ռօʀɖʀɨռɢ.stop()
     await ɳɾԃ.delete()
+
 
     try:
         if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and HEROKU == "HEROKU":
@@ -849,9 +857,6 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            HEROKU = heroku3.from_key(HEROKU_API_KEY)
-            app = HEROKU.apps()[HEROKU_APP_NAME]
-            app.restart()
             # await restart(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\nREBOOTED")
             await wait.delete()
 
@@ -868,6 +873,7 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
+            
     except Exception as Σ:
         zygote = await ɳɾԃ.reply_animation(
         animation=norderror,
