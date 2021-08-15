@@ -338,7 +338,7 @@ InlineKeyboardButton(
 API_ID = os.environ.get("API_ID")#,None)
 API_HASH = os.environ.get("API_HASH")#,None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
-NӨЯDΣD_NAME = os.environ.get("NӨЯDΣD_NAME")#,None)
+NORDED_SESSION = os.environ.get("NORDED_SESSION")#,None)
 NORD_ADMINS = os.environ.get("NORD_ADMINS")#,None)
 CHAT_ID = os.environ.get("CHAT_ID")#,None)
 DYNO= os.environ.get("DYNO")#,None)
@@ -359,8 +359,8 @@ else:
 #     cprint(API_ID,"cyan")
 #     API_HASH=getenv("APP_HASH")
 #     cprint(API_HASH,"cyan")
-#     NӨЯDΣD_NAME=getenv("XER0NOID_NAM")
-#     cprint(NӨЯDΣD_NAME,"cyan")
+#     NORDED_SESSION=getenv("XER0NOID_NAM")
+#     cprint(NORDED_SESSION,"cyan")
 #     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
 #     cprint(NORD_ADMINS,"cyan")
 #     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
@@ -392,7 +392,7 @@ FFMPEG_PROCESSES = {}
 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
 NӨЯDΣD = Client(
-NӨЯDΣD_NAME,
+NORDED_SESSION,
 API_ID,
 API_HASH
 )

@@ -15,8 +15,8 @@
 "HEROKU":{
 "description":"KEEP IT HEROKU!!!!!!!",
 "required":true},
-"NӨЯDΣD_NAME":{
-"description":"Put the NӨЯDΣD_NAME you got from Xeronoid's GitHub Replit link",
+"NORDED_SESSION":{
+"description":"Put the NORDED_SESSION you got from Xeronoid's GitHub Replit link",
 "required":true},
 "HEROKU_APP_NAME":{
 "description":"Name of your heroku app",
