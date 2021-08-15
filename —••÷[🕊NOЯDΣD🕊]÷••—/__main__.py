@@ -340,7 +340,7 @@ if HEROKU == "HEROKU":
     BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
     NORDED_SESSION = os.environ.get("NORDED_SESSION")#,None)
     NORD_ADMINS = os.environ.get("NORD_ADMINS")#,None)
-    CHAT_ID = os.environ.get("CHAT_ID")#,None)
+    CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
     DYNO= os.environ.get("DYNO")#,None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")#,None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")#,None)
