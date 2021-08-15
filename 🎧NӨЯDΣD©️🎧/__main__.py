@@ -2273,11 +2273,12 @@ client,
         delta_energy1 = (end - start).seconds
         delta_energy2= (end - start).microseconds
         psychodelic = await ɳɾԃ.reply_animation(
-        nordlinker,
+        norderror,
         caption=f"""{ӼɛӼօ} 👾 Hɛʏ NӨЯDΣD ʊֆɛʀ  {mntn}\n
-    |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
-            📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
-            📡 **{delta_energy2}** `𝙢𝙞𝙘𝙧𝙤𝙨𝙚𝙘𝙤𝙣𝙙𝙨`""",
+|   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
+        📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
+        📡 **{delta_energy2}** `𝙢𝙞𝙘𝙧𝙤𝙨𝙚𝙘𝙤𝙣𝙙𝙨`
+""",
         reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
         text="🕊DΣV GЯӨЦP",
