@@ -340,20 +340,19 @@ InlineKeyboardButton(
 
 
 
-SERVER = os.environ.get("SERVER",None)
+SERVER = os.environ.get("SERVER")#,None)
 if SERVER == "SERVER":
-    print("Getting Enviroment Items from Server")
-    API_ID = int(os.environ.get("API_ID",None))
-    API_HASH = os.environ.get("API_HASH",None)
-    BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
-    NӨЯDΣD_NAME = os.environ.get("NӨЯDΣD_NAME",None)
-    NORD_ADMINS = os.environ.get("NORD_ADMINS",None)
-    CHAT_ID = os.environ.get("CHAT_ID",None)
-    DYNO= os.environ.get("DYNO",None)
-    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME",None)
-    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY",None)
-    CLEANER = os.environ.get("CLEANER",None)
-    BOT_USERNAME = os.environ.get("BOT_USERNAME",None)
+    API_ID = os.environ.get("API_ID")#,None)
+    API_HASH = os.environ.get("API_HASH")#,None)
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
+    NӨЯDΣD_NAME = os.environ.get("NӨЯDΣD_NAME")#,None)
+    NORD_ADMINS = os.environ.get("NORD_ADMINS")#,None)
+    CHAT_ID = os.environ.get("CHAT_ID")#,None)
+    DYNO= os.environ.get("DYNO")#,None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")#,None)
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")#,None)
+    CLEANER = os.environ.get("CLEANER")#,None)
+    BOT_USERNAME = os.environ.get("BOT_USERNAME")#,None)
     if BOT_USERNAME.startswith("@"):
         BOT_USERNAME = BOT_USERNAME
     else:
@@ -363,17 +362,16 @@ if SERVER == "SERVER":
     """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
 else:
-    cprint("Getting Enviroment Items from SecretENV")
     API_ID=getenv("AP_iD")
-    cprint(API_ID,"yellow")
+    cprint(API_ID,"cyan")
     API_HASH=getenv("APP_HASH")
-    cprint(API_HASH,"yellow")
+    cprint(API_HASH,"cyan")
     NӨЯDΣD_NAME=getenv("XER0NOID_NAM")
-    cprint(NӨЯDΣD_NAME,"yellow")
+    cprint(NӨЯDΣD_NAME,"cyan")
     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
-    cprint(NORD_ADMINS,"yellow")
+    cprint(NORD_ADMINS,"cyan")
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
-    cprint(CHAT_ID,"yellow")
+    cprint(CHAT_ID,"cyan")
     DYNO="/"
     CLEANER=8 #BEST FOR TESTING
     HEROKU_API_KEY=None
@@ -396,10 +394,19 @@ else:
 
 GROUP_CALLS = {}
 FFMPEG_PROCESSES = {}
+
+"""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+"""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+
 NӨЯDΣD = Client(
 NӨЯDΣD_NAME,
 API_ID,
-API_HASH)
+API_HASH
+)
+
+"""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+"""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
+
 NӨЯDBӨƬ = Client(
 bot_token=BOT_TOKEN,
 api_id=API_ID,

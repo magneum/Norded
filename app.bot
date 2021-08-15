@@ -24,10 +24,6 @@
 "HEROKU_API_KEY":{
 "description":"Your Heroku API_TOKEN",
 "required":false},
-"OWNER_USERNAME":{
-"description": "Your Username like @HypeVoids",
-"required":true,
-"value":"@HYPEVOIDSOUL"},
 "BOT_USERNAME":{
 "description": "Your Bot @Username",
 "required":true,
