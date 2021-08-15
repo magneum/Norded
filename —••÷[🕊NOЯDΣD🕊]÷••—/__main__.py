@@ -3037,7 +3037,6 @@ client,
             caption=NORN
             )
             await asyncio.sleep(CLEANER)
-            await ADU.delete()
 
 
         except Exception as Σ:
