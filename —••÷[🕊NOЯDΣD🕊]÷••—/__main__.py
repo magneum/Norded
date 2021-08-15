@@ -2193,9 +2193,9 @@ class NORDPLAYER(object):
             NeoN = f"{ӼɛӼօ}[🔥 𝗡𝗢𝗥𝗗 𝗠𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)"
         else:
             if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-                NeoN = f"{ӼɛӼօ}[🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
+                NeoN = f"{ӼɛӼօ}(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
             else:
-                NeoN = f"{ӼɛӼօ}[🔹 𝗡Ө𝗥𝗗Σ𝗗_𝗣LΛ𝗬Σ𝗥 🔹](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)\n(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
+                NeoN = f"{ӼɛӼօ}(┛✧Д✧)ヘ♪ 🎧 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪:\n"
             
             NeoN += "——————÷[🕊NOЯDΣD🕊]÷——————\n".join([
                 f"""
