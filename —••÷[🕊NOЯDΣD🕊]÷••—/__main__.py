@@ -803,7 +803,15 @@ client,
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
 
-
+async def restart(text):
+    HEROKU = heroku3.from_key(HEROKU_API_KEY)
+    app = HEROKU.apps()[HEROKU_APP_NAME]
+    app.restart()
+    ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
+    client = ռօʀɖʀɨռɢ.client
+    chat_id = ռօʀɖɦօք.chat_id
+    message = await client.send_message(chat_id,text)
+    return message
 
 
 @NOЯDΣD.on_message(
@@ -818,12 +826,14 @@ NordFix))
 async def unplug(
 client,
 ɳɾԃ: NordLink):
+
     mntn = ɳɾԃ.from_user.mention
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
     ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ.clear()
     ռօʀɖʀɨռɢ.input_filename = ""
     await ռօʀɖʀɨռɢ.stop()
     await ɳɾԃ.delete()
+
     try:
         if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and HEROKU == "HEROKU":
             wait = await ɳɾԃ.reply_animation(
@@ -837,8 +847,13 @@ client,
             text="🤖 ΉYPΣ VӨID BӨT",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await restart(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\nREBOOTED")
+            HEROKU = heroku3.from_key(HEROKU_API_KEY)
+            app = HEROKU.apps()[HEROKU_APP_NAME]
+            app.restart()
+            # await restart(f"{ӼɛӼօ} 👾 Hɛʏ NOЯDΣD ʊֆɛʀ  {mntn}\nREBOOTED")
             await wait.delete()
+
+
         else:
             await ɳɾԃ.reply_animation(
             animation=nordanimer,
@@ -872,38 +887,38 @@ client,
 
 
 
-@NӨЯDBӨƬ.on_message(
-filters.private
-& filters.command(
-"unplug",
-NordFix))
-async def unplug(
-client,
-ɳɾԃ: NordLink):
-    mntn = ɳɾԃ.from_user.mention
-    await ɳɾԃ.delete()
-    try:
-        await ɳɾԃ.reply_animation(
-        animation=nordanimer,
-        caption=NOЯDΣDBΣ,
-        reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton(
-        text="🕊DΣV GЯӨЦP",
-        url=f"https://t.me/hypevoids",),],[
-        InlineKeyboardButton(
-        text="🤖 ΉYPΣ VӨID BӨT",
-        url=f"https://t.me/hypevoidbot")
-        ]]))
-    except Exception as Σ:
-        zygote = await ɳɾԃ.reply_animation(
-        animation=norderror,
-        caption=
-       f"""{ӼɛӼօ}
-🕊 {mntn} 🕊 
-⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
-        await asyncio.sleep(CLEANER)
-        await zygote.delete()
+# @NӨЯDBӨƬ.on_message(
+# filters.private
+# & filters.command(
+# "unplug",
+# NordFix))
+# async def unplug(
+# client,
+# ɳɾԃ: NordLink):
+#     mntn = ɳɾԃ.from_user.mention
+#     await ɳɾԃ.delete()
+#     try:
+#         await ɳɾԃ.reply_animation(
+#         animation=nordanimer,
+#         caption=NOЯDΣDBΣ,
+#         reply_markup=InlineKeyboardMarkup([[
+#         InlineKeyboardButton(
+#         text="🕊DΣV GЯӨЦP",
+#         url=f"https://t.me/hypevoids",),],[
+#         InlineKeyboardButton(
+#         text="🤖 ΉYPΣ VӨID BӨT",
+#         url=f"https://t.me/hypevoidbot")
+#         ]]))
+#     except Exception as Σ:
+#         zygote = await ɳɾԃ.reply_animation(
+#         animation=norderror,
+#         caption=
+#        f"""{ӼɛӼօ}
+# 🕊 {mntn} 🕊 
+# ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
+# """)
+#         await asyncio.sleep(CLEANER)
+#         await zygote.delete()
 
 
 
@@ -930,15 +945,7 @@ client,
 
 
 
-async def restart(text):
-    HEROKU = heroku3.from_key(HEROKU_API_KEY)
-    app = HEROKU.apps()[HEROKU_APP_NAME]
-    app.restart()
-    ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
-    client = ռօʀɖʀɨռɢ.client
-    chat_id = ռօʀɖɦօք.chat_id
-    message = await client.send_message(chat_id,text)
-    return message
+
     
 
 
@@ -3316,6 +3323,8 @@ client,
         CLEANER
         )
         await psychodelic.delete()
+
+
     except Exception as Σ:
         await ɳɾԃ.reply_text("😵") 
         chat_id = int(str(ɳɾԃ.chat.id))
