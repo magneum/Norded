@@ -21,7 +21,6 @@ import sys
 import math
 import time
 import asyncio
-import requests
 import logging
 import importlib
 from os import execl
@@ -104,9 +103,10 @@ try:
     import signal
 except ImportError:
     os.system("pip install signal")
-    
-
-
+try: 
+    import requests
+except ImportError:
+    os.system("pip install requests")
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -405,7 +405,8 @@ NӨЯDBӨƬ = Client(
 bot_token=BOT_TOKEN,
 api_id=API_ID,
 api_hash=API_HASH,
-session_name="NӨЯDBӨƬ")
+session_name="NӨЯDBӨƬ"
+)
 heroku_api = "https://api.heroku.com"
 group_calls = NORDCALLER
 
@@ -777,7 +778,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -873,7 +875,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1113,7 +1116,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1156,7 +1160,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1255,7 +1260,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1298,7 +1304,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1411,7 +1418,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1494,7 +1502,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1537,7 +1546,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1619,7 +1629,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1662,7 +1673,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1733,7 +1745,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1776,7 +1789,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1848,7 +1862,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1891,7 +1906,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -1960,7 +1976,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2003,7 +2020,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2087,7 +2105,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2130,7 +2149,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2302,7 +2322,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2351,7 +2372,8 @@ _,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2375,7 +2397,8 @@ _,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & filters.command("start"))
 async def on_start(
 _,
@@ -2408,7 +2431,8 @@ _,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2445,7 +2469,8 @@ _,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2469,7 +2494,8 @@ _,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
 & Nord_Admins
 & filters.command(
@@ -2572,7 +2598,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2596,7 +2623,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
 & Nord_Admins
 & filters.command(
@@ -2624,7 +2652,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
         
@@ -2713,7 +2742,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -2883,7 +2913,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3052,7 +3083,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -3077,7 +3109,8 @@ client,
 "Time to code for each false or dumb command's error handlers"
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3113,7 +3146,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -3149,7 +3183,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3185,11 +3220,57 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
 
+
+@NӨЯDBӨƬ.on_message(
+filters.chat(
+CHAT_ID
+)
+& ~Nord_Admins
+& Nord_Caller
+& ~filters.edited
+& filters.command(
+"pause",
+NordFix))
+async def yt(
+client,
+ɳɾԃ: NordLink):
+    try:
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        await ɳɾԃ.delete()
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+        f"""{ӼɛӼօ}
+🕊 {mntn} 🕊
+😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.\n𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴"""
+)
+        await asyncio.sleep(
+        CLEANER
+        )
+        await psychodelic.delete()
+    except Exception as Σ:
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        zygote = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+       f"""{ӼɛӼօ}
+🕊 {mntn} 🕊 
+⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
+"""
+)
+        await asyncio.sleep(CLEANER)
+        await zygote.delete()
 
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
@@ -3221,7 +3302,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3240,7 +3322,7 @@ client,
         caption=
         f"""{ӼɛӼօ}
 🕊 {mntn} 🕊
-⚠️`ʜꜱᴇᴇᴍꜱ ʟɪᴋᴇ` —••÷[🕊NOЯDΣD🕊]÷••—`ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ` **__{chat.title}__** `ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.`\n`ᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ` **__{chat.title}__** `ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ` [/resume]
+⚠️`ꜱᴇᴇᴍꜱ ʟɪᴋᴇ` —••÷[🕊NOЯDΣD🕊]÷••—`ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ᴘʟᴜɢɢᴇᴅ ʏᴇᴛ ᴀɴᴅ` **__{chat.title}__** `ʜᴀꜱ ɪᴛ'ꜱ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ/ᴄᴀʟʟ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴇᴛ.`\n`ᴘʟᴇᴀꜱᴇ ᴀꜱᴋ ɴᴏʀᴅ-ᴀᴅᴍɪɴꜱ ᴏꜰ` **__{chat.title}__** `ᴛᴏ ᴛᴜʀɴ ɪᴛ ᴏɴ ꜰɪʀꜱᴛ ᴀɴᴅ ʀᴇᴛʀʏ` [/resume]
 """)
         await asyncio.sleep(
         CLEANER
@@ -3257,11 +3339,56 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
 
+@NӨЯDBӨƬ.on_message(
+filters.chat(
+CHAT_ID
+)
+& ~Nord_Admins
+& Nord_Caller
+& ~filters.edited
+& filters.command(
+"resume",
+NordFix))
+async def yt(
+client,
+ɳɾԃ: NordLink):
+    try:
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        await ɳɾԃ.delete()
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+        f"""{ӼɛӼօ}
+🕊 {mntn} 🕊
+😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.\n𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴"""
+)
+        await asyncio.sleep(
+        CLEANER
+        )
+        await psychodelic.delete()
+    except Exception as Σ:
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        zygote = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+       f"""{ӼɛӼօ}
+🕊 {mntn} 🕊 
+⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
+"""
+)
+        await asyncio.sleep(CLEANER)
+        await zygote.delete()
 
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
@@ -3293,7 +3420,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3331,11 +3459,57 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
+@NӨЯDBӨƬ.on_message(
+filters.chat(
+CHAT_ID
+)
+& ~Nord_Admins
+& Nord_Caller
+& ~filters.edited
+& filters.command(
+"unplug",
+NordFix))
+async def yt(
+client,
+ɳɾԃ: NordLink):
+    try:
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        await ɳɾԃ.delete()
+        psychodelic = ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+        f"""{ӼɛӼօ}
+🕊 {mntn} 🕊
+😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.\n𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴"""
+)
+        await asyncio.sleep(
+        CLEANER
+        )
+        await psychodelic.delete()
 
+
+    except Exception as Σ:
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        zygote = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+       f"""{ӼɛӼօ}
+🕊 {mntn} 🕊 
+⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
+"""
+)
+        await asyncio.sleep(CLEANER)
+        await zygote.delete()
 
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
@@ -3366,7 +3540,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3385,7 +3560,7 @@ client,
         await psychodelic.delete()
         return
 
-    if "call" not in db:
+    if "plug" not in db:
         psychodelic = await ɳɾԃ.reply_animation(
         animation=norderror,
         caption="VC isn't started"
@@ -3394,7 +3569,7 @@ client,
         await psychodelic.delete()
         return
 
-    vc = db["call"]
+    vc = db["plug"]
     volume = int(
     ɳɾԃ.text.split(
     None, 1)[1])
@@ -3460,7 +3635,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3496,11 +3672,55 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
-
+@NӨЯDBӨƬ.on_message(
+filters.chat(
+CHAT_ID
+)
+& ~Nord_Admins
+& Nord_Caller
+& ~filters.edited
+& filters.command(
+"temp",
+NordFix))
+async def yt(
+client,
+ɳɾԃ: NordLink):
+    try:
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        await ɳɾԃ.delete()
+        psychodelic = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+        f"""{ӼɛӼօ}
+🕊 {mntn} 🕊
+😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.\n𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴"""
+)
+        await asyncio.sleep(
+        CLEANER
+        )
+        await psychodelic.delete()
+    except Exception as Σ:
+        await ɳɾԃ.reply_text("😵") 
+        chat_id = int(str(ɳɾԃ.chat.id))
+        chat = await client.get_chat(chat_id)
+        mntn = ɳɾԃ.from_user.mention
+        zygote = await ɳɾԃ.reply_animation(
+        animation=norderror,
+        caption=
+       f"""{ӼɛӼօ}
+🕊 {mntn} 🕊 
+⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
+"""
+)
+        await asyncio.sleep(CLEANER)
+        await zygote.delete()
 
 
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
@@ -3532,7 +3752,8 @@ client,
 
 @NӨЯDBӨƬ.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~Nord_Caller
 & ~filters.edited
 & filters.command(
@@ -3568,7 +3789,8 @@ client,
        f"""{ӼɛӼօ}
 🕊 {mntn} 🕊 
 ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{Σ}__`
-""")
+"""
+)
         await asyncio.sleep(CLEANER)
         await zygote.delete()
 
@@ -3626,18 +3848,18 @@ try:
     os.system("clear")
     LOGGER.info("\n\n\n\n🟢\n"+"ONLINE\n"+"NOЯDΣD USERBOT\n"+"ONLINE\n"+"🟢\n\n\n\n")
     NOЯDΣD.start()
-    LOGGER.info("\n\n")
-    LOGGER.info(API_ID)
-    LOGGER.info(API_HASH)
-    LOGGER.info(BOT_TOKEN)
-    LOGGER.info(NORDED_SESSION)
-    LOGGER.info(NORD_ADMINS)
-    LOGGER.info(CHAT_ID)
-    LOGGER.info(DYNO)
-    LOGGER.info(HEROKU_APP_NAME)
-    LOGGER.info(HEROKU_API_KEY)
-    LOGGER.info(CLEANER)
-    LOGGER.info(BOT_USERNAME)
+    # LOGGER.info("\n\n")
+    # LOGGER.info(API_ID)
+    # LOGGER.info(API_HASH)
+    # LOGGER.info(BOT_TOKEN)
+    # LOGGER.info(NORDED_SESSION)
+    # LOGGER.info(NORD_ADMINS)
+    # LOGGER.info(CHAT_ID)
+    # LOGGER.info(DYNO)
+    # LOGGER.info(HEROKU_APP_NAME)
+    # LOGGER.info(HEROKU_API_KEY)
+    # LOGGER.info(CLEANER)
+    # LOGGER.info(BOT_USERNAME)
     LOGGER.info("\n\n\n\n🟢\n"+"ONLINE\n"+"NOЯDΣD BOT\n"+"ONLINE\n"+"🟢\n\n\n\n")
     NӨЯDBӨƬ.start()
     LOGGER.info(f"\n\n\n\n{LICE}")
@@ -3650,8 +3872,8 @@ try:
     LOGGER.info(f"\n\n\n\n{LICE}")
     sys.exit()
 except Exception as Σ:
-    print(Σ)
-    print("Overriding to exit system")
+    LOGGER.info(Σ)
+    LOGGER.info("Overriding to exit system")
     sys.exit()
 """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
