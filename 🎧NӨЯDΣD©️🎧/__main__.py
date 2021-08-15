@@ -335,7 +335,7 @@ InlineKeyboardButton(
 
 HEROKU = os.environ.get("HEROKU")#,None)
 if HEROKU == "HEROKU":
-    API_ID = os.environ.get("API_ID")#,None)
+    API_ID = int(os.environ.get("API_ID"))#,None)
     API_HASH = os.environ.get("API_HASH")#,None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN")#,None)
     NORDED_SESSION = os.environ.get("NORDED_SESSION")#,None)
@@ -344,7 +344,7 @@ if HEROKU == "HEROKU":
     DYNO= os.environ.get("DYNO")#,None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")#,None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")#,None)
-    CLEANER = os.environ.get("CLEANER")#,None)
+    CLEANER = int(os.environ.get("CLEANER"))#,None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME")#,None)
     if BOT_USERNAME.startswith("@"):
         BOT_USERNAME = BOT_USERNAME
