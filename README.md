@@ -113,7 +113,7 @@ Put like this > 1868088205 1941593018 [with a space between]
 
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Norded.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
-- [![XERONOID_SESSION](https://img.shields.io/badge/XERONOID_SESSION-Vïå_REPLIT-red.svg)](https://replit.com/@HypeVoidSoul/Xeronoid-Pyrogram-Session#main.py)
+- [![XERONOID_SESSION](https://t.me/XERONOIDBOT)     
 
 
 
