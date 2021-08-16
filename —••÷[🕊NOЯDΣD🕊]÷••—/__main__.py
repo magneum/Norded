@@ -1201,7 +1201,7 @@ or
 
 
         try:
-            SESSION_HYPED = await morphed.export_NAMER_MAKERion_string()
+            SESSION_HYPED = await morphed.export_session_string()
             await morphed.send_photo(
             "me",
             photo="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg",
