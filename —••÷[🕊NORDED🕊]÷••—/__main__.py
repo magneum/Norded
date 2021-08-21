@@ -2073,24 +2073,24 @@ client,
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await roku()
-                await asyncio.sleep(15)
-                await ΣOЯPS.delete()
-                await ΣOЯ.reply_photo(
-                photo=nordlinker,
-                caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
-                text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
-                text="🤖 ΉYPΣ VӨID BӨT",
-                url=f"https://t.me/hypevoidbot")
-                ]]))
-                lic = await ΣOЯ.reply_photo(
-                photo=nordlinker,
-                caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n{LICENSE}")
-                await asyncio.sleep(12)
-                await lic.delete()
+                # await asyncio.sleep(15)
+                # await ΣOЯPS.delete()
+                # await ΣOЯ.reply_photo(
+                # photo=nordlinker,
+                # caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
+                # reply_markup=InlineKeyboardMarkup([[
+                # InlineKeyboardButton(
+                # text="🕊DΣV GЯӨЦP",
+                # url=f"https://t.me/hypevoids",),],[
+                # InlineKeyboardButton(
+                # text="🤖 ΉYPΣ VӨID BӨT",
+                # url=f"https://t.me/hypevoidbot")
+                # ]]))
+                # lic = await ΣOЯ.reply_photo(
+                # photo=nordlinker,
+                # caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n{LICENSE}")
+                # await asyncio.sleep(12)
+                # await lic.delete()
             else:
                 if HEROKU_API_KEY is None:
                     await ΣOЯ.delete()
