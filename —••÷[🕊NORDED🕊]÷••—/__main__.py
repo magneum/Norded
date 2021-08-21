@@ -2091,7 +2091,7 @@ client,
                 text="🤖 ΉYPΣ VӨID BӨT",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
-                await roku
+                await roku()
                 # HEROKU = heroku3.from_key(HEROKU_API_KEY)
                 # app = HEROKU.apps()[HEROKU_APP_NAME]
                 # app.restart()
@@ -2365,168 +2365,6 @@ client,
 "|"
 "---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
 "LET ME TRY TO MAKE THE CODE FOR DIRECT YOUTUBE PLAY USING /yt COMMAND"
-# @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
-# filters.chat(
-# CHAT_ID)
-# & Nord_Caller
-# & ~filters.edited
-# & filters.command(
-# "yt",
-# NordFix))
-# async def yt(
-# client,
-# ΣOЯ: NordLink):
-#     try:
-#         mntn = ΣOЯ.from_user.mention
-#         await ΣOЯ.delete()
-#         query = ''
-#         for i in ΣOЯ.command[1:]:
-#             query += ' ' + str(i)
-#         ydl_opts = {
-#         "format":
-#         "bestaudio[ext=m4a]"}
-#         try:
-#             results = []
-#             count = 0
-#             while len(results) == 0 and count < 6:
-#                 if count>0:
-#                     results = YoutubeSearch(
-#                     query,
-#                     max_results=1).to_dict()
-#                 count += 1
-#             try:
-#                 link = f"https://youtube.com{results[0]['url_suffix']}"
-#                 title = results[
-#                 0][
-#                 "title"]
-#                 thumbnail = results[
-#                 0][
-#                 "thumbnails"][
-#                 0]
-#                 duration = results[0][
-#                 "duration"]
-#                 views = results[
-#                 0][
-#                 "views"]
-#                 NORDED_THUMBNAIL = f'𝙽𝙾𝚁𝙳𝙴𝙳{ΣOЯ.message_id}.jpg'
-#                 thumb = requests.get(
-#                 thumbnail,
-#                 allow_redirects=True)
-#                 open(
-#                 NORDED_THUMBNAIL,
-#                 'wb').write(
-#                 thumb.content)
-#             except Exception as DΣD:
-#                 psychodelic =  await ΣOЯ.reply_photo(
-#                 photo=nordlinker,
-#                 caption=f"""
-#                 {ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{DΣD}`""",
-#                 reply_markup=InlineKeyboardMarkup([[
-#                 InlineKeyboardButton(
-#                 text="🕊DΣV GЯӨЦP",
-#                 url=f"https://t.me/hypevoids",),],[
-#                 InlineKeyboardButton(
-#                 text="🔖ɢɪᴛʜᴜʙ",
-#                 url=f"https://t.me/hypevoidbot",),],[
-#                 InlineKeyboardButton(
-#                 text="🤖 ΉYPΣ VӨID BӨT",
-#                 url=f"https://t.me/hypevoidbot")
-#                 ]]))
-#                 await asyncio.sleep(
-#            CLEANER
-#           )
-#                 await psychodelic.delete()
-#                 return
-#         except Exception as DΣD:
-#             psychodelic = await ΣOЯ.reply_photo(
-#             photo=nordlinker,
-#             caption=f"""
-#             {ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{DΣD}`""",
-#             reply_markup=InlineKeyboardMarkup([[
-#             InlineKeyboardButton(
-#             text="🕊DΣV GЯӨЦP",
-#             url=f"https://t.me/hypevoids",),],[
-#             InlineKeyboardButton(
-#             text="🔖ɢɪᴛʜᴜʙ",
-#             url=f"https://t.me/hypevoidbot",),],[
-#             InlineKeyboardButton(
-#             text="🤖 ΉYPΣ VӨID BӨT",
-#             url=f"https://t.me/hypevoidbot")
-#             ]]))
-#             await asyncio.sleep(
-#           CLEANER
-#           )
-#             await psychodelic.delete()
-#             return
-#         try:
-#             with youtube_dl.YoutubeDL(ydl_opts) as nordl:
-#                 info_dict = nordl.extract_info(link, download=False)
-#                 audio_file = nordl.prepare_filename(info_dict)
-#                 nordl.process_info(info_dict)
-#             nordlcap = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
-#             secmul, dur, dur_arr = 1, 0, duration.split(':')
-#             for i in range(len(dur_arr)-1, -1, -1):
-#                 dur += (int(dur_arr[i]) * secmul)
-#                 secmul *= 60
-#             chat_id = int(str(ΣOЯ.chat.id))
-#             ADU = await ΣOЯ.reply_audio(
-#             audio=audio_file,
-#             caption=nordlcap,
-#             title=title,
-#             duration=dur,
-#             thumb=NORDED_THUMBNAIL
-#             )
-#             await ADU.reply_photo(
-#             photo=NORDED_THUMBNAIL,
-#             caption=NORN,
-#             reply_markup=InlineKeyboardMarkup([[
-#             InlineKeyboardButton(
-#             text="🕊DΣV GЯӨЦP",
-#             url=f"https://t.me/hypevoids",),],[
-#             InlineKeyboardButton(
-#             text="🔖ɢɪᴛʜᴜʙ",
-#             url=f"https://t.me/hypevoidbot",),],[
-#             InlineKeyboardButton(
-#             text="🤖 ΉYPΣ VӨID BӨT",
-#             url=f"https://t.me/hypevoidbot")
-#             ]]))
-#         except Exception as DΣD:
-#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n❌ Error\n\n`{DΣD}`")
-#             await psychodelic.delete()
-#         try:
-#             os.remove(audio_file)
-#             os.remove(NORDED_THUMBNAIL)
-#         except Exception as DΣD:
-#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{DΣD}`")
-#     except Exception as DΣD:
-#         await ΣOЯ.reply_photo(
-#         photo=nordlinker,
-#         caption=
-#        f"""{ӼɛӼօ}
-# 🕊 {mntn} 🕊 
-# ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{DΣD}__`
-# """)
-"---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
-"|"
-"""
-|
-|
-🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇
-                                                       GNU GENERAL PUBLIC LICENSE 
-                                                         Version 3, 29 June 2007
-                                                Copyright (C) 2007 Free Software Foundation
-                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                                                        —••÷[🕊NORDED🕊]÷••— 
-                                                    Telegram Music player userbot 
-                                            has been licensed under GNU General Public License
-                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇
-|
-|
-"""
-"|"
-"---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
 @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
 filters.chat(
 CHAT_ID
@@ -2705,6 +2543,168 @@ client,
     except Exception as DΣD:
         print(DΣD)
         pass
+"---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
+"|"
+"""
+|
+|
+🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇🖇
+|
+|
+"""
+"|"
+"---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
+# @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
+# filters.chat(
+# CHAT_ID)
+# & Nord_Caller
+# & ~filters.edited
+# & filters.command(
+# "ytlicoius",
+# NordFix))
+# async def yt(
+# client,
+# ΣOЯ: NordLink):
+#     try:
+#         mntn = ΣOЯ.from_user.mention
+#         await ΣOЯ.delete()
+#         query = ''
+#         for i in ΣOЯ.command[1:]:
+#             query += ' ' + str(i)
+#         ydl_opts = {
+#         "format":
+#         "bestaudio[ext=m4a]"}
+#         try:
+#             results = []
+#             count = 0
+#             while len(results) == 0 and count < 6:
+#                 if count>0:
+#                     results = YoutubeSearch(
+#                     query,
+#                     max_results=1).to_dict()
+#                 count += 1
+#             try:
+#                 link = f"https://youtube.com{results[0]['url_suffix']}"
+#                 title = results[
+#                 0][
+#                 "title"]
+#                 thumbnail = results[
+#                 0][
+#                 "thumbnails"][
+#                 0]
+#                 duration = results[0][
+#                 "duration"]
+#                 views = results[
+#                 0][
+#                 "views"]
+#                 NORDED_THUMBNAIL = f'𝙽𝙾𝚁𝙳𝙴𝙳{ΣOЯ.message_id}.jpg'
+#                 thumb = requests.get(
+#                 thumbnail,
+#                 allow_redirects=True)
+#                 open(
+#                 NORDED_THUMBNAIL,
+#                 'wb').write(
+#                 thumb.content)
+#             except Exception as DΣD:
+#                 psychodelic =  await ΣOЯ.reply_photo(
+#                 photo=nordlinker,
+#                 caption=f"""
+#                 {ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{DΣD}`""",
+#                 reply_markup=InlineKeyboardMarkup([[
+#                 InlineKeyboardButton(
+#                 text="🕊DΣV GЯӨЦP",
+#                 url=f"https://t.me/hypevoids",),],[
+#                 InlineKeyboardButton(
+#                 text="🔖ɢɪᴛʜᴜʙ",
+#                 url=f"https://t.me/hypevoidbot",),],[
+#                 InlineKeyboardButton(
+#                 text="🤖 ΉYPΣ VӨID BӨT",
+#                 url=f"https://t.me/hypevoidbot")
+#                 ]]))
+#                 await asyncio.sleep(
+#            CLEANER
+#           )
+#                 await psychodelic.delete()
+#                 return
+#         except Exception as DΣD:
+#             psychodelic = await ΣOЯ.reply_photo(
+#             photo=nordlinker,
+#             caption=f"""
+#             {ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{DΣD}`""",
+#             reply_markup=InlineKeyboardMarkup([[
+#             InlineKeyboardButton(
+#             text="🕊DΣV GЯӨЦP",
+#             url=f"https://t.me/hypevoids",),],[
+#             InlineKeyboardButton(
+#             text="🔖ɢɪᴛʜᴜʙ",
+#             url=f"https://t.me/hypevoidbot",),],[
+#             InlineKeyboardButton(
+#             text="🤖 ΉYPΣ VӨID BӨT",
+#             url=f"https://t.me/hypevoidbot")
+#             ]]))
+#             await asyncio.sleep(
+#           CLEANER
+#           )
+#             await psychodelic.delete()
+#             return
+#         try:
+#             with youtube_dl.YoutubeDL(ydl_opts) as nordl:
+#                 info_dict = nordl.extract_info(link, download=False)
+#                 audio_file = nordl.prepare_filename(info_dict)
+#                 nordl.process_info(info_dict)
+#             nordlcap = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
+#             secmul, dur, dur_arr = 1, 0, duration.split(':')
+#             for i in range(len(dur_arr)-1, -1, -1):
+#                 dur += (int(dur_arr[i]) * secmul)
+#                 secmul *= 60
+#             chat_id = int(str(ΣOЯ.chat.id))
+#             ADU = await ΣOЯ.reply_audio(
+#             audio=audio_file,
+#             caption=nordlcap,
+#             title=title,
+#             duration=dur,
+#             thumb=NORDED_THUMBNAIL
+#             )
+#             await ADU.reply_photo(
+#             photo=NORDED_THUMBNAIL,
+#             caption=NORN,
+#             reply_markup=InlineKeyboardMarkup([[
+#             InlineKeyboardButton(
+#             text="🕊DΣV GЯӨЦP",
+#             url=f"https://t.me/hypevoids",),],[
+#             InlineKeyboardButton(
+#             text="🔖ɢɪᴛʜᴜʙ",
+#             url=f"https://t.me/hypevoidbot",),],[
+#             InlineKeyboardButton(
+#             text="🤖 ΉYPΣ VӨID BӨT",
+#             url=f"https://t.me/hypevoidbot")
+#             ]]))
+#         except Exception as DΣD:
+#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n❌ Error\n\n`{DΣD}`")
+#             await psychodelic.delete()
+#         try:
+#             os.remove(audio_file)
+#             os.remove(NORDED_THUMBNAIL)
+#         except Exception as DΣD:
+#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{DΣD}`")
+#     except Exception as DΣD:
+#         await ΣOЯ.reply_photo(
+#         photo=nordlinker,
+#         caption=
+#        f"""{ӼɛӼօ}
+# 🕊 {mntn} 🕊 
+# ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**\n**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**\n\n `__{DΣD}__`
+# """)
 "---------------------------------------------------------------------------------|____🤖NORDEDB🤖____"
 "|"
 """
