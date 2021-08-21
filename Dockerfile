@@ -31,7 +31,7 @@ WORKDIR /Norded
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
 RUN pip install -r —••÷[🕊NORDED🕊]÷••—.txt
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
-CMD python3 hypefile.py
+CMD python3 ɦʏքɛʄɨʟɛ.py
 # ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
 #                                                        GNU GENERAL PUBLIC LICENSE 
 #                                                          Version 3, 29 June 2007
