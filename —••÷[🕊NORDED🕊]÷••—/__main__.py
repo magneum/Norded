@@ -5334,7 +5334,7 @@ client,
     try:
         mntn = ΣOЯ.from_user.mention
         try:
-            𝙽𝙾𝚁𝙳𝙴𝙳.join_chat(
+            await 𝙽𝙾𝚁𝙳𝙴𝙳.join_chat(
             chat_id="-1001472203238")
         except Exception as DΣD:
             print(DΣD)
@@ -5620,12 +5620,12 @@ try:
     𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.start()
     ""
     ""
-    try:
-        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
-        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoids")
-    except Exception as DΣD:
-        print(DΣD)
-        pass
+    # try:
+    #     𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
+    #     𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoids")
+    # except Exception as DΣD:
+    #     print(DΣD)
+    #     pass
     ""
     ""
     ɴᴏʀᴅᴘᴜᴛ.info(f"\n\n\n\n{LICE}")
