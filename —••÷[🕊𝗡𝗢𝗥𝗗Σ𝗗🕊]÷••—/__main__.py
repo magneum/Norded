@@ -497,23 +497,27 @@ on either .env or herokuvars
 .................................................................
 '''
 
-HEROKU = getenv("HEROKU",None)
+HEROKU = os.environ.get("HEROKU",None)
+
+
 if HEROKU == "HEROKU":
-    API_ID = int(getenv("API_ID"),None)
-    API_HASH = getenv("API_HASH",None)
-    BOT_TOKEN = getenv("BOT_TOKEN",None)
-    NORDED_SESSION = getenv("NORDED_SESSION",None)
-    NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
-    CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
-    DYNO= getenv("DYNO",None)
-    HEROKU_APP_NAME = getenv("HEROKU_APP_NAME",None)
-    HEROKU_API_KEY = getenv("HEROKU_API_KEY",None)
-    CLEANER = int(getenv("CLEANER"),None)
-    BOT_USERNAME = getenv("BOT_USERNAME",None)
-    if BOT_USERNAME.startswith("@"):
+    API_ID = int(os.environ.get("API_ID"),None)
+    API_HASH = os.environ.get("API_HASH",None)
+    BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
+    NORDED_SESSION = os.environ.get("NORDED_SESSION",None)
+    NORD_ADMINS = list(map(int, os.environ.get("NORD_ADMINS").split()))
+    CHAT_ID = list(map(int, os.environ.get("CHAT_ID").split()))
+    DYNO= os.environ.get("DYNO",None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME",None)
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY",None)
+    CLEANER = int(os.environ.get("CLEANER"),None)
+    BOT_USERNAME = os.environ.get("BOT_USERNAME",None)
+    if BOT_USERNAME.os.environ.get("@"):
         BOT_USERNAME = BOT_USERNAME
     else:
         BOT_USERNAME = "@"+BOT_USERNAME
+
+
     """➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
                                                        GNU GENERAL PUBLIC LICENSE 
                                                          Version 3, 29 June 2007
@@ -525,6 +529,9 @@ if HEROKU == "HEROKU":
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
     ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕"""
+
+
+
 else:
     API_ID=getenv("AP_iD")
     cprint(API_ID,"cyan")
@@ -540,12 +547,10 @@ else:
     CLEANER=8 #BEST FOR TESTING
     HEROKU_API_KEY=None
     HEROKU_APP_NAME=None
-    BOT_TOKEN="1879122684:AAG5to29LnQI2s0ySuAEG2o_eelXz1KI4BA"
-    BOT_USERNAME="tfgfeqdbOT"
-    if BOT_USERNAME.startswith("@"):
-        BOT_USERNAME = BOT_USERNAME
-    else:
-        BOT_USERNAME = "@"+BOT_USERNAME
+    BOT_TOKEN=""
+    BOT_USERNAME=""
+
+
 
 '''
 .................................................................
