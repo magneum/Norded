@@ -515,7 +515,7 @@ if HEROKU == "HEROKU":
         BOT_USERNAME = BOT_USERNAME
     else:
         BOT_USERNAME = "@"+BOT_USERNAME
-else:
+elif HEROKU != "HEROKU":
     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
     NORDED_SESSION=getenv("NORDED_SESSION")
@@ -527,14 +527,14 @@ else:
     DYNO=getenv("DYNO")
     HEROKU_API_KEY=None
     HEROKU_APP_NAME=None
-
-
     cprint(API_ID,"cyan")
     cprint(API_HASH,"cyan")
     cprint(NORD_ADMINS,"cyan")
     cprint(CHAT_ID,"cyan")
     cprint(BOT_TOKEN,"cyan")
     cprint(BOT_USERNAME,"cyan")
+else:
+    cprint("Unknown Vars ..", "red")
 
 '''
 .................................................................
@@ -5321,10 +5321,7 @@ client,
 |
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
-filters.chat(
-CHAT_ID)
-& ~filters.edited
-& Nord_Admins
+Nord_Admins
 & filters.command(
 "alive",
 NordFix))
