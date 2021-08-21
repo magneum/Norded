@@ -515,20 +515,19 @@ if HEROKU == "HEROKU":
         BOT_USERNAME = BOT_USERNAME
     else:
         BOT_USERNAME = "@"+BOT_USERNAME
-
-
 else:
-    API_ID=6372795
-    API_HASH="4b7731b0a6d8e15bef82863887feb293"
-    NORDED_SESSION="BQCy8rOGmxQ0sUBZcW2570BXVPZkS1-KXOFJSKVLaIfP8XjVx5mHwKt_8jwkUhJ19ZE-ni_RrdUdzO7Mt3lcGIbMHAt0j3XOwSL3O7aZuTXJ0NAZ3xb8szG6V_XfsBsdEA5egt1wHqamDfQxuhJAaop1TXEGuQpI8feaC9MRpZZ-ELvOLH9M0FUJ3fqcr5_me7Whx3BFCI2uptYaNassP-Qv6fKEqTjVc6f-J1FLM9ZxkFCSgsnO3XMJqTF8OvZDT5jNkezUG1zWGov9gsOYe-OGspFMKq23-MotGnrF1u_kichlA_sbOauELGPMYzQyotnmbtJEYIRBuEfCf_tftwsKbXPecgA"
     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
-    BOT_TOKEN="1981530557:AAErbqNZoWyNYmNwekHvfdqHOXlUYXbVHZg"
-    BOT_USERNAME="@NordedBot"
+    NORDED_SESSION=getenv("NORDED_SESSION")
+    BOT_USERNAME=getenv("BOT_USERNAME")
+    BOT_TOKEN=getenv("BOT_TOKEN")
+    API_HASH=getenv("API_HASH")
+    CLEANER=getenv("CLEANER")
+    API_ID=getenv("API_ID")
+    DYNO=getenv("DYNO")
     HEROKU_API_KEY=None
     HEROKU_APP_NAME=None
-    CLEANER=8
-    DYNO="/"
+
 
     cprint(API_ID,"cyan")
     cprint(API_HASH,"cyan")
@@ -2062,7 +2061,7 @@ client,
             mntn = ΣOЯ.from_user.mention
             if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None:
                 await ΣOЯ.delete()
-                await ΣOЯ.reply_photo(
+                ΣOЯPS = await ΣOЯ.reply_photo(
                 photo=nordlinker,
                 caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n⚠️❗️   𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝗿𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗛𝗲𝗿𝗼𝗸𝘂-𝗗𝘆𝗻𝗼.\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 30𝙨𝙚𝙘-1𝙢𝙞𝙣",
                 reply_markup=InlineKeyboardMarkup([[
@@ -2074,25 +2073,23 @@ client,
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await roku()
-                # HEROKU = heroku3.from_key(HEROKU_API_KEY)
-                # app = HEROKU.apps()[HEROKU_APP_NAME]
-                # app.restart()
-                # await ΣOЯ.reply_photo(
-                # photo=nordlinker,
-                # caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
-                # reply_markup=InlineKeyboardMarkup([[
-                # InlineKeyboardButton(
-                # text="🕊DΣV GЯӨЦP",
-                # url=f"https://t.me/hypevoids",),],[
-                # InlineKeyboardButton(
-                # text="🤖 ΉYPΣ VӨID BӨT",
-                # url=f"https://t.me/hypevoidbot")
-                # ]]))
-                # lic = await ΣOЯ.reply_photo(
-                # photo=nordlinker,
-                # caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n{LICENSE}")
-                # await asyncio.sleep(12)
-                # await lic.delete()
+                await ΣOЯPS.delete()
+                await ΣOЯ.reply_photo(
+                photo=nordlinker,
+                caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
+                reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton(
+                text="🕊DΣV GЯӨЦP",
+                url=f"https://t.me/hypevoids",),],[
+                InlineKeyboardButton(
+                text="🤖 ΉYPΣ VӨID BӨT",
+                url=f"https://t.me/hypevoidbot")
+                ]]))
+                lic = await ΣOЯ.reply_photo(
+                photo=nordlinker,
+                caption=f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n{LICENSE}")
+                await asyncio.sleep(12)
+                await lic.delete()
             else:
                 if HEROKU_API_KEY is None:
                     await ΣOЯ.delete()
