@@ -219,7 +219,7 @@ from pyromod import listen
 from youtube_search import YoutubeSearch
 from pyrogram.types import ChatPermissions
 from pyrogram.utils import MAX_CHANNEL_ID
-from pyrogram import Client, filters
+from pyrogram import Client, filters,idle
 from asyncio.exceptions import TimeoutError
 from pyrogram.raw.base import InputGroupCall
 from pytgcalls import GroupCall as NORDCALLER
@@ -5514,14 +5514,7 @@ logging.basicConfig(handlers=[InterceptHandler()],
 level=logging.INFO)
 ɴᴏʀᴅᴘᴜᴛ = logging.getLogger(__name__)
 
-# file = open("bootlock.py", "w") 
-# file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED𝗕𝗢𝗧.start()\nidle()\nNORDED𝗕𝗢𝗧.stop()") 
-    
-# file = open("bootlocker.py", "w") 
-# file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED.start()\nidle()\nNORDED.stop()") 
 
-# import subprocess
-# subprocess.run("python3 bootlock.py & python3 bootlocker.py", shell=True)
 LICE="""➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 GNU GENERAL PUBLIC LICENSE 
 Version 3, 29 June 2007
@@ -5534,7 +5527,17 @@ has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
-from pyrogram import idle
+# file = open("bootlock.py", "w") 
+# file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED𝗕𝗢𝗧.start()\nidle()\nNORDED𝗕𝗢𝗧.stop()") 
+    
+# file = open("bootlocker.py", "w") 
+# file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED.start()\nidle()\nNORDED.stop()") 
+
+# import subprocess
+# subprocess.run("python3 bootlock.py & python3 bootlocker.py", shell=True)
+
+
+
 try: 
     if HEROKU == "HEROKU":
         pass
