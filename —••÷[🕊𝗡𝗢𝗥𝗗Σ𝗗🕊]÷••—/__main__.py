@@ -510,7 +510,7 @@ if HEROKU == "HEROKU":
     DYNO= getenv("DYNO",None)
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME",None)
     HEROKU_API_KEY = getenv("HEROKU_API_KEY",None)
-    CLEANER = int(getenv("CLEANER"),None)
+    CLEANER = getenv("CLEANER",None)
     BOT_USERNAME = getenv("BOT_USERNAME",None)
     if BOT_USERNAME.getenv("@"):
         BOT_USERNAME = BOT_USERNAME
@@ -5522,6 +5522,7 @@ has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 try: 
+
     os.system("clear")
     LOGGER.info("\n\n\n\n🟢\n"+"ONLINE\n"+"𝗡𝗢𝗥𝗗Σ𝗗 USERBOT\n"+"ONLINE\n"+"🟢\n\n\n\n")
     𝗡𝗢𝗥𝗗Σ𝗗.start()
@@ -5552,6 +5553,8 @@ except Exception as DΣD:
     LOGGER.info(DΣD)
     LOGGER.info("Overriding to exit system")
     sys.exit()
+
+    
 """
 |
 |
