@@ -1128,7 +1128,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1189,7 +1189,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1250,7 +1250,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1413,7 +1413,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1474,7 +1474,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1535,7 +1535,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1596,7 +1596,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1657,7 +1657,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1718,7 +1718,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1790,7 +1790,7 @@ client,
             )
             await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1849,7 +1849,7 @@ _,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1917,7 +1917,7 @@ _,
             disable_notification=False)
         except Exception as DΣD:
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -1979,7 +1979,7 @@ _,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2158,7 +2158,7 @@ client,
                     url=f"https://t.me/hypevoidbot")
                     ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2221,7 +2221,7 @@ client,
             else:
                 sys.exit()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2320,7 +2320,7 @@ client,
             ★  `{hours}**h**  `{minutes}**YΣ**  
         **|**  `{percentage}**%**""")
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2753,7 +2753,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2824,7 +2824,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2896,7 +2896,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -2967,7 +2967,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3039,7 +3039,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3112,7 +3112,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3186,7 +3186,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3346,7 +3346,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3418,7 +3418,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3479,7 +3479,7 @@ client,
             url=f"https://t.me/hypevoidbot")
             ]]))
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -3546,7 +3546,7 @@ client,
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4501,7 +4501,7 @@ client,
                 ]]))
                 
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4677,7 +4677,7 @@ client,
             if not ΣOЯ.audio:
                 await ΣOЯ.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4775,7 +4775,7 @@ client,
                 )
                     await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4825,7 +4825,7 @@ client,
             else:
                 await ΣOЯ.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4914,7 +4914,7 @@ client,
                 )
                 await join.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -4995,7 +4995,7 @@ client,
             )
             await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -5065,7 +5065,7 @@ client,
             )
             await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -5136,7 +5136,7 @@ client,
                 pass
             await asyncio.sleep(8)
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -5204,7 +5204,7 @@ client,
             )
             await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -5287,7 +5287,7 @@ client,
             )
             await psychodelic.delete()
         except Exception as DΣD:
-            zygote = await ΣOЯ.reply_photo(
+            zygote = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
         f"""{ӼɛӼօ}
@@ -5334,7 +5334,8 @@ client,
     try:
         mntn = ΣOЯ.from_user.mention
         try:
-            𝙽𝙾𝚁𝙳𝙴𝙳.join_chat(chat_id=-1001472203238)
+            𝙽𝙾𝚁𝙳𝙴𝙳.join_chat(
+            chat_id="-1001472203238")
         except Exception as DΣD:
             print(DΣD)
             pass
@@ -5354,7 +5355,7 @@ client,
         )
         await psychodelic.delete()
     except Exception as DΣD:
-        zygote = await ΣOЯ.reply_photo(
+        zygote = await ΣOЯ.reply_animation(
         animation=norderror,
         caption=
         f"""{ӼɛӼօ}
