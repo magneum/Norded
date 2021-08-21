@@ -2523,7 +2523,7 @@ client,
             except Exception as DΣD:
                 psychodelic = ΣOЯ.reply_text(f"{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n❌ Error cleaning yt temp files.\n\n`{DΣD}`")
         except Exception as DΣD:
-            ΣOЯ.reply_photo(
+            ΣOЯ.reply_animation(
             animation=norderror,
             caption=f"""{ӼɛӼօ}
         🕊 {mntn} 🕊 
@@ -2737,7 +2737,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -2808,7 +2808,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -2880,7 +2880,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -2951,7 +2951,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3023,7 +3023,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3094,7 +3094,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = ΣOЯ.reply_photo(
+            psychodelic = ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3168,7 +3168,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = ΣOЯ.reply_photo(
+            psychodelic = ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3238,7 +3238,7 @@ client,
     try:
         usage = "**Usage:**\n/volume [1-200]"
         if len(ΣOЯ.command) != 2:
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=usage
             )
@@ -3247,7 +3247,7 @@ client,
             return
 
         if "plug" not in db:
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption="VC isn't started"
             )
@@ -3261,7 +3261,7 @@ client,
         None, 1)[1])
         if (volume < 1) or (volume > 200):
             psychodelic = await ΣOЯ.reply_photo(
-            animation=norderror,
+            photo=nordlinker,
             caption=usage
             )
             await asyncio.sleep(CLEANER)
@@ -3274,7 +3274,7 @@ client,
             )       
             return
         except ValueError:
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=usage
             )
@@ -3283,7 +3283,7 @@ client,
 
 
         psychodelic = await ΣOЯ.reply_photo(
-            animation=norderror,
+            animation=nordlinker,
             caption=f"**Volume Set To {volume}**"
             )
         await asyncio.sleep(CLEANER)
@@ -3330,7 +3330,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3402,7 +3402,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
@@ -3530,7 +3530,7 @@ client,
             chat = await client.get_chat(chat_id)
             mntn = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_photo(
+            psychodelic = await ΣOЯ.reply_animation(
             animation=norderror,
             caption=
             f"""{ӼɛӼօ}
