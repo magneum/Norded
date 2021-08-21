@@ -532,23 +532,23 @@ if HEROKU == "HEROKU":
 
 
 
-else:
-    API_ID=getenv("AP_iD")
-    cprint(API_ID,"cyan")
-    API_HASH=getenv("APP_HASH")
-    cprint(API_HASH,"cyan")
-    NORDED_SESSION=getenv("XER0NOID_NAM")
-    cprint(NORDED_SESSION,"cyan")
-    NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
-    cprint(NORD_ADMINS,"cyan")
-    CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
-    cprint(CHAT_ID,"cyan")
-    DYNO="/"
-    CLEANER=8 #BEST FOR TESTING
-    HEROKU_API_KEY=None
-    HEROKU_APP_NAME=None
-    BOT_TOKEN=""
-    BOT_USERNAME=""
+# else:
+#     API_ID=getenv("AP_iD")
+#     cprint(API_ID,"cyan")
+#     API_HASH=getenv("APP_HASH")
+#     cprint(API_HASH,"cyan")
+#     NORDED_SESSION=getenv("XER0NOID_NAM")
+#     cprint(NORDED_SESSION,"cyan")
+#     NORD_ADMINS = list(map(int, getenv("NORD_ADMINS", "").split()))
+#     cprint(NORD_ADMINS,"cyan")
+#     CHAT_ID = list(map(int, getenv("CHAT_ID", "").split()))
+#     cprint(CHAT_ID,"cyan")
+#     DYNO="/"
+#     CLEANER=8 #BEST FOR TESTING
+#     HEROKU_API_KEY=None
+#     HEROKU_APP_NAME=None
+#     BOT_TOKEN=""
+#     BOT_USERNAME=""
 
 
 
