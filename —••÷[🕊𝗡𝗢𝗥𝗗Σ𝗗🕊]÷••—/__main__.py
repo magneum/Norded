@@ -501,7 +501,7 @@ HEROKU = getenv("HEROKU",None)
 
 
 if HEROKU == "HEROKU":
-    API_ID = int(getenv("API_ID"),None)
+    API_ID = getenv("API_ID",None)
     API_HASH = getenv("API_HASH",None)
     BOT_TOKEN = getenv("BOT_TOKEN",None)
     NORDED_SESSION = getenv("NORDED_SESSION",None)
