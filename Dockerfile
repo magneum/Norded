@@ -9,9 +9,13 @@
 #                                             has been licensed under GNU General Public License
 #                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 # ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
-FROM kalilinux/kali-rolling
+FROM python:latest
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
-RUN touch ~/.hushlogin
+ENV VIRTUAL_ENV "/venv"
+# —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
+RUN python -m venv $VIRTUAL_ENV
+# —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
+ENV PATH "$VIRTUAL_ENV/bin:$PATH"
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
 RUN mkdir —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
