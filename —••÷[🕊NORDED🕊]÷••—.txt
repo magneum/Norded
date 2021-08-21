@@ -1,0 +1,14 @@
+pytgcalls
+requests
+youtube_search
+youtube_dl
+wheel
+TgCrypto
+pyrogram
+heroku3
+ffmpeg-python
+urllib3
+termcolor
+loguru
+python-dotenv
+pyromod
