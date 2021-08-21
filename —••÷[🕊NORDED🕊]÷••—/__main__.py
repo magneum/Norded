@@ -5552,6 +5552,14 @@ try:
     𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.start()
     ""
     ""
+    try:
+        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
+        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoids")
+    except Exception as DΣD:
+        print(DΣD)
+        pass
+    ""
+    ""
     ɴᴏʀᴅᴘᴜᴛ.info(f"\n\n\n\n{LICE}")
     ""
     ""
