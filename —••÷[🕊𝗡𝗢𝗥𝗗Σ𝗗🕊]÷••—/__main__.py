@@ -512,7 +512,7 @@ if HEROKU == "HEROKU":
     HEROKU_API_KEY = getenv("HEROKU_API_KEY",None)
     CLEANER = getenv("CLEANER",None)
     BOT_USERNAME = getenv("BOT_USERNAME",None)
-    if BOT_USERNAME.getenv("@"):
+    if BOT_USERNAME.startswith("@"):
         BOT_USERNAME = BOT_USERNAME
     else:
         BOT_USERNAME = "@"+BOT_USERNAME
