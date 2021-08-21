@@ -2020,6 +2020,18 @@ async def roku():
         HEROKU = heroku3.from_key(HEROKU_API_KEY)
         app = HEROKU.apps()[HEROKU_APP_NAME]
         app.restart()
+        ΣOЯ: NordLink
+        await ΣOЯ.reply_photo(
+        photo=nordlinker,
+        caption=f"{ӼɛӼօ} **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
+        reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton(
+        text="🕊DΣV GЯӨЦP",
+        url=f"https://t.me/hypevoids",),],[
+        InlineKeyboardButton(
+        text="🤖 ΉYPΣ VӨID BӨT",
+        url=f"https://t.me/hypevoidbot")
+        ]]))
     except Exception as DΣD:
         print(DΣD)
         pass
