@@ -1764,13 +1764,14 @@ client,
 ΣOЯ: NordLink):
     try:
         try:
+            await ΣOЯ.delete()
             mntn = ΣOЯ.from_user.mention
             start = datetime.now()
             end = datetime.now()
             delta_energy1 = (end - start).seconds
             delta_energy2= (end - start).microseconds
             psychodelic = await ΣOЯ.reply_photo(
-            norderror,
+            photo=nordlinker,
             caption=f"""{ӼɛӼօ} 👾 Hɛʏ 𝙽𝙾𝚁𝙳𝙴𝙳 ʊֆɛʀ  {mntn}\n
     |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
             📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
