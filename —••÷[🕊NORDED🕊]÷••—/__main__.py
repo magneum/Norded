@@ -2267,7 +2267,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {mntn}
             await asyncio.sleep(6)
             await shuts.delete()
             if HEROKU_APP_NAME is not None:
-                HEROKU_APP_NAME.process_formation()["worker"].scale(0)
+                #HEROKU_APP_NAME.process_formation()["worker"].scale(0)
                 HEROKU = heroku3.from_key(HEROKU_API_KEY)
                 app = HEROKU.apps()[HEROKU_APP_NAME]
                 app.kill()
