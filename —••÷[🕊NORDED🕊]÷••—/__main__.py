@@ -501,6 +501,7 @@ on either .env or herokuvars
 HEROKU = getenv("HEROKU",None)
 if HEROKU == "HEROKU":
     API_ID = int(getenv("API_ID",None))
+    ALIVE_CHECK_CHAT = int(getenv("ALIVE_CHECK_CHAT"))
     API_HASH = getenv("API_HASH",None)
     BOT_TOKEN = getenv("BOT_TOKEN",None)
     NORDED_SESSION = getenv("NORDED_SESSION",None)
@@ -5654,7 +5655,7 @@ try:
     ɴᴏʀᴅᴘᴜᴛ.info("//")
     try:
         𝙽𝙾𝚁𝙳𝙴𝙳.send_photo(
-        chat_id=CHAT_ID,
+        chat_id=ALIVE_CHECK_CHAT,
         photo=nordlinker,
         caption=f"""{ӼɛӼօ}
 

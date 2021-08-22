@@ -12,6 +12,9 @@
 "API_HASH":{
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
 "required":true},
+"ALIVE_CHECK_CHAT":{
+"description":"Put the GROUP CHAT ID where after bot is deployed a confirmation message will be sent.",
+"required":true}, 
 "HEROKU":{
 "description":"KEEP IT HEROKU!!!!!!!",
 "required":true},
