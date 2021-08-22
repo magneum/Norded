@@ -805,8 +805,6 @@ Variables and not to be changed
 '''
 
 HEROKU_CATEG=f"""{ӼɛӼօ}[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
-**{DYNO}shutdown**
-•♪ `𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳` 🕊Norded Smart Music Player🕊.
 **{DYNO}restart**
 •♪ `𝘙𝘦𝘣𝘰𝘰𝘵` —••÷[🕊NORDED🕊]÷••— `𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.`
 **{DYNO}usage**  
@@ -877,13 +875,13 @@ XERO_HELP = f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 •♪ `𝘔𝘰𝘷𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘯𝘦𝘹𝘵 𝘵𝘳𝘢𝘤𝘬 𝘰𝘳 𝘚𝘬𝘪𝘱 𝘵𝘳𝘢𝘤𝘬 𝘪𝘯 𝘲𝘶𝘦𝘶𝘦 𝘭𝘪𝘬𝘦`: "𝘯𝘦𝘹𝘵 2".
 `{DYNO}temp`   
 •♪ `𝘊𝘭𝘦𝘢𝘯 𝘵𝘦𝘮𝘱 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦𝘴 𝘪𝘯 𝘴𝘦𝘳𝘷𝘦𝘳 𝘰𝘧` 🕊Norded Smart Music Player🕊.\n\n[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
-`{DYNO}shutdown`
-•♪ `𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳` 🕊Norded Smart Music Player🕊.
 `{DYNO}restart`
 •♪ `𝘙𝘦𝘣𝘰𝘰𝘵` —••÷[🕊NORDED🕊]÷••— `𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.`
 `{DYNO}usage`  
 •♪ `𝘍𝘪𝘯𝘥` —••÷[🕊NORDED🕊]÷••— `𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦`
 """
+#`{DYNO}shutdown`
+#•♪ `𝘛𝘶𝘳𝘯 𝘰𝘧𝘧 𝘏𝘌𝘙𝘖𝘒𝘜 𝘋𝘺𝘯𝘰 𝘧𝘰𝘳` 🕊Norded Smart Music Player🕊.
 
 '''
 .................................................................
@@ -2241,59 +2239,59 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {mntn}
 """
 "|"
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
-@𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
-filters.chat(
-CHAT_ID
-)
-& ~filters.edited
-& Nord_Admins
-& filters.command(
-"shutdown",
-NordFix))
-async def shutdown(
-client,
-ΣOЯ: NordLink):
-    try:
-        try:
-            mntn = ΣOЯ.from_user.mention
-            await ΣOЯ.delete()
-            shuts = await ΣOЯ.reply_photo(
-            photo=nordlinker,
-            caption=f"""{ӼɛӼօ}
-Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {mntn}
-⚠️❗️  `𝗧𝘂𝗿𝗶𝗻𝗴 𝗢𝗳𝗳 𝗛𝗲𝗿𝗼𝗸𝘂 𝗗𝘆𝗻𝗼𝘀 𝗳𝗼𝗿 NORDED🕊 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿.\n𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝘁𝘂𝗿𝗻 𝗶𝘁 𝗼𝗻 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝗮𝗴𝗮𝗶𝗻.`
-"""
-)
-            await asyncio.sleep(6)
-            await shuts.delete()
-            if HEROKU_APP_NAME is not None:
-                #HEROKU_APP_NAME.process_formation()["worker"].scale(0)
-                HEROKU = heroku3.from_key(HEROKU_API_KEY)
-                app = HEROKU.apps()[HEROKU_APP_NAME]
-                app.kill_dyno(HEROKU_APP_NAME)
-                app.dynos['run.1'].kill()
-            else:
-                HEROKU = heroku3.from_key(HEROKU_API_KEY)
-                app = HEROKU.apps()[HEROKU_APP_NAME]
-                app.kill()
-                sys.exit()
-        except Exception as DΣD:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
-            caption=
-        f"""{ӼɛӼօ}
-🕊 {mntn} 🕊 
-⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**
-**ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**
+# @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
+# filters.chat(
+# CHAT_ID
+# )
+# & ~filters.edited
+# & Nord_Admins
+# & filters.command(
+# "shutdown",
+# NordFix))
+# async def shutdown(
+# client,
+# ΣOЯ: NordLink):
+#     try:
+#         try:
+#             mntn = ΣOЯ.from_user.mention
+#             await ΣOЯ.delete()
+#             shuts = await ΣOЯ.reply_photo(
+#             photo=nordlinker,
+#             caption=f"""{ӼɛӼօ}
+# Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {mntn}
+# ⚠️❗️  `𝗧𝘂𝗿𝗶𝗻𝗴 𝗢𝗳𝗳 𝗛𝗲𝗿𝗼𝗸𝘂 𝗗𝘆𝗻𝗼𝘀 𝗳𝗼𝗿 NORDED🕊 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿.\n𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝘁𝘂𝗿𝗻 𝗶𝘁 𝗼𝗻 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝗮𝗴𝗮𝗶𝗻.`
+# """
+# )
+#             await asyncio.sleep(6)
+#             await shuts.delete()
+#             if HEROKU_APP_NAME is not None:
+#                 #HEROKU_APP_NAME.process_formation()["worker"].scale(0)
+#                 HEROKU = heroku3.from_key(HEROKU_API_KEY)
+#                 app = HEROKU.apps()[HEROKU_APP_NAME]
+#                 app.kill_dyno(HEROKU_APP_NAME)
+#                 app.dynos['run.1'].kill()
+#             else:
+#                 HEROKU = heroku3.from_key(HEROKU_API_KEY)
+#                 app = HEROKU.apps()[HEROKU_APP_NAME]
+#                 app.kill()
+#                 sys.exit()
+#         except Exception as DΣD:
+#             zygote = await ΣOЯ.reply_animation(
+#             animation=norderror,
+#             caption=
+#         f"""{ӼɛӼօ}
+# 🕊 {mntn} 🕊 
+# ⚠️**ᴛʜᴇʀᴇ ᴡᴀꜱ ᴀɴ ᴇʀʀᴏʀ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇQᴜᴇꜱᴛ.**
+# **ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ**
 
-`__{DΣD}__`
-"""
-)
-            await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as DΣD:
-        print(DΣD)
-        sys.exit()
+# `__{DΣD}__`
+# """
+# )
+#             await asyncio.sleep(CLEANER)
+#             await zygote.delete()
+#     except Exception as DΣD:
+#         print(DΣD)
+#         sys.exit()
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
 """
