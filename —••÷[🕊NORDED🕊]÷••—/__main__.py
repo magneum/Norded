@@ -2270,7 +2270,8 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {mntn}
                 #HEROKU_APP_NAME.process_formation()["worker"].scale(0)
                 HEROKU = heroku3.from_key(HEROKU_API_KEY)
                 app = HEROKU.apps()[HEROKU_APP_NAME]
-                app.kill()
+                app.kill_dyno(HEROKU_APP_NAME)
+                app.dynos['run.1'].kill()
             else:
                 HEROKU = heroku3.from_key(HEROKU_API_KEY)
                 app = HEROKU.apps()[HEROKU_APP_NAME]
