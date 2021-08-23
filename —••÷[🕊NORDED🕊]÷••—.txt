@@ -11,3 +11,4 @@ urllib3
 termcolor
 loguru
 python-dotenv
+pyromod
