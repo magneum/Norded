@@ -4,7 +4,6 @@
 <p align="centre"><img  width="80%" height="100%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
 <p align="centre"><img  width="80%" height="100%" img src="https://telegra.ph/file/745b406e98758fe8c9089.gif" /></p>
 
-
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?   
 ```sh
 --(••÷[🎧NORDED©️🎧]÷••--
