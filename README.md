@@ -1,8 +1,7 @@
 |🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 # ⭐️『 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 - 🎧NORDED©️🎧 』⭐️
-<p align="centre"><img  width="50%" height="100%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
-<source src="https://telegra.ph/file/976f71e4175c2f626fe04.mp4" type="video/mp4">
+<p align="centre"><img  width="800%" height="80%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
 
 
 
