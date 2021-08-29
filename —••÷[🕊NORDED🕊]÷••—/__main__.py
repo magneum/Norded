@@ -209,14 +209,14 @@ from pyrogram import Client, filters,idle
 from asyncio.exceptions import TimeoutError
 from pyrogram.raw.base import InputGroupCall
 from pytgcalls import GroupCall as NORDCALLER
-from pyrogram.types import Message as NordLink
 utcnow = datetime.utcnow().replace(microsecond=0)
+from pyrogram.types import Message as ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from pytgcalls import GroupCallFactory, GroupCallFileAction
 from pyrogram.raw.functions.phone import EditGroupCallTitle
-from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
-from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
+from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR as HYPEDLDIR
+from pyrogram.types import InlineKeyboardMarkup as HypeKeyboardMarkup,InlineKeyboardButton as HypeKeyboardButton
 from pyrogram.errors import SessionPasswordNeeded, FloodWait,PhoneNumberInvalid, ApiIdInvalid,PhoneCodeInvalid, PhoneCodeExpired
 
 '''
@@ -245,17 +245,17 @@ MIB keyboard shortcuts
 .................................................................
 '''
 
-MIB = InlineKeyboardMarkup([[
-InlineKeyboardButton(
+MIB = HypeKeyboardMarkup([[
+HypeKeyboardButton(
 text="🏷Group",
 url="https://t.me/HYPEVOIDS"),
-InlineKeyboardButton(
+HypeKeyboardButton(
 text="💰Channel",
 url="https://t.me/HYPEVOIDLAB"),
-InlineKeyboardButton(
+HypeKeyboardButton(
 text="⚜️Dev+Git",
 url="https://t.me/HYPEVOIDBOT")],
-[InlineKeyboardButton(
+[HypeKeyboardButton(
 text="🧸Master Bot",
 url="https://t.me/XERONOIDBOT")]])
 
@@ -283,17 +283,17 @@ A part of CallbackData
 .................................................................
 '''
 
-HELP_BUTTONS = InlineKeyboardMarkup([[
-InlineKeyboardButton(
+HELP_BUTTONS = HypeKeyboardMarkup([[
+HypeKeyboardButton(
 "𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛",
 callback_data="𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️",
 callback_data="𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️"),],[  
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣",
 callback_data="𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺",
 callback_data="𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺")]])
 
@@ -321,8 +321,8 @@ A part of CallbackData
 .................................................................
 '''
 
-CLOSE_BUTTON = InlineKeyboardMarkup(
-[[InlineKeyboardButton(
+CLOSE_BUTTON = HypeKeyboardMarkup(
+[[HypeKeyboardButton(
 "𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺",
 callback_data="𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺")]])
 
@@ -350,14 +350,14 @@ A part of CallbackData
 .................................................................
 '''
 
-MEM_BUTT = InlineKeyboardMarkup([[
-InlineKeyboardButton(
+MEM_BUTT = HypeKeyboardMarkup([[
+HypeKeyboardButton(
 "𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️",
 callback_data="𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣",
 callback_data="𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺",
 callback_data="𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺")]])
 
@@ -385,14 +385,14 @@ A part of CallbackData
 .................................................................
 '''
 
-ADM_BUTT = InlineKeyboardMarkup([[
-InlineKeyboardButton(
+ADM_BUTT = HypeKeyboardMarkup([[
+HypeKeyboardButton(
 "𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛",
 callback_data="𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣",
 callback_data="𝙃𝙚𝙧𝙤𝙠𝙪 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🟣"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺",
 callback_data="𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺")]])
 
@@ -420,14 +420,14 @@ A part of CallbackData
 .................................................................
 '''
 
-HERO_BUTT = InlineKeyboardMarkup([[
-InlineKeyboardButton(
+HERO_BUTT = HypeKeyboardMarkup([[
+HypeKeyboardButton(
 "𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛",
 callback_data="𝙈𝙚𝙢𝙗𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 💛"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️",
 callback_data="𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⚜️"),],[
-InlineKeyboardButton(
+HypeKeyboardButton(
 "𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺",
 callback_data="𝙀𝙭𝙞𝙩 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪🔺")]])
 
@@ -655,14 +655,14 @@ Variables and not to be changed
 DURATION_AUTOPLAY_MIN = 10
 LICENSE =""""[—••÷[🕊NORDED🕊]÷••—Telegram Music player userbot has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀.GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation,Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.](https://github.com/HypeVoidSoul/Xeronoid/blob/VOID/LICENSE)"""
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-nordlinker="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
-norderror = "https://telegra.ph/file/3b0adb8bdcf025bd61ccd.mp4"
+𝙽𝙾𝚁𝙴𝙳_HUD="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
+𝙽𝙾𝚁𝙴𝙳_ERROR = "https://telegra.ph/file/3b0adb8bdcf025bd61ccd.mp4"
 nordanimer="https://telegra.ph/file/745b406e98758fe8c9089.gif"
-ӼɛӼօ = "÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷\n•🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•\n"
+ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ = "🕊**𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**🕊\n[•🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•](https://t.me/hypevoidbot)\n"
 LINK = "(https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"
 DURATION_PLAY_HOUR = 3
 HRKU = heroku3.from_key(HEROKU_API_KEY)
-NordFix = prefixes=DYNO
+𝙽𝙾𝚁𝙴𝙳_FIXER = prefixes=DYNO
 
 '''
 .................................................................
@@ -690,7 +690,7 @@ Variables and not to be changed
 .................................................................
 '''
 
-MEMBER_CATEG=f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
+MEMBER_CATEG=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
 **{DYNO}stream**
 •♪ `𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰` 🕊Norded Smart Music Player🕊.
 **{DYNO}stream**
@@ -729,7 +729,7 @@ Variables and not to be changed
 .................................................................
 '''
 
-ADMIN_CATEG=f"""{ӼɛӼօ}[𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
+ADMIN_CATEG=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
 **{DYNO}norded** 
 •♪ `𝘊𝘩𝘦𝘤𝘬 𝘸𝘩𝘦𝘳𝘦 𝘪𝘴 𝘵𝘩𝘦` —••÷[🕊NORDED🕊]÷••— `𝘶𝘴𝘦𝘳𝘣𝘰𝘵 𝘱𝘭𝘶𝘨𝘨𝘦𝘥.`
 **{DYNO}plug**   
@@ -776,19 +776,19 @@ Variables and not to be changed
 .................................................................
 '''
 
-HEROKU_CATEG=f"""{ӼɛӼօ}[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
+HEROKU_CATEG=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[𝗛𝗲𝗿𝗼𝗸𝘂 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}\n
 **{DYNO}restart**
 •♪ `𝘙𝘦𝘣𝘰𝘰𝘵` —••÷[🕊NORDED🕊]÷••— `𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘪𝘯 𝘏𝘌𝘙𝘖𝘒𝘜.`
 **{DYNO}usage**  
 •♪ `𝘍𝘪𝘯𝘥` —••÷[🕊NORDED🕊]÷••— `𝘏𝘌𝘙𝘖𝘒𝘜 𝘥𝘺𝘯𝘰 𝘶𝘴𝘢𝘨𝘦`
 """
-INFO_CATEG = f"""{ӼɛӼօ}**__Please press below buttons to check the available commands.__**
+INFO_CATEG = f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}**__Please press below buttons to check the available commands.__**
 
 ⛵️Ðêv Mêñ†ïðñ§:
     @HypeVoidoul
     @HypeVoidBot
 """
-NORN = f"""{ӼɛӼօ}**__Audio is here.__**\n**Please reply to the audio file with** /stream"""
+NORN = f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}**__Audio is here.__**\n**Please reply to the audio file with** /stream"""
 
 '''
 .................................................................
@@ -816,7 +816,7 @@ Variables and not to be changed
 .................................................................
 '''
 
-XERO_HELP = f"""{ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
+XERO_HELP = f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[𝗠𝗲𝗺𝗯𝗲𝗿_𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀]{LINK}
 **{DYNO}stream**   
 •♪ `𝘙𝘦𝘱𝘭𝘺 𝘵𝘰 𝘢𝘶𝘥𝘪𝘰 𝘧𝘪𝘭𝘦 𝘵𝘰 𝘱𝘭𝘢𝘺/𝘲𝘶𝘦𝘶𝘦 𝘵𝘰` 🕊Norded Smart Music Player🕊.
 `{DYNO}stream`   
@@ -950,7 +950,7 @@ OTP =  """
 𝗥𝗲𝗯𝗼𝗼𝘁 —••÷[🕊NORDED🕊]÷••—𝗺𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝗶𝗻 𝗛𝗘𝗥𝗢𝗞𝗨.
 𝗙𝗶𝗻𝗱 —••÷[🕊NORDED🕊]÷••—𝗛𝗘𝗥𝗢𝗞𝗨 𝗱𝘆𝗻𝗼 𝘂𝘀𝗮𝗴𝗲
 """
-NORDEDBΣ=f"""{ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ɴᴏʀᴅ ᴀᴅᴍɪɴꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ —••÷[🕊NORDED🕊]÷••—ɪꜱ ᴘʟᴜɢɢᴇᴅ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.`
+NORDEDBΣ=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ɴᴏʀᴅ ᴀᴅᴍɪɴꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ —••÷[🕊NORDED🕊]÷••—ɪꜱ ᴘʟᴜɢɢᴇᴅ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.`
 **__If needed to know the commands then use /nord__**
 
 [𝗣𝗹𝗲𝗮𝘀𝗲 𝘂𝘀𝗲 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽𝘀.](https://t.me/hypevoids)"""
@@ -967,11 +967,11 @@ NORDEDBΣ=f"""{ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏ�
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-async def Nord_Verity(_, __, ΣOЯ: NordLink):
+async def 𝙽𝙾𝚁𝙴𝙳_VERITY(_, __, ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     if ΣOЯ.from_user.id in NORD_ADMINS:
         return True
     return False
-Nord_Admins = filters.create(Nord_Verity)
+𝙽𝙾𝚁𝙴𝙳_ADMINS = filters.create(𝙽𝙾𝚁𝙴𝙳_VERITY)
 """
 ===========================================================================================================================================
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -985,12 +985,12 @@ Nord_Admins = filters.create(Nord_Verity)
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-async def Nord_Connected(_, __, ΣOЯ: NordLink):
+async def 𝙽𝙾𝚁𝙴𝙳_CONNECTED(_, __, ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
     if not (ռօʀɖʀɨռɢ and ռօʀɖʀɨռɢ.is_connected):
         return False
     return True
-Nord_Caller = filters.create(Nord_Connected)
+𝙽𝙾𝚁𝙴𝙳_RINGER = filters.create(𝙽𝙾𝚁𝙴𝙳_CONNECTED)
 """
 ===========================================================================================================================================
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -1004,11 +1004,12 @@ Nord_Caller = filters.create(Nord_Connected)
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-async def Nord_Ghost_Filter(_, __, ΣOЯ: NordLink):
+async def 𝙽𝙾𝚁𝙴𝙳_GHOST(_, __, ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     return bool(
     ΣOЯ.from_user is None 
-    and ΣOЯ.sender_chat)
-Nord_Ghost = filters.create(Nord_Ghost_Filter)
+    and ΣOЯ.sender_chat
+    )
+Nord_Ghost = filters.create(𝙽𝙾𝚁𝙴𝙳_GHOST)
 """
 ===========================================================================================================================================
                                                        GNU GENERAL PUBLIC LICENSE 
@@ -1056,44 +1057,48 @@ Nord_Ghost = filters.create(Nord_Ghost_Filter)
 filters.private
 & filters.command(
 "plug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def plug(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1116,44 +1121,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "stream",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def stream(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1176,44 +1185,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "next",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def next(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1240,27 +1253,27 @@ async def nord(bot, update):
         try:
             text = INFO_CATEG.format(update.from_user.mention)
             reply_markup = HELP_BUTTONS
-            pic=nordlinker
+            pic=𝙽𝙾𝚁𝙴𝙳_HUD
             await update.reply_photo(
             photo=pic,
             caption=text,
             reply_markup=reply_markup)
-        except Exception as Σ:
-            ΣOЯ = NordLink
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            ΣOЯ = ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )            
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1307,22 +1320,22 @@ async def cb_data(bot, update):
                 await update.message.delete()
             else:
                 return False
-        except Exception as Σ:
-            ΣOЯ = NordLink
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            ΣOЯ = ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1345,44 +1358,48 @@ async def cb_data(bot, update):
 filters.private
 & filters.command(
 "norded",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def norded(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1405,44 +1422,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "end",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def end(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1465,44 +1486,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "replay",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def replay(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1525,44 +1550,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "pause",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def pause(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1585,44 +1614,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "resume",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def resume(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1645,44 +1678,48 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "temp",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def temp(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1704,60 +1741,63 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
 filters.command(
 "ping",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def ping_pong(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             await ΣOЯ.delete()
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             start = datetime.now()
             end = datetime.now()
             delta_energy1 = (end - start).seconds
             delta_energy2= (end - start).microseconds
-            psychodelic = await ΣOЯ.reply_photo(
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 |   𝚂𝚎𝚛𝚟𝚎𝚛 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚎 𝚝𝚒𝚖𝚎 𝚒𝚜   |
     📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
     📡 **{delta_energy2}** `𝙢𝙞𝙘𝙧𝙤𝙨𝙚𝙘𝙤𝙣𝙙𝙨`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1781,41 +1821,43 @@ filters.command(
 "license"))
 async def on_license(
 _,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=LICENSE,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1841,7 +1883,7 @@ CHAT_ID
 & filters.command("start"))
 async def on_start(
 _,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             try:
@@ -1852,9 +1894,9 @@ _,
             except Exception:
                 await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 @Admins 𝘗𝘭𝘦𝘢𝘴𝘦 𝘮𝘢𝘬𝘦 [𝙽𝚘𝚛𝚍𝚎𝚍 𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) 𝘢𝘥𝘮𝘪𝘯.
 
     **Bot is missing required permissions to work properly.**
@@ -1866,25 +1908,26 @@ _,
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
             disable_notification=False)
-        except Exception as Σ:
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1908,50 +1951,52 @@ filters.command(
 "start"))
 async def on_start(
 _,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **I ΛM** [𝙽𝚘𝚛𝚍𝚎𝚍 𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg) 
 **𝘧𝘰𝘳 𝘱𝘭𝘢𝘺𝘪𝘯𝘨 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘵𝘩𝘦 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵𝘴 𝘰𝘧 𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘎𝘳𝘰𝘶𝘱𝘴 & 𝘊𝘩𝘢𝘯𝘯𝘦𝘭𝘴**.
 
 𝚂𝚎𝚗𝚍 𝚖𝚎 `/nord` 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚒𝚗𝚏𝚘.
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -1975,20 +2020,20 @@ async def roku():
         HEROKU = heroku3.from_key(HEROKU_API_KEY)
         app = HEROKU.apps()[HEROKU_APP_NAME]
         app.restart()
-        # ΣOЯ: NordLink
+        # ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ
         # await ΣOЯ.reply_photo(
-        # photo=nordlinker,
-        # caption=f"{ӼɛӼօ} **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
-        # reply_markup=InlineKeyboardMarkup([[
-        # InlineKeyboardButton(
+        # photo=𝙽𝙾𝚁𝙴𝙳_HUD,
+        # caption=f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
+        # reply_markup=HypeKeyboardMarkup([[
+        # HypeKeyboardButton(
         # text="🕊DΣV GЯӨЦP",
         # url=f"https://t.me/hypevoids",),],[
-        # InlineKeyboardButton(
+        # HypeKeyboardButton(
         # text="✨••Hype Void Lab••✨",
         # url=f"https://t.me/hypevoidbot")
         # ]]))
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2012,34 +2057,36 @@ filters.chat(
 CHAT_ID
 )
 & ~filters.edited
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "restart",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def restart(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None:
                 await ΣOЯ.delete()
                 ΣOЯPS = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️𝘔𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘳𝘦𝘴𝘵𝘢𝘳𝘵𝘪𝘯𝘨 𝘏𝘦𝘳𝘰𝘬𝘶-𝘋𝘺𝘯𝘰.
 𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 30𝙨𝙚𝙘-1𝙢𝙞𝙣
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
@@ -2047,19 +2094,19 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 # await asyncio.sleep(15)
                 # await ΣOЯPS.delete()
                 # await ΣOЯ.reply_photo(
-                # photo=nordlinker,
-                # caption=f"{ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
-                # reply_markup=InlineKeyboardMarkup([[
-                # InlineKeyboardButton(
+                # photo=𝙽𝙾𝚁𝙴𝙳_HUD,
+                # caption=f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n  **𝙽𝙾𝚁𝙳𝙴𝙳 𝙝𝙖𝙨 𝙘𝙡𝙚𝙖𝙣𝙚𝙙 𝙪𝙥 𝙖𝙣𝙙 𝙧𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙞𝙩𝙨𝙚𝙡𝙛!**",
+                # reply_markup=HypeKeyboardMarkup([[
+                # HypeKeyboardButton(
                 # text="🕊DΣV GЯӨЦP",
                 # url=f"https://t.me/hypevoids",),],[
-                # InlineKeyboardButton(
+                # HypeKeyboardButton(
                 # text="✨••Hype Void Lab••✨",
                 # url=f"https://t.me/hypevoidbot")
                 # ]]))
                 # lic = await ΣOЯ.reply_photo(
-                # photo=nordlinker,
-                # caption=f"{ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n{LICENSE}")
+                # photo=𝙽𝙾𝚁𝙴𝙳_HUD,
+                # caption=f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n{LICENSE}")
                 # await asyncio.sleep(12)
                 # await lic.delete()
             else:
@@ -2067,9 +2114,9 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     await ΣOЯ.delete()
                     await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶𝘳 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗜_𝗞𝗘𝗬 𝘪𝘴 𝘦𝘪𝘵𝘩𝘦𝘳 𝘦𝘮𝘱𝘵𝘺 𝘰𝘳 𝘸𝘳𝘰𝘯𝘨.
@@ -2077,11 +2124,12 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
@@ -2089,9 +2137,9 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     await ΣOЯ.delete()
                     await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶𝘳 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗣_𝗡𝗔𝗠𝗘 𝘪𝘴 𝘦𝘪𝘵𝘩𝘦𝘳 𝘦𝘮𝘱𝘵𝘺 𝘰𝘳 𝘸𝘳𝘰𝘯𝘨.
@@ -2099,11 +2147,12 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
@@ -2111,9 +2160,9 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     await ΣOЯ.delete()
                     await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶𝘳 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗜_𝗞𝗘𝗬 𝗮𝗻𝗱 𝗛𝗘𝗥𝗢𝗞𝗨_𝗔𝗣𝗣_𝗡𝗔𝗠𝗘 𝘪𝘴 𝘦𝘪𝘵𝘩𝘦𝘳 𝘦𝘮𝘱𝘵𝘺 𝘰𝘳 𝘸𝘳𝘰𝘯𝘨.
@@ -2121,11 +2170,12 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
@@ -2133,40 +2183,42 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     await ΣOЯ.delete()
                     await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ} 
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} 
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐇𝐞𝐫𝐨𝐤𝐮 𝐥𝐨𝐠𝐬 𝐭𝐨 @HypeVoids 𝐢𝐟 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐰𝐫𝐨𝐧𝐠 𝐡𝐚𝐩𝐩𝐞𝐧𝐬
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2190,23 +2242,24 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 # CHAT_ID
 # )
 # & ~filters.edited
-# & Nord_Admins
+# & 𝙽𝙾𝚁𝙴𝙳_ADMINS
 # & filters.command(
 # "shutdown",
-# NordFix))
+# 𝙽𝙾𝚁𝙴𝙳_FIXER
+#))
 # async def shutdown(
 # client,
-# ΣOЯ: NordLink):
+# ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 #     try:
 #         try:
-#             mntn = ΣOЯ.from_user.mention
+#             𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
 #             await ΣOЯ.delete()
 #             shuts = await ΣOЯ.reply_photo(
 #             photo=
-#            nordlinker,
+#            𝙽𝙾𝚁𝙴𝙳_HUD,
 #             caption=
-#            f"""{ӼɛӼօ}
-# Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**# ⚠️`𝗧𝘂𝗿𝗶𝗻𝗴 𝗢𝗳𝗳 𝗛𝗲𝗿𝗼𝗸𝘂 𝗗𝘆𝗻𝗼𝘀 𝗳𝗼𝗿 NORDED🕊 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿.\n𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝘁𝘂𝗿𝗻 𝗶𝘁 𝗼𝗻 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝗮𝗴𝗮𝗶𝗻.`
+#            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+# Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**# ⚠️`𝗧𝘂𝗿𝗶𝗻𝗴 𝗢𝗳𝗳 𝗛𝗲𝗿𝗼𝗸𝘂 𝗗𝘆𝗻𝗼𝘀 𝗳𝗼𝗿 NORDED🕊 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿.\n𝗠𝗮𝗻𝘂𝗮𝗹𝗹𝘆 𝘁𝘂𝗿𝗻 𝗶𝘁 𝗼𝗻 𝘁𝗼 𝘀𝘁𝗮𝗿𝘁 𝗮𝗴𝗮𝗶𝗻.`
 # """
 # )
 #             await asyncio.sleep(6)
@@ -2222,23 +2275,24 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #                 app = HEROKU.apps()[HEROKU_APP_NAME]
 #                 app.kill()
 #                 sys.exit()
-#         except Exception as Σ:
-#             zygote = await ΣOЯ.reply_animation(
-#             animation=norderror,
+#         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+#             animation=
+#            𝙽𝙾𝚁𝙴𝙳_ERROR,
 #             caption=
-#         f"""{ӼɛӼօ}
+#         f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 # Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-#🐧 **{mntn}** 🐧 
+#🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 # ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 # **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-# `{Σ}`
+# `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 # """
 # )
 #             await asyncio.sleep(CLEANER)
-#             await zygote.delete()
-#     except Exception as Σ:
-#         print(Σ)
+#             await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+#     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#         print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
 #         sys.exit()
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2259,20 +2313,21 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
 filters.command("usage",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def usage(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             event = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️**𝗔𝘀𝗸𝗶𝗻𝗴 𝗛𝗲𝗿𝗼𝗸𝘂 𝗮𝗻𝗱 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗲𝘀𝘁**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
@@ -2330,24 +2385,25 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2371,17 +2427,18 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& Nord_Caller
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "yt",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             query = ''
             for i in ΣOЯ.command[1:]:
@@ -2399,13 +2456,13 @@ client,
                         max_results=1).to_dict()
                     count += 1
                 try:
-                    psychode =  await ΣOЯ.reply_animation(
+                    𝙽𝙾𝚁𝙴𝙳_PSYCODE =  await ΣOЯ.reply_animation(
                     animation="worklord/norded_dling.gif",
                     duration=4,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵 𝘵𝘪𝘭𝘭 **𝙽𝚘𝚛𝚍𝚎𝚍 𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛** 𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘴 𝘢𝘯𝘥 𝘤𝘰𝘯𝘷𝘦𝘳𝘵𝘴 𝘈𝘶𝘥𝘪𝘰 𝘧𝘰𝘳 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘪𝘯 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵!
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
@@ -2427,63 +2484,65 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     thumb = requests.get(
                     thumbnail,
                     allow_redirects=False
-                    )#True
+                    )
                     open(
                     NORDED_THUMBNAIL,
                     'wb').write(
                     thumb.content
                     )
 
-                except Exception as Σ:
-                    psychodelic =  await ΣOЯ.reply_photo(
+                except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+                    𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC =  await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @HypeVoidSoul or @HypeVoids:
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
                     await asyncio.sleep(CLEANER)
-                    await psychodelic.delete()
+                    await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
                     return
                     
-            except Exception as Σ:
-                psychodelic = await ΣOЯ.reply_photo(
+            except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+                𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @HypeVoidSoul or @HypeVoids:
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,          
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await asyncio.sleep(CLEANER)
-                await psychodelic.delete()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
                 return
             try:
                 with youtube_dl.YoutubeDL(ydl_opts) as nordl:
@@ -2491,14 +2550,14 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     link,
                     download=False
                     )
-                    audio_file = nordl.prepare_filename(
+                    𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE = nordl.prepare_filename(
                     info_dict
                     )
                     nordl.process_info(
                     info_dict
                     )
 
-                nordlcap = f"""
+                𝙽𝙾𝚁𝙴𝙳_CAP = f"""
 📜`ᴀᴜᴅɪᴏ ᴛɪᴛʟᴇ`: **[{title[:35]}]({link})**
 ⏳`ᴀᴜᴅɪᴏ ᴅᴜʀᴀᴛɪᴏɴ`: **[{duration}]({link})**
 
@@ -2511,13 +2570,13 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     dur_arr[i]) * secmul)
                     secmul *= 60
 
-                await psychode.delete()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCODE.delete()
                 psychoded = await ΣOЯ.reply_animation(
                 animation="https://telegra.ph/file/c8f986b67bb8b3ab566b3.mp4",
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 🔥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜰɪɴɪꜱʜᴇᴅ
 
 𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 
@@ -2527,19 +2586,20 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 )
 
                 ADU = await ΣOЯ.reply_audio(
-                audio=audio_file,
-                caption=nordlcap,
+                audio=𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE,
+                caption=𝙽𝙾𝚁𝙴𝙳_CAP,
                 title=title,
                 duration=dur,
                 thumb=NORDED_THUMBNAIL,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="📷 YouTube Downloader",
                 url=f"https://t.me/HVYouTubeBot",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="⭕️ YouTube Music Downloader",
                 url=f"https://t.me/HVYouTubeMusicBot",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
@@ -2552,50 +2612,51 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 await asyncio.sleep(CLEANER)
 
 
-            except Exception as Σ:
-                psychodelic = await ΣOЯ.reply_text(
-                f"""{ӼɛӼօ}
+            except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+                𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_text(
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ❌ Error
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
-                await psychodelic.delete()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
             try:
-                os.remove(audio_file)
+                os.remove(𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE)
                 os.remove(NORDED_THUMBNAIL)
                 os.system("clear")
                 cprint("Success and Cleared Screen", "cyan")
-            except Exception as Σ:
-                psychodelic = await ΣOЯ.reply_text(
-                f"""{ӼɛӼօ}
+            except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+                𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_text(
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ❌ Error 𝘤𝘭𝘦𝘢𝘯𝘪𝘯𝘨 𝘺𝘵 𝘵𝘦𝘮𝘱 𝘧𝘪𝘭𝘦𝘴.
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
-        except Exception as Σ:
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_animation(
-            animation=norderror,
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
  Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2616,17 +2677,19 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 # @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
 # filters.chat(
-# CHAT_ID)
-# & Nord_Caller
+# CHAT_ID
+#)
+# & 𝙽𝙾𝚁𝙴𝙳_RINGER
 # & ~filters.edited
 # & filters.command(
 # "ytlicoius",
-# NordFix))
+# 𝙽𝙾𝚁𝙴𝙳_FIXER
+#))
 # async def yt(
 # client,
-# ΣOЯ: NordLink):
+# ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 #     try:
-#         mntn = ΣOЯ.from_user.mention
+#         𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
 #         await ΣOЯ.delete()
 #         query = ''
 #         for i in ΣOЯ.command[1:]:
@@ -2665,66 +2728,68 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #                 NORDED_THUMBNAIL,
 #                 'wb').write(
 #                 thumb.content)
-#             except Exception as Σ:
-#                 psychodelic =  await ΣOЯ.reply_photo(
+#             except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#                 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC =  await ΣOЯ.reply_photo(
 #                 photo=
-#                nordlinker,
+#                𝙽𝙾𝚁𝙴𝙳_HUD,
 #                 caption=
 #                f"""
-#                 {ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
-#                 reply_markup=InlineKeyboardMarkup([[
-#                 InlineKeyboardButton(
+#                 {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#                 reply_markup=
+#            HypeKeyboardMarkup([[
+#                 HypeKeyboardButton(
 #                 text="🕊DΣV GЯӨЦP",
 #                 url=f"https://t.me/hypevoids",),],[
-#                 InlineKeyboardButton(
+#                 HypeKeyboardButton(
 #                 text="🔖ɢɪᴛʜᴜʙ",
 #                 url=f"https://t.me/hypevoidbot",),],[
-#                 InlineKeyboardButton(
+#                 HypeKeyboardButton(
 #                 text="✨••Hype Void Lab••✨",
 #                 url=f"https://t.me/hypevoidbot")
 #                 ]]))
 #                 await asyncio.sleep(
 #            CLEANER
 #           )
-#                 await psychodelic.delete()
+#                 await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 #                 return
-#         except Exception as Σ:
-#             psychodelic = await ΣOЯ.reply_photo(
+#         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#             𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
 #             photo=
-#            nordlinker,
+#            𝙽𝙾𝚁𝙴𝙳_HUD,
 #             caption=
 #            f"""
-#             {ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ}`""",
-#             reply_markup=InlineKeyboardMarkup([[
-#             InlineKeyboardButton(
+#             {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#             reply_markup=
+#            HypeKeyboardMarkup([[
+#             HypeKeyboardButton(
 #             text="🕊DΣV GЯӨЦP",
 #             url=f"https://t.me/hypevoids",),],[
-#             InlineKeyboardButton(
+#             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
 #             url=f"https://t.me/hypevoidbot",),],[
-#             InlineKeyboardButton(
+#             HypeKeyboardButton(
 #             text="✨••Hype Void Lab••✨",
 #             url=f"https://t.me/hypevoidbot")
 #             ]]))
 #             await asyncio.sleep(
 #           CLEANER
 #           )
-#             await psychodelic.delete()
+#             await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 #             return
 #         try:
 #             with youtube_dl.YoutubeDL(ydl_opts) as nordl:
 #                 info_dict = nordl.extract_info(link, download=False)
-#                 audio_file = nordl.prepare_filename(info_dict)
+#                 𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE = nordl.prepare_filename(info_dict)
 #                 nordl.process_info(info_dict)
-#             nordlcap = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
+#             𝙽𝙾𝚁𝙴𝙳_CAP = f'🎧 **Title**: [{title[:35]}]({link})\n⏳ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`'
 #             secmul, dur, dur_arr = 1, 0, duration.split(':')
 #             for i in range(len(dur_arr)-1, -1, -1):
 #                 dur += (int(dur_arr[i]) * secmul)
 #                 secmul *= 60
 #             chat_id = int(str(ΣOЯ.chat.id))
 #             ADU = await ΣOЯ.reply_audio(
-#             audio=audio_file,
-#             caption=nordlcap,
+#             audio=𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE,
+#             caption=𝙽𝙾𝚁𝙴𝙳_CAP,
 #             title=title,
 #             duration=dur,
 #             thumb=NORDED_THUMBNAIL
@@ -2732,34 +2797,35 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #             await ADU.reply_photo(
 #             photo=NORDED_THUMBNAIL,
 #             caption=NORN,
-#             reply_markup=InlineKeyboardMarkup([[
-#             InlineKeyboardButton(
+#             reply_markup=
+#            HypeKeyboardMarkup([[
+#             HypeKeyboardButton(
 #             text="🕊DΣV GЯӨЦP",
 #             url=f"https://t.me/hypevoids",),],[
-#             InlineKeyboardButton(
+#             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
 #             url=f"https://t.me/hypevoidbot",),],[
-#             InlineKeyboardButton(
+#             HypeKeyboardButton(
 #             text="✨••Hype Void Lab••✨",
 #             url=f"https://t.me/hypevoidbot")
 #             ]]))
-#         except Exception as Σ:
-#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n❌ Error\n\n`{Σ}`")
-#             await psychodelic.delete()
+#         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#             𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_text(f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n❌ Error\n\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`")
+#             await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 #         try:
-#             os.remove(audio_file)
+#             os.remove(𝙽𝙾𝚁𝙴𝙳_AUDIO_SOURCE)
 #             os.remove(NORDED_THUMBNAIL)
-#         except Exception as Σ:
-#             psychodelic = await ΣOЯ.reply_text(f"{ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{mntn}**\n❌ Error cleaning yt temp files.\n\n`{Σ}`")
-#     except Exception as Σ:
+#         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+#             𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_text(f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n❌ Error cleaning yt temp files.\n\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`")
+#     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
 #         await ΣOЯ.reply_photo(
 #         photo=
-#        nordlinker,
+#        𝙽𝙾𝚁𝙴𝙳_HUD,
 #         caption=
-#        f"""{ӼɛӼօ}
+#        f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 # Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-#🐧 **{mntn}** 🐧 
-# ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**\n**𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**\n\n `{Σ}`
+#🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
+# ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**\n**𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**\n\n `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 # """)
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2782,25 +2848,27 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "stream",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def stream(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /stream
@@ -2810,29 +2878,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2855,25 +2924,27 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "pause",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-    🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+    🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /pause
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -2882,29 +2953,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2927,26 +2999,28 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Admins
-& Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_ADMINS
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "pause",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 """
@@ -2954,29 +3028,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -2999,25 +3074,27 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "resume",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-    🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+    🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /resume
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -3026,29 +3103,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3071,26 +3149,28 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Admins
-& Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_ADMINS
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "resume",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
@@ -3099,29 +3179,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3144,25 +3225,27 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "unplug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-    🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+    🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /unplug
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -3171,31 +3254,32 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 
 
-        except Exception as Σ:
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3218,26 +3302,28 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Admins
-& Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_ADMINS
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "unplug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -3246,31 +3332,32 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 
 
-        except Exception as Σ:
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3293,32 +3380,35 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "vol",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def volume(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         usage = "**Usage:**\n/volume [1-200]"
         if len(ΣOЯ.command) != 2:
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=usage
             )
             await asyncio.sleep(CLEANER)
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
             return
 
         if "plug" not in db:
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption="VC isn't started"
             )
             await asyncio.sleep(CLEANER)
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
             return
 
         vc = db["plug"]
@@ -3326,13 +3416,13 @@ client,
         ΣOЯ.text.split(
         None, 1)[1])
         if (volume < 1) or (volume > 200):
-            psychodelic = await ΣOЯ.reply_photo(
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=usage
             )
             await asyncio.sleep(CLEANER)
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
             return
             
         try:
@@ -3341,22 +3431,23 @@ client,
             )       
             return
         except ValueError:
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=usage
             )
             await asyncio.sleep(CLEANER)
-            await psychodelic.delete()
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 
 
-        psychodelic = await ΣOЯ.reply_photo(
-            animation=nordlinker,
+        𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
+            animation=𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=f"**Volume Set To {volume}**"
             )
         await asyncio.sleep(CLEANER)
-        await psychodelic.delete()
-    except Exception as Σ:
-        print(Σ)
+        await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3379,25 +3470,27 @@ client,
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "temp",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 [/temp]
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -3406,29 +3499,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3451,26 +3545,28 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Admins
-& Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_ADMINS
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "temp",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
@@ -3479,29 +3575,30 @@ client,
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3524,45 +3621,49 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.private
 & filters.command(
 "unplug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def unplug(
 client,
-ΣOЯ: NordLink): 
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ): 
     try:
-        mntn = ΣOЯ.from_user.mention
+        𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
         await ΣOЯ.delete()
         try:
             await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=NORDEDBΣ,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=
+            NORDEDBΣ,
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
- `{Σ}`
+ `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3585,54 +3686,57 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 filters.chat(
 CHAT_ID
 )
-& ~Nord_Caller
+& ~𝙽𝙾𝚁𝙴𝙳_RINGER
 & ~filters.edited
 & filters.command(
 "yt",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def yt(
 client,
-ΣOЯ: NordLink): 
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ): 
     try:
         try:
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
-            psychodelic = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
-🕊 **{mntn}** 🕊
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
+🕊 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🕊
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 [/yt SONG.NAME]
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await psychodelic.delete()
-        except Exception as Σ:
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text("😵") 
             chat_id = int(str(ΣOЯ.chat.id))
             chat = await client.get_chat(chat_id)
-            mntn = ΣOЯ.from_user.mention
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 "---------------------------------------------------------------------------------|____🤖𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃🤖____"
 "|"
@@ -3668,7 +3772,7 @@ EXIT module when users do it wrong
 @𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.on_message(
 filters.private
 & filters.command("session"))
-async def norded(client, hn: NordLink):
+async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
             await hn.delete()
@@ -3686,17 +3790,17 @@ async def norded(client, hn: NordLink):
 **ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴇɪᴛʜᴇʀ ᴏꜰ ᴛʜᴏꜱᴇ ᴛʜᴇɴ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ʙᴏᴛ**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3731,17 +3835,17 @@ async def norded(client, hn: NordLink):
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3763,17 +3867,17 @@ async def norded(client, hn: NordLink):
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3806,17 +3910,17 @@ async def norded(client, hn: NordLink):
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3849,17 +3953,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3897,17 +4001,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3939,17 +4043,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -3971,17 +4075,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4003,17 +4107,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4039,17 +4143,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4088,17 +4192,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4121,17 +4225,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4155,17 +4259,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4187,17 +4291,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4228,17 +4332,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4259,17 +4363,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4292,17 +4396,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4324,17 +4428,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4356,17 +4460,17 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
@@ -4390,23 +4494,23 @@ or
 —••÷[🕊NӨЯDΣD🕊]÷••—
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-        reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
+        reply_markup = HypeKeyboardMarkup([[
+        HypeKeyboardButton(
         text="🏷Group",
         url="https://t.me/HYPEVOIDS"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="💰Channel",
         url="https://t.me/HYPEVOIDLAB"),],[
-        InlineKeyboardButton(
+        HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/HYPEVOIDBOT")
         ]]))
             return
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4427,17 +4531,19 @@ GONNA BE LONG LOL
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "plug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def plug(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
-        mntn = ΣOЯ.from_user.mention
+        𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
         ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
         if not ռօʀɖʀɨռɢ:
             ռօʀɖɦօք.ռօʀɖʀɨռɢ = GroupCallFactory(client).get_file_group_call()
@@ -4453,18 +4559,18 @@ client,
             await ΣOЯ.delete()
             xy = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
-            caption=f"""{ӼɛӼօ}
+            𝙽𝙾𝚁𝙴𝙳_HUD,
+            caption=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 `𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
             await xy.delete()
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4482,8 +4588,8 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         ռօʀɖɦօք.chat_id = MAX_CHANNEL_ID - context.full_chat.id
-        kai = await NorDAnimatE(
-        f"""{ӼɛӼօ}
+        kai = await 𝙽𝙾𝚁𝙴𝙳_ANIMATE(
+        f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
@@ -4493,8 +4599,8 @@ async def network_status_changed_handler(context, is_connected: bool):
         )
         await kai.delete()
     else:
-        kai = await NorDAnimatE(
-        f"""{ӼɛӼօ}
+        kai = await 𝙽𝙾𝚁𝙴𝙳_ANIMATE(
+        f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 𝐍𝐨𝐫𝐝𝐞𝐝 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐡𝐚𝐬 𝐥𝐞𝐟𝐭 𝐚𝐧𝐝 𝐮𝐧𝐩𝐥𝐮𝐠𝐠𝐞𝐝 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐲𝐞𝐫 𝐢𝐧 𝐯𝐨𝐢𝐜𝐞 𝐜𝐡𝐚𝐭!
 `Please wait till —••÷[🕊NORDED🕊]÷••— reboots.`
 𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣.
@@ -4545,28 +4651,30 @@ async def restart(text):
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "unplug",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def unplug(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         await ΣOЯ.delete()
         try:
             HEROKU = heroku3.from_key(HEROKU_API_KEY)
             app = HEROKU.apps()[HEROKU_APP_NAME]
             app.restart()
-        except Exception as Σ:
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             await ΣOЯ.reply_text(
-            f"{ӼɛӼօ}\nPlease use /restart before replugging as auto reboot failed")
+            f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}\nPlease use /restart before replugging as auto reboot failed")
             return
 
-        mntn = ΣOЯ.from_user.mention
+        𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
         ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
         ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ.clear()
         ռօʀɖʀɨռɢ.input_filename = ""
@@ -4578,20 +4686,21 @@ client,
             if HEROKU_API_KEY is not None and HEROKU_APP_NAME is not None and HEROKU == "HEROKU":
                 wait = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️𝘗𝘭𝘦𝘢𝘴𝘦 𝘸𝘢𝘪𝘵 𝘵𝘪𝘭𝘭 𝘤𝘰𝘥𝘦 𝘤𝘭𝘦𝘢𝘯𝘴 𝘢𝘯𝘥 𝘳𝘦𝘴𝘵𝘢𝘳𝘵𝘴 𝘪𝘵𝘴𝘦𝘭𝘧.
 𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣.
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
@@ -4601,41 +4710,43 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             else:
                 await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️𝘗𝘭𝘦𝘢𝘴𝘦 𝘔𝘢𝘯𝘶𝘢𝘭𝘭𝘺 `/restart` 𝘵𝘩𝘦 𝘣𝘰𝘵 𝘢𝘴 𝘪𝘵 𝘪𝘴 𝘪𝘯 𝗡𝗢𝗡-𝗛𝗘𝗥𝗢𝗞𝗨  𝘮𝘰𝘥𝘦.
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4652,37 +4763,40 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& filters.command("stream",NordFix))
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& filters.command("stream",𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def stream(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
-        mntn = ΣOЯ.from_user.mention
+        𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
         ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
         ռօʀɖքʟǟʏɛʀʟɨֆȶ = ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ
         try:
             if ΣOЯ.audio:
                 if ΣOЯ.audio.duration > (
                     DURATION_AUTOPLAY_MIN * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60):
-                    psychodelic = await ΣOЯ.reply_photo(
+                    𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=f"{str(DURATION_AUTOPLAY_MIN)}",
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
                 )
-                    await psychodelic.delete()
+                    await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
                     return
                 m_audio = ΣOЯ
 
@@ -4693,22 +4807,23 @@ client,
                 m_audio = ΣOЯ.reply_to_message
                 if m_audio.audio.duration > (
                     DURATION_PLAY_HOUR * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60 * 60):
-                    psychodelic = await ΣOЯ.reply_photo(
+                    𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=f"{str(DURATION_PLAY_HOUR)}",
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
                 )
-                    await psychodelic.delete()
+                    await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
                     return
 
                     """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
@@ -4724,28 +4839,29 @@ client,
 
             if ռօʀɖքʟǟʏɛʀʟɨֆȶ and ռօʀɖքʟǟʏɛʀʟɨֆȶ[-1].audio.file_unique_id \
                     == m_audio.audio.file_unique_id:
-                psychodelic = await ΣOЯ.reply_photo(
+                𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 That Audio file was successfully already added
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await asyncio.sleep(
                 CLEANER
                 )
-                await psychodelic.delete()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
                 return
 
                 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
@@ -4755,29 +4871,30 @@ That Audio file was successfully already added
             if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
                 m_status = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
-                caption=f"""{ӼɛӼօ}
+                𝙽𝙾𝚁𝙴𝙳_HUD,
+                caption=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘸𝘢𝘪𝘵 𝘧𝘰𝘳 —••÷[🕊NORDED🕊]÷••— 𝘵𝘰 𝘭𝘪𝘯𝘬 𝘸𝘪𝘵𝘩 𝘶𝘴𝘦𝘣𝘰𝘵 𝘴𝘦𝘳𝘷𝘦𝘳..
 
 `𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await ռօʀɖɖօառʟօǟɖɛʀ(ռօʀɖքʟǟʏɛʀʟɨֆȶ[0])
                 ռօʀɖʀɨռɢ.input_filename = os.path.join(
                 client.workdir,
-                DEFAULT_DOWNLOAD_DIR,
+                HYPEDLDIR,
                 f"{ռօʀɖքʟǟʏɛʀʟɨֆȶ[0].audio.file_unique_id}.raw")
-                await ռօʀɖɦօք.NorDClocK()
+                await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK()
                 await m_status.delete()
             await ռօʀɖɦօք.send_playlist()
 
@@ -4798,8 +4915,8 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 except Exception:
                     await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
-                    caption=f"{ӼɛӼօ}\n[ERROR]: FAILED TO EDIT VC TITLE, MAKE ME ADMIN."
+                𝙽𝙾𝚁𝙴𝙳_HUD,
+                    caption=f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}\n[ERROR]: FAILED TO EDIT VC TITLE, MAKE ME ADMIN."
                     )
                     pass
             except ChatAdminRequired:
@@ -4810,24 +4927,25 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 await ռօʀɖɖօառʟօǟɖɛʀ(track)
             if not ΣOЯ.audio:
                 await ΣOЯ.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4844,18 +4962,20 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "next",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def next(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
-        mntn = ΣOЯ.from_user.mention
+        𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
         try:
             await ΣOЯ.delete()
             ռօʀɖքʟǟʏɛʀʟɨֆȶ = ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ
@@ -4874,15 +4994,16 @@ client,
                             text.append(f" {i}. **{audio}**")
                         else:
                             text.append(f" {i}")
-                    psychodelic = await ΣOЯ.reply_photo(
+                    𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption="\n".join(text),disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
@@ -4892,46 +5013,48 @@ client,
                     """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
 
                 except (ValueError, TypeError):
-                    psychodelic = await ΣOЯ.reply_photo(
+                    𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                     photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                     caption=
-                    f"""{ӼɛӼօ}
+                    f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙞𝙣𝙥𝙪𝙩
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                    reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
+                    reply_markup=
+            HypeKeyboardMarkup([[
+                    HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
                     url=f"https://t.me/hypevoids",),],[
-                    InlineKeyboardButton(
+                    HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/hypevoidbot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
                 )
-                    await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+                    await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4948,38 +5071,41 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & filters.command(
 "nord",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def help(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             if cb_data is False:
                 await ΣOЯ.reply_text(f"Add @{BOT_USERNAME} to group")
             else:
                 await ΣOЯ.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -4996,46 +5122,49 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "norded",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def norded(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
             if ռօʀɖʀɨռɢ and ռօʀɖʀɨռɢ.is_connected:
                 chat_id = int("-100" + str(ռօʀɖʀɨռɢ.full_chat.id))
                 chat = await client.get_chat(chat_id)
-                psychodelic = await ΣOЯ.reply_photo(
+                𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝘪𝘴 𝘤𝘶𝘳𝘳𝘦𝘯𝘵𝘭𝘺 𝘪𝘯 𝘵𝘩𝘦 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘰𝘧:
 - **__{chat.title}__**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
                 await asyncio.sleep(
                 CLEANER
                 )
-                await psychodelic.delete()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
 
                 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
                 """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
@@ -5043,19 +5172,20 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             else:
                 join = await ΣOЯ.reply_photo(
                 photo=
-                nordlinker,
+                𝙽𝙾𝚁𝙴𝙳_HUD,
                 caption=
-                f"""{ӼɛӼօ}
+                f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️••÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷•• 𝘥𝘪𝘥𝘯'𝘵 𝘫𝘰𝘪𝘯 𝘢𝘯𝘺 𝘷𝘰𝘪𝘤𝘦 𝘤𝘢𝘭𝘭 𝘺𝘦𝘵.
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-                reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton(
+                reply_markup=
+            HypeKeyboardMarkup([[
+                HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
                 url=f"https://t.me/hypevoids",),],[
-                InlineKeyboardButton(
+                HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/hypevoidbot")
                 ]]))
@@ -5064,24 +5194,25 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 CLEANER
                 )
                 await join.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5098,41 +5229,44 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "end",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def end(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
             ռօʀɖʀɨռɢ.stop_playout()
-            psychodelic = await ΣOЯ.reply_photo(
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⏹❗️ **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            await ռօʀɖɦօք.NorDClocK(reset=True)
+            await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK(reset=True)
 
             """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
             """➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧🎧➕🎧🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"""
@@ -5149,25 +5283,26 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5184,65 +5319,69 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "replay",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def restart(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
             if not ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ:
                 return
             ռօʀɖʀɨռɢ.restart_playout()
-            await ռօʀɖɦօք.NorDClocK()
-            psychodelic = await ΣOЯ.reply_photo(
+            await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK()
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⏹❗️ **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝗼𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5259,66 +5398,70 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "pause",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def pause(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             ռօʀɖɦօք.ռօʀɖʀɨռɢ.pause_playout()
-            await ռօʀɖɦօք.NorDClocK(reset=True)
-            psychodelic = await ΣOЯ.reply_photo(
+            await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK(reset=True)
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗽𝗮𝘂𝘀𝗲𝗱 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
-            ռօʀɖɦօք.ռօʀɖʍֆɢʀ["pause"] = psychodelic
+            ռօʀɖɦօք.ռօʀɖʍֆɢʀ["pause"] = 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC
             try:
-                await psychodelic.pin()
+                await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.pin()
             except ChatAdminRequired:
                 pass
             except FloodWait:
                 pass
             await asyncio.sleep(8)
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5335,36 +5478,39 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "resume",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def resume(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             ռօʀɖɦօք.ռօʀɖʀɨռɢ.resume_playout()
-            psychodelic = await ΣOЯ.reply_photo(
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗿𝗲𝘀𝘂𝗺𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
@@ -5373,25 +5519,26 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5408,23 +5555,25 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 @𝙽𝙾𝚁𝙳𝙴𝙳.on_message(
 filters.chat(
-CHAT_ID)
+CHAT_ID
+)
 & ~filters.edited
-& Nord_Caller
-& Nord_Admins
+& 𝙽𝙾𝚁𝙴𝙳_RINGER
+& 𝙽𝙾𝚁𝙴𝙳_ADMINS
 & filters.command(
 "temp",
-NordFix))
+𝙽𝙾𝚁𝙴𝙳_FIXER
+))
 async def clean(
 client,
-ΣOЯ: NordLink):
+ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     try:
         try:
-            mntn = ΣOЯ.from_user.mention
+            𝙽𝙾𝚁𝙴𝙳_MENTION = ΣOЯ.from_user.mention
             await ΣOЯ.delete()
             download_dir = os.path.join(
             client.workdir,
-            DEFAULT_DOWNLOAD_DIR)
+            HYPEDLDIR)
             temp_nord: list[str] = os.listdir(
             download_dir)
             for track in ռօʀɖɦօք.ռօʀɖքʟǟʏɛʀʟɨֆȶ[:2]:
@@ -5440,46 +5589,48 @@ client,
                         os.path.join(
                         download_dir,
                         ʀǟաƈ))
-            psychodelic = await ΣOЯ.reply_photo(
+            𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_photo(
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗰𝗹𝗲𝗮𝗻𝗲𝗱 {count} 𝘁𝗲𝗺𝗽/𝗿𝗮𝘄 𝗳𝗶𝗹𝗲𝘀
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """,
-            reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(
+            reply_markup=
+            HypeKeyboardMarkup([[
+            HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
             url=f"https://t.me/hypevoids",),],[
-            InlineKeyboardButton(
+            HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/hypevoidbot")
             ]]))
             await asyncio.sleep(
             CLEANER
             )
-            await psychodelic.delete()
-        except Exception as Σ:
-            zygote = await ΣOЯ.reply_animation(
-            animation=norderror,
+            await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
+        except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+            𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
+            animation=
+            𝙽𝙾𝚁𝙴𝙳_ERROR,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
-🐧 **{mntn}** 🐧 
+🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️**𝘛𝘩𝘦𝘳𝘦 𝘸𝘢𝘴 𝘢𝘯 𝘌𝘳𝘳𝘰𝘳 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘱𝘳𝘦𝘷𝘪𝘰𝘶𝘴 𝘳𝘦𝘲𝘶𝘦𝘴𝘵.**
 **𝘗𝘭𝘦𝘢𝘴𝘦 𝘤𝘩𝘦𝘤𝘬 𝘣𝘦𝘭𝘰𝘸 𝘦𝘳𝘳𝘰𝘳 𝘵𝘰 𝘭𝘦𝘢𝘳𝘯 𝘮𝘰𝘳𝘦.**
 
-`{Σ}`
+`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
             await asyncio.sleep(CLEANER)
-            await zygote.delete()
-    except Exception as Σ:
-        print(Σ)
+            await 𝙽𝙾𝚁𝙴𝙳_ZYGOTE.delete()
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
 """
 ===========================================================================================================================================
@@ -5500,32 +5651,31 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 """
 class NORDPLAYER(object):
     def __init__(self):
-        self.ռօʀɖʀɨռɢ = None
         self.client = None
         self.chat_id = None
+        self.ռօʀɖʀɨռɢ = None
         self.ռօʀɖƈʟօƈӄ = None
-        self.ռօʀɖքʟǟʏɛʀʟɨֆȶ = []
         self.ռօʀɖʍֆɢʀ = {}
+        self.ռօʀɖքʟǟʏɛʀʟɨֆȶ = []
+        
     async def send_playlist(self):
         ռօʀɖքʟǟʏɛʀʟɨֆȶ = self.ռօʀɖքʟǟʏɛʀʟɨֆȶ
         if not ռօʀɖքʟǟʏɛʀʟɨֆȶ:
-            NeoN = f"{ӼɛӼօ}[🕊NORDED🕊 𝗠𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)"
+            𝙽𝙾𝚁𝙴𝙳 = f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[🕊NORDED🕊 𝗠𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)"
         else:
             if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-                NeoN = f"[🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/hypevoidbot) 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪"
+                𝙽𝙾𝚁𝙴𝙳 = "🕊**𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**🕊\n[•🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•](https://t.me/hypevoidbot)\n"
             else:
-                NeoN = f"[🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/hypevoidbot) 𝗧𝗵𝗲𝗿𝗲 𝘄𝗲 𝗴𝗼 ♪"
+                𝙽𝙾𝚁𝙴𝙳 = "🕊**𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**🕊\n[•🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•](https://t.me/hypevoidbot)\n"
             
-            NeoN += "\n".join([
-                f"""🕊`÷ 𝙽𝙾𝚁𝙳𝙴𝙳 MUSIC ÷`🕊
-🍪**ᴛɪᴛʟᴇ**: **{i}.**[{x.audio.title}]({x.link}) |**{x.audio.duration}sec**
-"""
+            𝙽𝙾𝚁𝙴𝙳 += "=•=•=•=•=•=•=•🦋 𝙽𝙾𝚁𝙳𝙴𝙳÷••—".join([
+                f"𝗦𝗼𝗻𝗴:🍪:**{i}+**[{x.audio.title}]({x.link})"
                 for i, x in enumerate(ռօʀɖքʟǟʏɛʀʟɨֆȶ)
                 ])
         if ռօʀɖɦօք.ռօʀɖʍֆɢʀ.get("ռօʀɖքʟǟʏɛʀʟɨֆȶ") is not None:
             await ռօʀɖɦօք.ռօʀɖʍֆɢʀ["ռօʀɖքʟǟʏɛʀʟɨֆȶ"].delete()
-        ռօʀɖɦօք.ռօʀɖʍֆɢʀ["ռօʀɖքʟǟʏɛʀʟɨֆȶ"] = await NorDAnimatE(NeoN)
-    async def NorDClocK(self, reset=False):
+        ռօʀɖɦօք.ռօʀɖʍֆɢʀ["ռօʀɖքʟǟʏɛʀʟɨֆȶ"] = await 𝙽𝙾𝚁𝙴𝙳_ANIMATE(𝙽𝙾𝚁𝙴𝙳)
+    async def 𝙽𝙾𝚁𝙴𝙳_CLOCK(self, reset=False):
         self.ռօʀɖƈʟօƈӄ = (None if reset else datetime.utcnow().replace(microsecond=0))       
 ռօʀɖɦօք = NORDPLAYER()
 """
@@ -5541,7 +5691,7 @@ class NORDPLAYER(object):
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-async def NorDAnimatE(text):
+async def 𝙽𝙾𝚁𝙴𝙳_ANIMATE(text):
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
     client = ռօʀɖʀɨռɢ.client
     chat_id = ռօʀɖɦօք.chat_id   
@@ -5571,16 +5721,16 @@ async def NorDIgnoreNow():
     if not ռօʀɖքʟǟʏɛʀʟɨֆȶ:
         return
     if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-        await ռօʀɖɦօք.NorDClocK()
+        await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK()
         return
     client = ռօʀɖʀɨռɢ.client
     download_dir = os.path.join(
     client.workdir,
-    DEFAULT_DOWNLOAD_DIR)
+    HYPEDLDIR)
     ռօʀɖʀɨռɢ.input_filename = os.path.join(
     download_dir,
     f"{ռօʀɖքʟǟʏɛʀʟɨֆȶ[1].audio.file_unique_id}.raw")
-    await ռօʀɖɦօք.NorDClocK()
+    await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK()
     old_track = ռօʀɖքʟǟʏɛʀʟɨֆȶ.pop(0)
     await ռօʀɖɦօք.send_playlist()
     os.remove(os.path.join(
@@ -5602,12 +5752,12 @@ async def NorDIgnoreNow():
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-async def ռօʀɖɖօառʟօǟɖɛʀ(ΣOЯ: NordLink):
+async def ռօʀɖɖօառʟօǟɖɛʀ(ΣOЯ: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
     ռօʀɖʀɨռɢ = ռօʀɖɦօք.ռօʀɖʀɨռɢ
     client = ռօʀɖʀɨռɢ.client
     raw_file = os.path.join(
     client.workdir,
-    DEFAULT_DOWNLOAD_DIR,
+    HYPEDLDIR,
     f"{ΣOЯ.audio.file_unique_id}.raw")
     if not os.path.isfile(raw_file):
         original_file = await ΣOЯ.download()
@@ -5681,8 +5831,10 @@ has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧➕🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 """
-
-
+"+"
+"+"
+"+"
+"+"
 # file = open("bootlock.py", "w") 
 # file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED𝗕𝗢𝗧.start()\nidle()\nNORDED𝗕𝗢𝗧.stop()") 
     
@@ -5691,13 +5843,17 @@ has been licensed under GNU General Public License
 
 # import subprocess
 # subprocess.run("python3 bootlock.py & python3 bootlocker.py", shell=True)
-
-
+"+"
+"+"
+"+"
+"+"
 try: 
     if HEROKU == "HEROKU":
         pass
     else:
         os.system("clear")
+    "+"
+    "+"
     "+"
     "+"
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
@@ -5717,24 +5873,30 @@ try:
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
     "+"
     "+"
+    "+"
+    "+"
     try:
         𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
         𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoids")
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
         "+"
         "+"
+        "+"
+        "+"
     try:
+        "+"
+        "+"
         "+"
         "+"
         if HEROKU == "HEROKU":
             𝙽𝙾𝚁𝙳𝙴𝙳.send_photo(
             chat_id=ALIVE_CHECK_CHAT,
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 `Congrats on Successfull Bootup of` 
 **—••÷[🕊NORDED🕊]÷••—**
 
@@ -5745,13 +5907,14 @@ try:
 •🕊—•=•=•=•=•=•=•=•=•=•=•=•=•=•—🕊•
 """
 )
+
         else:
             𝙽𝙾𝚁𝙳𝙴𝙳.send_photo(
             chat_id=ALIVE_CHECK_CHAT,
             photo=
-            nordlinker,
+            𝙽𝙾𝚁𝙴𝙳_HUD,
             caption=
-            f"""{ӼɛӼօ}
+            f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 `Congrats on Successfull Bootup of` 
 **—••÷[🕊NORDED🕊]÷••—**
 
@@ -5763,9 +5926,11 @@ try:
 """
 )
         "+"
+        "+"
+        "+"
         "+"   
-    except Exception as Σ:
-        print(Σ)
+    except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+        print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
     "+"
@@ -5779,7 +5944,11 @@ try:
         "green")
     "+"
     "+"   
+    "+"
+    "+"
     idle()
+    "+"
+    "+"
     "+"
     "+"  
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
@@ -5787,6 +5956,8 @@ try:
         pass
     else:
         os.system("clear")
+    "+"
+    "+"
     "+"
     "+"
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
@@ -5806,12 +5977,14 @@ try:
     ɴᴏʀᴅᴘᴜᴛ.info("••••••••••••••••••••••••••••••••")
     "+"
     "+"
+    "+"
+    "+"
     sys.exit()
-except Exception as Σ:
-    ɴᴏʀᴅᴘᴜᴛ.info(Σ)
+except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
+    ɴᴏʀᴅᴘᴜᴛ.info(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
     ɴᴏʀᴅᴘᴜᴛ.info("Overriding code to exit system")
     sys.exit()
-
+"+"
 """
 ===========================================================================================================================================
                                                        GNU GENERAL PUBLIC LICENSE 
