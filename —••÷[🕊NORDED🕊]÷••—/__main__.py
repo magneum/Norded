@@ -5670,6 +5670,7 @@ class NORDPLAYER(object):
             
             𝙽𝙾𝚁𝙴𝙳 += "🦋".join([
                 f"𝗦𝗼𝗻𝗴:🍪:**{i}**[{x.audio.title}]({x.link})"
+
                 for i, x in enumerate(ռօʀɖքʟǟʏɛʀʟɨֆȶ)
                 ])
         if ռօʀɖɦօք.ռօʀɖʍֆɢʀ.get("ռօʀɖքʟǟʏɛʀʟɨֆȶ") is not None:
