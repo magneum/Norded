@@ -5870,7 +5870,7 @@ import sys
 import shutil
 from os import getenv
 from termcolor import *
-import pyAesCrypt as Hyper
+import pyAesCrypt as NORD_FER
 from zipfile import ZipFile
 from dotenv import load_dotenv
 """
@@ -5886,8 +5886,8 @@ from dotenv import load_dotenv
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 ===========================================================================================================================================
 """
-BFS = 64 * 1024
-HPCD = getenv(
+NORD_FFWS = 64 * 1024
+NORD_DCPG = getenv(
 "HEROKU")
 if os.path.exists(
     "Zz4xp01pklo"):
@@ -6001,11 +6001,11 @@ except Exception as e:
 """
 if os.path.isfile("xp0e.py"):
     try:
-        Hyper.encryptFile(
+        NORD_FER.encryptFile(
         "xp0e.py",
         "xp0e.aes",
-        HPCD,
-        BFS)
+        NORD_DCPG,
+        NORD_FFWS)
         os.remove(
         "xp0e.py")
     except Exception as e:
@@ -6027,11 +6027,11 @@ else:
 ===========================================================================================================================================
 """
 try:
-    Hyper.decryptFile(
+    NORD_FER.decryptFile(
     "xp0e.aes",
     "xp0edoc.py",
-    HPCD,
-    BFS)
+    NORD_DCPG,
+    NORD_FFWS)
 except Exception as e:
     print(e)
     sys.exit(1)
