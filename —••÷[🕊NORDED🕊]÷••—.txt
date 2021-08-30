@@ -12,3 +12,4 @@ termcolor
 loguru
 python-dotenv
 pyromod
+pyAesCrypt
