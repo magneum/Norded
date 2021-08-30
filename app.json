@@ -9,6 +9,9 @@
 "API_ID":{
 "description":"api_id part of your Telegram API Key From @HVApiBot Only",
 "required":true},
+"CODE":{
+"description":"ENTER THE CODE GIVEN BY @HYPEVOIDBOT .....",
+"required":true},
 "API_HASH":{
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
 "required":true},

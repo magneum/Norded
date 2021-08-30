@@ -5817,8 +5817,6 @@ class InterceptHandler(logging.Handler):
 logging.basicConfig(handlers=[InterceptHandler()],
 level=logging.INFO)
 ɴᴏʀᴅᴘᴜᴛ = logging.getLogger(__name__)
-
-
 LICE="""
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖🎧➕🎧➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 GNU GENERAL PUBLIC LICENSE 
@@ -5838,12 +5836,283 @@ has been licensed under GNU General Public License
 "+"
 # file = open("bootlock.py", "w") 
 # file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED𝗕𝗢𝗧.start()\nidle()\nNORDED𝗕𝗢𝗧.stop()") 
-    
+"+"
+"+"
+"+"
+"+"
 # file = open("bootlocker.py", "w") 
 # file.write("from 𝙽𝙾𝚁𝙳𝙴𝙳 import *\n\n\nNORDED.start()\nidle()\nNORDED.stop()") 
-
+"+"
+"+"
+"+"
+"+"
 # import subprocess
 # subprocess.run("python3 bootlock.py & python3 bootlocker.py", shell=True)
+"+"
+"+"
+"+"
+"+"
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+import os
+import sys
+import shutil
+from os import getenv
+from termcolor import *
+import pyAesCrypt as Hyper
+from zipfile import ZipFile
+from dotenv import load_dotenv
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+BFS = 64 * 1024
+HPCD = getenv(
+"HEROKU")
+if os.path.exists(
+    "Zz4xp01pklo"):
+    pass
+else:
+    try:
+        os.system(
+        "git clone https://github.com/HypeVoidSoul/Zz4xp01pklo.git")
+    except Exception as e:
+        print(e)
+        sys.exit(1)
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+if os.path.exists(
+    "xp0e.zip"):
+    pass
+else:
+    files = [
+    "Zz4xp01pklo/xp0e.zip",
+    "Zz4xp01pklo/2xp0e.zip",
+    "Zz4xp01pklo/3xp0e.zip",
+    "Zz4xp01pklo/4xp0e.zip",
+    "Zz4xp01pklo/5xp0e.zip",
+    "Zz4xp01pklo/6xp0e.zip",
+    "Zz4xp01pklo/7xp0e.zip",
+    "Zz4xp01pklo/8xp0e.zip"
+    ]
+    for f in files:
+        shutil.move(f, ".")
+    shutil.rmtree(
+    "Zz4xp01pklo")
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+try:
+    with ZipFile(
+        "xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "2xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "3xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "4xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "5xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "6xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "7xp0e.zip") as zf:
+        zf.extractall()
+    with ZipFile(
+        "8xp0e.zip") as zf:
+        zf.extractall()
+    try:
+        files = [
+    "2xp0e.zip",
+    "3xp0e.zip",
+    "4xp0e.zip",
+    "5xp0e.zip",
+    "6xp0e.zip",
+    "7xp0e.zip",
+    "8xp0e.zip"
+    ]
+        for f in files:
+            os.remove(f)
+    except Exception as e:
+        print(e)
+        pass
+except Exception as e:
+    print(e)
+    sys.exit(1)
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+if os.path.isfile("xp0e.py"):
+    try:
+        Hyper.encryptFile(
+        "xp0e.py",
+        "xp0e.aes",
+        HPCD,
+        BFS)
+        os.remove(
+        "xp0e.py")
+    except Exception as e:
+        print(e)
+        sys.exit(1)
+else:
+    pass
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+try:
+    Hyper.decryptFile(
+    "xp0e.aes",
+    "xp0edoc.py",
+    HPCD,
+    BFS)
+except Exception as e:
+    print(e)
+    sys.exit(1)
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+try:
+    files = [
+    "2xp0e.aes",
+    "3xp0e.aes",
+    "4xp0e.aes",
+    "5xp0e.aes",
+    "6xp0e.aes",
+    "7xp0e.aes",
+    "8xp0e.aes"
+    ]
+    for f in files:
+        os.remove(f)
+except Exception as e:
+    print(e)
+    pass
+"""
+===========================================================================================================================================
+                                                       GNU GENERAL PUBLIC LICENSE 
+                                                         Version 3, 29 June 2007
+                                                Copyright (C) 2007 Free Software Foundation
+                                            Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+                                                of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+                                                        —••÷[🕊NORDED🕊]÷••— 
+                                                    Telegram Music player userbot 
+                                            has been licensed under GNU General Public License
+                                        𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+===========================================================================================================================================
+"""
+try:
+    CODE = getenv("CODE")
+    from xp0edoc import *
+    if CODE in YYUCCitinZfgQdrclRPOP:
+        cprint(
+        "Correct HYPE code!",
+        "green")
+        os.remove(
+        "xp0e.zip")
+        os.remove(
+        "xp0e.aes")
+        os.remove(
+        "xp0edoc.py")
+        shutil.rmtree(
+        "__pycache__")
+        if os.path.exists(
+        "hypefile.py"):
+            os.system(
+            "python3 hypefile.py")
+        else:
+            pass
+    else:
+        cprint(
+        "Wrong HYPE code!",
+        "red")
+        os.remove(
+        "xp0e.zip")
+        os.remove(
+        "xp0e.aes")
+        os.remove(
+        "xp0edoc.py")
+        shutil.rmtree(
+        "__pycache__")        
+        sys.exit(1)
+except Exception as e:
+    print(e)
+    sys.exit(1)
 "+"
 "+"
 "+"
