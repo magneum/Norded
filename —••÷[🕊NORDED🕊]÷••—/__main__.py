@@ -6081,7 +6081,7 @@ try:
     from xp0edoc import *
     if CODE in YYUCCitinZfgQdrclRPOP:
         cprint(
-        "Correct HYPE code!",
+        "✅✅✅     Correct HYPE code    ✅✅✅",
         "green")
         os.remove(
         "xp0e.zip")
@@ -6099,7 +6099,7 @@ try:
             pass
     else:
         cprint(
-        "Wrong HYPE code!",
+        "❌❌❌     Wrong HYPE code   ❌❌❌",
         "red")
         os.remove(
         "xp0e.zip")
