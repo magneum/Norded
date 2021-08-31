@@ -23,7 +23,7 @@
 ```
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS   
-- [![Generic badge](https://img.shields.io/badge/NORDED-Vïå_ßð†-red.svg)](https://t.me/XERONOIDBOT)
+- [![Generic badge](https://img.shields.io/badge/NORDED-Vïå_ßð†-red.svg)](https://t.me/NORDEDBOT)
 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
@@ -79,7 +79,7 @@
     -   BOT_TOKEN = From @BotFather Only
     -   API_TOKEN = From @HVApiBot Only
     -   API_HASH  = From @HVApiBot Only
-    -   XERONOID_SESSION = Get it from below replit link
+    -   NORDED_SESSION = Get it from below link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   HEROKU_APP_NAME = Name of your heroku app
     -   HEROKU_API_KEY = Your Heroku API_TOKEN 
@@ -88,7 +88,7 @@
     -   CLEANER = Put the value to auto clean the notifications by 🎧NORDED©️🎧
     -   CHAT_ID = Group chat IDs where your 🎧NORDED©️🎧 player can play music.
 Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
-    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid.
+    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of NORDED.
 Put like this > 1868088205 1941593018 [with a space between]
 
 
@@ -96,14 +96,14 @@ Put like this > 1868088205 1941593018 [with a space between]
     -   BOT_TOKEN = From @BotFather Only
     -   API_TOKEN = From @HVApiBot Only
     -   API_HASH  = From @HVApiBot Only
-    -   XERONOID_SESSION = Get it from below replit link
+    -   NORDED_SESSION = Get it from below link
     -   OWNER_USERNAME = Your Username like @HypeVoids
     -   BOT_USERNAME = Your Bot @Username
     -   DYNO = Keep any command prefix as per your needs!
     -   CLEANER = Put the value to auto clean the notifications by 🎧NORDED©️🎧
     -   CHAT_ID = Group chat IDs where your 🎧NORDED©️🎧 player can play music.
 Put like this > -1001526909798 -1001472203238 -1001509210199 [with a space between]
-    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of Xeronoid.
+    -   NORD_ADMINS = User IDs of the Admins you want can use 𝗔𝗱𝗺𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 of NORDED.
 Put like this > 1868088205 1941593018 [with a space between]
 ```
 
@@ -113,7 +113,7 @@ Put like this > 1868088205 1941593018 [with a space between]
 
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Norded.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
-- [![Generic badge](https://img.shields.io/badge/NORDED_SESSION-Vïå_ßð†-blue.svg)](https://t.me/XERONOIDBOT)
+- [![Generic badge](https://img.shields.io/badge/NORDED_SESSION-Vïå_ßð†-blue.svg)](https://t.me/NORDEDBOT)
 
 
 # 📜 LICΣПSΣ    
