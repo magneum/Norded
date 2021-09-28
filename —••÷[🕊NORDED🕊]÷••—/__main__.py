@@ -282,7 +282,7 @@ MIB keyboard shortcuts
 MIB = HypeKeyboardMarkup([[
 HypeKeyboardButton(
 text="🏷Group",
-url="https://t.me/HYPEVOIDS"),
+url="https://t.me/Krakns"),
 HypeKeyboardButton(
 text="💰Channel",
 url="https://t.me/HYPEVOIDLAB"),
@@ -1089,7 +1089,7 @@ OTP =  """
 NORDEDBΣ=f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}`ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ɴᴏʀᴅ ᴀᴅᴍɪɴꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ —••÷[🕊NORDED🕊]÷••—ɪꜱ ᴘʟᴜɢɢᴇᴅ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.`
 **__If needed to know the commands then use /nord__**
 
-[𝗣𝗹𝗲𝗮𝘀𝗲 𝘂𝘀𝗲 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽𝘀.](https://t.me/hypevoids)"""
+[𝗣𝗹𝗲𝗮𝘀𝗲 𝘂𝘀𝗲 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽𝘀.](https://t.me/Krakns)"""
 
 
 
@@ -1235,7 +1235,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1306,7 +1306,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1377,7 +1377,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1571,7 +1571,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1642,7 +1642,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1713,7 +1713,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1784,7 +1784,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1855,7 +1855,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -1926,7 +1926,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -2008,7 +2008,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -2079,7 +2079,7 @@ _,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -2234,7 +2234,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -2295,7 +2295,7 @@ async def roku():
         # reply_markup=HypeKeyboardMarkup([[
         # HypeKeyboardButton(
         # text="🕊DΣV GЯӨЦP",
-        # url=f"https://t.me/hypevoids",),],[
+        # url=f"https://t.me/Krakns",),],[
         # HypeKeyboardButton(
         # text="✨••Hype Void Lab••✨",
         # url=f"https://t.me/KrakinzBot")
@@ -2360,7 +2360,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -2374,7 +2374,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 # reply_markup=HypeKeyboardMarkup([[
                 # HypeKeyboardButton(
                 # text="🕊DΣV GЯӨЦP",
-                # url=f"https://t.me/hypevoids",),],[
+                # url=f"https://t.me/Krakns",),],[
                 # HypeKeyboardButton(
                 # text="✨••Hype Void Lab••✨",
                 # url=f"https://t.me/KrakinzBot")
@@ -2404,7 +2404,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -2428,7 +2428,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -2452,7 +2452,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -2466,7 +2466,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} 
 Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
-𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐇𝐞𝐫𝐨𝐤𝐮 𝐥𝐨𝐠𝐬 𝐭𝐨 @HypeVoids 𝐢𝐟 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐰𝐫𝐨𝐧𝐠 𝐡𝐚𝐩𝐩𝐞𝐧𝐬
+𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐇𝐞𝐫𝐨𝐤𝐮 𝐥𝐨𝐠𝐬 𝐭𝐨 @Krakns 𝐢𝐟 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐰𝐫𝐨𝐧𝐠 𝐡𝐚𝐩𝐩𝐞𝐧𝐬
 
 [🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
@@ -2474,7 +2474,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -2803,7 +2803,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @HypeVoids:
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @Krakns:
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
 [🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
@@ -2812,7 +2812,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -2831,7 +2831,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @HypeVoids:
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @Krakns:
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
 [🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
@@ -2840,7 +2840,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -3048,12 +3048,12 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #                𝙽𝙾𝚁𝙴𝙳_HUD,
 #                 caption=
 #                f"""
-#                 {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @Krakinz or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#                 {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @Krakinz or @Krakns:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
 #                 reply_markup=
 #            HypeKeyboardMarkup([[
 #                 HypeKeyboardButton(
 #                 text="🕊DΣV GЯӨЦP",
-#                 url=f"https://t.me/hypevoids",),],[
+#                 url=f"https://t.me/Krakns",),],[
 #                 HypeKeyboardButton(
 #                 text="🔖ɢɪᴛʜᴜʙ",
 #                 url=f"https://t.me/KrakinzBot",),],[
@@ -3072,12 +3072,12 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #            𝙽𝙾𝚁𝙴𝙳_HUD,
 #             caption=
 #            f"""
-#             {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @Krakinz or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#             {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @Krakinz or @Krakns:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
 #             reply_markup=
 #            HypeKeyboardMarkup([[
 #             HypeKeyboardButton(
 #             text="🕊DΣV GЯӨЦP",
-#             url=f"https://t.me/hypevoids",),],[
+#             url=f"https://t.me/Krakns",),],[
 #             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
 #             url=f"https://t.me/KrakinzBot",),],[
@@ -3115,7 +3115,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #            HypeKeyboardMarkup([[
 #             HypeKeyboardButton(
 #             text="🕊DΣV GЯӨЦP",
-#             url=f"https://t.me/hypevoids",),],[
+#             url=f"https://t.me/Krakns",),],[
 #             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
 #             url=f"https://t.me/KrakinzBot",),],[
@@ -4035,7 +4035,7 @@ client,
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -4205,7 +4205,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4274,7 +4274,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4318,7 +4318,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4369,7 +4369,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4422,7 +4422,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4483,7 +4483,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4545,7 +4545,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4589,7 +4589,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4622,7 +4622,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4671,7 +4671,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4726,7 +4726,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4771,7 +4771,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4817,7 +4817,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4861,7 +4861,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4909,7 +4909,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4941,7 +4941,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -4986,7 +4986,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -5016,7 +5016,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -5059,7 +5059,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -5103,7 +5103,7 @@ or
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
         text="🏷Group",
-        url="https://t.me/HYPEVOIDS"),],[
+        url="https://t.me/Krakns"),],[
         HypeKeyboardButton(
         text="—••÷[🕊NӨЯDΣD🕊]÷••—",
         url="https://t.me/nordedbot"),],[
@@ -5327,7 +5327,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5351,7 +5351,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5424,7 +5424,7 @@ client,
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -5451,7 +5451,7 @@ client,
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -5490,7 +5490,7 @@ That Audio file was successfully already added
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5522,7 +5522,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5647,7 +5647,7 @@ client,
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -5673,7 +5673,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                     HypeKeyboardButton(
                     text="🕊DΣV GЯӨЦP",
-                    url=f"https://t.me/hypevoids",),],[
+                    url=f"https://t.me/Krakns",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
                     url=f"https://t.me/KrakinzBot")
@@ -5817,7 +5817,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5846,7 +5846,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
                 HypeKeyboardButton(
                 text="🕊DΣV GЯӨЦP",
-                url=f"https://t.me/hypevoids",),],[
+                url=f"https://t.me/Krakns",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
                 url=f"https://t.me/KrakinzBot")
@@ -5931,7 +5931,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -6032,7 +6032,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -6116,7 +6116,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -6203,7 +6203,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -6305,7 +6305,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             HypeKeyboardMarkup([[
             HypeKeyboardButton(
             text="🕊DΣV GЯӨЦP",
-            url=f"https://t.me/hypevoids",),],[
+            url=f"https://t.me/Krakns",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
             url=f"https://t.me/KrakinzBot")
@@ -6928,7 +6928,7 @@ try:
     "+"
     try:
         𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
-        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoids")
+        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@Krakns")
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
         print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
         pass

@@ -80,7 +80,7 @@
     -   API_TOKEN = From @HVApiBot Only
     -   API_HASH  = From @HVApiBot Only
     -   NORDED_SESSION = Get it from below link
-    -   OWNER_USERNAME = Your Username like @HypeVoids
+    -   OWNER_USERNAME = Your Username like @Krakns
     -   HEROKU_APP_NAME = Name of your heroku app
     -   HEROKU_API_KEY = Your Heroku API_TOKEN 
     -   BOT_USERNAME = Your Bot @Username
@@ -97,7 +97,7 @@ Put like this > 1868088205 1941593018 [with a space between]
     -   API_TOKEN = From @HVApiBot Only
     -   API_HASH  = From @HVApiBot Only
     -   NORDED_SESSION = Get it from below link
-    -   OWNER_USERNAME = Your Username like @HypeVoids
+    -   OWNER_USERNAME = Your Username like @Krakns
     -   BOT_USERNAME = Your Bot @Username
     -   DYNO = Keep any command prefix as per your needs!
     -   CLEANER = Put the value to auto clean the notifications by 🎧NORDED©️🎧

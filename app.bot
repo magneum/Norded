@@ -3,7 +3,7 @@
 "repository": "https://github.com/Krakinz/Norded.git",
 "stack": "container",
 "description": "—••÷[🕊NORDED🕊]÷••—",
-"website": "https://t,me/hypevoids",
+"website": "https://t.me/Krakns",
 "keywords": ["telegram","voice","pyrogram","musicbot","userbot"],
 "env": {
 "API_ID":{
