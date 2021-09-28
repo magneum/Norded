@@ -285,7 +285,7 @@ text="🏷Group",
 url="https://t.me/Krakns"),
 HypeKeyboardButton(
 text="💰Channel",
-url="https://t.me/HYPEVOIDLAB"),
+url="https://t.me/KrakinzLab"),
 HypeKeyboardButton(
 text="⚜️Dev+Git",
 url="https://t.me/KrakinzBot")],
@@ -4211,7 +4211,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4280,7 +4280,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4324,7 +4324,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4375,7 +4375,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4428,7 +4428,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4489,7 +4489,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4551,7 +4551,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4595,7 +4595,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4628,7 +4628,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4677,7 +4677,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4732,7 +4732,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4777,7 +4777,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4823,7 +4823,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4867,7 +4867,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4915,7 +4915,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4947,7 +4947,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -4992,7 +4992,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -5022,7 +5022,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -5065,7 +5065,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -5109,7 +5109,7 @@ or
         url="https://t.me/nordedbot"),],[
         HypeKeyboardButton(
         text="💰Channel",
-        url="https://t.me/HYPEVOIDLAB"),],[
+        url="https://t.me/KrakinzLab"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
         url="https://t.me/KrakinzBot")
@@ -6927,7 +6927,7 @@ try:
     "+"
     "+"
     try:
-        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@hypevoidlab")
+        𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@KrakinzLab")
         𝙽𝙾𝚁𝙳𝙴𝙳.join_chat("@Krakns")
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
         print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
