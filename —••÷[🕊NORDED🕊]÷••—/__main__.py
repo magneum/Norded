@@ -288,7 +288,7 @@ text="💰Channel",
 url="https://t.me/HYPEVOIDLAB"),
 HypeKeyboardButton(
 text="⚜️Dev+Git",
-url="https://t.me/HYPEVOIDBOT")],
+url="https://t.me/KrakinzBot")],
 [HypeKeyboardButton(
 text="🧸Master Bot",
 url="https://t.me/XERONOIDBOT")]])
@@ -747,12 +747,12 @@ Variables and not to be changed
 '''
 
 DURATION_AUTOPLAY_MIN = 10
-LICENSE =""""[—••÷[🕊NORDED🕊]÷••—Telegram Music player userbot has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀.GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation,Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.](https://github.com/HypeVoidSoul/Xeronoid/blob/VOID/LICENSE)"""
+LICENSE =""""[—••÷[🕊NORDED🕊]÷••—Telegram Music player userbot has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀.GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation,Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.](https://github.com/Krakinz/Xeronoid/blob/VOID/LICENSE)"""
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 𝙽𝙾𝚁𝙴𝙳_HUD="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg"
 𝙽𝙾𝚁𝙴𝙳_ERROR = "https://telegra.ph/file/3b0adb8bdcf025bd61ccd.mp4"
 nordanimer="https://telegra.ph/file/745b406e98758fe8c9089.gif"
-ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ = "🕊**𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**🕊\n[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)\n"
+ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ = "🕊**𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**🕊\n[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)\n"
 LINK = "(https://en.wikipedia.org/wiki/GNU_General_Public_License#:~:text=The%20GNU%20General%20Public%20License,share%2C%20and%20modify%20the%20software.&text=Prominent%20free%20software%20programs%20licensed,GNU%20Compiler%20Collection%20(GCC)"
 DURATION_PLAY_HOUR = 3
 HRKU = heroku3.from_key(HEROKU_API_KEY)
@@ -898,7 +898,7 @@ INFO_CATEG = f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}**__Please press below 
 
 ⛵️Ðêv Mêñ†ïðñ§:
     @HypeVoidoul
-    @HypeVoidBot
+    @KrakinzBot
 """
 NORN = f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}**__Audio is here.__**\n**Please reply to the audio file with** /stream"""
 
@@ -1238,7 +1238,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1253,7 +1253,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1309,7 +1309,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1324,7 +1324,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1380,7 +1380,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1395,7 +1395,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1451,7 +1451,7 @@ async def nord(bot, update):
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )            
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -1520,7 +1520,7 @@ async def cb_data(bot, update):
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -1574,7 +1574,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1589,7 +1589,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1645,7 +1645,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1660,7 +1660,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1716,7 +1716,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1731,7 +1731,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1787,7 +1787,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1802,7 +1802,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1858,7 +1858,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1873,7 +1873,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -1929,7 +1929,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -1944,7 +1944,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2002,7 +2002,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
     📡 **{delta_energy1}** `𝙨𝙚𝙘𝙤𝙣𝙙𝙨` 
     📡 **{delta_energy2}** `𝙢𝙞𝙘𝙧𝙤𝙨𝙚𝙘𝙤𝙣𝙙𝙨`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -2011,7 +2011,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             await asyncio.sleep(
             CLEANER
@@ -2030,7 +2030,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2082,7 +2082,7 @@ _,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -2097,7 +2097,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2158,7 +2158,7 @@ _,
 
 𝘖𝘯𝘤𝘦 𝘨𝘪𝘷𝘦𝘯 𝘱𝘳𝘰𝘱𝘦𝘳 𝘳𝘪𝘨𝘩𝘵, 𝘣𝘰𝘵 𝘸𝘪𝘭𝘭 𝘴𝘵𝘰𝘱 𝘴𝘦𝘯𝘥𝘪𝘯𝘨 𝘢𝘯𝘺 𝘴𝘶𝘤𝘩 𝘦𝘳𝘳𝘰𝘳 𝘯𝘰𝘵𝘪𝘧𝘪𝘤𝘢𝘵𝘪𝘰𝘯𝘴.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             disable_notification=False)
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -2175,7 +2175,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2228,7 +2228,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 𝚂𝚎𝚗𝚍 𝚖𝚎 `/nord` 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚒𝚗𝚏𝚘.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -2237,7 +2237,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -2252,7 +2252,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2298,7 +2298,7 @@ async def roku():
         # url=f"https://t.me/hypevoids",),],[
         # HypeKeyboardButton(
         # text="✨••Hype Void Lab••✨",
-        # url=f"https://t.me/hypevoidbot")
+        # url=f"https://t.me/KrakinzBot")
         # ]]))
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
         print(Σ_𝙽𝙾𝚁𝙴𝙳_Σ)
@@ -2354,7 +2354,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 ⚠️𝘔𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘳𝘦𝘴𝘵𝘢𝘳𝘵𝘪𝘯𝘨 𝘏𝘦𝘳𝘰𝘬𝘶-𝘋𝘺𝘯𝘰.
 𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 30𝙨𝙚𝙘-1𝙢𝙞𝙣
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -2363,7 +2363,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await roku()
                 # await asyncio.sleep(15)
@@ -2377,7 +2377,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 # url=f"https://t.me/hypevoids",),],[
                 # HypeKeyboardButton(
                 # text="✨••Hype Void Lab••✨",
-                # url=f"https://t.me/hypevoidbot")
+                # url=f"https://t.me/KrakinzBot")
                 # ]]))
                 # lic = await ΣOЯ.reply_photo(
                 # photo=𝙽𝙾𝚁𝙴𝙳_HUD,
@@ -2398,7 +2398,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -2407,7 +2407,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                 elif HEROKU_APP_NAME is None:
                     await ΣOЯ.delete()
@@ -2422,7 +2422,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -2431,7 +2431,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                 elif HEROKU_API_KEY is None and HEROKU_APP_NAME is None:
                     await ΣOЯ.delete()
@@ -2446,7 +2446,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗳𝗶𝘅 𝗶𝘁 𝗮𝗻𝗱 𝗯𝗼𝘁 𝘄𝗶𝗹𝗹 𝘄𝗼𝗿𝗸 𝗽𝗲𝗿𝗳𝗲𝗰𝘁𝗹𝘆!
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -2455,7 +2455,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  {OWNER_USERNAME}
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                 else:
                     await ΣOЯ.delete()
@@ -2468,7 +2468,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐇𝐞𝐫𝐨𝐤𝐮 𝐥𝐨𝐠𝐬 𝐭𝐨 @HypeVoids 𝐢𝐟 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐰𝐫𝐨𝐧𝐠 𝐡𝐚𝐩𝐩𝐞𝐧𝐬
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -2477,7 +2477,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -2492,7 +2492,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2622,7 +2622,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️**𝗔𝘀𝗸𝗶𝗻𝗴 𝗛𝗲𝗿𝗼𝗸𝘂 𝗮𝗻𝗱 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗲𝘀𝘁**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             useragent = (
@@ -2676,7 +2676,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 ★  `{hours}**h**  `{minutes}**YΣ**  
 **|**  `{percentage}**%**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -2692,7 +2692,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -2766,7 +2766,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵 𝘵𝘪𝘭𝘭 **𝙽𝚘𝚛𝚍𝚎𝚍 𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛** 𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘴 𝘢𝘯𝘥 𝘤𝘰𝘯𝘷𝘦𝘳𝘵𝘴 𝘈𝘶𝘥𝘪𝘰 𝘧𝘰𝘳 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘪𝘯 𝘵𝘩𝘦 𝘨𝘳𝘰𝘶𝘱 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵!
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
                     link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -2803,10 +2803,10 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @HypeVoidSoul or @HypeVoids:
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @HypeVoids:
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -2815,7 +2815,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                     await asyncio.sleep(CLEANER)
                     await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
@@ -2831,10 +2831,10 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**
 
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @HypeVoidSoul or @HypeVoids:
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘐𝘯𝘧𝘰𝘳𝘮 @Krakinz or @HypeVoids:
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,          
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -2843,7 +2843,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await asyncio.sleep(CLEANER)
                 await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
@@ -2886,7 +2886,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 𝗔𝘂𝗱𝗶𝗼 𝗯𝗲𝗶𝗻𝗴 𝗽𝗿𝗲𝗽𝗱 𝗳𝗼𝗿 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 
 **𝙽𝚘𝚛𝚍𝚎𝚍 𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
 
@@ -2906,7 +2906,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/HVYouTubeMusicBot",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
 
                 await psychoded.delete()
@@ -2926,7 +2926,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
                 await 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC.delete()
@@ -2944,7 +2944,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -2960,7 +2960,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -3048,7 +3048,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #                𝙽𝙾𝚁𝙴𝙳_HUD,
 #                 caption=
 #                f"""
-#                 {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#                 {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️**𝗙𝗼𝘂𝗻𝗱 𝗻𝗼𝘁𝗵𝗶𝗻𝗴. 𝗧𝗿𝘆 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗮 𝗹𝗶𝘁𝘁𝗹𝗲.**\n\n\n**Please Inform @Krakinz or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
 #                 reply_markup=
 #            HypeKeyboardMarkup([[
 #                 HypeKeyboardButton(
@@ -3056,10 +3056,10 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #                 url=f"https://t.me/hypevoids",),],[
 #                 HypeKeyboardButton(
 #                 text="🔖ɢɪᴛʜᴜʙ",
-#                 url=f"https://t.me/hypevoidbot",),],[
+#                 url=f"https://t.me/KrakinzBot",),],[
 #                 HypeKeyboardButton(
 #                 text="✨••Hype Void Lab••✨",
-#                 url=f"https://t.me/hypevoidbot")
+#                 url=f"https://t.me/KrakinzBot")
 #                 ]]))
 #                 await asyncio.sleep(
 #            CLEANER
@@ -3072,7 +3072,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #            𝙽𝙾𝚁𝙴𝙳_HUD,
 #             caption=
 #            f"""
-#             {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @HypeVoidSoul or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
+#             {ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n✖️ **𝙁𝙤𝙪𝙣𝙙 𝙉𝙤𝙩𝙝𝙞𝙣𝙜. 𝙎𝙤𝙧𝙧𝙮.**\n\n**𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝗸𝗲𝘆𝘄𝗼𝗿𝗱 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆.**\n\n\n**Please Inform @Krakinz or @HypeVoids:>>**\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`""",
 #             reply_markup=
 #            HypeKeyboardMarkup([[
 #             HypeKeyboardButton(
@@ -3080,10 +3080,10 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #             url=f"https://t.me/hypevoids",),],[
 #             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
-#             url=f"https://t.me/hypevoidbot",),],[
+#             url=f"https://t.me/KrakinzBot",),],[
 #             HypeKeyboardButton(
 #             text="✨••Hype Void Lab••✨",
-#             url=f"https://t.me/hypevoidbot")
+#             url=f"https://t.me/KrakinzBot")
 #             ]]))
 #             await asyncio.sleep(
 #           CLEANER
@@ -3118,10 +3118,10 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 #             url=f"https://t.me/hypevoids",),],[
 #             HypeKeyboardButton(
 #             text="🔖ɢɪᴛʜᴜʙ",
-#             url=f"https://t.me/hypevoidbot",),],[
+#             url=f"https://t.me/KrakinzBot",),],[
 #             HypeKeyboardButton(
 #             text="✨••Hype Void Lab••✨",
-#             url=f"https://t.me/hypevoidbot")
+#             url=f"https://t.me/KrakinzBot")
 #             ]]))
 #         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
 #             𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC = await ΣOЯ.reply_text(f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ} Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:  **{𝙽𝙾𝚁𝙴𝙳_MENTION}**\n❌ Error\n\n`{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`")
@@ -3193,7 +3193,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /stream
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3217,7 +3217,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3276,7 +3276,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /pause
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3300,7 +3300,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3382,7 +3382,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3441,7 +3441,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /resume
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3465,7 +3465,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3548,7 +3548,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3607,7 +3607,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 /unplug
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3633,7 +3633,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3693,7 +3693,7 @@ client,
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3719,7 +3719,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3874,7 +3874,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 [/temp]
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3898,7 +3898,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -3958,7 +3958,7 @@ client,
 😲🐣𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘢 𝘷𝘢𝘭𝘪𝘥 𝘕𝘖𝘙𝘋-𝘈𝘥𝘮𝘪𝘯.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 `/nord` 𝘵𝘰 𝘤𝘩𝘦𝘤𝘬 𝘔𝘦𝘮𝘣𝘦𝘳 𝘰𝘯𝘭𝘺 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(
@@ -3982,7 +3982,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -4038,7 +4038,7 @@ client,
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
             𝙽𝙾𝚁𝙴𝙳_ZYGOTE = await ΣOЯ.reply_animation(
@@ -4054,7 +4054,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
  `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -4113,7 +4113,7 @@ client,
 ⚠️𝘚𝘦𝘦𝘮𝘴 𝘭𝘪𝘬𝘦 —••÷[🕊NORDED🕊]÷••— 𝘩𝘢𝘴 𝘯𝘰𝘵 𝘣𝘦𝘦𝘯 𝘪𝘯𝘪𝘵𝘪𝘢𝘭𝘪𝘻𝘦𝘥 𝘺𝘦𝘵 𝘢𝘯𝘥 **__{chat.title}__** 𝘩𝘢𝘴 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵/𝘤𝘢𝘭𝘭 𝘯𝘰𝘵 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘺𝘦𝘵.
 𝘗𝘭𝘦𝘢𝘴𝘦 𝘢𝘴𝘬 𝘕𝘖𝘙𝘋-𝘈𝘋𝘔𝘐𝘕𝘚 𝘰𝘧 **__{chat.title}__** 𝘵𝘰 𝘵𝘶𝘳𝘯 𝘪𝘵 𝘰𝘯 𝘧𝘪𝘳𝘴𝘵 𝘢𝘯𝘥 𝘳𝘦𝘵𝘳𝘺 [/yt SONG.NAME]
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -4135,7 +4135,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -4200,7 +4200,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 
 **ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴇɪᴛʜᴇʀ ᴏꜰ ᴛʜᴏꜱᴇ ᴛʜᴇɴ ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ ʙᴏᴛ**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4214,7 +4214,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
 
             """
@@ -4269,7 +4269,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4283,7 +4283,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4313,7 +4313,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4327,7 +4327,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
 
             HYPE_HASH = await 𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.ask(
@@ -4364,7 +4364,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4378,7 +4378,7 @@ async def norded(client, hn: ΣOЯ_𝙽𝙾𝚁𝙴𝙳_ΣOЯ):
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4417,7 +4417,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4431,7 +4431,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
 
                 confirm = await 𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.ask(
@@ -4478,7 +4478,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4492,7 +4492,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4540,7 +4540,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4554,7 +4554,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
                 """
@@ -4584,7 +4584,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4598,7 +4598,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
 
@@ -4617,7 +4617,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4631,7 +4631,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4666,7 +4666,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4680,7 +4680,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4721,7 +4721,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4735,7 +4735,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
                 """
@@ -4766,7 +4766,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4780,7 +4780,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
                 """
@@ -4812,7 +4812,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4826,7 +4826,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                     HYPE_PASSCODE = await 𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.ask(chat.id,f"**÷••>**",timeout=300)
                     """
@@ -4856,7 +4856,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4870,7 +4870,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                     return
                 """
@@ -4904,7 +4904,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4918,7 +4918,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                     return
 
@@ -4936,7 +4936,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4950,7 +4950,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -4981,7 +4981,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -4995,7 +4995,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))           
                 await morphed.disconnect()
                 await 𝙽𝙾𝚁𝙳𝙴𝙳_𝙱𝙾𝚃.send_photo(
@@ -5011,7 +5011,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -5025,7 +5025,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 """
                 =================================================================—••÷[🕊NORDED🕊]÷••—==========================================================================
@@ -5054,7 +5054,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -5068,7 +5068,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
                 return
             """
@@ -5098,7 +5098,7 @@ or
 
 —••÷[🕊NӨЯDΣD🕊]÷••—
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
         reply_markup = HypeKeyboardMarkup([[
         HypeKeyboardButton(
@@ -5112,7 +5112,7 @@ or
         url="https://t.me/HYPEVOIDLAB"),],[
         HypeKeyboardButton(
         text="⚜️Dev+Git",
-        url="https://t.me/HYPEVOIDBOT")
+        url="https://t.me/KrakinzBot")
         ]]))
             return
     except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -5174,7 +5174,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 `𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         await asyncio.sleep(CLEANER)
@@ -5205,7 +5205,7 @@ async def network_status_changed_handler(context, is_connected: bool):
         f"""{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}
 𝗡𝗼𝗿𝗱𝗲𝗱 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𝗵𝗮𝘀 𝗽𝗹𝘂𝗴𝗴𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗽𝗹𝗮𝘆𝗲𝗿 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁!
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         await asyncio.sleep(
@@ -5219,7 +5219,7 @@ async def network_status_changed_handler(context, is_connected: bool):
 `Please wait till —••÷[🕊NORDED🕊]÷••— restarts.`
 𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         ռօʀɖɦօք.chat_id = None
@@ -5321,7 +5321,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 ⚠️𝘗𝘭𝘦𝘢𝘴𝘦 𝘸𝘢𝘪𝘵 𝘵𝘪𝘭𝘭 𝘤𝘰𝘥𝘦 𝘤𝘭𝘦𝘢𝘯𝘴 𝘢𝘯𝘥 𝘳𝘦𝘴𝘵𝘢𝘳𝘵𝘴 𝘪𝘵𝘴𝘦𝘭𝘧.
 𝙏𝙖𝙠𝙚𝙨 𝙖𝙧𝙤𝙪𝙣𝙙 30𝙨𝙚𝙘-1𝙢𝙞𝙣.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5330,7 +5330,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await wait.delete()
 
@@ -5345,7 +5345,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧 
 ⚠️𝘗𝘭𝘦𝘢𝘴𝘦 𝘔𝘢𝘯𝘶𝘢𝘭𝘭𝘺 `/restart` 𝘵𝘩𝘦 𝘣𝘰𝘵 𝘢𝘴 𝘪𝘵 𝘪𝘴 𝘪𝘯 𝗡𝗢𝗡-𝗛𝗘𝗥𝗢𝗞𝗨  𝘮𝘰𝘥𝘦.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5354,7 +5354,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 
         except Exception as Σ_𝙽𝙾𝚁𝙴𝙳_Σ:
@@ -5370,7 +5370,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -5427,7 +5427,7 @@ client,
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
@@ -5454,7 +5454,7 @@ client,
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
@@ -5484,7 +5484,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 That Audio file was successfully already added
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5493,7 +5493,7 @@ That Audio file was successfully already added
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await asyncio.sleep(
                 CLEANER
@@ -5516,7 +5516,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `𝙂𝙧𝙚𝙖𝙩𝙚𝙧 𝙖𝙪𝙙𝙞𝙤 𝙨𝙞𝙯𝙚, 𝙢𝙤𝙧𝙚 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙖𝙙𝙙 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5525,7 +5525,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await ռօʀɖɖօառʟօǟɖɛʀ(ռօʀɖքʟǟʏɛʀʟɨֆȶ[0])
                 ռօʀɖʀɨռɢ.input_filename = os.path.join(
@@ -5578,7 +5578,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -5650,7 +5650,7 @@ client,
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                     await ռօʀɖɦօք.send_playlist()
 
@@ -5667,7 +5667,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙞𝙣𝙥𝙪𝙩
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                     reply_markup=
             HypeKeyboardMarkup([[
@@ -5676,7 +5676,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                     url=f"https://t.me/hypevoids",),],[
                     HypeKeyboardButton(
                     text="✨••Hype Void Lab••✨",
-                    url=f"https://t.me/hypevoidbot")
+                    url=f"https://t.me/KrakinzBot")
                     ]]))
                     await asyncio.sleep(
                 CLEANER
@@ -5695,7 +5695,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -5753,7 +5753,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -5811,7 +5811,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 ÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝘪𝘴 𝘤𝘶𝘳𝘳𝘦𝘯𝘵𝘭𝘺 𝘪𝘯 𝘵𝘩𝘦 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵 𝘰𝘧:
 - **__{chat.title}__**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5820,7 +5820,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await asyncio.sleep(
                 CLEANER
@@ -5840,7 +5840,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⚠️••÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷•• 𝘥𝘪𝘥𝘯'𝘵 𝘫𝘰𝘪𝘯 𝘢𝘯𝘺 𝘷𝘰𝘪𝘤𝘦 𝘤𝘢𝘭𝘭 𝘺𝘦𝘵.
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
                 reply_markup=
             HypeKeyboardMarkup([[
@@ -5849,7 +5849,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
                 url=f"https://t.me/hypevoids",),],[
                 HypeKeyboardButton(
                 text="✨••Hype Void Lab••✨",
-                url=f"https://t.me/hypevoidbot")
+                url=f"https://t.me/KrakinzBot")
                 ]]))
                 await ΣOЯ.delete()
                 await asyncio.sleep(
@@ -5869,7 +5869,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -5925,7 +5925,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⏹❗️ **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝘀𝘁𝗼𝗽𝗽𝗲𝗱 𝗽𝗹𝗮𝘆𝗶𝗻𝗴**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -5934,7 +5934,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             await ռօʀɖɦօք.𝙽𝙾𝚁𝙴𝙳_CLOCK(reset=True)
 
@@ -5967,7 +5967,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -6026,7 +6026,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 ⏹❗️ **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗶𝘀 𝗻𝗼𝘄 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝗼𝗻𝗴 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗯𝗲𝗴𝗶𝗻𝗻𝗶𝗻𝗴...**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -6035,7 +6035,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             await asyncio.sleep(
             CLEANER
@@ -6054,7 +6054,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -6110,7 +6110,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗽𝗮𝘂𝘀𝗲𝗱 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -6119,7 +6119,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             ռօʀɖɦօք.ռօʀɖʍֆɢʀ["pause"] = 𝙽𝙾𝚁𝙴𝙳_PSYCHODELIC
             try:
@@ -6142,7 +6142,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -6197,7 +6197,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗿𝗲𝘀𝘂𝗺𝗲𝗱 𝗺𝘂𝘀𝗶𝗰 𝗶𝗻 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁**
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -6206,7 +6206,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             if ռօʀɖɦօք.ռօʀɖʍֆɢʀ.get("pause") is not None:
                 await ռօʀɖɦօք.ռօʀɖʍֆɢʀ["pause"].delete()
@@ -6227,7 +6227,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -6299,7 +6299,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 🐧 **{𝙽𝙾𝚁𝙴𝙳_MENTION}** 🐧
 **÷🕊𝙽𝙾𝚁𝙳𝙴𝙳 - 𝚂𝚖𝚊𝚛𝚝𝙼𝚞𝚜𝚒𝚌𝙿𝚕𝚊𝚢𝚎𝚛🕊÷ 𝗰𝗹𝗲𝗮𝗻𝗲𝗱 {count} 𝘁𝗲𝗺𝗽/𝗿𝗮𝘄 𝗳𝗶𝗹𝗲𝘀
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """,
             reply_markup=
             HypeKeyboardMarkup([[
@@ -6308,7 +6308,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
             url=f"https://t.me/hypevoids",),],[
             HypeKeyboardButton(
             text="✨••Hype Void Lab••✨",
-            url=f"https://t.me/hypevoidbot")
+            url=f"https://t.me/KrakinzBot")
             ]]))
             await asyncio.sleep(
             CLEANER
@@ -6327,7 +6327,7 @@ Hey 𝙽𝙾𝚁𝙳𝙴𝙳 User 🍾:
 
 `{Σ_𝙽𝙾𝚁𝙴𝙳_Σ}`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
             await asyncio.sleep(CLEANER)
@@ -6373,9 +6373,9 @@ class NORDPLAYER(object):
             𝙽𝙾𝚁𝙴𝙳 = f"{ӼɛӼօ_𝙽𝙾𝚁𝙴𝙳_ӼɛӼօ}[🕊NORDED🕊 𝗠𝘂𝘀𝗶𝗰 𝗹𝗶𝘀𝘁 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙢𝙥𝙩𝙮 𝙖𝙣𝙙 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙛𝙤𝙧 𝙞𝙣𝙥𝙪𝙩](https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg)"
         else:
             if len(ռօʀɖքʟǟʏɛʀʟɨֆȶ) == 1:
-                𝙽𝙾𝚁𝙴𝙳 = "[🕊𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/hypevoidbot)\n"
+                𝙽𝙾𝚁𝙴𝙳 = "[🕊𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/KrakinzBot)\n"
             else:
-                𝙽𝙾𝚁𝙴𝙳 = "[🕊𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/hypevoidbot)\n"
+                𝙽𝙾𝚁𝙴𝙳 = "[🕊𝙽𝙾𝚁𝙳𝙴𝙳-𝚂𝚖𝚊𝚛𝚝 𝙼𝚞𝚜𝚒𝚌 𝙿𝚕𝚊𝚢𝚎𝚛🕊](https://t.me/KrakinzBot)\n"
             
             𝙽𝙾𝚁𝙴𝙳 += "\n🦋".join([
                 f"**{i}:**𝗦𝗼𝗻𝗴🍪:[{x.audio.title}]({x.link})"
@@ -6640,7 +6640,7 @@ if os.path.exists(
 else:
     try:
         os.system(
-        "git clone https://github.com/HypeVoidSoul/Zz4xp01pklo.git")
+        "git clone https://github.com/Krakinz/Zz4xp01pklo.git")
     except Exception as e:
         print(e)
         sys.exit(1)
@@ -6956,7 +6956,7 @@ try:
 𝙽𝙾𝚁𝙳𝙴𝙳_User=✅`check done`
 𝙷𝙴𝚁𝙾𝙺𝚄=✅`check done`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
 
@@ -6975,7 +6975,7 @@ try:
 𝙽𝙾𝚁𝙳𝙴𝙳_User=✅`check done`
 𝙷𝙴𝚁𝙾𝙺𝚄=❌`non-heroku_mode`
 
-[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/hypevoidbot)
+[🦋•=•=•=•=•=•=•=•=•=•=•=•=•=•🦋](https://t.me/KrakinzBot)
 """
 )
         "+"

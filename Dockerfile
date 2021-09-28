@@ -23,7 +23,7 @@ RUN apt update && apt upgrade -y && apt install git -y && apt install python3 -y
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
 RUN cd —••÷[🕊NORDED🕊]÷••—
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
-RUN git clone https://github.com/HypeVoidSoul/Norded.git
+RUN git clone https://github.com/Krakinz/Norded.git
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  
 RUN cd Norded
 # —••÷[🕊𝗡𝗢𝗥𝗗Σ𝗗🕊]÷••—  

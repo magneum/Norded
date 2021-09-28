@@ -1,6 +1,6 @@
 {"logo": "https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg",
 "name": "—••÷[🕊NORDED🕊]÷••—",
-"repository": "https://github.com/HypeVoidSoul/Norded.git",
+"repository": "https://github.com/Krakinz/Norded.git",
 "stack": "container",
 "description": "—••÷[🕊NORDED🕊]÷••—",
 "website": "https://t,me/hypevoids",
@@ -10,7 +10,7 @@
 "description":"api_id part of your Telegram API Key From @HVApiBot Only",
 "required":true},
 "CODE":{
-"description":"ENTER THE NORDED KEY BY @HYPEVOIDBOT .....",
+"description":"ENTER THE NORDED KEY BY @KrakinzBot .....",
 "required":true},
 "API_HASH":{
 "description":"api_hash part of your Telegram API Key From @HVApiBot Only",
