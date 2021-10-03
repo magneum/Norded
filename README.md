@@ -1,4 +1,3 @@
-|🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 # ⭐️『 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 - 🎧NORDED©️🎧 』⭐️
 <p align="centre"><img  width="800%" height="80%" img src="https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg" /></p>
@@ -25,7 +24,7 @@
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS   
 - [![Generic badge](https://img.shields.io/badge/NORDED-Vïå_ßð†-red.svg)](https://t.me/NORDEDBOT)
 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖
-- [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/KrakinzBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
+- [![Generic badge](https://img.shields.io/badge/KrakinzBot-Vïå_ßð†-Yellow.svg)](https://t.me/KrakinzBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
 
 # 📷 SCЯΣΣПSΉӨƬS
@@ -131,5 +130,3 @@ Put like this > 1868088205 1941593018 [with a space between]
                 has been licensed under GNU General Public License
                     𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 ➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕     
-```
-|🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
